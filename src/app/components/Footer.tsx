@@ -93,8 +93,10 @@ const Footer = () => {
                 href=""
                 className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%]"
               >
-                <img
-                  src="https://img.icons8.com/?size=24&id=de4vjQ6J061l&format=png"
+                <Image
+                  src={
+                    'https://img.icons8.com/?size=24&id=de4vjQ6J061l&format=png'
+                  }
                   alt="headerImg"
                   width={20}
                   height={20}
@@ -117,8 +119,8 @@ const Footer = () => {
                 href=""
                 className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%]"
               >
-                <img
-                  src="https://img.icons8.com/?size=32&id=16154&format=png"
+                <Image
+                  src={'https://img.icons8.com/?size=32&id=16154&format=png'}
                   alt="headerImg"
                   width={20}
                   height={20}
@@ -129,8 +131,8 @@ const Footer = () => {
                 href=""
                 className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%]"
               >
-                <img
-                  src="https://img.icons8.com/?size=32&id=16154&format=png"
+                <Image
+                  src={'https://img.icons8.com/?size=32&id=16154&format=png'}
                   alt="headerImg"
                   width={20}
                   height={20}
