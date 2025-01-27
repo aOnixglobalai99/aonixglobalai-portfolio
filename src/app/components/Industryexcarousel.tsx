@@ -9,7 +9,6 @@ const Industryexcarousel = () => {
   return (
     <div className="carousel">
       <div className="carouselItems">
-<<<<<<< HEAD
         {/* Healthcare Technology */}
         <div className="carouselItem w-[1140px]">
           <div className="flex gap-5">
@@ -28,29 +27,11 @@ const Industryexcarousel = () => {
               <img
                 src="https://img.freepik.com/free-vector/smart-healthcare-technology-template_53876-117499.jpg?semt=ais_hybrid"
                 alt="Healthcare Technology"
-=======
-        <div className="carouselItem w-[1140px]">
-          <div className="flex gap-5">
-            <div className="w-6/12 flex flex-col justify-center">
-              <h2 className=" text-[25px] font-bold mb-5">
-                Vero eos et accusamus
-              </h2>
-              <p>
-                Vero eos et accusamus et iusto odio dignissimos ducimus qui{' '}
-              </p>
-            </div>
-            <div className="w-6/12 h-[300px]">
-              {' '}
-              <Image
-                src={HealthcareTechnology}
-                alt="headerImg"
->>>>>>> master
                 className="h-full object-fill"
               />
             </div>
           </div>
         </div>
-<<<<<<< HEAD
 
         {/* E-commerce Technology */}
         <div className="carouselItem w-[1140px]">
@@ -70,49 +51,11 @@ const Industryexcarousel = () => {
               <img
                 src="https://img.freepik.com/free-vector/flat-design-online-shopping-c_23-2150321059.jpg?semt=ais_hybrid"
                 alt="E-commerce Technology"
-=======
-        <div className="carouselItem w-[1140px]">
-          <div className="flex gap-5">
-            <div className="w-6/12 flex flex-col justify-center">
-              <h2 className=" text-[25px] font-bold mb-5">
-                Vero eos et accusamus
-              </h2>
-              <p>
-                Vero eos et accusamus et iusto odio dignissimos ducimus qui{' '}
-              </p>
-            </div>
-            <div className="w-6/12 h-[300px]">
-              {' '}
-              <Image
-                src={EcommerceTechnology}
-                alt="headerImg"
-                className="h-full"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="carouselItem w-[1140px]">
-          <div className="flex gap-5">
-            <div className="w-6/12 flex flex-col justify-center">
-              <h2 className=" text-[25px] font-bold mb-5">
-                Vero eos et accusamus
-              </h2>
-              <p>
-                Vero eos et accusamus et iusto odio dignissimos ducimus qui{' '}
-              </p>
-            </div>
-            <div className="w-6/12 h-[300px]">
-              {' '}
-              <Image
-                src={SchoolTechnology}
-                alt="headerImg"
->>>>>>> master
                 className="h-full object-fill"
               />
             </div>
           </div>
         </div>
-<<<<<<< HEAD
 
         {/* School Technology */}
         <div className="carouselItem w-[1140px]">
@@ -155,23 +98,6 @@ const Industryexcarousel = () => {
               <img
                 src="https://img.freepik.com/free-vector/real-estate-banner-template_23-2148965222.jpg?ga=GA1.1.901203890.1737960981&semt=ais_hybrid"
                 alt="Real Estate Technology"
-=======
-        <div className="carouselItem w-[1140px]">
-          <div className="flex gap-5">
-            <div className="w-6/12 flex flex-col justify-center">
-              <h2 className=" text-[25px] font-bold mb-5">
-                Vero eos et accusamus
-              </h2>
-              <p>
-                Vero eos et accusamus et iusto odio dignissimos ducimus qui{' '}
-              </p>
-            </div>
-            <div className="w-6/12 h-[300px]">
-              {' '}
-              <Image
-                src={Realstate}
-                alt="headerImg"
->>>>>>> master
                 className="h-full object-fill"
               />
             </div>

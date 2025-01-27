@@ -1,18 +1,14 @@
 import React from 'react';
-<<<<<<< HEAD
 import Image from 'next/image';
 import client1 from '../assets/images/client-1.png';
 import client2 from '../assets/images/client-2.png';
 import client3 from '../assets/images/client-3.png';
 import client4 from '../assets/images/client-4.png';
-=======
->>>>>>> master
 
 const Carousel = () => {
   return (
     <div className="carousel">
       <div className="carouselItems">
-<<<<<<< HEAD
         <div className="carouselItem flex flex-col gap-[30px]">
           <div className="pl-[10%] pr-[10%]">
             "Working with AonixGlobalAI has significantly boosted our online
@@ -95,18 +91,6 @@ const Carousel = () => {
             <p className="clientTitle">Travel Agency Owner</p>
             <p className="clientCompany">Wanderlust Travels</p>
           </div>
-=======
-        <div className="carouselItem">
-          Vero eos et accusamus et iusto odio dignissimos ducimus qui{' '}
-        </div>
-        <div className="carouselItem">
-          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-          et quas molestias excepturi sint
-        </div>
-        <div className="carouselItem">
-          {' '}
-          quos dolores et quas molestias excepturi sint
->>>>>>> master
         </div>
       </div>
     </div>
