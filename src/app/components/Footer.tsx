@@ -21,6 +21,32 @@ const Footer = () => {
               </h1>
             </div>
             <p className="text-[white] text-[15px]">
+<<<<<<< HEAD
+              Empowering the Future with Intelligent Solutions
+            </p>
+            <div className="flex flex-col gap-3 mt-[30px]">
+              <div className="flex gap-2.5">
+                <img
+                  src="https://img.icons8.com/?size=48&id=uzeKRJIGwbBY&format=png"
+                  alt="headerImg"
+                  width={15}
+                  height={10}
+                  className="h-[20px]"
+                />
+                <p className="text-[white] text-[15px]">
+                  Indore, Madhya Pradesh
+                </p>
+              </div>
+              <div className="flex gap-2.5">
+                <Image src={email} alt="headerImg" width={15} height={10} />
+                <p className="text-[white] text-[15px]">
+                  support@aonixglobalai.com
+                </p>
+              </div>
+              <div className="flex gap-2.5">
+                <Image src={phone} alt="headerImg" width={15} height={10} />
+                <p className="text-[white] text-[15px]">(+91) 8709871715</p>
+=======
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod
             </p>
@@ -32,6 +58,7 @@ const Footer = () => {
               <div className="flex gap-2.5">
                 <Image src={phone} alt="headerImg" width={15} height={10} />
                 <p className="text-[white] text-[15px]">(+62)81 235 26512</p>
+>>>>>>> master
               </div>
             </div>
           </div>
@@ -75,6 +102,21 @@ const Footer = () => {
               >
                 <Image src={linkedin} alt="headerImg" width={20} height={20} />
               </Link>
+<<<<<<< HEAD
+              {/* Twitter(X) clickable logo */}
+              <Link
+                href=""
+                className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%]"
+              >
+                <img
+                  src="https://img.icons8.com/?size=24&id=de4vjQ6J061l&format=png"
+                  alt="headerImg"
+                  width={20}
+                  height={20}
+                />
+              </Link>
+=======
+>>>>>>> master
               <Link
                 href=""
                 className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%]"
@@ -87,6 +129,33 @@ const Footer = () => {
               >
                 <Image src={insta} alt="headerImg" width={20} height={20} />
               </Link>
+<<<<<<< HEAD
+              {/* Dribble clickable logo */}
+              <Link
+                href=""
+                className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%]"
+              >
+                <img
+                  src="https://img.icons8.com/?size=32&id=16154&format=png"
+                  alt="headerImg"
+                  width={20}
+                  height={20}
+                />
+              </Link>
+              {/* Behance clickable logo */}
+              <Link
+                href=""
+                className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%]"
+              >
+                <img
+                  src="https://img.icons8.com/?size=32&id=16154&format=png"
+                  alt="headerImg"
+                  width={20}
+                  height={20}
+                />
+              </Link>
+=======
+>>>>>>> master
             </div>
           </div>
         </div>
@@ -96,7 +165,11 @@ const Footer = () => {
             Technolgy & IT Solution Template Kit by Baliniz
           </p>
           <p className="text-[white] text-[15px]">
+<<<<<<< HEAD
+            Copyright © 2025 All rights reserved.
+=======
             Copyright © 2021 All rights reserved.
+>>>>>>> master
           </p>
         </div>
       </div>
