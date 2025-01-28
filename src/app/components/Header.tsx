@@ -2,12 +2,12 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaChevronDown } from 'react-icons/fa';
-import Dropdown from './Dropdown';
+// import { FaChevronDown } from 'react-icons/fa';
+// import Dropdown from './Dropdown';
 import logo from '../assets/images/logo.png';
 
 const Header: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="max-w-[1140px] flex items-center justify-between m-auto px-4 py-6 bg-white">

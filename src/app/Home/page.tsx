@@ -1,7 +1,7 @@
 import React from 'react';
 // import './components.css';
 import Image from 'next/image';
-import logo from '../assets/images/logo.png';
+// import logo from '../assets/images/logo.png';
 import tick from '../assets/images/tick-icon.svg';
 import whitetick from '../assets/images/whitetick.svg';
 import rightarrowline from '../assets/images/right-arrow-line.svg';
