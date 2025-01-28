@@ -5,7 +5,7 @@ import phone from '../assets/images/phone.svg';
 import email from '../assets/images/email.svg';
 import linkedin from '../assets/images/linkedin.svg';
 import insta from '../assets/images/insta.svg';
-import { FaChevronDown, FaChevronRight } from 'react-icons/fa';
+import { FaChevronRight } from 'react-icons/fa';
 import Link from 'next/link';
 const Footer = () => {
   return (
