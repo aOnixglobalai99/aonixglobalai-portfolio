@@ -1,8 +1,14 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaChevronDown } from 'react-icons/fa';
+import Dropdown from './Dropdown';
 import logo from '../assets/images/logo.png';
-const header = () => {
+
+const Header: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="max-w-[1140px] flex items-center justify-between m-auto px-4 py-6 bg-white">
       <div className="flex items-center gap-4">
@@ -46,13 +52,11 @@ const header = () => {
               Industry
             </Link>
           </li>
+          {/* Dropdown for PAGES */}
           <li>
-            <Link
-              className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e] transition-[0.3s]"
-              href=""
-            >
-              PAGES
-            </Link>
+            <div className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e] transition-[0.3s]">
+              <Dropdown />
+            </div>
           </li>
           <li>
             <Link
@@ -82,4 +86,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;
