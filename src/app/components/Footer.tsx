@@ -5,7 +5,7 @@ import phone from '../assets/images/phone.svg';
 import email from '../assets/images/email.svg';
 import linkedin from '../assets/images/linkedin.svg';
 import insta from '../assets/images/insta.svg';
-import facebook from '../assets/images/facebook.svg';
+import { FaChevronDown, FaChevronRight } from 'react-icons/fa';
 import Link from 'next/link';
 const Footer = () => {
   return (
@@ -49,26 +49,72 @@ const Footer = () => {
             </div>
           </div>
           <div className="w-[20%] flex flex-col gap-5">
-            {/* <h1 className="text-[white] text-[25px]">Other Pages</h1>
+            <h1 className="text-[white] text-[25px]">Quick Links</h1>
             <ul className="flex flex-col gap-2">
-              <li className="text-[white] text-[15px]">Home</li>
-              <li className="text-[white] text-[15px]">Home</li>
-              <li className="text-[white] text-[15px]">Home</li>
-              <li className="text-[white] text-[15px]">Home</li>
-              <li className="text-[white] text-[15px]">Home</li>
-              <li className="text-[white] text-[15px]">Home</li>
-            </ul> */}
+              <li className="text-white text-[15px]">
+                <Link href="#" className="flex items-center">
+                  <FaChevronRight className="text-blue-500" size={16} />
+                  <span className="ml-2 hover:text-blue-500">
+                    Privacy Policy
+                  </span>
+                </Link>
+              </li>
+              <li className="text-white text-[15px]">
+                <Link href="#" className="flex items-center">
+                  <FaChevronRight className="text-blue-500" size={16} />
+                  <span className="ml-2 hover:text-blue-500">
+                    Term Of Service
+                  </span>
+                </Link>
+              </li>
+              <li className="text-white text-[15px]">
+                <Link href="#" className="flex items-center">
+                  <FaChevronRight className="text-blue-500" size={16} />
+                  <span className="ml-2 hover:text-blue-500">Disclaimer</span>
+                </Link>
+              </li>
+              <li className="text-white text-[15px]">
+                <Link href="#" className="flex items-center">
+                  <FaChevronRight className="text-blue-500" size={16} />
+                  <span className="ml-2 hover:text-blue-500">Credits</span>
+                </Link>
+              </li>
+              <li className="text-white text-[15px]">
+                <Link href="#" className="flex items-center">
+                  <FaChevronRight className="text-blue-500" size={16} />
+                  <span className="ml-2 hover:text-blue-500">FAQ</span>
+                </Link>
+              </li>
+            </ul>
           </div>
           <div className="w-[20%] flex flex-col gap-5">
-            {/* <h1 className="text-[white] text-[25px]">Other Pages</h1>
+            <h1 className="text-[white] text-[25px]">Other Pages</h1>
             <ul className="flex flex-col gap-2">
-              <li className="text-[white] text-[15px]">Home</li>
-              <li className="text-[white] text-[15px]">Home</li>
-              <li className="text-[white] text-[15px]">Home</li>
-              <li className="text-[white] text-[15px]">Home</li>
-              <li className="text-[white] text-[15px]">Home</li>
-              <li className="text-[white] text-[15px]">Home</li>
-            </ul> */}
+              <li className="text-white text-[15px] flex items-center">
+                <Link href="#" className="flex items-center">
+                  <FaChevronRight className="text-blue-500" />
+                  <span className="ml-2 hover:text-blue-500">Home</span>
+                </Link>
+              </li>
+              <li className="text-white text-[15px] flex items-center">
+                <Link href="#our_services" className="flex items-center">
+                  <FaChevronRight className="text-blue-500" />
+                  <span className="ml-2 hover:text-blue-500">Services</span>
+                </Link>
+              </li>
+              <li className="text-white text-[15px] flex items-center">
+                <Link href="#" className="flex items-center">
+                  <FaChevronRight className="text-blue-500" />
+                  <span className="ml-2 hover:text-blue-500">Contact</span>
+                </Link>
+              </li>
+              <li className="text-white text-[15px] flex items-center">
+                <Link href="#" className="flex items-center">
+                  <FaChevronRight className="text-blue-500" />
+                  <span className="ml-2 hover:text-blue-500">Project</span>
+                </Link>
+              </li>
+            </ul>
           </div>
           <div className="w-[30%] flex flex-col gap-5">
             <h2 className="text-[white] p-[5px] text-[25px]">Newsletter</h2>
@@ -82,11 +128,12 @@ const Footer = () => {
               Get the latest news & updates
             </p>
             <div className="flex gap-8">
+              {/* LinkedIn clickable logo */}
               <Link
                 href=""
                 className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%]"
               >
-                <Image src={linkedin} alt="headerImg" width={20} height={20} />
+                <Image src={linkedin} alt="headerImg" width={15} height={15} />
               </Link>
               {/* Twitter(X) clickable logo */}
               <Link
@@ -98,21 +145,16 @@ const Footer = () => {
                     'https://img.icons8.com/?size=24&id=de4vjQ6J061l&format=png'
                   }
                   alt="headerImg"
-                  width={20}
-                  height={20}
+                  width={15}
+                  height={15}
                 />
               </Link>
+              {/* Instagram Clickable logo */}
               <Link
                 href=""
                 className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%]"
               >
-                <Image src={facebook} alt="headerImg" width={20} height={20} />
-              </Link>
-              <Link
-                href=""
-                className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%]"
-              >
-                <Image src={insta} alt="headerImg" width={20} height={20} />
+                <Image src={insta} alt="headerImg" width={15} height={15} />
               </Link>
               {/* Dribble clickable logo */}
               <Link
@@ -122,8 +164,8 @@ const Footer = () => {
                 <Image
                   src={'https://img.icons8.com/?size=32&id=16154&format=png'}
                   alt="headerImg"
-                  width={20}
-                  height={20}
+                  width={18}
+                  height={18}
                 />
               </Link>
               {/* Behance clickable logo */}
@@ -132,10 +174,12 @@ const Footer = () => {
                 className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%]"
               >
                 <Image
-                  src={'https://img.icons8.com/?size=32&id=16154&format=png'}
+                  src={
+                    'https://img.icons8.com/?size=24&id=HvLKZeTLqQZn&format=png'
+                  }
                   alt="headerImg"
-                  width={20}
-                  height={20}
+                  width={15}
+                  height={15}
                 />
               </Link>
             </div>
