@@ -54,9 +54,12 @@ const Header: React.FC = () => {
           </li>
           {/* Dropdown for PAGES */}
           <li>
-            <div className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e] transition-[0.3s]">
-              <Dropdown />
-            </div>
+            <Link
+              className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e] transition-[0.3s]"
+              href=""
+            >
+              Our Work
+            </Link>
           </li>
           <li>
             <Link

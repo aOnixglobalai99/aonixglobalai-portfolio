@@ -10,17 +10,17 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <div className="client-footer-div bg-[#078dd7] h-[400px] w-full bg-center bg-no-repeat bg-cover relative mt-[100px]">
-      <div className=" w-[1140px] m-auto flex flex-col gap-5 py-10">
+      <div className=" w-[1140px] m-auto flex flex-col gap-5 py-10 ">
         <div className="flex gap-5">
           <div className="w-[30%] flex flex-col px-0 justify-between">
-            <div className="flex items-center gap-[15px]">
+            <div className="flex items-center gap-[15px] bg-white p-[5px] rounded-2xl">
               <Image src={logo} alt="headerImg" width={45} height={45} />
               <h1 className="text-3xl font-bold text-[#121a5e]">
-                Aonix<span className="text-white">Global</span>
+                Aonix<span className="text-[#078dd7]">Global</span>
                 <span className="text-[#121a5e]">AI</span>
               </h1>
             </div>
-            <p className="text-[white] text-[15px]">
+            <p className="text-[white] text-[15px] pt-[10px]">
               Empowering the Future with Intelligent Solutions
             </p>
             <div className="flex flex-col gap-3 mt-[30px]">
@@ -133,7 +133,7 @@ const Footer = () => {
                 href=""
                 className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%]"
               >
-                <Image src={linkedin} alt="headerImg" width={15} height={15} />
+                <Image src={linkedin} alt="headerImg" width={12} height={12} />
               </Link>
               {/* Twitter(X) clickable logo */}
               <Link

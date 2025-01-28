@@ -44,12 +44,6 @@ const Dropdown: React.FC = () => {
         }
       >
         <a
-          href="#about_us"
-          className="block px-4 py-2 text-gray-100 hover:bg-gray-300 hover:text-[#333] rounded-md"
-        >
-          About Us
-        </a>
-        <a
           href="#team"
           className="block px-4 py-2 text-gray-100 hover:bg-gray-300 hover:text-[#333] rounded-md"
         >
