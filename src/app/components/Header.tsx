@@ -25,17 +25,9 @@ const header = () => {
           <li>
             <Link
               className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e] transition-[0.3s]"
-              href="#about_us"
+              href=""
             >
-              About us
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e] transition-[0.3s]"
-              href="#our_blog"
-            >
-              Blog
+              AI
             </Link>
           </li>
           <li>
@@ -51,7 +43,32 @@ const header = () => {
               className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e] transition-[0.3s]"
               href=""
             >
-              Why us
+              Industry
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e] transition-[0.3s]"
+              href=""
+            >
+              PAGES
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e] transition-[0.3s]"
+              href="#our_blog"
+            >
+              Blog
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e] transition-[0.3s]"
+              href="#contact_us"
+            >
+              Contact Us
             </Link>
           </li>
         </ul>

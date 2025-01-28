@@ -339,7 +339,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className="mt-[100px] mb-[100px]">
+        {/* <div className="mt-[100px] mb-[100px]">
           <div className=" w-[1140px] m-auto flex flex-col">
             <div className="flex flex-col items-center gap-2.5 px-[360px] py-0">
               <h1 className="text-[#121a5e] font-semibold text-xl">
@@ -422,7 +422,7 @@ const page = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <section className="engineer-team-back relative">
           <div className=" bg-black opacity-70 h-full w-full flex items-center gap-5 absolute flex-col px-[181px] py-[100px]">
@@ -436,7 +436,7 @@ const page = () => {
           </div>
         </section>
 
-        <section className="mt-[-100px]">
+        <section id="contact_us" className="pt-[100px]">
           <div className=" w-[1140px] m-auto flex shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] bg-white">
             <div className="submit-form-div-left bg-center bg-no-repeat bg-cover relative w-6/12 p-10">
               <div className="flex flex-col gap-[15px]">
