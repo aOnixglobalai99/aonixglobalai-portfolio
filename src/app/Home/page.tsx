@@ -443,13 +443,17 @@ const page = () => {
                 <h2 className="text-[40px] text-[white] font-bold leading-[45px]">
                   Perfect Solutions For Your Business
                 </h2>
-                <p className="text-base text-[white]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo
+                <p className="text-base text-[white] text-justify">
+                  At AonixGlobalAI, we deliver innovative and scalable IT
+                  solutions tailored to your business needs. Leveraging
+                  cutting-edge technologies and exceptional customer support, we
+                  drive efficiency, growth, and success in today's competitive
+                  landscape.
                 </p>
-                <ul className="gap-2.5 flex flex-col mt-5">
+                <p className="text-xl text-[white] font-bold mt-5">
+                  Our Commitments to Excellence:
+                </p>
+                <ul className="gap-2.5 flex flex-col">
                   <li className="text-[16px] text-[white] flex gap-1">
                     <Image
                       src={whitetick}
@@ -457,7 +461,7 @@ const page = () => {
                       width={15}
                       height={10}
                     />
-                    We are committed to providing quality IT Services
+                    Custom IT solutions aligned with your business goals
                   </li>
                   <li className="text-[16px] text-[white] flex gap-1">
                     <Image
@@ -466,7 +470,7 @@ const page = () => {
                       width={15}
                       height={10}
                     />{' '}
-                    We are committed to providing quality IT Services
+                    Seamless integration for long-term scalability
                   </li>
                   <li className="text-[16px] text-[white] flex gap-1">
                     <Image
@@ -475,7 +479,7 @@ const page = () => {
                       width={15}
                       height={10}
                     />{' '}
-                    We are committed to providing quality IT Services
+                    Advanced security and compliance measures
                   </li>
                   <li className="text-[16px] text-[white] flex gap-1">
                     <Image
@@ -484,10 +488,14 @@ const page = () => {
                       width={15}
                       height={10}
                     />{' '}
-                    We are committed to providing quality IT Services
+                    AI-driven solutions to stay ahead in the tech race
                   </li>
                 </ul>
-                <div className="flex gap-5 mt-[50px]">
+                <p className="text-xl text-[white] font-bold mt-5">
+                  Explore how our expertise can transform your business
+                  operations:
+                </p>
+                <div className="flex gap-5 mt-[10px]">
                   <Link
                     href=""
                     className="text-[15px] h-10 flex items-center bg-[white] font-semibold px-5 py-0 text-[#121a5e]"
