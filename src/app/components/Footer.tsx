@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className="client-footer-div bg-[#078dd7] h-[400px] w-full bg-center bg-no-repeat bg-cover relative mt-[100px]">
       <div className=" w-[1140px] m-auto flex flex-col gap-5 py-10 ">
-        <div className="flex gap-5">
+        <div className="flex gap-5 justify-between">
           <div className="w-[30%] flex flex-col px-0 justify-between">
             <div className="flex items-center gap-[15px] bg-white p-[5px] rounded-2xl">
               <Image src={logo} alt="headerImg" width={45} height={45} />
@@ -25,8 +25,10 @@ const Footer = () => {
             </p>
             <div className="flex flex-col gap-3 mt-[30px]">
               <div className="flex gap-2.5">
-                <img
-                  src="https://img.icons8.com/?size=48&id=uzeKRJIGwbBY&format=png"
+                <Image
+                  src={
+                    'https://img.icons8.com/?size=48&id=uzeKRJIGwbBY&format=png'
+                  }
                   alt="headerImg"
                   width={15}
                   height={10}
@@ -38,17 +40,29 @@ const Footer = () => {
               </div>
               <div className="flex gap-2.5">
                 <Image src={email} alt="headerImg" width={15} height={10} />
-                <p className="text-[white] text-[15px]">
+                {/* <p className="text-[white] text-[15px]">
                   support@aonixglobalai.com
-                </p>
+                </p> */}
+                <a
+                  href="mailto:support@aonixglobalai.com"
+                  className="text-[white] text-[15px] hover:underline"
+                >
+                  support@aonixglobalai.com
+                </a>
               </div>
               <div className="flex gap-2.5">
                 <Image src={phone} alt="headerImg" width={15} height={10} />
-                <p className="text-[white] text-[15px]">(+91) 8709871715</p>
+                {/* <p className="text-[white] text-[15px]">(+91) 8709871715</p> */}
+                <a
+                  href="tel:+918709871715"
+                  className="text-[white] text-[15px] hover:underline"
+                >
+                  (+91) 8709871715
+                </a>
               </div>
             </div>
           </div>
-          <div className="w-[20%] flex flex-col gap-5">
+          {/* <div className="w-[20%] flex flex-col gap-5">
             <h1 className="text-[white] text-[25px]">Quick Links</h1>
             <ul className="flex flex-col gap-2">
               <li className="text-white text-[15px]">
@@ -86,32 +100,38 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div className="w-[20%] flex flex-col gap-5">
             <h1 className="text-[white] text-[25px]">Other Pages</h1>
             <ul className="flex flex-col gap-2">
               <li className="text-white text-[15px] flex items-center">
                 <Link href="#" className="flex items-center">
                   <FaChevronRight className="text-blue-500" />
-                  <span className="ml-2 hover:text-blue-500">Home</span>
+                  <span className="ml-2 hover:text-blue-400">Home</span>
                 </Link>
               </li>
               <li className="text-white text-[15px] flex items-center">
                 <Link href="#our_services" className="flex items-center">
                   <FaChevronRight className="text-blue-500" />
-                  <span className="ml-2 hover:text-blue-500">Services</span>
+                  <span className="ml-2 hover:text-blue-400">Services</span>
+                </Link>
+              </li>
+              <li className="text-white text-[15px] flex items-center">
+                <Link href="#contact_us" className="flex items-center">
+                  <FaChevronRight className="text-blue-500" />
+                  <span className="ml-2 hover:text-blue-400">Contact</span>
                 </Link>
               </li>
               <li className="text-white text-[15px] flex items-center">
                 <Link href="#" className="flex items-center">
                   <FaChevronRight className="text-blue-500" />
-                  <span className="ml-2 hover:text-blue-500">Contact</span>
+                  <span className="ml-2 hover:text-blue-400">Project</span>
                 </Link>
               </li>
               <li className="text-white text-[15px] flex items-center">
                 <Link href="#" className="flex items-center">
                   <FaChevronRight className="text-blue-500" />
-                  <span className="ml-2 hover:text-blue-500">Project</span>
+                  <span className="ml-2 hover:text-blue-400">FAQs</span>
                 </Link>
               </li>
             </ul>
@@ -119,8 +139,13 @@ const Footer = () => {
           <div className="w-[30%] flex flex-col gap-5">
             <h2 className="text-[white] p-[5px] text-[25px]">Newsletter</h2>
             <div className="bg-white flex gap-[5px] p-[5px]">
-              <input className="text-[15px] border-[unset]" />
-              <button className="text-[15px] h-10 flex items-center text-[white] font-semibold px-5 py-0 bg-[#121a5e]">
+              <input
+                // className="text-[15px] border-[unset]"
+                className="flex-grow p-2 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="email address"
+              />
+              <button className="text-[15px] h-10 flex items-center text-[white] font-semibold px-3 py-0 bg-blue-600 hover:bg-blue-700">
+                {/* className="bg-blue-600 bg-[#121a5e]" */}
                 SUBSCRIBE
               </button>
             </div>
@@ -130,15 +155,16 @@ const Footer = () => {
             <div className="flex gap-8">
               {/* LinkedIn clickable logo */}
               <Link
-                href=""
-                className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%]"
+                href="https://www.linkedin.com/company/aonixglobalai/"
+                className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%] hover:bg-gray-300"
+                target="_blank"
               >
                 <Image src={linkedin} alt="headerImg" width={12} height={12} />
               </Link>
               {/* Twitter(X) clickable logo */}
               <Link
                 href=""
-                className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%]"
+                className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%] hover:bg-gray-300"
               >
                 <Image
                   src={
@@ -151,15 +177,17 @@ const Footer = () => {
               </Link>
               {/* Instagram Clickable logo */}
               <Link
-                href=""
-                className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%]"
+                href="https://www.instagram.com/aonixglobalai/"
+                className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%] hover:bg-gray-300"
+                target="_blank"
               >
                 <Image src={insta} alt="headerImg" width={15} height={15} />
               </Link>
               {/* Dribble clickable logo */}
               <Link
-                href=""
-                className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%]"
+                href="https://dribbble.com/AonixGlobalAI"
+                className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%] hover:bg-gray-300"
+                target="_blank"
               >
                 <Image
                   src={'https://img.icons8.com/?size=32&id=16154&format=png'}
@@ -170,8 +198,9 @@ const Footer = () => {
               </Link>
               {/* Behance clickable logo */}
               <Link
-                href=""
-                className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%]"
+                href="https://www.behance.net/aonixgldevelop"
+                className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%] hover:bg-gray-300"
+                target="_blank"
               >
                 <Image
                   src={

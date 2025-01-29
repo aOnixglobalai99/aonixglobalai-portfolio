@@ -21,7 +21,7 @@ import servicenine from '../assets/images/service-9.png';
 import Link from 'next/link';
 const page = () => {
   return (
-    <div className="">
+    <div className="" id="top">
       <div className="header-back fixed w-full">
         <Header />
       </div>
