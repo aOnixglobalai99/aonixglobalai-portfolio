@@ -18,6 +18,7 @@ import servicesix from '../assets/images/service-6.webp';
 import serviceseven from '../assets/images/service-7.png';
 import serviceeight from '../assets/images/service-8.png';
 import servicenine from '../assets/images/service-9.png';
+import ScrollToTop from '../components/ScrollToTop';
 import Link from 'next/link';
 const page = () => {
   return (
@@ -625,8 +626,12 @@ const page = () => {
           </div>
         </div>
       </div>
+
       <div>
         <Footer />
+      </div>
+      <div>
+        <ScrollToTop />
       </div>
     </div>
   );
