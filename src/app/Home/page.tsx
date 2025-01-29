@@ -448,8 +448,8 @@ const page = () => {
                   At AonixGlobalAI, we deliver innovative and scalable IT
                   solutions tailored to your business needs. Leveraging
                   cutting-edge technologies and exceptional customer support, we
-                  drive efficiency, growth, and success in today's competitive
-                  landscape.
+                  drive efficiency, growth, and success in today&apos;s
+                  competitive landscape.
                 </p>
                 <p className="text-xl text-[white] font-bold mt-5">
                   Our Commitments to Excellence:
