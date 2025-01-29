@@ -7,55 +7,53 @@ import linkedin from '../assets/images/linkedin.svg';
 import insta from '../assets/images/insta.svg';
 import { FaChevronRight } from 'react-icons/fa';
 import Link from 'next/link';
+
 const Footer = () => {
   return (
-    <div className="client-footer-div bg-[#078dd7] h-[400px] w-full bg-center bg-no-repeat bg-cover relative mt-[100px] z-[1]">
-      <div className=" w-[1140px] m-auto flex flex-col gap-5 py-10 ">
-        <div className="flex gap-5 justify-between">
-          <div className="w-[30%] flex flex-col px-0 justify-between">
-            <div className="flex items-center gap-[15px] bg-white p-[5px] rounded-2xl">
-              <Image src={logo} alt="headerImg" width={45} height={45} />
-              <h1 className="text-3xl font-bold text-[#121a5e]">
+    <div className="client-footer-div bg-[#078dd7] w-full bg-center bg-no-repeat bg-cover relative mt-20 z-1">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Company Info Section */}
+          <div className="flex flex-col gap-4">
+            <div className="flex items-center gap-3 bg-white p-2 rounded-2xl w-fit">
+              <Image src={logo} alt="Logo" width={45} height={45} />
+              <h1 className="text-2xl sm:text-3xl font-bold text-[#121a5e]">
                 Aonix<span className="text-[#078dd7]">Global</span>
                 <span className="text-[#121a5e]">AI</span>
               </h1>
             </div>
-            <p className="text-[white] text-[15px] pt-[10px]">
-              {'Empowering the Future with Intelligent Solutions'}
+
+            <p className="text-white text-sm sm:text-base">
+              Empowering the Future with Intelligent Solutions
             </p>
-            <div className="flex flex-col gap-3 mt-[30px]">
-              <div className="flex gap-2.5">
+
+            <div className="flex flex-col gap-3 mt-4">
+              <div className="flex items-center gap-2.5">
                 <Image
-                  src={
-                    'https://img.icons8.com/?size=48&id=uzeKRJIGwbBY&format=png'
-                  }
-                  alt="headerImg"
+                  src="https://img.icons8.com/?size=48&id=uzeKRJIGwbBY&format=png"
+                  alt="Location"
                   width={15}
-                  height={10}
-                  className="h-[20px]"
+                  height={15}
+                  className="h-5 w-auto"
                 />
-                <p className="text-[white] text-[15px]">
-                  {'Indore, Madhya Pradesh'}
-                </p>
+                <p className="text-white text-sm">Indore, Madhya Pradesh</p>
               </div>
-              <div className="flex gap-2.5">
-                <Image src={email} alt="headerImg" width={15} height={10} />
-                {/* <p className="text-[white] text-[15px]">
-                  support@aonixglobalai.com
-                </p> */}
+
+              <div className="flex items-center gap-2.5">
+                <Image src={email} alt="Email" width={15} height={15} />
                 <a
                   href="mailto:support@aonixglobalai.com"
-                  className="text-[white] text-[15px] hover:underline"
+                  className="text-white text-sm hover:underline"
                 >
                   support@aonixglobalai.com
                 </a>
               </div>
-              <div className="flex gap-2.5">
-                <Image src={phone} alt="headerImg" width={15} height={10} />
-                {/* <p className="text-[white] text-[15px]">(+91) 8709871715</p> */}
+
+              <div className="flex items-center gap-2.5">
+                <Image src={phone} alt="Phone" width={15} height={15} />
                 <a
                   href="tel:+918709871715"
-                  className="text-[white] text-[15px] hover:underline"
+                  className="text-white text-sm hover:underline"
                 >
                   (+91) 8709871715
                 </a>
@@ -101,127 +99,111 @@ const Footer = () => {
               </li>
             </ul>
           </div> */}
-          <div className="w-[20%] flex flex-col gap-5">
-            <h1 className="text-[white] text-[25px]">Other Pages</h1>
+
+          {/* Other Pages Section */}
+          <div className="flex flex-col gap-4">
+            <h2 className="text-white text-xl sm:text-2xl font-semibold">
+              Other Pages
+            </h2>
             <ul className="flex flex-col gap-2">
-              <li className="text-white text-[15px] flex items-center">
-                <Link href="#" className="flex items-center">
-                  <FaChevronRight className="text-blue-500" />
-                  <span className="ml-2 hover:text-blue-400">Home</span>
-                </Link>
-              </li>
-              <li className="text-white text-[15px] flex items-center">
-                <Link href="#our_services" className="flex items-center">
-                  <FaChevronRight className="text-blue-500" />
-                  <span className="ml-2 hover:text-blue-400">Services</span>
-                </Link>
-              </li>
-              <li className="text-white text-[15px] flex items-center">
-                <Link href="#contact_us" className="flex items-center">
-                  <FaChevronRight className="text-blue-500" />
-                  <span className="ml-2 hover:text-blue-400">Contact</span>
-                </Link>
-              </li>
-              <li className="text-white text-[15px] flex items-center">
-                <Link href="#" className="flex items-center">
-                  <FaChevronRight className="text-blue-500" />
-                  <span className="ml-2 hover:text-blue-400">Project</span>
-                </Link>
-              </li>
-              <li className="text-white text-[15px] flex items-center">
-                <Link href="#" className="flex items-center">
-                  <FaChevronRight className="text-blue-500" />
-                  <span className="ml-2 hover:text-blue-400">FAQs</span>
-                </Link>
-              </li>
+              {['Home', 'Services', 'Contact', 'Project', 'FAQs'].map(
+                (item) => (
+                  <li key={item} className="text-white text-sm">
+                    <Link
+                      href={
+                        item === 'Services'
+                          ? '#our_services'
+                          : item === 'Contact'
+                          ? '#contact_us'
+                          : '#'
+                      }
+                      className="flex items-center group"
+                    >
+                      <FaChevronRight
+                        className="text-blue-500 group-hover:text-blue-400"
+                        size={14}
+                      />
+                      <span className="ml-2 group-hover:text-blue-400 transition-colors">
+                        {item}
+                      </span>
+                    </Link>
+                  </li>
+                )
+              )}
             </ul>
           </div>
-          <div className="w-[30%] flex flex-col gap-5">
-            <h2 className="text-[white] p-[5px] text-[25px]">Newsletter</h2>
-            <div className="bg-white flex gap-[5px] p-[5px]">
+
+          {/* Newsletter Section */}
+          <div className="flex flex-col gap-4">
+            <h2 className="text-white text-xl sm:text-2xl font-semibold">
+              Newsletter
+            </h2>
+            <div className="flex flex-col sm:flex-row gap-2">
               <input
-                // className="text-[15px] border-[unset]"
-                className="flex-grow p-2 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="email address"
+                className="flex-grow p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                placeholder="Email address"
+                type="email"
               />
-              <button className="text-[15px] h-10 flex items-center text-[white] font-semibold px-3 py-0 bg-blue-600 hover:bg-blue-700">
-                {/* className="bg-blue-600 bg-[#121a5e]" */}
+              <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg text-sm transition-colors">
                 SUBSCRIBE
               </button>
             </div>
-            <p className="text-[white] text-[15px]">
-              {'Get the latest news & updates'}
-            </p>
-            <div className="flex gap-8">
-              {/* LinkedIn clickable logo */}
-              <Link
-                href="https://www.linkedin.com/company/aonixglobalai/"
-                className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%] hover:bg-gray-300"
-                target="_blank"
-              >
-                <Image src={linkedin} alt="headerImg" width={12} height={12} />
-              </Link>
-              {/* Twitter(X) clickable logo */}
-              <Link
-                href=""
-                className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%] hover:bg-gray-300"
-              >
-                <Image
-                  src={
-                    'https://img.icons8.com/?size=24&id=de4vjQ6J061l&format=png'
-                  }
-                  alt="headerImg"
-                  width={15}
-                  height={15}
-                />
-              </Link>
-              {/* Instagram Clickable logo */}
-              <Link
-                href="https://www.instagram.com/aonixglobalai/"
-                className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%] hover:bg-gray-300"
-                target="_blank"
-              >
-                <Image src={insta} alt="headerImg" width={15} height={15} />
-              </Link>
-              {/* Dribble clickable logo */}
-              <Link
-                href="https://dribbble.com/AonixGlobalAI"
-                className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%] hover:bg-gray-300"
-                target="_blank"
-              >
-                <Image
-                  src={'https://img.icons8.com/?size=32&id=16154&format=png'}
-                  alt="headerImg"
-                  width={18}
-                  height={18}
-                />
-              </Link>
-              {/* Behance clickable logo */}
-              <Link
-                href="https://www.behance.net/aonixgldevelop"
-                className="bg-[white] w-10 h-10 flex items-center justify-center rounded-[50%] hover:bg-gray-300"
-                target="_blank"
-              >
-                <Image
-                  src={
-                    'https://img.icons8.com/?size=24&id=HvLKZeTLqQZn&format=png'
-                  }
-                  alt="headerImg"
-                  width={15}
-                  height={15}
-                />
-              </Link>
+
+            <p className="text-white text-sm">Get the latest news & updates</p>
+
+            {/* Social Links */}
+            <div className="flex flex-wrap gap-4 mt-2">
+              {[
+                {
+                  href: 'https://www.linkedin.com/company/aonixglobalai/',
+                  icon: linkedin,
+                  size: 12,
+                },
+                {
+                  href: '#',
+                  icon: 'https://img.icons8.com/?size=24&id=de4vjQ6J061l&format=png',
+                  size: 15,
+                },
+                {
+                  href: 'https://www.instagram.com/aonixglobalai/',
+                  icon: insta,
+                  size: 15,
+                },
+                {
+                  href: 'https://dribbble.com/AonixGlobalAI',
+                  icon: 'https://img.icons8.com/?size=32&id=16154&format=png',
+                  size: 18,
+                },
+                {
+                  href: 'https://www.behance.net/aonixgldevelop',
+                  icon: 'https://img.icons8.com/?size=24&id=HvLKZeTLqQZn&format=png',
+                  size: 15,
+                },
+              ].map((social, index) => (
+                <Link
+                  key={index}
+                  href={social.href}
+                  className="bg-white w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-300 transition-colors"
+                  target="_blank"
+                >
+                  <Image
+                    src={social.icon}
+                    alt="Social Icon"
+                    width={social.size}
+                    height={social.size}
+                  />
+                </Link>
+              ))}
             </div>
           </div>
         </div>
 
-        <div className="flex justify-between absolute w-[1140px] pt-[30px] border-t-white border-t border-solid bottom-7">
-          <p className="text-[white] text-[15px]">
-            {'Technolgy & IT Solution Template Kit by Baliniz'}
-          </p>
-          <p className="text-[white] text-[15px]">
-            {'Copyright © 2025 All rights reserved.'}
-          </p>
+        {/* Footer Bottom */}
+        <div className="mt-10 pt-6 border-t border-white/30">
+          <div className="flex flex-col sm:flex-row justify-between gap-4 text-white text-sm">
+            <p>Technolgy & IT Solution Template Kit by Baliniz</p>
+            <p>Copyright © 2025 All rights reserved.</p>
+          </div>
         </div>
       </div>
     </div>
