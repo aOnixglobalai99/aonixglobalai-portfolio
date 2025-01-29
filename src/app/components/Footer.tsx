@@ -9,7 +9,7 @@ import { FaChevronRight } from 'react-icons/fa';
 import Link from 'next/link';
 const Footer = () => {
   return (
-    <div className="client-footer-div bg-[#078dd7] h-[400px] w-full bg-center bg-no-repeat bg-cover relative mt-[100px]">
+    <div className="client-footer-div bg-[#078dd7] h-[400px] w-full bg-center bg-no-repeat bg-cover relative mt-[100px] z-[1]">
       <div className=" w-[1140px] m-auto flex flex-col gap-5 py-10 ">
         <div className="flex gap-5 justify-between">
           <div className="w-[30%] flex flex-col px-0 justify-between">

@@ -425,7 +425,7 @@ const page = () => {
           </div>
         </div> */}
 
-        <section className="engineer-team-back relative">
+        {/* <section className="engineer-team-back relative">
           <div className=" bg-black opacity-70 h-full w-full flex items-center gap-5 absolute flex-col px-[181px] py-[100px]">
             <h1 className="text-[40px] text-[white] font-bold text-center w-9/12">
               Don&apos;t Hesitate To Contact Us For Better Information And
@@ -435,6 +435,23 @@ const page = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
+          </div>
+        </section> */}
+        {/* Hire me section  */}
+        <section className="w-screen mt-3 bg-[#192373] flex justify-between py-8 px-8 lg:py-20 lg:px-20 max-sm:flex-col">
+          <div className="text-white">
+            <h4 className="text-2xl lg:text-4xl font-semibold">
+              Hire me for your next project!
+            </h4>
+            <p className="mt-4 lg:text-xl">
+              I am available for your next project
+            </p>
+          </div>
+
+          <div className="flex justify-center max-sm:w-full">
+            <button className="px-11 lg:px-12 p-3 lg:p-4 text-white bg-[#41dfe7] rounded-full lg:text-2xl ">
+              Contact Me
+            </button>
           </div>
         </section>
 
@@ -625,13 +642,13 @@ const page = () => {
             </div>
           </div>
         </div>
+        <div>
+          <ScrollToTop />
+        </div>
       </div>
 
       <div>
         <Footer />
-      </div>
-      <div>
-        <ScrollToTop />
       </div>
     </div>
   );
