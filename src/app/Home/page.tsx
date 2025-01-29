@@ -7,7 +7,7 @@ import whitetick from '../assets/images/whitetick.svg';
 import rightarrowline from '../assets/images/right-arrow-line.svg';
 import Header from '../components/Header';
 import Carousel from '../components/Carousel';
-import Industryexcarousel from '../components/Industryexcarousel';
+// import Industryexcarousel from '../components/Industryexcarousel';
 import Footer from '../components/Footer';
 import serviceone from '../assets/images/service-1.webp';
 import servicetwo from '../assets/images/service-2.webp';
@@ -19,6 +19,8 @@ import serviceseven from '../assets/images/service-7.png';
 import serviceeight from '../assets/images/service-8.png';
 import servicenine from '../assets/images/service-9.png';
 import ScrollToTop from '../components/ScrollToTop';
+import Industry from '../components/industries';
+// import OurProjects from '@/app/components/our_work';
 import Link from 'next/link';
 const page = () => {
   return (
@@ -325,10 +327,14 @@ const page = () => {
               </p>
             </div>
             <div className="mt-[50px]">
-              <Industryexcarousel />
+              {/* <Industryexcarousel /> */}
+              <Industry />
             </div>
           </div>
         </div>
+        {/* <div>
+          <OurProjects />
+        </div> */}
 
         <div className="flex mt-[100px]">
           <div className="client-team-img-left h-[500px] w-6/12 bg-center bg-no-repeat bg-cover relative"></div>
