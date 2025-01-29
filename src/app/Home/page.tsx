@@ -115,7 +115,7 @@ const page = () => {
                   Our experts deliver scalable, secure, and future-ready
                   solutions tailored to your needs, from infrastructure
                   optimization to intelligent systems and custom applications,
-                  ensuring success in today’s digital landscape.
+                  ensuring success in today&apos;s digital landscape.
                 </h1>
                 {/* <p className="text-xs mt-[15px] pl-0 pr-[120px] py-0">
                 Your team delivers secure, scalable, and future-proof solutions,
@@ -287,7 +287,7 @@ const page = () => {
                 <p className="text-[12px]">
                   Implementing result-oriented digital marketing strategies,
                   including SEO, PPC, social media, and email campaigns, to
-                  boost your brand’s online visibility and engagement.
+                  boost your brand&apos;s online visibility and engagement.
                 </p>
               </div>
 
@@ -427,7 +427,8 @@ const page = () => {
         <section className="engineer-team-back relative">
           <div className=" bg-black opacity-70 h-full w-full flex items-center gap-5 absolute flex-col px-[181px] py-[100px]">
             <h1 className="text-[40px] text-[white] font-bold text-center w-9/12">
-              Don’t Hesitate To Contact Us For Better Information And Services
+              Don&apos;t Hesitate To Contact Us For Better Information And
+              Services
             </h1>
             <p className="text-[22px] text-[white] font-medium text-center p-0 w-9/12">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

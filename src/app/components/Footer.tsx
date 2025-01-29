@@ -21,7 +21,7 @@ const Footer = () => {
               </h1>
             </div>
             <p className="text-[white] text-[15px] pt-[10px]">
-              Empowering the Future with Intelligent Solutions
+              {'Empowering the Future with Intelligent Solutions'}
             </p>
             <div className="flex flex-col gap-3 mt-[30px]">
               <div className="flex gap-2.5">
@@ -35,7 +35,7 @@ const Footer = () => {
                   className="h-[20px]"
                 />
                 <p className="text-[white] text-[15px]">
-                  Indore, Madhya Pradesh
+                  {'Indore, Madhya Pradesh'}
                 </p>
               </div>
               <div className="flex gap-2.5">
@@ -150,7 +150,7 @@ const Footer = () => {
               </button>
             </div>
             <p className="text-[white] text-[15px]">
-              Get the latest news & updates
+              {'Get the latest news & updates'}
             </p>
             <div className="flex gap-8">
               {/* LinkedIn clickable logo */}
@@ -217,10 +217,10 @@ const Footer = () => {
 
         <div className="flex justify-between absolute w-[1140px] pt-[30px] border-t-white border-t border-solid bottom-7">
           <p className="text-[white] text-[15px]">
-            Technolgy & IT Solution Template Kit by Baliniz
+            {'Technolgy & IT Solution Template Kit by Baliniz'}
           </p>
           <p className="text-[white] text-[15px]">
-            Copyright © 2025 All rights reserved.
+            {'Copyright © 2025 All rights reserved.'}
           </p>
         </div>
       </div>
