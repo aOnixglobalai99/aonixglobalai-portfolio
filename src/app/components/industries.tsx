@@ -1,7 +1,5 @@
 import React from 'react';
 
-import cyber_security from '../assets/images/cyber_security.webp';
-
 const Industry = () => {
   const cardData = [
     {
