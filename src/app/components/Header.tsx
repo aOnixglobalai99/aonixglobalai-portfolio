@@ -18,7 +18,7 @@ const Header: React.FC = () => {
           <span className="text-[#121a5e]">AI</span>
         </h1>
       </div>
-      <div className="hidden md:flex">
+      <div>
         <ul className="flex items-center gap-8">
           <li>
             <Link
