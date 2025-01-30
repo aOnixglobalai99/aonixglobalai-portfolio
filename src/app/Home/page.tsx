@@ -21,6 +21,8 @@ import servicenine from '../assets/images/service-9.png';
 import ScrollToTop from '../components/ScrollToTop';
 import Industry from '../components/industries';
 import OurTeam from '../components/OurTeam';
+import Works from '../components/Ourwork';
+
 // import OurProjects from '@/app/components/our_work';
 import Link from 'next/link';
 const page = () => {
@@ -165,14 +167,14 @@ const page = () => {
         </div>
 
         {/* Services Section */}
-        <div className="pt-16 md:pt-[100px]">
+        <div id="our_services" className="pt-8 md:pt-[100px]">
           <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
             {/* Header Section */}
             <div className="flex flex-col items-center gap-2.5 px-4 md:px-20 lg:px-[360px]">
               <h1 className="text-[#121a5e] font-semibold text-xl">
                 Services Offered By AonixGlobalAI
               </h1>
-              <p className="text-justify hyphens-auto max-w-[90%] text-[12px]">
+              <p className="text-justify hyphens-auto text-[12px]">
                 AonixGlobalAI provides a comprehensive range of development
                 services designed to meet your specific needs, from creating
                 intuitive user interfaces to developing scalable web and mobile
@@ -181,7 +183,7 @@ const page = () => {
             </div>
 
             {/* Services Grid */}
-            <div className="mt-8 flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="md:pt-[100px] pt-8 flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-5">
               {/* Service Card 1 */}
               <div className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
                 <Image
@@ -338,15 +340,15 @@ const page = () => {
                 beneficial outcomes for any business:
               </p>
             </div>
-            <div className="mt-[50px]">
+            <div className="">
               {/* <Industryexcarousel /> */}
               <Industry />
             </div>
           </div>
         </div>
-        {/* <div>
-          <OurProjects />
-        </div> */}
+        <div>
+          <Works />
+        </div>
 
         <div className="flex mt-[100px]">
           <div className="client-team-img-left h-[500px] w-6/12 bg-center bg-no-repeat bg-cover relative"></div>
@@ -467,7 +469,7 @@ const page = () => {
           </div>
 
           <div className="flex justify-center max-sm:w-full">
-            <button className="px-11 lg:px-12 p-3 lg:p-4 text-white bg-[#41dfe7] rounded-full lg:text-2xl ">
+            <button className="px-11 lg:px-12 p-3 lg:p-4 text-white bg-blue-600 shadow-lg hover:bg-blue-700 transition-opacity duration-300 rounded-full lg:text-2xl ">
               Contact Me
             </button>
           </div>
@@ -597,7 +599,7 @@ const page = () => {
         <div id="our_blog" className="pt-[100px]">
           <div className=" w-[1140px] m-auto flex flex-col">
             <div className="flex flex-col items-center gap-2.5 px-[360px] py-0">
-              <h1 className="text-[#121a5e] font-semibold text-xl">Oue Blog</h1>
+              <h1 className="text-[#121a5e] font-semibold text-xl">Our Blog</h1>
               <h2 className="text-3xl font-semibold">Latest News & Articles</h2>
               <p className="text-center text-xs">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

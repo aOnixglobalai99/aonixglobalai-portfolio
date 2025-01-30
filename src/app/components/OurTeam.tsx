@@ -14,84 +14,90 @@ import team from '../assets/images/TeamWork.png';
 import laptop from '../assets/images/laptopwork.png';
 import john from '../assets/images/john.jpeg';
 import jane from '../assets/images/jane.jpeg';
-import alice from '../assets/images/alice.jpeg';
+// import alice from '../assets/images/alice.jpeg';
 import michael from '../assets/images/michael.jpeg';
 import emily from '../assets/images/emily.jpeg';
 import chris from '../assets/images/chris.jpeg';
+import shubham from '../assets/images/shubham.jpg';
+import neha from '../assets/images/neha.jpg';
+import Dilrus from '../assets/images/Dilras_Hussain.jpeg';
+import Jeba from '../assets/images/Jeba_Shertate.jpg';
+import Avinash from '../assets/images/Avinash_Dubey.jpg';
+import Riya from '../assets/images/Riya_Rana.jpg';
 
 // Team Members Data
 const teamMembers = [
   {
-    name: 'John Doe',
-    role: 'Frontend Developer',
-    image: john,
-    twitter: 'https://twitter.com/johndoe',
-    linkedin: 'https://linkedin.com/in/johndoe',
+    name: 'Dilras Hussain',
+    role: 'Nodejs backend developer',
+    image: Dilrus,
+    // twitter: '',
+    linkedin: 'https://linkedin.com/in/dilras-hussain-330474207',
   },
   {
-    name: 'Jane Smith',
-    role: 'UI/UX Designer',
-    image: jane,
-    twitter: 'https://twitter.com/janesmith',
-    linkedin: 'https://linkedin.com/in/janesmith',
+    name: 'Neha Singh',
+    role: 'MERN Developer',
+    image: neha,
+    // twitter: '',
+    linkedin: 'https://www.linkedin.com/in/neha-singh-2142392a1/',
   },
   {
-    name: 'Alice Johnson',
-    role: 'Backend Developer',
-    image: alice,
-    twitter: 'https://twitter.com/alicejohnson',
-    linkedin: 'https://linkedin.com/in/alicejohnson',
+    name: 'Shubham Kumar Gupta',
+    role: 'MERN Developer',
+    image: shubham,
+    // twitter: '',
+    linkedin: 'https://www.linkedin.com/in/iamshubhamkumargupta/',
   },
   {
-    name: 'Michael Brown',
-    role: 'Project Manager',
-    image: michael,
-    twitter: 'https://twitter.com/michaelbrown',
-    linkedin: 'https://linkedin.com/in/michaelbrown',
+    name: 'Riya Rana',
+    role: 'MERN Developer',
+    image: Riya,
+    // twitter: '',
+    linkedin: 'https://www.linkedin.com/in/riyaranadseu/',
   },
   {
-    name: 'Emily Davis',
-    role: 'Marketing Specialist',
-    image: emily,
-    twitter: 'https://twitter.com/emilydavis',
-    linkedin: 'https://linkedin.com/in/emilydavis',
+    name: 'Jeba Shertate',
+    role: 'UI/UX',
+    image: Jeba,
+    // twitter: '',
+    linkedin: 'https://www.linkedin.com/in/jeba-shertate-754068248/',
   },
   {
-    name: 'Chris Wilson',
-    role: 'Data Scientist',
-    image: chris,
-    twitter: 'https://twitter.com/chriswilson',
-    linkedin: 'https://linkedin.com/in/chriswilson',
+    name: 'Avinash Dube',
+    role: 'DevOps Engineer',
+    image: Avinash,
+    // twitter: '',
+    linkedin: 'https://www.linkedin.com/in/avinash-dubey-7b996b178/',
   },
 ];
 
 // Expertise Areas Data
-const expertiseAreas = [
-  {
-    title: 'Web Development',
-    description:
-      'We specialize in building fast, responsive, and user-friendly websites using the latest technologies.',
-    icon: <FaCode size={40} className="text-blue-500" />,
-  },
-  {
-    title: 'UI/UX Design',
-    description:
-      'Our design team ensures the best user experience and visually appealing interfaces for all our products.',
-    icon: <FaPaintBrush size={40} className="text-pink-500" />,
-  },
-  {
-    title: 'Backend Development',
-    description:
-      'We create scalable and secure backend systems that ensure seamless functionality and performance.',
-    icon: <FaCogs size={40} className="text-green-500" />,
-  },
-  {
-    title: 'Team Collaboration',
-    description:
-      'Our team works closely together to deliver the best results, ensuring transparency and strong communication.',
-    icon: <FaUsers size={40} className="text-yellow-500" />,
-  },
-];
+// const expertiseAreas = [
+//   {
+//     title: 'Web Development',
+//     description:
+//       'We specialize in building fast, responsive, and user-friendly websites using the latest technologies.',
+//     icon: <FaCode size={40} className="text-blue-500" />,
+//   },
+//   {
+//     title: 'UI/UX Design',
+//     description:
+//       'Our design team ensures the best user experience and visually appealing interfaces for all our products.',
+//     icon: <FaPaintBrush size={40} className="text-pink-500" />,
+//   },
+//   {
+//     title: 'Backend Development',
+//     description:
+//       'We create scalable and secure backend systems that ensure seamless functionality and performance.',
+//     icon: <FaCogs size={40} className="text-green-500" />,
+//   },
+//   {
+//     title: 'Team Collaboration',
+//     description:
+//       'Our team works closely together to deliver the best results, ensuring transparency and strong communication.',
+//     icon: <FaUsers size={40} className="text-yellow-500" />,
+//   },
+// ];
 
 const OurTeam = () => {
   return (
@@ -130,14 +136,14 @@ const OurTeam = () => {
                   </h3>
                   <p className="text-white tracking-wide">{member.role}</p>
                   <div className="flex space-x-4 mt-3">
-                    <a
+                    {/* <a
                       href={member.twitter}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-blue-400"
                     >
                       <FaTwitter size={20} />
-                    </a>
+                    </a> */}
                     <a
                       href={member.linkedin}
                       target="_blank"
@@ -177,7 +183,7 @@ const OurTeam = () => {
       </section>
 
       {/* Expertise Section */}
-      <section className="py-20 bg-gray-50 text-center">
+      {/* <section className="py-20 bg-gray-50 text-center">
         <div className="max-w-9xl mx-auto px-4">
           <h2 className="text-5xl font-medium tracking-widest text-gray-800 mb-12">
             Our Expertise
@@ -197,7 +203,7 @@ const OurTeam = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
