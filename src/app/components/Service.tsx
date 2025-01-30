@@ -13,7 +13,7 @@ const Service = () => {
         </div>
       </div>
 
-      {/* <div className="mt-[100px] mb-[100px]">
+      <div className="mt-[100px] mb-[100px]">
         <div className=" w-[1140px] m-auto flex flex-col">
           <div className="flex flex-col items-center gap-2.5 px-[360px] py-0">
             <h1 className="text-[#121a5e] font-semibold text-xl">
@@ -76,9 +76,9 @@ const Service = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div className="flex mt-[100px] mb-[100px]">
+      <div className="flex mt-[100px] mb-[100px]">
         <div className="client-team-img-left h-[500px] w-6/12 bg-center bg-no-repeat bg-cover relative"></div>
         <div className="client-message-div h-[500px] w-6/12 bg-center bg-no-repeat bg-cover relative bg-[#078dd7] flex justify-center text-[25px] text-[white] font-bold pt-[50px]">
           <h2 className="">What Client Say About Us</h2>
@@ -95,9 +95,9 @@ const Service = () => {
             <p></p>
           </div>
         </div>
-      </div> */}
+      </div>
 
-      {/* <section className="engineer-team-back relative">
+      <section className="engineer-team-back relative">
         <div className=" bg-black opacity-70 h-full w-full flex items-center gap-5 absolute flex-col px-[181px] py-[100px]">
           <h1 className="text-[40px] text-[white] font-bold text-center w-9/12">
             Don’t Hesitate To Contact Us For Better Information And Services
@@ -107,7 +107,7 @@ const Service = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
         </div>
-      </section> */}
+      </section>
 
       <section>
         <div className=" w-[1140px] m-auto flex gap-5">
