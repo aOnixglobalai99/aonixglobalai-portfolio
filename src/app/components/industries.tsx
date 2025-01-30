@@ -77,13 +77,13 @@ const Industry = () => {
       imageUrl:
         'https://www.vamenture.com/images/idustry/agriculture-software.webp',
     },
-    // More items as per the original data...
   ];
 
   return (
-    <div className="flex flex-col min-h-screen w-full overflow-y-auto">
-      {/* Header Section */}
-      {/* <header>
+    <div className="pt-16 md:pt-[50px]">
+      <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
+        {/* Header Section */}
+        {/* <header>
         <section
           className="text-white py-40 text-center"
           style={{
@@ -100,35 +100,36 @@ const Industry = () => {
         </section>
       </header> */}
 
-      {/* Main Content */}
-      <div className="container px-4 py-8 relative max-w-7xl mx-auto pb-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {/* Industry Cards Grid */}
+        <div className="mt-4 flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {cardData.map((card, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+              className="bg-white text-center  flex flex-col items-center gap-5 border-neutral-100 rounded-lg border-solid border-[0px_0px_0px_0px] overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
             >
-              <img
-                src={card.imageUrl}
-                alt={card.title}
-                className="w-full h-72 object-cover rounded-t-lg"
-              />
-              <h3 className="mt-4 text-xl font-semibold text-gray-800">
-                {card.title}
-              </h3>
-              <p className="text-justify hyphens-auto mt-2 text-gray-600">
-                {card.description}
-              </p>
-              {/* <button className="mt-4 bg-teal-500 text-white py-2 px-4 rounded-lg hover:bg-teal-600 transition-colors duration-300">
-                Read More
-              </button> */}
+              <div className="w-full h-48 md:h-56 lg:h-72 overflow-hidden">
+                <img
+                  src={card.imageUrl}
+                  alt={card.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="font-bold text-lg text-gray-800">
+                  {card.title}
+                </h3>
+                <p className="text-[14px] mt-3 text-gray-600">
+                  {card.description}
+                </p>
+                {/* <button className="mt-4 bg-teal-500 text-white py-2 px-4 rounded-lg hover:bg-teal-600 transition-colors duration-300">
+                  Read More
+                </button> */}
+              </div>
             </div>
           ))}
         </div>
-      </div>
-
-      {/* Footer Section */}
-      {/* <footer>
+        {/* Footer Section */}
+        {/* <footer>
         <section
           className="text-white py-20 text-center"
           style={{
@@ -145,6 +146,7 @@ const Industry = () => {
           </button>
         </section>
       </footer> */}
+      </div>
     </div>
   );
 };

@@ -171,7 +171,7 @@ const page = () => {
               <h1 className="text-[#121a5e] font-semibold text-xl">
                 Services Offered By AonixGlobalAI
               </h1>
-              <p className="text-justify hyphens-auto text-xs max-w-[90%]">
+              <p className="text-justify hyphens-auto max-w-[90%] text-[12px]">
                 AonixGlobalAI provides a comprehensive range of development
                 services designed to meet your specific needs, from creating
                 intuitive user interfaces to developing scalable web and mobile
@@ -330,7 +330,7 @@ const page = () => {
                 Our Industry Expertise
               </h1>
               {/* <h2 className="text-3xl font-semibold">IT Solutions & Projects</h2> */}
-              <p className="text-justify hyphens-auto text-[15px] mt-5">
+              <p className="text-justify hyphens-auto text-[14px] mt-5">
                 With broad experience across a number of sectors, we offer
                 specialized solutions to meet the unique needs of each industry.
                 The following are only a few of the domains where we can provide
@@ -608,7 +608,7 @@ const page = () => {
                   <h1 className="text-[#272b36] font-medium">
                     Digital Conference Of IT Tech Events in 2020
                   </h1>
-                  <p className="text-[14px] text-[#7a7a7a]">
+                  <p className="text-[12px] text-[#7a7a7a]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore
                   </p>
