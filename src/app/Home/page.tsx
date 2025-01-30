@@ -163,25 +163,29 @@ const page = () => {
           </div>
         </div>
 
-        <div id="our_services" className="pt-[100px]">
-          <div className=" w-[1140px] m-auto ">
-            <div className="flex flex-col items-center gap-2.5 px-[360px] py-0">
+        {/* Services Section */}
+        <div className="pt-16 md:pt-[100px]">
+          <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
+            {/* Header Section */}
+            <div className="flex flex-col items-center gap-2.5 px-4 md:px-20 lg:px-[360px]">
               <h1 className="text-[#121a5e] font-semibold text-xl">
                 Services Offered By AonixGlobalAI
               </h1>
-              {/* <h2 className="text-3xl font-semibold">IT Solutions & Projects</h2> */}
-              <p className="text-center text-xs">
+              <p className="text-justify text-xs max-w-[90%]">
                 AonixGlobalAI provides a comprehensive range of development
                 services designed to meet your specific needs, from creating
                 intuitive user interfaces to developing scalable web and mobile
                 applications.
               </p>
             </div>
-            <div className="m-auto grid grid-cols-[auto_auto_auto] gap-5 mt-8">
+
+            {/* Services Grid */}
+            <div className="mt-8 flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {/* Service Card 1 */}
               <div className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
                 <Image
                   src={serviceone}
-                  alt="headerImg"
+                  alt="UI/UX Design"
                   width={45}
                   height={45}
                 />
@@ -192,10 +196,12 @@ const page = () => {
                   and engaging experience across all devices.
                 </p>
               </div>
+
+              {/* Service Card 2 */}
               <div className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
                 <Image
                   src={servicetwo}
-                  alt="headerImg"
+                  alt="Web Development"
                   width={45}
                   height={45}
                 />
@@ -206,10 +212,12 @@ const page = () => {
                   and optimal performance.
                 </p>
               </div>
+
+              {/* Service Card 3 */}
               <div className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
                 <Image
                   src={servicethree}
-                  alt="headerImg"
+                  alt="Mobile Development"
                   width={45}
                   height={45}
                 />
@@ -220,10 +228,12 @@ const page = () => {
                   business demands.
                 </p>
               </div>
+
+              {/* Service Card 4 */}
               <div className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
                 <Image
                   src={servicefour}
-                  alt="headerImg"
+                  alt="CMS Development"
                   width={45}
                   height={45}
                 />
@@ -234,10 +244,12 @@ const page = () => {
                   hassle-free.
                 </p>
               </div>
+
+              {/* Service Card 5 */}
               <div className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
                 <Image
                   src={servicefive}
-                  alt="headerImg"
+                  alt="API Development"
                   width={45}
                   height={45}
                 />
@@ -249,10 +261,11 @@ const page = () => {
                 </p>
               </div>
 
+              {/* Service Card 6 */}
               <div className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
                 <Image
                   src={servicesix}
-                  alt="headerImg"
+                  alt="Cloud Solutions"
                   width={45}
                   height={45}
                 />
@@ -264,10 +277,11 @@ const page = () => {
                 </p>
               </div>
 
+              {/* Service Card 7 */}
               <div className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
                 <Image
                   src={serviceseven}
-                  alt="headerImg"
+                  alt="AI Solutions"
                   width={45}
                   height={45}
                 />
@@ -279,10 +293,11 @@ const page = () => {
                 </p>
               </div>
 
+              {/* Service Card 8 */}
               <div className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
                 <Image
                   src={serviceeight}
-                  alt="headerImg"
+                  alt="Digital Marketing"
                   width={45}
                   height={45}
                 />
@@ -294,13 +309,9 @@ const page = () => {
                 </p>
               </div>
 
+              {/* Service Card 9 */}
               <div className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
-                <Image
-                  src={servicenine}
-                  alt="headerImg"
-                  width={45}
-                  height={45}
-                />
+                <Image src={servicenine} alt="DevOps" width={45} height={45} />
                 <h1 className="font-bold">DevOps & Automation</h1>
                 <p className="text-[12px]">
                   Streamlining your software development lifecycle through
