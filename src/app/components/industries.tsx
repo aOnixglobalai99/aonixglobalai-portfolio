@@ -116,10 +116,12 @@ const Industry = () => {
               <h3 className="mt-4 text-xl font-semibold text-gray-800">
                 {card.title}
               </h3>
-              <p className="mt-2 text-gray-600">{card.description}</p>
-              <button className="mt-4 bg-teal-500 text-white py-2 px-4 rounded-lg hover:bg-teal-600 transition-colors duration-300">
+              <p className="text-justify hyphens-auto mt-2 text-gray-600">
+                {card.description}
+              </p>
+              {/* <button className="mt-4 bg-teal-500 text-white py-2 px-4 rounded-lg hover:bg-teal-600 transition-colors duration-300">
                 Read More
-              </button>
+              </button> */}
             </div>
           ))}
         </div>
