@@ -1,5 +1,7 @@
 import React from 'react';
 
+import cyber_security from '../assets/images/cyber_security.webp';
+
 const Industry = () => {
   const cardData = [
     {
@@ -39,7 +41,7 @@ const Industry = () => {
       description:
         'Offers AI-based threat detection, cloud security, identity management, and encryption to safeguard businesses from cyber threats.',
       imageUrl:
-        'https://files.oaiusercontent.com/file-5CrvSeYuee8N8AqNBVyCqw?se=2025-01-30T18%3A20%3A46Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dd32ab321-f15d-42a2-8fe8-214a7b21bed4.webp&sig=85xiFUT7w8mVehmlX%2BFjBbfICjtmz/YZtDTqQKxbr8s%3D',
+        'https://images.pexels.com/photos/39584/censorship-limitations-freedom-of-expression-restricted-39584.jpeg?auto=compress&cs=tinysrgb&w=600',
     },
     {
       title: 'Education & E-Learning Technology',
