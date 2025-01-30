@@ -97,7 +97,7 @@ const OurTeam = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative">
+      <section className="relative mt-4">
         <Image src={team} alt="Our Team" className="w-full" />
         <div className="absolute inset-0 flex items-center justify-center group">
           <h1 className="text-white tracking-widest text-6xl font-bold transition-transform duration-800 hover:cursor-pointer hover:scale-110">

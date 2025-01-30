@@ -20,6 +20,7 @@ import serviceeight from '../assets/images/service-8.png';
 import servicenine from '../assets/images/service-9.png';
 import ScrollToTop from '../components/ScrollToTop';
 import Industry from '../components/industries';
+import OurTeam from '../components/OurTeam';
 // import OurProjects from '@/app/components/our_work';
 import Link from 'next/link';
 const page = () => {
@@ -470,6 +471,10 @@ const page = () => {
               Contact Me
             </button>
           </div>
+        </section>
+
+        <section>
+          <OurTeam />
         </section>
 
         <section id="contact_us" className="pt-[100px]">
