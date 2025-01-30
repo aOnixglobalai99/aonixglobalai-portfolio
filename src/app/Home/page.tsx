@@ -171,7 +171,7 @@ const page = () => {
               <h1 className="text-[#121a5e] font-semibold text-xl">
                 Services Offered By AonixGlobalAI
               </h1>
-              <p className="text-justify text-xs max-w-[90%]">
+              <p className="text-justify hyphens-auto text-xs max-w-[90%]">
                 AonixGlobalAI provides a comprehensive range of development
                 services designed to meet your specific needs, from creating
                 intuitive user interfaces to developing scalable web and mobile
@@ -190,7 +190,7 @@ const page = () => {
                   height={45}
                 />
                 <h1 className="font-bold">UI/UX Design & Development</h1>
-                <p className="text-justify text-[12px]">
+                <p className="text-justify hyphens-auto text-[12px]">
                   Crafting user-centric designs that focus on functionality and
                   aesthetics, ensuring your digital platforms offer a seamless
                   and engaging experience across all devices.
@@ -206,7 +206,7 @@ const page = () => {
                   height={45}
                 />
                 <h1 className="font-bold">Web Application Development</h1>
-                <p className="text-justify text-[12px]">
+                <p className="text-justify hyphens-auto text-[12px]">
                   Delivering robust and scalable web solutions tailored to meet
                   your business objectives, designed to ensure high efficiency
                   and optimal performance.
@@ -222,7 +222,7 @@ const page = () => {
                   height={45}
                 />
                 <h1 className="font-bold">Mobile App Development</h1>
-                <p className="text-justify text-[12px]">
+                <p className="text-justify hyphens-auto text-[12px]">
                   Creating intuitive and feature-rich mobile applications for
                   both iOS and Android to enhance user engagement and meet
                   business demands.
@@ -238,7 +238,7 @@ const page = () => {
                   height={45}
                 />
                 <h1 className="font-bold">CMS Web Development</h1>
-                <p className="text-justify text-[12px]">
+                <p className="text-justify hyphens-auto text-[12px]">
                   Developing flexible and SEO-optimized content management
                   systems that make managing and updating your website quick and
                   hassle-free.
@@ -254,7 +254,7 @@ const page = () => {
                   height={45}
                 />
                 <h1 className="font-bold">API Development & Integration</h1>
-                <p className="text-justify text-[12px]">
+                <p className="text-justify hyphens-auto text-[12px]">
                   Building and integrating APIs to simplify data interactions,
                   enabling your applications to seamlessly connect with external
                   services.
@@ -270,7 +270,7 @@ const page = () => {
                   height={45}
                 />
                 <h1 className="font-bold">Cloud-based Solutions</h1>
-                <p className="text-justify text-[12px]">
+                <p className="text-justify hyphens-auto text-[12px]">
                   Offering reliable and scalable cloud solutions that adapt to
                   your business needs, ensuring uninterrupted operations in a
                   dynamic market environment.
@@ -286,7 +286,7 @@ const page = () => {
                   height={45}
                 />
                 <h1 className="font-bold">AI Solutions</h1>
-                <p className="text-justify text-[12px]">
+                <p className="text-justify hyphens-auto text-[12px]">
                   Harnessing the power of artificial intelligence to create
                   smart, data-driven applications and automate processes,
                   driving innovation and operational efficiency.
@@ -302,7 +302,7 @@ const page = () => {
                   height={45}
                 />
                 <h1 className="font-bold">Digital Marketing</h1>
-                <p className="text-justify text-[12px]">
+                <p className="text-justify hyphens-auto text-[12px]">
                   Implementing result-oriented digital marketing strategies,
                   including SEO, PPC, social media, and email campaigns, to
                   boost your brand&apos;s online visibility and engagement.
@@ -313,7 +313,7 @@ const page = () => {
               <div className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
                 <Image src={servicenine} alt="DevOps" width={45} height={45} />
                 <h1 className="font-bold">DevOps & Automation</h1>
-                <p className="text-justify text-[12px]">
+                <p className="text-justify hyphens-auto text-[12px]">
                   Streamlining your software development lifecycle through
                   DevOps practices and automation tools, ensuring faster
                   delivery and enhanced reliability of your applications.
@@ -330,7 +330,7 @@ const page = () => {
                 Our Industry Expertise
               </h1>
               {/* <h2 className="text-3xl font-semibold">IT Solutions & Projects</h2> */}
-              <p className="text-justify text-[15px] mt-5">
+              <p className="text-justify hyphens-auto text-[15px] mt-5">
                 With broad experience across a number of sectors, we offer
                 specialized solutions to meet the unique needs of each industry.
                 The following are only a few of the domains where we can provide
