@@ -1,12 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 import {
-  FaTwitter,
+  // FaTwitter,
   FaLinkedinIn,
-  FaCode,
-  FaPaintBrush,
-  FaCogs,
-  FaUsers,
+  // FaCode,
+  // FaPaintBrush,
+  // FaCogs,
+  // FaUsers,
 } from 'react-icons/fa';
 
 // Images
