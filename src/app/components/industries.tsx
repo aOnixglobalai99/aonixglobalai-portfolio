@@ -107,7 +107,7 @@ const Industry = () => {
               key={index}
               className="bg-white text-center  flex flex-col items-center gap-5 border-neutral-100 rounded-lg border-solid border-[0px_0px_0px_0px] overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
             >
-              <div className="w-full h-48 md:h-56 lg:h-72 overflow-hidden">
+              <div className="w-full h-56 md:h-56 lg:h-72 overflow-hidden">
                 <img
                   src={card.imageUrl}
                   alt={card.title}
