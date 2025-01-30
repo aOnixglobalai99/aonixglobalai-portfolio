@@ -12,12 +12,12 @@ import {
 // Images
 import team from '../assets/images/TeamWork.png';
 import laptop from '../assets/images/laptopwork.png';
-import john from '../assets/images/john.jpeg';
-import jane from '../assets/images/jane.jpeg';
+// import jane from '../assets/images/jane.jpeg';
+// import john from '../assets/images/john.jpeg';
 // import alice from '../assets/images/alice.jpeg';
-import michael from '../assets/images/michael.jpeg';
-import emily from '../assets/images/emily.jpeg';
-import chris from '../assets/images/chris.jpeg';
+// import michael from '../assets/images/michael.jpeg';
+// import emily from '../assets/images/emily.jpeg';
+// import chris from '../assets/images/chris.jpeg';
 import shubham from '../assets/images/shubham.jpg';
 import neha from '../assets/images/neha.jpg';
 import Dilrus from '../assets/images/Dilras_Hussain.jpeg';
