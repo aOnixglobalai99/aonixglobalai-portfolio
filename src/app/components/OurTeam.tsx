@@ -28,13 +28,6 @@ import Riya from '../assets/images/Riya_Rana.jpg';
 // Team Members Data
 const teamMembers = [
   {
-    name: 'Dilras Hussain',
-    role: 'Nodejs backend developer',
-    image: Dilrus,
-    // twitter: '',
-    linkedin: 'https://linkedin.com/in/dilras-hussain-330474207',
-  },
-  {
     name: 'Neha Singh',
     role: 'MERN Developer',
     image: neha,
@@ -54,6 +47,13 @@ const teamMembers = [
     image: Riya,
     // twitter: '',
     linkedin: 'https://www.linkedin.com/in/riyaranadseu/',
+  },
+  {
+    name: 'Dilras Hussain',
+    role: 'Nodejs backend developer',
+    image: Dilrus,
+    // twitter: '',
+    linkedin: 'https://linkedin.com/in/dilras-hussain-330474207',
   },
   {
     name: 'Jeba Shertate',
@@ -103,19 +103,19 @@ const OurTeam = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative mt-4">
+      {/* <section className="relative mt-4">
         <Image src={team} alt="Our Team" className="w-full" />
         <div className="absolute inset-0 flex items-center justify-center group">
           <h1 className="text-white tracking-widest text-6xl font-bold transition-transform duration-800 hover:cursor-pointer hover:scale-110">
             Our Team
           </h1>
         </div>
-      </section>
+      </section> */}
 
       {/* Team Section */}
-      <section className="py-12 bg-gray-100">
+      <section className="py-12 bg-white">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-medium tracking-widest text-gray-800 mb-8">
+          <h2 className="text-4xl font-bold tracking-widest text-white mb-8 bg-blue-900 inline-block p-[20px] rounded-lg">
             Meet Our Amazing Team
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
@@ -161,7 +161,7 @@ const OurTeam = () => {
       </section>
 
       {/* Transparent Section with Background Image Effect */}
-      <section
+      {/* <section
         className="h-screen relative py-12 bg-transparent text-center"
         style={{
           backgroundImage: `url(${laptop.src})`,
@@ -180,7 +180,7 @@ const OurTeam = () => {
             connected and follow us for more updates!
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* Expertise Section */}
       {/* <section className="py-20 bg-gray-50 text-center">
