@@ -49,6 +49,7 @@ const Works: React.FC = () => {
     <section className="overflow-hidden">
       <div className="w-full bg-white  font-sans md:px-10">
         <div className="relative max-w-7xl mx-auto pb-20">
+          <div>Our Work</div>
           {projects.map((project, index) => (
             <div
               key={index}
