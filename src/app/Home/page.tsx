@@ -475,117 +475,99 @@ const page = () => {
           <OurTeam />
         </section>
 
-        <section id="contact_us" className="pt-[100px]">
-          <div className=" w-[1140px] m-auto flex shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] bg-white">
-            <div className="submit-form-div-left bg-center bg-no-repeat bg-cover relative w-6/12 p-10">
-              <div className="flex flex-col gap-[15px]">
-                <h2 className="text-[40px] text-[white] font-bold leading-[45px]">
+        <section id="contact_us" className="pt-[100px] px-4 md:px-6 lg:px-0">
+          <div className="max-w-[1140px] mx-auto flex flex-col lg:flex-row shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] bg-white">
+            {/* Left Section */}
+            <div className="submit-form-div-left bg-center bg-no-repeat bg-cover relative w-full lg:w-6/12 p-6 md:p-10">
+              <div className="flex flex-col gap-4 md:gap-[15px]">
+                <h2 className="text-3xl md:text-[40px] text-white font-bold leading-[45px]">
                   Perfect Solutions For Your Business
                 </h2>
-                <p className="text-base text-[white] text-justify">
+                <p className="text-sm md:text-base text-white text-justify">
                   At AonixGlobalAI, we deliver innovative and scalable IT
-                  solutions tailored to your business needs. Leveraging
-                  cutting-edge technologies and exceptional customer support, we
-                  drive efficiency, growth, and success in today&apos;s
-                  competitive landscape.
+                  solutions tailored to your business needs.
                 </p>
-                <p className="text-xl text-[white] font-bold mt-5">
+                <p className="text-lg md:text-xl text-white font-bold mt-3 md:mt-5">
                   Our Commitments to Excellence:
                 </p>
-                <ul className="gap-2.5 flex flex-col">
-                  <li className="text-[16px] text-[white] flex gap-1">
-                    <Image
-                      src={whitetick}
-                      alt="headerImg"
-                      width={15}
-                      height={10}
-                    />
-                    Custom IT solutions aligned with your business goals
-                  </li>
-                  <li className="text-[16px] text-[white] flex gap-1">
-                    <Image
-                      src={whitetick}
-                      alt="headerImg"
-                      width={15}
-                      height={10}
-                    />{' '}
-                    Seamless integration for long-term scalability
-                  </li>
-                  <li className="text-[16px] text-[white] flex gap-1">
-                    <Image
-                      src={whitetick}
-                      alt="headerImg"
-                      width={15}
-                      height={10}
-                    />{' '}
-                    Advanced security and compliance measures
-                  </li>
-                  <li className="text-[16px] text-[white] flex gap-1">
-                    <Image
-                      src={whitetick}
-                      alt="headerImg"
-                      width={15}
-                      height={10}
-                    />{' '}
-                    AI-driven solutions to stay ahead in the tech race
-                  </li>
+                <ul className="gap-2 flex flex-col">
+                  {[
+                    'Custom IT solutions aligned with your business goals',
+                    'Seamless integration for long-term scalability',
+                    'Advanced security and compliance measures',
+                    'AI-driven solutions to stay ahead in the tech race',
+                  ].map((item, index) => (
+                    <li
+                      key={index}
+                      className="text-sm md:text-[16px] text-white flex gap-2 items-center"
+                    >
+                      <Image
+                        src={whitetick}
+                        alt="tick"
+                        width={15}
+                        height={10}
+                      />{' '}
+                      {item}
+                    </li>
+                  ))}
                 </ul>
-                <p className="text-xl text-[white] font-bold mt-5">
+                <p className="text-lg md:text-xl text-white font-bold mt-3 md:mt-5">
                   Explore how our expertise can transform your business
                   operations:
                 </p>
-                <div className="flex gap-5 mt-[10px]">
+                <div className="flex flex-col md:flex-row gap-3 md:gap-5 mt-4">
                   <Link
                     href=""
-                    className="text-[15px] h-10 flex items-center bg-[white] font-semibold px-5 py-0 text-[#121a5e]"
+                    className="text-sm md:text-[15px] h-10 flex items-center justify-center bg-white font-semibold px-5 text-[#121a5e] w-full md:w-auto"
                   >
                     GET A QUOTE
                   </Link>
                   <Link
                     href=""
-                    className="text-[15px] h-10 flex items-center text-white font-semibold px-5 py-0"
+                    className="text-sm md:text-[15px] h-10 flex items-center justify-center text-white font-semibold px-5 w-full md:w-auto"
                   >
                     Read more{' '}
-                    <Image src={rightarrowline} alt="headerImg" width={20} />
+                    <Image src={rightarrowline} alt="arrow" width={20} />
                   </Link>
                 </div>
               </div>
             </div>
-            <form className="w-6/12 bg-[white] z-[1] p-10">
-              <div className="flex gap-5  mb-[15px]">
-                <div className="w-full">
+            {/* Right Section */}
+            <form className="w-full lg:w-6/12 bg-white z-[1] p-6 md:p-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 mb-[15px]">
+                <div>
                   <label className="text-[#121a5e] text-[15px]">Name</label>
-                  <input className="border h-10 w-full text-[13px] font-normal text-[black] mt-2.5 p-[10px] border-solid border-[#ededed]" />
+                  <input className="border h-10 w-full text-[13px] mt-2.5 p-2 border-[#ededed]" />
                 </div>
-                <div className="w-full">
+                <div>
                   <label className="text-[#121a5e] text-[15px]">Email</label>
-                  <input className="border h-10 w-full text-[13px] font-normal text-[black] mt-2.5 p-[10px] border-solid border-[#ededed]" />
+                  <input className="border h-10 w-full text-[13px] mt-2.5 p-2 border-[#ededed]" />
                 </div>
               </div>
-              <div className="flex gap-5  mb-[15px]">
-                <div className="w-full">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 mb-[15px]">
+                <div>
                   <label className="text-[#121a5e] text-[15px]">Select</label>
-                  <select className="border h-10 w-full text-[13px] font-normal text-[black] mt-2.5 p-[10px] border-solid border-[#ededed]">
+                  <select className="border h-10 w-full text-[13px] mt-2.5 p-2 border-[#ededed]">
                     <option>IT Manager</option>
                     <option>Apps</option>
                     <option>IT Manager</option>
                     <option>IT Manager</option>
                   </select>
                 </div>
-                <div className="w-full">
+                <div>
                   <label className="text-[#121a5e] text-[15px]">
                     Telephone
                   </label>
-                  <input className="border h-10 w-full text-[13px] font-normal text-[black] mt-2.5 p-[10px] border-solid border-[#ededed]" />
+                  <input className="border h-10 w-full text-[13px] mt-2.5 p-2 border-[#ededed]" />
                 </div>
               </div>
-              <div className=" mb-[15px]">
+              <div className="mb-[15px]">
                 <label className="text-[#121a5e] text-[15px]">
                   Additional Details
                 </label>
-                <textarea className="border min-h-[200px] resize-none w-full text-[13px] font-normal text-[black] mt-2.5 p-[10px] border-solid border-[#ededed]" />
+                <textarea className="border min-h-[200px] resize-none w-full text-[13px] mt-2.5 p-2 border-[#ededed]" />
               </div>
-              <button className="text-[15px] h-10 flex items-center text-[white] font-semibold px-5 py-0 bg-[#121a5e]">
+              <button className="text-[15px] h-10 flex items-center justify-center text-white font-semibold px-5 bg-[#121a5e] w-full md:w-auto">
                 Submit Request
               </button>
             </form>
