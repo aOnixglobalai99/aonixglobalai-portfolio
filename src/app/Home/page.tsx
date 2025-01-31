@@ -321,7 +321,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className="mt-[100px]">
+        <div id="industries" className="pt-[100px]">
           <div className=" w-[1140px] m-auto ">
             <div className="flex flex-col items-center gap-2.5 px-[220px] py-0">
               <h1 className="text-[#121a5e] font-semibold text-[30px]">
@@ -341,7 +341,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div id="our_work">
           <Works />
         </div>
 

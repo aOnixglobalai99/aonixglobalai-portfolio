@@ -23,7 +23,7 @@ const Header: React.FC = () => {
           <li>
             <Link
               className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e] transition-[0.3s]"
-              href=""
+              href="#top"
             >
               Home
             </Link>
@@ -47,7 +47,7 @@ const Header: React.FC = () => {
           <li>
             <Link
               className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e] transition-[0.3s]"
-              href=""
+              href="#industries"
             >
               Industry
             </Link>
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
           <li>
             <Link
               className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e] transition-[0.3s]"
-              href=""
+              href="#our_work"
             >
               Our Work
             </Link>
