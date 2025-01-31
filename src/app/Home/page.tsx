@@ -453,20 +453,24 @@ const page = () => {
           </div>
         </section> */}
         {/* Hire me section  */}
-        <section className="w-screen mt-3 bg-[#192373] flex justify-between py-8 px-8 lg:py-20 lg:px-20 max-sm:flex-col">
-          <div className="text-white">
-            <h4 className="text-2xl lg:text-4xl font-semibold">
-              Hire me for your next project!
-            </h4>
-            <p className="mt-4 lg:text-xl">
-              I am available for your next project
-            </p>
-          </div>
+        <section className="w-full mt-3 bg-[#192373] py-8 px-6 lg:py-20 lg:px-20">
+          <div className="max-w-6xl mx-auto flex justify-between items-center max-md:flex-col">
+            {/* Text Content */}
+            <div className="text-white max-md:text-center">
+              <h4 className="text-2xl lg:text-4xl font-semibold">
+                Hire me for your next project!
+              </h4>
+              <p className="mt-4 text-lg lg:text-xl">
+                I am available for your next project
+              </p>
+            </div>
 
-          <div className="flex justify-center max-sm:w-full">
-            <button className="px-11 lg:px-12 p-3 lg:p-4 text-white bg-blue-600 shadow-lg hover:bg-blue-700 transition-opacity duration-300 rounded-full lg:text-2xl ">
-              Contact Me
-            </button>
+            {/* Button */}
+            <div className="max-md:mt-5">
+              <button className="px-8 md:px-11 lg:px-12 py-3 md:py-4 text-white bg-blue-600 shadow-lg hover:bg-blue-700 transition-opacity duration-300 rounded-full text-lg md:text-xl lg:text-2xl">
+                Contact Me
+              </button>
+            </div>
           </div>
         </section>
 
