@@ -10,8 +10,8 @@ import {
 } from 'react-icons/fa';
 
 // Images
-import team from '../assets/images/TeamWork.png';
-import laptop from '../assets/images/laptopwork.png';
+// import team from '../assets/images/TeamWork.png';
+// import laptop from '../assets/images/laptopwork.png';
 // import jane from '../assets/images/jane.jpeg';
 // import john from '../assets/images/john.jpeg';
 // import alice from '../assets/images/alice.jpeg';
