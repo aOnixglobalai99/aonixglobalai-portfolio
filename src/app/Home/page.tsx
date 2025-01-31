@@ -22,9 +22,10 @@ import ScrollToTop from '../components/ScrollToTop';
 import Industry from '../components/industries';
 import OurTeam from '../components/OurTeam';
 import Works from '../components/Ourwork';
-
 // import OurProjects from '@/app/components/our_work';
 import Link from 'next/link';
+import FAQ from '../components/FAQs';
+
 const page = () => {
   return (
     <div className="" id="top">
@@ -49,20 +50,18 @@ const page = () => {
         </div>
 
         <div className="mt-[-100px]">
-          <div className=" w-[1140px] m-auto flex gap-5">
-            <div className="backgrounddd bg-white text-center w-[33%] shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
+          <div className="w-full max-w-[1140px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 px-4">
+            <div className="backgrounddd bg-white text-center shadow-md flex flex-col items-center gap-5 border-neutral-100 px-6 py-8 rounded-lg">
               <Image src={servicetwo} alt="headerImg" width={45} height={45} />
               <h1 className="font-bold">UI/UX and Web App Development</h1>
-              <p className="text-[12px]">
+              <p className="text-sm">
                 Delivering intuitive UI/UX designs and high-performance web
                 applications for seamless, scalable, and secure digital
-                experiences. Our expert team ensures user-centric solutions that
-                drive engagement, boost performance, and align with your
-                business goals.
+                experiences.
               </p>
             </div>
 
-            <div className="backgrounddd bg-white text-center w-[33%] shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
+            <div className="backgrounddd bg-white text-center shadow-md flex flex-col items-center gap-5 border-neutral-100 px-6 py-8 rounded-lg">
               <Image
                 src={serviceseven}
                 alt="headerImg"
@@ -70,15 +69,14 @@ const page = () => {
                 height={45}
               />
               <h1 className="font-bold">AI Solutions for Enhanced Business</h1>
-              <p className="text-[12px]">
+              <p className="text-sm">
                 Utilizing advanced AI technology to develop intelligent
-                applications that streamline processes, reduce costs, enhance
-                efficiency, and drive business growth by delivering smarter,
-                faster, and more automated solutions.
+                applications that streamline processes, reduce costs, and
+                enhance efficiency.
               </p>
             </div>
 
-            <div className="backgrounddd bg-white text-center w-[33%] shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
+            <div className="backgrounddd bg-white text-center shadow-md flex flex-col items-center gap-5 border-neutral-100 px-6 py-8 rounded-lg">
               <Image
                 src={servicethree}
                 alt="headerImg"
@@ -86,11 +84,9 @@ const page = () => {
                 height={45}
               />
               <h1 className="font-bold">Mobile App Development</h1>
-              <p className="text-[12px]">
+              <p className="text-sm">
                 Creating custom, user-friendly mobile apps for iOS and Android
-                to enhance engagement, streamline operations, and drive growth
-                with innovative features, seamless performance, and solutions
-                tailored to your business goals.
+                to enhance engagement, streamline operations, and drive growth.
               </p>
             </div>
           </div>
@@ -666,9 +662,16 @@ const page = () => {
             </div>
           </div>
         </div>
+
+        <div>
+          <FAQ />
+        </div>
         <div>
           <ScrollToTop />
         </div>
+        {/* <div>
+          <FAQ />
+        </div> */}
       </div>
 
       <div>
