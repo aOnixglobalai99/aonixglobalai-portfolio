@@ -29,10 +29,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
 }
 
-/* Tablet devices */
+/* Tablet */
 @media (max-width: 1024px) {
   .homepagefirstdiv-back {
     background-size: contain;
@@ -40,7 +40,7 @@ body {
   }
 }
 
-/* Mobile devices */
+/* Mobile */
 @media (max-width: 768px) {
   .homepagefirstdiv-back {
     background-size: cover;

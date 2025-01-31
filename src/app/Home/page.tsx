@@ -345,11 +345,18 @@ const page = () => {
           <Works />
         </div>
 
-        <div className="flex mt-[100px]">
-          <div className="client-team-img-left h-[500px] w-6/12 bg-center bg-no-repeat bg-cover relative"></div>
-          <div className="client-message-div h-[500px] w-6/12 bg-center bg-no-repeat bg-cover relative bg-[#078dd7] flex   flex-col items-center justify-start text-[25px] text-[white] font-bold pt-[50px]">
-            <h2 className="">What Client Say About Us</h2>
-            <div className="flex items-center justify-center text-center text-[15px] font-normal mt-[40px]">
+        <div className="flex flex-col md:flex-row mt-[50px] md:mt-[100px] w-full">
+          {/* Left Image Section */}
+          <div className="client-team-img-left h-[300px] md:h-[500px] w-full md:w-6/12 bg-center bg-no-repeat bg-cover relative"></div>
+
+          {/* Right Content Section */}
+          <div className="client-message-div h-auto md:h-[500px] w-full md:w-6/12 bg-[#078dd7] flex flex-col items-center justify-start text-white font-bold py-10 px-5 md:py-[50px]">
+            <h2 className="text-[20px] md:text-[25px] text-center">
+              What Clients Say About Us
+            </h2>
+
+            {/* Carousel */}
+            <div className="flex items-center justify-center text-center text-[14px] md:text-[15px] font-normal mt-5 md:mt-[40px] w-full">
               <Carousel />
             </div>
           </div>
