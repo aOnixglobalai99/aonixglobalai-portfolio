@@ -47,6 +47,11 @@ const Works: React.FC = () => {
 
   return (
     <section className="overflow-hidden">
+      <div className="max-w-6xl mx-auto text-center -mb-20 max-md:mb-10 pt-32">
+        <h2 className="text-4xl font-bold tracking-widest text-white mb-8 bg-blue-900 inline-block p-[20px] rounded-lg">
+          Our Work
+        </h2>
+      </div>
       <div className="w-full bg-white  font-sans md:px-10">
         <div className="relative max-w-7xl mx-auto pb-20">
           {projects.map((project, index) => (

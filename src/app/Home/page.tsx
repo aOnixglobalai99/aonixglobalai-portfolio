@@ -22,7 +22,7 @@ import ScrollToTop from '../components/ScrollToTop';
 import Industry from '../components/industries';
 import OurTeam from '../components/OurTeam';
 import Works from '../components/Ourwork';
-// import OurProjects from '@/app/components/our_work';
+import OurBlog from '../components/OurBlog';
 import Link from 'next/link';
 import FAQ from '../components/FAQs';
 
@@ -323,16 +323,10 @@ const page = () => {
 
         <div id="industries" className="pt-8 md:pt-[100px]">
           <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
-            <div className="flex flex-col items-center gap-2.5 px-4 md:px-20 lg:px-[360px]">
-              <h1 className="text-[#121a5e] font-semibold text-xl">
-                Our Industry Expertise
-              </h1>
-              <p className="text-justify hyphens-auto text-[12px]">
-                With broad experience across a number of sectors, we offer
-                specialized solutions to meet the unique needs of each industry.
-                The following are only a few of the domains where we can provide
-                beneficial outcomes for any business:
-              </p>
+            <div className="max-w-6xl mx-auto text-center pt-10">
+              <h2 className="text-4xl font-bold tracking-widest text-white mb-8 bg-blue-900 inline-block p-[20px] rounded-lg">
+                Our Blogs
+              </h2>
             </div>
             <div className="">
               <Industry />
@@ -454,6 +448,11 @@ const page = () => {
             </p>
           </div>
         </section> */}
+
+        <section>
+          <OurTeam />
+        </section>
+
         {/* Hire me section  */}
         <section className="w-full mt-3 bg-[#192373] py-8 px-6 lg:py-20 lg:px-20">
           <div className="max-w-6xl mx-auto flex justify-between items-center max-md:flex-col">
@@ -469,15 +468,14 @@ const page = () => {
 
             {/* Button */}
             <div className="max-md:mt-5">
-              <button className="px-8 md:px-11 lg:px-12 py-3 md:py-4 text-white bg-blue-600 shadow-lg hover:bg-blue-700 transition-opacity duration-300 rounded-full text-lg md:text-xl lg:text-2xl">
+              <Link
+                className="px-8 md:px-11 lg:px-12 py-3 md:py-4 text-white bg-blue-600 shadow-lg hover:bg-blue-700 transition-opacity duration-300 rounded-full text-lg md:text-xl lg:text-2xl"
+                href="#contact_us"
+              >
                 Contact Me
-              </button>
+              </Link>
             </div>
           </div>
-        </section>
-
-        <section>
-          <OurTeam />
         </section>
 
         <section id="contact_us" className="pt-[100px] px-4 md:px-6 lg:px-0">
@@ -553,10 +551,10 @@ const page = () => {
                 <div>
                   <label className="text-[#121a5e] text-[15px]">Select</label>
                   <select className="border h-10 w-full text-[13px] mt-2.5 p-2 border-[#ededed]">
-                    <option>IT Manager</option>
-                    <option>Apps</option>
-                    <option>IT Manager</option>
-                    <option>IT Manager</option>
+                    <option>Website</option>
+                    <option>Mobile Application</option>
+                    <option>AI</option>
+                    <option>Customer Service Chat Bot</option>
                   </select>
                 </div>
                 <div>
@@ -579,76 +577,9 @@ const page = () => {
           </div>
         </section>
 
-        {/* <div id="our_blog" className="pt-[100px]">
-          <div className=" w-[1140px] m-auto flex flex-col">
-            <div className="flex flex-col items-center gap-2.5 px-[360px] py-0">
-              <h1 className="text-[#121a5e] font-semibold text-xl">Our Blog</h1>
-              <h2 className="text-3xl font-semibold">Latest News & Articles</h2>
-              <p className="text-center text-xs">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </p>
-            </div>
-            <div className=" w-[1140px] m-auto grid grid-cols-[auto_auto_auto] gap-5 mt-[50px]">
-              <div className="bg-white flex flex-col gap-5 rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px] group">
-                <div className="newsone-img-back w-full bg-center bg-no-repeat bg-cover h-[236px] group-hover:rotate-2 group-hover:opacity-80 group-hover:scale-105 transition-all duration-[0.4s] ease-[ease]"></div>
-
-                <div className="flex flex-col gap-[5px]">
-                  <p className="text-[#7a7a7a] text-xs">April 4, 2021</p>
-                  <h1 className="text-[#272b36] font-medium">
-                    Digital Conference Of IT Tech Events in 2020
-                  </h1>
-                  <p className="text-[12px] text-[#7a7a7a]">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore
-                  </p>
-                  <Link href="/Blogs" className=" flex gap-2.5 text-xs mt-2.5">
-                    Read more{' '}
-                    <Image src={rightarrowline} alt="headerImg" width={15} />
-                  </Link>
-                </div>
-              </div>
-
-              <div className="bg-white flex flex-col gap-5 rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px] group">
-                <div className="newsone-img-back w-full bg-center bg-no-repeat bg-cover h-[236px] group-hover:rotate-2 group-hover:opacity-80 group-hover:scale-105 transition-all duration-[0.4s] ease-[ease]"></div>
-
-                <div className="flex flex-col gap-[5px]">
-                  <p className="text-[#7a7a7a] text-xs">April 4, 2021</p>
-                  <h1 className="text-[#272b36] font-medium">
-                    Digital Conference Of IT Tech Events in 2020
-                  </h1>
-                  <p className="text-[14px] text-[#7a7a7a]">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore
-                  </p>
-                  <Link href="/Blogs" className=" flex gap-2.5 text-xs mt-2.5">
-                    Read more{' '}
-                    <Image src={rightarrowline} alt="headerImg" width={15} />
-                  </Link>
-                </div>
-              </div>
-
-              <div className="bg-white flex flex-col gap-5 rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px] group">
-                <div className="newsone-img-back w-full bg-center bg-no-repeat bg-cover h-[236px] group-hover:rotate-2 group-hover:opacity-80 group-hover:scale-105 transition-all duration-[0.4s] ease-[ease]"></div>
-
-                <div className="flex flex-col gap-[5px]">
-                  <p className="text-[#7a7a7a] text-xs">April 4, 2021</p>
-                  <h1 className="text-[#272b36] font-medium">
-                    Digital Conference Of IT Tech Events in 2020
-                  </h1>
-                  <p className="text-[14px] text-[#7a7a7a]">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore
-                  </p>
-                  <Link href="/Blogs" className=" flex gap-2.5 text-xs mt-2.5">
-                    Read more{' '}
-                    <Image src={rightarrowline} alt="headerImg" width={15} />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
+        <section>
+          <OurBlog />
+        </section>
 
         <div>
           <FAQ />

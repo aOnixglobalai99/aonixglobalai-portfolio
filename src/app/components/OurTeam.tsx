@@ -118,7 +118,7 @@ const OurTeam = () => {
           <h2 className="text-4xl font-bold tracking-widest text-white mb-8 bg-blue-900 inline-block p-[20px] rounded-lg">
             Meet Our Amazing Team
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 pb-12 pt-24">
             {teamMembers.map((member, index) => (
               <div key={index} className="relative group">
                 {/* Image */}
