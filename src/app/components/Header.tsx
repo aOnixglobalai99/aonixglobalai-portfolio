@@ -7,6 +7,11 @@ import logo from '../assets/images/logo.png';
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Handler to close menu
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
   return (
     <>
       {/* Overlay */}
@@ -45,47 +50,57 @@ const Header: React.FC = () => {
           <div className="flex flex-col gap-4">
             <Link
               href="#top"
+              onClick={handleLinkClick}
               className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e]"
             >
               Home
             </Link>
             <Link
               href=""
+              onClick={handleLinkClick}
               className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e]"
             >
               AI
             </Link>
             <Link
               href="#our_services"
+              onClick={handleLinkClick}
               className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e]"
             >
               Services
             </Link>
             <Link
               href="#industries"
+              onClick={handleLinkClick}
               className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e]"
             >
               Industry
             </Link>
             <Link
               href="#our_work"
+              onClick={handleLinkClick}
               className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e]"
             >
               Our Work
             </Link>
             <Link
               href="#our_blog"
+              onClick={handleLinkClick}
               className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e]"
             >
               Blog
             </Link>
             <Link
               href="#contact_us"
+              onClick={handleLinkClick}
               className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e]"
             >
               Contact Us
             </Link>
-            <button className="w-full bg-[#078dd7] rounded text-lg font-semibold text-white p-2.5 hover:bg-[#077bc8]">
+            <button
+              onClick={handleLinkClick}
+              className="w-full bg-[#078dd7] rounded text-lg font-semibold text-white p-2.5 hover:bg-[#077bc8]"
+            >
               Call Us
             </button>
           </div>
