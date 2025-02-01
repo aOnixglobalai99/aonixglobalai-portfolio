@@ -28,9 +28,9 @@ import FAQ from '../components/FAQs';
 
 const page = () => {
   return (
-    <div className="" id="top">
+    <div className="w-full" id="top">
       <Header />
-      <div className="">
+      <div className="w-full">
         <div className="homepagefirstdiv-back h-[800px] bg-center bg-no-repeat bg-cover">
           <div className="h-full flex flex-col items-start w-[1140px] justify-center m-auto">
             <h2 className="text-[white]  font-black w-[488px] text-left text-[35px]">
@@ -319,14 +319,13 @@ const page = () => {
           </div>
         </div>
 
-        <div id="industries" className="pt-[100px]">
-          <div className=" w-[1140px] m-auto ">
-            <div className="flex flex-col items-center gap-2.5 px-[220px] py-0">
-              <h1 className="text-[#121a5e] font-semibold text-[30px]">
+        <div id="industries" className="pt-8 md:pt-[100px]">
+          <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
+            <div className="flex flex-col items-center gap-2.5 px-4 md:px-20 lg:px-[360px]">
+              <h1 className="text-[#121a5e] font-semibold text-xl">
                 Our Industry Expertise
               </h1>
-              {/* <h2 className="text-3xl font-semibold">IT Solutions & Projects</h2> */}
-              <p className="text-justify hyphens-auto text-[14px] mt-5">
+              <p className="text-justify hyphens-auto text-[12px]">
                 With broad experience across a number of sectors, we offer
                 specialized solutions to meet the unique needs of each industry.
                 The following are only a few of the domains where we can provide
@@ -334,7 +333,6 @@ const page = () => {
               </p>
             </div>
             <div className="">
-              {/* <Industryexcarousel /> */}
               <Industry />
             </div>
           </div>
@@ -343,22 +341,19 @@ const page = () => {
           <Works />
         </div>
 
-        <div className="flex flex-col md:flex-row mt-[50px] md:mt-[100px] w-full">
-          {/* Left Image Section */}
+        {/* <div className="flex flex-col md:flex-row mt-[50px] md:mt-[100px] w-full">
           <div className="client-team-img-left h-[300px] md:h-[500px] w-full md:w-6/12 bg-center bg-no-repeat bg-cover relative"></div>
 
-          {/* Right Content Section */}
           <div className="client-message-div h-auto md:h-[500px] w-full md:w-6/12 bg-[#078dd7] flex flex-col items-center justify-start text-white font-bold py-10 px-5 md:py-[50px]">
             <h2 className="text-[20px] md:text-[25px] text-center">
               What Clients Say About Us
             </h2>
 
-            {/* Carousel */}
             <div className="flex items-center justify-center text-center text-[14px] md:text-[15px] font-normal mt-5 md:mt-[40px] w-full">
               <Carousel />
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* <div className="mt-[100px] mb-[100px]">
           <div className=" w-[1140px] m-auto flex flex-col">
@@ -582,7 +577,7 @@ const page = () => {
           </div>
         </section>
 
-        <div id="our_blog" className="pt-[100px]">
+        {/* <div id="our_blog" className="pt-[100px]">
           <div className=" w-[1140px] m-auto flex flex-col">
             <div className="flex flex-col items-center gap-2.5 px-[360px] py-0">
               <h1 className="text-[#121a5e] font-semibold text-xl">Our Blog</h1>
@@ -651,7 +646,7 @@ const page = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div>
           <FAQ />

@@ -81,7 +81,7 @@ const Industry = () => {
   ];
 
   return (
-    <div className="pt-16 md:pt-[100px]">
+    <div className="pt-8 md:pt-[100px]">
       <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
         {/* Header Section */}
         {/* <header>
@@ -100,31 +100,25 @@ const Industry = () => {
           </h1>
         </section>
       </header> */}
-
         {/* Industry Cards Grid */}
         <div className="mt-4 flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {cardData.map((card, index) => (
             <div
               key={index}
-              className="bg-white text-center  flex flex-col items-center gap-5 border-neutral-100 rounded-lg border-solid border-[0px_0px_0px_0px] overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+              className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 rounded-lg border-solid border-[0px_0px_0px_0px] overflow-hidden"
             >
-              <div className="w-full h-56  md:h-56 lg:h-72 overflow-hidden">
+              <div className="w-full h-48 md:h-56 lg:h-64 overflow-hidden">
                 <img
                   src={card.imageUrl}
                   alt={card.title}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="font-bold text-lg text-gray-800">
-                  {card.title}
-                </h3>
-                <p className="text-[14px] mt-3 text-gray-600">
+              <div className="px-[30px] py-[33px]">
+                <h3 className="font-bold text-base md:text-lg">{card.title}</h3>
+                <p className="text-justify hyphens-auto text-[12px] mt-3 text-gray-600">
                   {card.description}
                 </p>
-                {/* <button className="mt-4 bg-teal-500 text-white py-2 px-4 rounded-lg hover:bg-teal-600 transition-colors duration-300">
-                  Read More
-                </button> */}
               </div>
             </div>
           ))}
