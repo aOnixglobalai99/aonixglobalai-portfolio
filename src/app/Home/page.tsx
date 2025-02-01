@@ -325,7 +325,7 @@ const page = () => {
           <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
             <div className="max-w-6xl mx-auto text-center pt-10">
               <h2 className="text-4xl font-bold tracking-widest text-white mb-8 bg-blue-900 inline-block p-[20px] rounded-lg">
-                Our Blogs
+                Our Industry Expertise
               </h2>
             </div>
             <div className="">
