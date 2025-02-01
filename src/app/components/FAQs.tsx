@@ -17,14 +17,14 @@ const FAQ: React.FC = () => {
   const faqs: FAQItem[] = [
     {
       question:
-        'What makes Vamenture the best software and mobile app development company?',
+        'What makes AonixGlobalAI the best software and mobile app development company?',
       answer:
-        'Vamenture is known for its innovative approach, experienced team, and client-centric solutions, ensuring high-quality results.',
+        'AonixGlobalAI is known for its innovative approach, experienced team, and client-centric solutions, ensuring high-quality results.',
     },
     {
       question: 'Do you offer app maintenance and support services?',
       answer:
-        'Vamenture certainly offers application maintenance and support services. This covers periodical updates, bug fixes, performance tuning, and technical support to ensure that your application runs smoothly and stays up to date with the latest standards and requirements.',
+        'AonixGlobalAI certainly offers application maintenance and support services. This covers periodical updates, bug fixes, performance tuning, and technical support to ensure that your application runs smoothly and stays up to date with the latest standards and requirements.',
     },
     {
       question:
@@ -38,7 +38,7 @@ const FAQ: React.FC = () => {
         "Our pricing depends on the project's scope and complexity. Contact us for a customized quote.",
     },
     {
-      question: 'How does Vamenture manage software development projects?',
+      question: 'How does AonixGlobalAI manage software development projects?',
       answer:
         'We use agile methodologies, regular updates, and client collaboration to ensure seamless project management.',
     },

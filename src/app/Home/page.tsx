@@ -32,18 +32,20 @@ const page = () => {
       <Header />
       <div className="w-full">
         <div className="homepagefirstdiv-back h-[800px] bg-center bg-no-repeat bg-cover">
-          <div className="h-full flex flex-col items-start w-[1140px] justify-center m-auto">
-            <h2 className="text-[white]  font-black w-[488px] text-left text-[35px]">
-              Innovative IT, AI & Tech Solutions for Modern Businesses
-            </h2>
-            <p className="text-xl text-[white] w-[45%] mb-5">
-              Empowering businesses with scalable IT, AI, and tech solutions to
-              drive innovation, streamline operations, and ensure security.
-            </p>
+          <div className="h-full flex flex-col items-start w-fit justify-center m-auto">
+            <div className="px-4 md:px-6 lg:px-8">
+              <h2 className="text-white font-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl w-full sm:w-[500px] md:w-[600px] lg:w-[700px] leading-tight mb-4">
+                Innovative IT, AI & Tech Solutions for Modern Businesses
+              </h2>
+              <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl w-full sm:w-[400px] md:w-[500px] lg:w-[600px] leading-relaxed mb-5">
+                Empowering businesses with scalable IT, AI, and tech solutions
+                to drive innovation, streamline operations, and ensure security.
+              </p>
+            </div>
 
             {/* <button className="bg-[#078dd7] rounded font-semibold text-[white]  hover:bg-[#077bc8] transition-[0.3s] text-[25px] px-[60px] py-[15px]">
-            Contact Us
-          </button> */}
+    Contact Us
+  </button> */}
           </div>
         </div>
 
