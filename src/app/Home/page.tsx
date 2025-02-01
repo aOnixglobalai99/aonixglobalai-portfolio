@@ -6,7 +6,7 @@ import tick from '../assets/images/tick-icon.svg';
 import whitetick from '../assets/images/whitetick.svg';
 import rightarrowline from '../assets/images/right-arrow-line.svg';
 import Header from '../components/Header';
-import Carousel from '../components/Carousel';
+// import Carousel from '../components/Carousel';
 // import Industryexcarousel from '../components/Industryexcarousel';
 import Footer from '../components/Footer';
 import serviceone from '../assets/images/service-1.webp';
