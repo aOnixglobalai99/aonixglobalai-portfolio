@@ -29,10 +29,8 @@ import FAQ from '../components/FAQs';
 const page = () => {
   return (
     <div className="" id="top">
-      <div className="header-back fixed w-full">
-        <Header />
-      </div>
-      <div className="pt-[90px]">
+      <Header />
+      <div className="">
         <div className="homepagefirstdiv-back h-[800px] bg-center bg-no-repeat bg-cover">
           <div className="h-full flex flex-col items-start w-[1140px] justify-center m-auto">
             <h2 className="text-[white]  font-black w-[488px] text-left text-[35px]">

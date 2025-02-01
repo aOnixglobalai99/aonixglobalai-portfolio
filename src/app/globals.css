@@ -66,11 +66,14 @@ body {
   background-image: linear-gradient(rgba(18, 26, 94, 0.566), rgb(18, 26, 94)),
     url('assets/images/worldmap.png');
 }
+
 .header-back {
   background-image: radial-gradient(transparent 1px, #ffffff 1px);
   mask: linear-gradient(rgb(0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
-  z-index: 2;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
+
 .casestudyfirst-img-back {
   background-image: url('assets/images/caseone.jpg');
 }
