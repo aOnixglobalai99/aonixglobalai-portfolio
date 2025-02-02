@@ -9,7 +9,7 @@ import Vampzz1 from '../assets/images/vampzz-cap-commerce-1.png';
 import Vampzz2 from '../assets/images/vampzz-cap-commerce-2.png';
 import Vampzz3 from '../assets/images/vampzz-cap-commerce-3.png';
 import Vampzz4 from '../assets/images/vampzz-cap-commerce-4.png';
-import { px } from 'framer-motion';
+// import { px } from 'framer-motion';
 
 interface Project {
   title: string;
