@@ -63,7 +63,7 @@ const Works: React.FC = () => {
     <>
       <section className="overflow-hidden">
         <div className="max-w-6xl mx-auto text-center -mb-20 max-md:mb-10 pt-32">
-          <h2 className="text-4xl font-bold tracking-widest text-white mb-8 bg-blue-900 inline-block p-[20px] rounded-lg">
+          <h2 className="text-2xl  sm:text-4xl font-bold tracking-widest text-white mb-8 bg-blue-900 inline-block p-[20px] rounded-lg">
             Our Work
           </h2>
         </div>

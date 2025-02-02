@@ -36,7 +36,7 @@ const Blog: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen w-full overflow-y-auto py-12">
+    <div className="flex flex-col min-h-screen w-full overflow-y-auto pt-12">
       {/* Header Section */}
       <header>
         {/* <section
@@ -50,7 +50,7 @@ const Blog: React.FC = () => {
           }}
         ></section> */}
         <div className="max-w-6xl mx-auto text-center pt-10">
-          <h2 className="text-4xl font-bold tracking-widest text-white mb-8 bg-blue-900 inline-block p-[20px] rounded-lg">
+          <h2 className="text-2xl  sm:text-4xl font-bold tracking-widest text-white mb-8 bg-blue-900 inline-block p-[20px] rounded-lg">
             Our Blogs
           </h2>
         </div>

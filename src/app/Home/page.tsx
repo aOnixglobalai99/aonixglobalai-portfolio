@@ -165,7 +165,12 @@ const page = () => {
         <div id="our_services" className="pt-[100px]">
           <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
             {/* Header Section */}
-            <div className="flex flex-col items-center gap-2.5 px-4 md:px-20 lg:px-[360px]">
+            <div className="max-w-6xl mx-auto text-center pt-10">
+              <h2 className="text-2xl  sm:text-4xl font-bold tracking-widest text-white mb-8 bg-blue-900 inline-block p-[20px] rounded-lg">
+                Services Offered By AonixGlobalAI
+              </h2>
+            </div>
+            {/* <div className="flex flex-col items-center gap-2.5 px-4 md:px-20 lg:px-[360px]">
               <h1 className="text-[#121a5e] font-semibold text-xl">
                 Services Offered By AonixGlobalAI
               </h1>
@@ -175,7 +180,7 @@ const page = () => {
                 intuitive user interfaces to developing scalable web and mobile
                 applications.
               </p>
-            </div>
+            </div> */}
 
             {/* Services Grid */}
             <div className="md:pt-[100px] pt-8 flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -324,7 +329,7 @@ const page = () => {
         <div id="industries" className="pt-12 md:pt-[100px]">
           <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
             <div className="max-w-6xl mx-auto text-center pt-10">
-              <h2 className="text-4xl font-bold tracking-widest text-white mb-8 bg-blue-900 inline-block p-[20px] rounded-lg">
+              <h2 className="text-2xl  sm:text-4xl font-bold tracking-widest text-white mb-8 bg-blue-900 inline-block p-[20px] rounded-lg">
                 Our Industry Expertise
               </h2>
             </div>
