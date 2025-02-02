@@ -75,9 +75,9 @@ const Works: React.FC = () => {
                 className="flex flex-col md:flex-row justify-start pt-10 md:pt-20 gap-10"
               >
                 {/* Title Section */}
-                <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
+                <div className="sticky flex flex-col md:flex-row z-1 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
                   <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center shadow-lg transition-transform duration-300 transform hover:scale-110">
-                    <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700"></div>
+                    <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2"></div>
                   </div>
                   <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-500 dark:text-neutral-500 hover:text-indigo-600 transition-colors duration-300">
                     {project.title}
@@ -86,7 +86,7 @@ const Works: React.FC = () => {
 
                 {/* Image Section */}
                 <div className="relative pl-4 pr-4 md:pl-4 w-full">
-                  <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
+                  <h3 className="md:hidden block text-4xl mb-4 text-center font-bold text-neutral-500 dark:text-neutral-500 -mt-11 pb-10">
                     {project.title}
                   </h3>
                   <a
