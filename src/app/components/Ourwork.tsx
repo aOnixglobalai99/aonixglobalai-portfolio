@@ -9,6 +9,7 @@ import Vampzz1 from '../assets/images/vampzz-cap-commerce-1.png';
 import Vampzz2 from '../assets/images/vampzz-cap-commerce-2.png';
 import Vampzz3 from '../assets/images/vampzz-cap-commerce-3.png';
 import Vampzz4 from '../assets/images/vampzz-cap-commerce-4.png';
+import { px } from 'framer-motion';
 
 interface Project {
   title: string;
@@ -59,62 +60,64 @@ const Works: React.FC = () => {
   ];
 
   return (
-    <section className="overflow-hidden">
-      <div className="max-w-6xl mx-auto text-center -mb-20 max-md:mb-10 pt-32">
-        <h2 className="text-4xl font-bold tracking-widest text-white mb-8 bg-blue-900 inline-block p-[20px] rounded-lg">
-          Our Work
-        </h2>
-      </div>
-      <div className="w-full bg-white font-sans md:px-10">
-        <div className="relative max-w-7xl mx-auto pb-20">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="flex flex-col justify-start pt-10 md:pt-20 gap-10"
-            >
-              {/* Title Section */}
-              <div className="sticky flex flex-col z-40 items-center top-40 self-start w-full">
-                <div className="h-10 absolute left-3 w-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center shadow-lg transition-transform duration-300 transform hover:scale-110">
-                  <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700"></div>
-                </div>
-                <h3 className="text-4xl md:text-5xl font-bold text-neutral-500 dark:text-neutral-500 hover:text-indigo-600 transition-colors duration-300">
-                  {project.title}
-                </h3>
-              </div>
-
-              {/* Image Section */}
-              <div className="relative px-4 w-full">
-                {/* <h3 className="text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500 md:hidden">
-                  {project.title}
-                </h3> */}
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.example.com/"
-                >
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
-                    {project.images.map((image, idx) => (
-                      <div
-                        key={idx}
-                        className="overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
-                      >
-                        <img
-                          alt={project.title}
-                          loading="lazy"
-                          decoding="async"
-                          className="aspect-w-1 aspect-h-1 object-cover w-full h-full transition-transform duration-300 transform hover:scale-105"
-                          src={typeof image === 'string' ? image : image.src}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </a>
-              </div>
-            </div>
-          ))}
+    <>
+      <section className="overflow-hidden">
+        <div className="max-w-6xl mx-auto text-center -mb-20 max-md:mb-10 pt-32">
+          <h2 className="text-4xl font-bold tracking-widest text-white mb-8 bg-blue-900 inline-block p-[20px] rounded-lg">
+            Our Work
+          </h2>
         </div>
-      </div>
-    </section>
+        <div className="w-full bg-white font-sans md:px-10">
+          <div className="relative max-w-7xl mx-auto pb-20">
+            {projects.map((project, index) => (
+              <div
+                key={index}
+                className="flex flex-col md:flex-row justify-start pt-10 md:pt-20 gap-10"
+              >
+                {/* Title Section */}
+                <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
+                  <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center shadow-lg transition-transform duration-300 transform hover:scale-110">
+                    <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700"></div>
+                  </div>
+                  <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-500 dark:text-neutral-500 hover:text-indigo-600 transition-colors duration-300">
+                    {project.title}
+                  </h3>
+                </div>
+
+                {/* Image Section */}
+                <div className="relative pl-4 pr-4 md:pl-4 w-full">
+                  <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
+                    {project.title}
+                  </h3>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.example.com/"
+                  >
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                      {project.images.map((image, idx) => (
+                        <div
+                          key={idx}
+                          className="overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                        >
+                          <img
+                            alt={project.title}
+                            loading="lazy"
+                            decoding="async"
+                            className="aspect-w-1 aspect-h-1 object-cover w-full h-full transition-transform duration-300 transform hover:scale-105"
+                            src={typeof image === 'string' ? image : image.src}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 
