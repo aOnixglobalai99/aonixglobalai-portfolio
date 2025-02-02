@@ -116,7 +116,7 @@ const Industry = () => {
               </div>
               <div className="px-[30px] py-[33px]">
                 <h3 className="font-bold text-base md:text-lg">{card.title}</h3>
-                <p className="text-justify hyphens-auto text-[12px] mt-3 text-gray-600">
+                <p className="text-justify hyphens-auto text-[12px] mt-3">
                   {card.description}
                 </p>
               </div>
