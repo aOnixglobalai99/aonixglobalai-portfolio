@@ -1,4 +1,17 @@
 import React from 'react';
+import Image from 'next/image';
+import Healthcare from '../assets/images/Healthcare-IT-Solutions.jpg';
+import Fintech from '../assets/images/Fintech.jpg';
+import Telecom from '../assets/images/Telecom-&-Networking.webp';
+import Aviation from '../assets/images/Aviation.webp';
+import Ecommerce from '../assets/images/E-Commerce.jpg';
+import Cybersec from '../assets/images/cyber_security.webp';
+import Education from '../assets/images/Education.webp';
+import Cloud from '../assets/images/Cloud-Computing.webp';
+import Automotive from '../assets/images/Automotive.jpg';
+import Blockchain from '../assets/images/Blockchain.webp';
+import AI from '../assets/images/AI.webp';
+import Manufacturing from '../assets/images/Manufacturing.jpg';
 
 const Industry = () => {
   const cardData = [
@@ -6,77 +19,73 @@ const Industry = () => {
       title: 'Healthcare IT Solutions',
       description:
         'Develops EHR, telemedicine, AI diagnostics, and patient management systems to improve healthcare efficiency, compliance, and accessibility.',
-      imageUrl:
-        'https://www.vamenture.com/images/idustry/healthcare-software-banner.webp',
+      imageUrl: Healthcare,
     },
     {
       title: 'Fintech & Banking Solutions',
       description:
         'Provides secure payment gateways, AI fraud detection, blockchain transactions, and mobile banking apps for seamless financial services.',
-      imageUrl:
-        'https://www.vamenture.com/images/idustry/finTech-software.webp',
+      imageUrl: Fintech,
     },
     {
       title: 'Telecom & Networking',
       description:
         'Optimizes network management, 5G deployment, VoIP, AI-driven maintenance, and billing automation for improved connectivity and telecom services.',
-      imageUrl: 'https://www.vamenture.com/images/idustry/telecom.webp',
+      imageUrl: Telecom,
     },
     {
       title: 'Aviation & Aerospace Technology',
       description:
         'Develops flight scheduling, air traffic monitoring, predictive maintenance, and passenger experience solutions to enhance aviation operations.',
-      imageUrl: 'https://www.vamenture.com/images/idustry/aviation.webp',
+      imageUrl: Aviation,
     },
     {
       title: 'E-Commerce & Retail Tech',
       description:
         'Builds AI-powered recommendation engines, inventory management, omnichannel retail platforms, and secure payment solutions for online shopping.',
-      imageUrl: 'https://www.vamenture.com/images/idustry/e-commerce.webp',
+      imageUrl: Ecommerce,
     },
     {
       title: 'Cybersecurity & Data Protection',
       description:
         'Offers AI-based threat detection, cloud security, identity management, and encryption to safeguard businesses from cyber threats.',
-      imageUrl:
-        'https://images.pexels.com/photos/39584/censorship-limitations-freedom-of-expression-restricted-39584.jpeg?auto=compress&cs=tinysrgb&w=600',
+      imageUrl: Cybersec,
     },
     {
       title: 'Education & E-Learning Technology',
       description:
         'Develops AI-driven learning platforms, virtual classrooms, interactive AR/VR tools, and remote assessment solutions for digital education.',
-      imageUrl: 'https://www.vamenture.com/images/idustry/legal-software.webp',
+      imageUrl: Education,
     },
     {
       title: 'Cloud Computing & SaaS Solutions',
       description:
         'Provides cloud applications, multi-cloud strategies, serverless computing, and SaaS-based business solutions for enterprises.',
-      imageUrl: 'https://www.vamenture.com/images/idustry/mobile-game.webp',
+      imageUrl: Cloud,
     },
     {
       title: 'Automotive & Smart Mobility',
       description:
         'Creates AI-driven self-driving tech, fleet management, IoT-powered vehicle tracking, and predictive maintenance solutions for transportation.',
-      imageUrl: 'https://www.vamenture.com/images/idustry/logistics.webp',
+      imageUrl: Automotive,
     },
     {
       title: 'Blockchain & Web3 Solutions',
       description:
         'Develops DApps, smart contracts, NFT marketplaces, cryptocurrency exchanges, and blockchain-based identity management for the Web3 ecosystem.',
-      imageUrl: 'https://www.vamenture.com/images/idustry/retail-software.webp',
+      imageUrl: Blockchain,
     },
     {
       title: 'AI & Machine Learning Solutions',
       description:
         'Offers AI model development, NLP, predictive analytics, and automation solutions for various industries.',
-      imageUrl:
-        'https://www.vamenture.com/images/idustry/agriculture-software.webp',
+      imageUrl: AI,
     },
     {
       title: 'Manufacturing & Industrial Automation',
       description:
         'Delivers IoT-enabled automation, predictive maintenance, robotics integration, and real-time supply chain analytics for industries.',
-      imageUrl: 'https://www.vamenture.com/images/idustry/insurance.webp',
+      imageUrl: Manufacturing,
     },
   ];
 
@@ -108,7 +117,7 @@ const Industry = () => {
               className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 rounded-lg border-solid border-[0px_0px_0px_0px] overflow-hidden"
             >
               <div className="w-full h-48 md:h-56 lg:h-64 overflow-hidden">
-                <img
+                <Image
                   src={card.imageUrl}
                   alt={card.title}
                   className="w-full h-full object-cover"
