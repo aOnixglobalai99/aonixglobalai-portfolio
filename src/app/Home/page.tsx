@@ -581,7 +581,7 @@ const page = () => {
           <OurBlog />
         </section>
 
-        <div>
+        <div id="faq" className="pt-[100px]">
           <FAQ />
         </div>
         <div>

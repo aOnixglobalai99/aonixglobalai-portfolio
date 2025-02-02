@@ -115,6 +115,10 @@ const Footer = () => {
                           ? '#our_services'
                           : item === 'Contact'
                           ? '#contact_us'
+                          : item === 'Project'
+                          ? '#our_work'
+                          : item === 'FAQs'
+                          ? '#faq'
                           : '#'
                       }
                       className="flex items-center group"
