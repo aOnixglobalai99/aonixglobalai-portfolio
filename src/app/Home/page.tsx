@@ -162,7 +162,7 @@ const page = () => {
         </div>
 
         {/* Services Section */}
-        <div id="our_services" className="pt-8 md:pt-[100px]">
+        <div id="our_services" className="pt-[100px]">
           <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
             {/* Header Section */}
             <div className="flex flex-col items-center gap-2.5 px-4 md:px-20 lg:px-[360px]">
@@ -321,7 +321,7 @@ const page = () => {
           </div>
         </div>
 
-        <div id="industries" className="pt-8 md:pt-[100px]">
+        <div id="industries" className="pt-12 md:pt-[100px]">
           <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
             <div className="max-w-6xl mx-auto text-center pt-10">
               <h2 className="text-4xl font-bold tracking-widest text-white mb-8 bg-blue-900 inline-block p-[20px] rounded-lg">

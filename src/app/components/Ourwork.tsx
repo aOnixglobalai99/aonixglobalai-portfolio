@@ -8,7 +8,7 @@ interface Project {
 const Works: React.FC = () => {
   const projects: Project[] = [
     {
-      title: 'Inventailor',
+      title: 'Bandage',
       images: [
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyO_4mDnHPGtsnLTvAPvbyb3WT39ygQ3JnUg&s',
         'https://www.shutterstock.com/image-photo/team-diverse-partners-mature-latin-600nw-2346448085.jpg',
