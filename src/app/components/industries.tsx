@@ -5,7 +5,7 @@ import Fintech from '../assets/images/Fintech.jpg';
 import Telecom from '../assets/images/Telecom-&-Networking.webp';
 import Aviation from '../assets/images/Aviation.webp';
 import Ecommerce from '../assets/images/E-Commerce.jpg';
-import Cybersec from '../assets/images/cyber_security.webp';
+import Cybersec from '../assets/images/cyber_security.jpeg';
 import Education from '../assets/images/Education.webp';
 import Cloud from '../assets/images/Cloud-Computing.webp';
 import Automotive from '../assets/images/Automotive.jpg';
