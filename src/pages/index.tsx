@@ -13,6 +13,7 @@ import Image from 'next/image';
 import ScrollToTop from '@/components/ScrollToTop';
 import OurTeam from '@/components/OurTeam';
 import Link from 'next/link';
+import TechIcons from '@/components/techAnimation';
 
 const HomePage = () => {
   return (
@@ -101,6 +102,7 @@ const HomePage = () => {
             </div>
           </div>
         </section>
+        <TechIcons />
         {/* <ContactUsPage /> */}
         <ScrollToTop />
 
