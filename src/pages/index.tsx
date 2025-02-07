@@ -4,7 +4,7 @@ import Service from './Service';
 import Industry from './Industries';
 import OurWork from './OurWork';
 import BlogPage from './Blog';
-import ContactUsPage from './ContactUs';
+// import ContactUsPage from './ContactUs';
 import FAQs from '../components/FAQs';
 import service2 from '../../assets/servicesImages/service-2.webp';
 import service7 from '../../assets/servicesImages/service-7.png';
