@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-// import { div } from 'framer-motion/client';
 import Image from 'next/image';
 
 const techStack1 = [
@@ -81,29 +80,10 @@ const AnimatedRow = ({
 
 export default function TechIcons() {
   return (
-    <div>
-      <div>
-        <div className="text-center px-5 mb-20">
-          <div className="max-w-4xl mx-auto text-center -mb-20 max-md:mb-10 pb-4 md:pb-24">
-            <h2 className="text-2xl sm:text-5xl font-bold tracking-widest text-[#333]  inline-block p-[20px] rounded-lg">
-              Technologies and Platforms We Work With
-            </h2>
-            <p className="text-justify hyphens-auto text-[15px] mt-5 px-2 md:px-10">
-              We leverage a diverse range of technologies and platforms to build
-              powerful and scalable solutions. Our tech stack encompasses
-              cutting-edge front-end frameworks, robust back-end architectures,
-              and reliable infrastructure, ensuring seamless development for web
-              and mobile applications.
-            </p>
-          </div>
-          {/* <h2 className="text-3xl font-semibold">IT Solutions & Projects</h2> */}
-        </div>
-      </div>
-      <div className="overflow-hidden bg-gray-100 py-4 md:py-6 space-y-2 md:space-y-4">
-        <AnimatedRow items={techStack1} direction="left" duration={20} />
-        <AnimatedRow items={techStack2} direction="right" duration={24} />
-        <AnimatedRow items={techStack3} direction="left" duration={20} />
-      </div>
+    <div className="overflow-hidden bg-gray-100 py-4 md:py-6 space-y-2 md:space-y-4">
+      <AnimatedRow items={techStack1} direction="left" duration={20} />
+      <AnimatedRow items={techStack2} direction="right" duration={24} />
+      <AnimatedRow items={techStack3} direction="left" duration={20} />
     </div>
   );
 }
