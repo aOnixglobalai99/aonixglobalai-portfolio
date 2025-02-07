@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Articles from './blog/BlogList';
+import Articles from '../components/blog/BlogList';
 import { useRouter } from 'next/navigation';
 
 const Blog = () => {

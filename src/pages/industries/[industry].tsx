@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 // import { useParams } from "react-router-dom";
-import categories from './IndustriesData';
+import categories from '../../components/industries/IndustriesData';
 import Image, { StaticImageData } from 'next/image';
 import Logo from '../../../assets/industries/tick.png';
 import { useRouter } from 'next/router';
