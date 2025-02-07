@@ -85,7 +85,7 @@ export default function TechIcons() {
       <div>
         <div className="text-center px-5 mb-20">
           <div className="max-w-4xl mx-auto text-center -mb-20 max-md:mb-10 pb-4 md:pb-24">
-            <h2 className="text-2xl sm:text-4xl font-bold tracking-widest text-[#333]  inline-block p-[20px] rounded-lg">
+            <h2 className="text-2xl sm:text-5xl font-bold tracking-widest text-[#333]  inline-block p-[20px] rounded-lg">
               Technologies and Platforms We Work With
             </h2>
             <p className="text-justify hyphens-auto text-[15px] mt-5 px-2 md:px-10">
