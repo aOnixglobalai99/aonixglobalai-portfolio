@@ -163,7 +163,7 @@ const Industry: React.FC = () => {
               Our Industry Expertise
             </h2>
           </div>
-          <p className="text-justify hyphens-auto text-[15px] mt-5 px-2 md:px-10">
+          <p className="text-center text-[15px] mt-5 px-2 md:px-10">
             With broad experience across a number of sectors, we offer
             specialized solutions to meet the unique needs of each industry. The
             following are only a few of the domains where we can provide
@@ -185,7 +185,7 @@ const Industry: React.FC = () => {
                 transform: `translateX(-${
                   (currentIndex * 100) / cardData.length
                 }%)`,
-                transition: 'transform 600ms cubic-bezier(0.4, 0, 0.2, 1)', // Increased to 600ms
+                transition: 'transform 600ms cubic-bezier(0.4, 0, 0.2, 1)',
               }}
             >
               {cardData.map((card: IndustryCard, index: number) => (
@@ -200,7 +200,7 @@ const Industry: React.FC = () => {
                         <h3 className="font-bold text-xl md:text-2xl mb-3 md:mb-6">
                           {card.title}
                         </h3>
-                        <p className="text-justify text-base md:text-lg mb-4 md:mb-8">
+                        <p className="text-left text-[15px] mb-4 md:mb-8">
                           {card.description}
                         </p>
                         <button
@@ -234,16 +234,16 @@ const Industry: React.FC = () => {
           </div>
 
           <button
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 md:p-3 rounded-full z-10 transition-all duration-300"
+            className="absolute left-2 md:left-[-45] top-1/3 md:top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 md:p-3 rounded-full z-10 transition-all duration-300"
             onClick={prevSlide}
           >
-            <ChevronLeft className="h-6 w-6 md:h-8 md:w-8" />
+            <ChevronLeft className="h-5 w-5 md:h-4 md:w-4" />
           </button>
           <button
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 md:p-3 rounded-full z-10 transition-all duration-300"
+            className="absolute right-2 md:right-[-45px] top-1/3 md:top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 md:p-3 rounded-full z-10 transition-all duration-300"
             onClick={nextSlide}
           >
-            <ChevronRight className="h-6 w-6 md:h-8 md:w-8" />
+            <ChevronRight className="h-5 w-5 md:h-4 md:w-4" />
           </button>
 
           <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 flex gap-2">
