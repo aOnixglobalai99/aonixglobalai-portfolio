@@ -74,7 +74,7 @@ const HomePage = () => {
         {/* About Us Section */}
         <AboutUsPage />
         <Service />
-        <Industry />
+        {/* <Industry /> */}
         <IndustryCarousel />
         {/* <IndustryCarousel /> */}
         <OurWork />
