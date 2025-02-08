@@ -17,7 +17,7 @@ const Blog = () => {
               Our Blogs
             </h2>
           </div>
-          <p className="text-justify hyphens-auto text-[15px] mt-5 px-2 md:px-10">
+          <p className="text-center text-[15px] mt-5 px-2 md:px-10">
             Stay updated with our latest insights, industry trends, and
             technological innovations through our carefully curated blog posts.
             Our experts share valuable knowledge and experience in various
@@ -42,7 +42,7 @@ const Blog = () => {
                 <h3 className="font-bold text-lg absolute top-0">
                   {card.title}
                 </h3>
-                <p className="text-justify text-sm mt-3 pt-14">
+                <p className="text-left text-sm mt-3 pt-14">
                   {card.description}
                 </p>
               </div>

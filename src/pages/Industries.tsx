@@ -90,7 +90,7 @@ const Industry = () => {
             </h2>
           </div>
           {/* <h2 className="text-3xl font-semibold">IT Solutions & Projects</h2> */}
-          <p className="text-justify hyphens-auto text-[15px] mt-5 px-2 md:px-10">
+          <p className="text-center text-[15px] mt-5 px-2 md:px-10">
             With broad experience across a number of sectors, we offer
             specialized solutions to meet the unique needs of each industry. The
             following are only a few of the domains where we can provide
@@ -116,9 +116,7 @@ const Industry = () => {
                   <h3 className="font-bold text-lg absolute top-0">
                     {card.title}
                   </h3>
-                  <p className="text-justify text-sm pt-10">
-                    {card.description}
-                  </p>
+                  <p className="text-left text-sm pt-10">{card.description}</p>
                 </div>
                 <div className="mb-4">
                   <button
