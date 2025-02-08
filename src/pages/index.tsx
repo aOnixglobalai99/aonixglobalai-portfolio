@@ -75,6 +75,7 @@ const HomePage = () => {
         <AboutUsPage />
         <Service />
         {/* <Industry /> */}
+
         <IndustryCarousel />
         {/* <IndustryCarousel /> */}
         <OurWork />
@@ -104,6 +105,24 @@ const HomePage = () => {
             </div>
           </div>
         </section>
+
+        <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto mb-12 md:mb-32">
+          <div className="text-center px-5">
+            <div className="max-w-6xl mx-auto text-center -mb-20 max-md:mb-10 pb-4 md:pb-24">
+              <h2 className="text-2xl sm:text-4xl font-bold tracking-widest text-white bg-blue-900 inline-block p-[20px] rounded-lg">
+                Technologies and Platforms We Work With
+              </h2>
+            </div>
+            {/* <h2 className="text-3xl font-semibold">IT Solutions & Projects</h2> */}
+            <p className="text-justify hyphens-auto text-[15px] mt-5 px-2 md:px-10">
+              We use a wide array of technologies and platforms to deliver
+              robust solutions. From modern front-end frameworks to reliable
+              back-end systems, our tech stack supports diverse needs for web
+              and mobile applications.
+            </p>
+          </div>
+        </div>
+
         <TechIcons />
         {/* <ContactUsPage /> */}
         <ScrollToTop />
