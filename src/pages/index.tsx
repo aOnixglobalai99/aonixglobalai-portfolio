@@ -1,7 +1,7 @@
 import React from 'react';
 import AboutUsPage from '../components/AboutUs';
 import Service from './Service';
-import Industry from './Industries';
+// import Industry from './Industries';
 import OurWork from './OurWork';
 import BlogPage from './Blog';
 // import ContactUsPage from './ContactUs';
@@ -74,7 +74,7 @@ const HomePage = () => {
         {/* About Us Section */}
         <AboutUsPage />
         <Service />
-        <Industry />
+        {/* <Industry /> */}
         <IndustryCarousel />
         {/* <IndustryCarousel /> */}
         <OurWork />
