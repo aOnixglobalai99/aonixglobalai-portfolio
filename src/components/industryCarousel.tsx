@@ -195,19 +195,6 @@ const Industry: React.FC = () => {
                   style={{ width: `${100 / cardData.length}%` }}
                 >
                   <div className="flex flex-col md:flex-row h-full">
-                    <div className="w-full md:w-1/2 h-48 md:h-full relative">
-                      <div className="absolute inset-0">
-                        <Image
-                          src={card.imageUrl}
-                          alt={card.alt}
-                          fill
-                          className="object-cover"
-                          priority={index === currentIndex}
-                          sizes="(max-width: 768px) 100vw, 50vw"
-                        />
-                      </div>
-                    </div>
-
                     <div className="w-full md:w-1/2 p-4 md:p-8 flex flex-col justify-center">
                       <div className="max-w-xl">
                         <h3 className="font-bold text-xl md:text-2xl mb-3 md:mb-6">
@@ -226,6 +213,18 @@ const Industry: React.FC = () => {
                         >
                           Read More
                         </button>
+                      </div>
+                    </div>
+                    <div className="w-full md:w-1/2 h-48 md:h-full relative">
+                      <div className="absolute inset-0">
+                        <Image
+                          src={card.imageUrl}
+                          alt={card.alt}
+                          fill
+                          className="object-cover"
+                          priority={index === currentIndex}
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                        />
                       </div>
                     </div>
                   </div>
