@@ -155,7 +155,7 @@ const Industry: React.FC = () => {
   };
 
   return (
-    <section id="industries" className="pt-12 pb-32 md:pt-[100px]">
+    <section id="industries" className=" pb-32 ">
       <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
         <div className="text-center px-5">
           <div className="max-w-6xl mx-auto text-center -mb-20 max-md:mb-10 pb-4 md:pb-24">
@@ -173,7 +173,7 @@ const Industry: React.FC = () => {
 
         <div className="relative w-full mt-16">
           <div
-            className="overflow-hidden relative h-[420px] md:h-[450px] bg-white rounded-lg shadow-lg"
+            className="overflow-hidden relative h-[420px] md:h-[350px] bg-white rounded-lg shadow-lg"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
@@ -194,7 +194,7 @@ const Industry: React.FC = () => {
                   className="relative h-full"
                   style={{ width: `${100 / cardData.length}%` }}
                 >
-                  <div className="flex flex-col md:flex-row h-full">
+                  <div className="flex flex-col-reverse md:flex-row h-full">
                     <div className="w-full md:w-1/2 p-4 md:p-8 flex flex-col justify-center">
                       <div className="max-w-xl">
                         <h3 className="font-bold text-xl md:text-2xl mb-3 md:mb-6">
