@@ -14,6 +14,7 @@ import ScrollToTop from '@/components/ScrollToTop';
 import OurTeam from '@/components/OurTeam';
 import Link from 'next/link';
 import TechIcons from '@/components/techAnimation';
+import IndustryCarousel from '@/components/industryCarousel';
 
 const HomePage = () => {
   return (
@@ -74,6 +75,7 @@ const HomePage = () => {
         <AboutUsPage />
         <Service />
         <Industry />
+        <IndustryCarousel />
         {/* <IndustryCarousel /> */}
         <OurWork />
         <OurTeam />
