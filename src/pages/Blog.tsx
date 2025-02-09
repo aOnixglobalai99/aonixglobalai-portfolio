@@ -9,7 +9,7 @@ const Blog = () => {
   const BlogList: typeof Articles = Articles;
 
   return (
-    <div id="blog" className="pt-12 md:pt-[100px]">
+    <div id="blog" className="mb-10">
       <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
         <div className="text-center px-5">
           <div className="max-w-6xl mx-auto text-center -mb-20 max-md:mb-10 pb-4 md:pb-24">
