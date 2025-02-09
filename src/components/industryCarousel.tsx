@@ -155,11 +155,11 @@ const Industry: React.FC = () => {
   };
 
   return (
-    <section id="industries" className=" pb-32 ">
+    <section id="industries" className=" pb-[120px] ">
       <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
         <div className="text-center px-5">
-          <div className="max-w-6xl mx-auto text-center -mb-20 max-md:mb-10 pb-4 md:pb-24">
-            <h2 className="text-2xl sm:text-4xl font-bold tracking-widest text-white mb-8 bg-blue-900 inline-block p-[20px] rounded-lg">
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="text-2xl  sm:text-4xl lg:text-5xl font-bold tracking-widest text-blue-900">
               Our Industry Expertise
             </h2>
           </div>
@@ -171,7 +171,7 @@ const Industry: React.FC = () => {
           </p>
         </div>
 
-        <div className="relative w-full mt-16">
+        <div className="relative w-full mt-[100px]">
           <div
             className="overflow-hidden relative h-[420px] md:h-[350px] bg-white rounded-lg shadow-lg"
             onTouchStart={handleTouchStart}

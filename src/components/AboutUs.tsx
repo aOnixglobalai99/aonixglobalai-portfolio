@@ -4,7 +4,7 @@ import tick from '../../assets/images/tick-icon.svg';
 
 const AboutUsPage = () => {
   return (
-    <div id="about_us" className="pt-[100px] px-4 mb-[50px] md:mb-[100px]">
+    <div id="about_us" className="pt-[100px] px-4 mb-[100px]">
       <div className="max-w-[1140px] w-full m-auto flex flex-col md:flex-row gap-5">
         <div className="about-us-div h-[300px] md:h-[500px] w-full md:w-6/12 bg-center bg-no-repeat bg-cover relative">
           <div className="absolute"></div>

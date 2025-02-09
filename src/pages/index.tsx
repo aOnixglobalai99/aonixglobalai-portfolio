@@ -23,7 +23,7 @@ const HomePage = () => {
       <div className="w-full">
         <div className="homepagefirstdiv-back h-[800px] bg-center bg-no-repeat bg-cover">
           <div className="h-full flex flex-col items-start w-full max-w-[1140px] mx-auto pr-4 justify-center m-auto">
-            <div className="px-4">
+            <div className="px-4 xl:px-0">
               <h2 className="text-white font-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl w-full sm:w-[500px] md:w-[600px] lg:w-[700px] leading-tight mb-4">
                 Innovative IT, AI & Tech Solutions for Modern Businesses
               </h2>
@@ -40,7 +40,7 @@ const HomePage = () => {
         </div>
 
         <div className="mt-[-100px]">
-          <div className="w-full max-w-[1140px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 px-4 lg:px-0">
+          <div className="w-full max-w-[1140px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 px-4 xl:px-0">
             {/* Card 1 */}
             <div className="backgrounddd bg-white text-center shadow-md flex flex-col items-center gap-5 border-neutral-100 px-6 py-8">
               <Image src={service2} alt="headerImg" width={45} height={45} />
