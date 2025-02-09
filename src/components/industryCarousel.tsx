@@ -234,7 +234,7 @@ const Industry: React.FC = () => {
           </div>
 
           <button
-            className="absolute left-2 md:left-[-45] top-1/3 md:top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 md:p-3 rounded-full z-10 transition-all duration-300"
+            className="absolute left-2 md:left-[-45px] top-1/3 md:top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 md:p-3 rounded-full z-10 transition-all duration-300"
             onClick={prevSlide}
           >
             <ChevronLeft className="h-5 w-5 md:h-4 md:w-4" />
