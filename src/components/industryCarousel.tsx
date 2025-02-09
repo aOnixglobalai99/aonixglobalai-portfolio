@@ -30,7 +30,7 @@ const Industry: React.FC = () => {
     {
       title: 'Fintech & Banking Solutions',
       description:
-        'Provides secure payment gateways, AI fraud detection, blockchain transactions, and mobile banking apps for seamless financial services.',
+        'Provides secure payment gateways, AI fraud detection, blockchain transactions, and mobile banking apps for seamless and efficient financial services.',
       imageUrl: '/images/industry/Fintech.jpg',
       alt: 'Fintech and Banking Solutions visualization',
     },
@@ -51,28 +51,28 @@ const Industry: React.FC = () => {
     {
       title: 'E-Commerce & Retail Tech',
       description:
-        'Builds AI-powered recommendation engines, inventory management, omnichannel retail platforms, and secure payment solutions for online shopping.',
+        'Builds AI-powered recommendation engines, inventory management, omnichannel retail platforms, and secure payment solutions for seamless online shopping experiences.',
       imageUrl: '/images/industry/E-Commerce.jpg',
       alt: 'E-Commerce and Retail Technology visualization',
     },
     {
       title: 'Cybersecurity & Data Protection',
       description:
-        'Offers AI-based threat detection, cloud security, identity management, and encryption to safeguard businesses from cyber threats.',
+        'Offers AI-based threat detection, cloud security, identity management, and encryption to safeguard businesses from evolving cyber threats and attacks.',
       imageUrl: '/images/industry/cyber_security.jpeg',
       alt: 'Cybersecurity and Data Protection visualization',
     },
     {
-      title: 'Education & E-Learning Technology',
+      title: 'E-Learning Technology',
       description:
-        'Develops AI-driven learning platforms, virtual classrooms, interactive AR/VR tools, and remote assessment solutions for digital education.',
+        'Develops AI-driven learning platforms, virtual classrooms, interactive AR/VR tools, and remote assessment solutions for effective digital education and training.',
       imageUrl: '/images/industry/Education.webp',
       alt: 'Education and E-Learning Technology visualization',
     },
     {
-      title: 'Cloud Computing & SaaS Solutions',
+      title: 'Cloud & SaaS Solutions',
       description:
-        'Provides cloud applications, multi-cloud strategies, serverless computing, and SaaS-based business solutions for enterprises.',
+        'Provides cloud applications, multi-cloud strategies, serverless computing, and SaaS-based business solutions for enterprises, startups, and organizations.',
       imageUrl: '/images/industry/Cloud-Computing.webp',
       alt: 'Cloud Computing and SaaS Solutions visualization',
     },
@@ -93,14 +93,14 @@ const Industry: React.FC = () => {
     {
       title: 'AI & Machine Learning Solutions',
       description:
-        'Offers AI model development, NLP, predictive analytics, and automation solutions for various industries.',
+        'Offers AI model development, NLP, predictive analytics, and automation solutions for various industries, businesses, organizations, and enterprises.',
       imageUrl: '/images/industry/AI.webp',
       alt: 'AI and Machine Learning Solutions visualization',
     },
     {
-      title: 'Manufacturing & Industrial Automation',
+      title: 'Smart Manufacturing Solutions',
       description:
-        'Delivers IoT-enabled automation, predictive maintenance, robotics integration, and real-time supply chain analytics for industries.',
+        'Delivers IoT-enabled automation, predictive maintenance, robotics integration, and real-time supply chain analytics for industries, factories, and enterprises.',
       imageUrl: '/images/industry/Manufacturing.jpg',
       alt: 'Manufacturing and Industrial Automation visualization',
     },
