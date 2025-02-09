@@ -1,13 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
-import {
-  // FaTwitter,
-  FaLinkedinIn,
-  // FaCode,
-  // FaPaintBrush,
-  // FaCogs,
-  // FaUsers,
-} from 'react-icons/fa';
+// import // FaTwitter,
+// FaLinkedinIn,
+// FaCode,
+// FaPaintBrush,
+// FaCogs,
+// FaUsers,
+// 'react-icons/fa';
 import shubham from '../../assets/ourTeam/shubham.jpg';
 import neha from '../../assets/ourTeam/neha.jpg';
 import Dilrus from '../../assets/ourTeam/Dilras_Hussain.jpeg';
