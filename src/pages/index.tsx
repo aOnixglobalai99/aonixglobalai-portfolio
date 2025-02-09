@@ -40,10 +40,13 @@ const HomePage = () => {
         </div>
 
         <div className="mt-[-100px]">
-          <div className="w-full max-w-[1140px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 px-4">
-            <div className="backgrounddd bg-white text-center shadow-md flex flex-col items-center gap-5 border-neutral-100 px-6 py-8 rounded-lg">
+          <div className="w-full max-w-[1140px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 px-4 lg:px-0">
+            {/* Card 1 */}
+            <div className="backgrounddd bg-white text-center shadow-md flex flex-col items-center gap-5 border-neutral-100 px-6 py-8">
               <Image src={service2} alt="headerImg" width={45} height={45} />
-              <h1 className="font-bold">UI/UX and Web App Development</h1>
+              <h1 className="font-bold text-lg">
+                UI/UX and Web App Development
+              </h1>
               <p className="text-sm">
                 Delivering intuitive UI/UX designs and high-performance web
                 applications for seamless, scalable, and secure digital
@@ -51,9 +54,15 @@ const HomePage = () => {
               </p>
             </div>
 
-            <div className="backgrounddd bg-white text-center shadow-md flex flex-col items-center gap-5 border-neutral-100 px-6 py-8 rounded-lg">
+            {/* Card 2 */}
+            <div className="backgrounddd bg-white text-center shadow-md flex flex-col items-center gap-5 border-neutral-100 px-6 py-8">
               <Image src={service7} alt="headerImg" width={45} height={45} />
-              <h1 className="font-bold">AI Solutions for Enhanced Business</h1>
+              {/* <h1 className="font-bold text-lg">
+                AI Solutions for Enhanced Business
+              </h1> */}
+              <h1 className="font-bold text-lg">
+                AI-Powered Intelligent Business
+              </h1>
               <p className="text-sm">
                 Utilizing advanced AI technology to develop intelligent
                 applications that streamline processes, reduce costs, and
@@ -61,9 +70,10 @@ const HomePage = () => {
               </p>
             </div>
 
-            <div className="backgrounddd bg-white text-center shadow-md flex flex-col items-center gap-5 border-neutral-100 px-6 py-8 rounded-lg">
-              <Image src={service3} alt="headerImg" width={45} height={45} />
-              <h1 className="font-bold">Mobile App Development</h1>
+            {/* Card 3 */}
+            <div className="backgrounddd bg-white text-center shadow-md flex flex-col items-center gap-5 border-neutral-100 px-6 py-8">
+              <Image src={service3} alt="headerImg" width={40} height={40} />
+              <h1 className="font-bold text-lg">Mobile App Development</h1>
               <p className="text-sm">
                 Creating custom, user-friendly mobile apps for iOS and Android
                 to enhance engagement, streamline operations, and drive growth.
@@ -71,6 +81,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+
         {/* About Us Section */}
         <AboutUsPage />
         <Service />
