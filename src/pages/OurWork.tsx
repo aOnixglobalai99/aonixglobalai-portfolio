@@ -49,22 +49,22 @@ const Works: React.FC = () => {
   return (
     <>
       <section className="overflow-hidden">
-        <div className="max-w-5xl mx-auto text-center -mb-16 max-md:-mb-6 md:pb-20">
-          <h2 className="text-2xl sm:text-4xl font-bold tracking-widest text-white mb-6 bg-blue-900 inline-block p-4 rounded-lg">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-3xl  sm:text-4xl lg:text-5xl font-bold tracking-widest text-blue-900 mb-[80px] lg:mb-[100px]">
             Our Work
           </h2>
         </div>
-        <div className="w-full bg-white font-sans md:px-8">
-          <div className="relative max-w-6xl mx-auto pb-16">
+        <div className="w-full bg-white font-sans md:px-8 mb-[60px]">
+          <div className="relative max-w-6xl mx-auto">
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="flex flex-col md:flex-row justify-start pt-12 md:pt-16 gap-8"
+                className="flex flex-col md:flex-row justify-start gap-8"
               >
                 {/* Title Section */}
-                <div className="sticky flex flex-col md:flex-row z-1 items-center top-28 self-start max-w-xs lg:max-w-sm md:w-full">
-                  <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center shadow-lg transition-transform duration-300 transform hover:scale-110">
-                    <div className="h-3 w-3 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2"></div>
+                <div className="sticky flex flex-col md:flex-row z-1 items-center top-[90px] self-start max-w-xs lg:max-w-sm md:w-full">
+                  <div className="h-7 lg:h-10 absolute left-3 md:left-3 w-7 lg:w-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center shadow-lg transition-transform duration-300 transform hover:scale-110">
+                    <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 lg:p-2"></div>
                   </div>
                   <h3 className="hidden md:block text-xl md:pl-16 md:text-4xl font-bold text-neutral-500 dark:text-neutral-500 hover:text-indigo-600 transition-colors duration-300">
                     {project.title}
@@ -73,7 +73,7 @@ const Works: React.FC = () => {
 
                 {/* Image Section */}
                 <div className="relative pl-3 pr-3 md:pl-3 w-full">
-                  <h3 className="md:hidden block text-4xl mb-3 text-center font-bold text-neutral-500 dark:text-neutral-500 -mt-8 pb-8">
+                  <h3 className="md:hidden block text-3xl text-center font-bold text-neutral-500 dark:text-neutral-500 -mt-8 pb-10">
                     {project.title}
                   </h3>
                   <a
@@ -81,12 +81,12 @@ const Works: React.FC = () => {
                     rel="noopener noreferrer"
                     href="https://www.example.com/"
                   >
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 pb-10">
                       {project.images.map((image, idx) => (
                         <div
                           key={idx}
                           className="overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
-                          style={{ width: '100%', height: '200px' }} // Adjust height as needed
+                          style={{ width: '100%', height: '200px' }}
                         >
                           <img
                             alt={project.title}

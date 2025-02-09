@@ -1,18 +1,34 @@
-import responsive from '../../../assets/blogImages/responsive.jpg';
+// import responsive from '../../../assets/blogImages/responsive.jpg';
+import webApplication from '../../../assets/blogImages/web-application-2.webp';
+import mobileApplication from '../../../assets/blogImages/mobile-application-1.webp';
+import ai from '../../../assets/blogImages/AI.jpg';
+
 // import saas from "../../../assets/blogImages/saas.jpg"
 // import rightCompany from "../../../assets/blogImages/rightCompany.jpg"
 // import startup from "../../../assets/blogImages/startup.jpg"
 // import smallBusiness from "../../../assets/blogImages/smallBusiness.jpg"
 // import sasVSsaas from "../../../assets/blogImages/sas-VS-saas.jpg"
-import softwaresolution from '../../../assets/blogImages/software-solution.jpg';
+// import softwaresolution from '../../../assets/blogImages/software-solution.jpg';
 // import nodejspopular from "../../../assets/blogImages/nodejs-popular.jpg"
-import frontend from '../../../assets/blogImages/frontend.jpg';
+// import frontend from '../../../assets/blogImages/frontend.jpg';
 const articles = [
   {
-    imageUrl: responsive,
-    title: 'Why Responsive Web Design Is Important',
+    imageUrl: webApplication,
+    title: 'Why Web Application Development Matters',
     description:
-      'Learn why responsive web design matters for mobile adaptability, improved user experience, and better SEO rankings.',
+      'Learn how web application development enhances user experience, streamlines business operations, and ensures scalability in the digital era.',
+  },
+  {
+    imageUrl: mobileApplication,
+    title: 'Why Mobile Application Development Is Essential',
+    description:
+      'Discover the importance of mobile app development for business growth, user engagement, and seamless cross-platform accessibility.',
+  },
+  {
+    imageUrl: ai,
+    title: 'Why AI Solutions Are Transforming Industries',
+    description:
+      'Discover the impact of AI solutions on business efficiency, intelligent automation, data-driven decision-making, and enhanced customer experiences.',
   },
   // {
   //   imageUrl: saas,
@@ -44,24 +60,12 @@ const articles = [
   //   description:
   //   "Compare SAS vs SaaS to understand their features, benefits, and ideal use cases, helping you choose the right solution.",
   // },
-  {
-    imageUrl: softwaresolution,
-    title: 'What Are Software Solutions? Definition & Importance',
-    description:
-      'Software solutions help businesses improve efficiency, automate tasks, and enhance operations. Learn their definition and importance.',
-  },
   // {
   //   imageUrl: nodejspopular,
   //   title: "Why Node.js is Popular: Why It Should Be Your Top Choice?",
   //   description:
   //   "Discover why Node.js is popular for web development, offering speed, scalability, and an extensive ecosystem for modern applications.",
   // },
-  {
-    imageUrl: frontend,
-    title: 'Best Front-End Frameworks For Web Development [2025]',
-    description:
-      'Find the best front-end frameworks for web development, boosting efficiency and creativity in creating stunning, responsive web applications.',
-  },
 ];
 
 export default articles;
