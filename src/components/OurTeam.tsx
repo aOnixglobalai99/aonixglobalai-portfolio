@@ -1,13 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
-import {
-  // FaTwitter,
-  FaLinkedinIn,
-  // FaCode,
-  // FaPaintBrush,
-  // FaCogs,
-  // FaUsers,
-} from 'react-icons/fa';
+// import // FaTwitter,
+// FaLinkedinIn,
+// FaCode,
+// FaPaintBrush,
+// FaCogs,
+// FaUsers,
+// 'react-icons/fa';
 import shubham from '../../assets/ourTeam/shubham.jpg';
 import neha from '../../assets/ourTeam/neha.jpg';
 import Dilrus from '../../assets/ourTeam/Dilras_Hussain.jpeg';
@@ -22,42 +21,42 @@ const teamMembers = [
     role: 'MERN Developer',
     image: neha,
     // twitter: '',
-    linkedin: 'https://www.linkedin.com/in/neha-singh-2142392a1/',
+    // linkedin: 'https://www.linkedin.com/in/neha-singh-2142392a1/',
   },
   {
     name: 'Shubham Kumar Gupta',
     role: 'MERN Developer',
     image: shubham,
     // twitter: '',
-    linkedin: 'https://www.linkedin.com/in/iamshubhamkumargupta/',
+    // linkedin: 'https://www.linkedin.com/in/iamshubhamkumargupta/',
   },
   {
     name: 'Riya Rana',
     role: 'MERN Developer',
     image: Riya,
     // twitter: '',
-    linkedin: 'https://www.linkedin.com/in/riyaranadseu/',
+    // linkedin: 'https://www.linkedin.com/in/riyaranadseu/',
   },
   {
     name: 'Dilras Hussain',
     role: 'Nodejs backend developer',
     image: Dilrus,
     // twitter: '',
-    linkedin: 'https://linkedin.com/in/dilras-hussain-330474207',
+    // linkedin: 'https://linkedin.com/in/dilras-hussain-330474207',
   },
   {
     name: 'Jeba Shertate',
     role: 'UI/UX',
     image: Jeba,
     // twitter: '',
-    linkedin: 'https://www.linkedin.com/in/jeba-shertate-754068248/',
+    // linkedin: 'https://www.linkedin.com/in/jeba-shertate-754068248/',
   },
   {
     name: 'Avinash Dube',
     role: 'DevOps Engineer',
     image: Avinash,
     // twitter: '',
-    linkedin: 'https://www.linkedin.com/in/avinash-dubey-7b996b178/',
+    // linkedin: 'https://www.linkedin.com/in/avinash-dubey-7b996b178/',
   },
 ];
 
@@ -127,15 +126,15 @@ const OurTeam = () => {
                     {member.name}
                   </h3>
                   <p className="text-white tracking-wide">{member.role}</p>
-                  <div className="flex space-x-4 mt-3">
-                    {/* <a
+                  {/* <div className="flex space-x-4 mt-3">
+                    <a
                       href={member.twitter}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-blue-400"
                     >
                       <FaTwitter size={20} />
-                    </a> */}
+                    </a>
                     <a
                       href={member.linkedin}
                       target="_blank"
@@ -144,7 +143,7 @@ const OurTeam = () => {
                     >
                       <FaLinkedinIn size={20} />
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             ))}
