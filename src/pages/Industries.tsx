@@ -84,12 +84,11 @@ const Industry = () => {
     <div id="industries" className="">
       <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto mb-12 md:mb-32">
         <div className="text-center px-5">
-          <div className="max-w-6xl mx-auto text-center -mb-20 max-md:mb-10 pb-4 md:pb-24">
-            <h2 className="text-2xl sm:text-4xl font-bold tracking-widest text-white bg-blue-900 inline-block p-[20px] rounded-lg">
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="text-2xl  sm:text-4xl lg:text-5xl font-bold tracking-widest text-blue-900">
               Our Industry Expertise
             </h2>
           </div>
-          {/* <h2 className="text-3xl font-semibold">IT Solutions & Projects</h2> */}
           <p className="text-center text-[15px] mt-5 px-2 md:px-10">
             With broad experience across a number of sectors, we offer
             specialized solutions to meet the unique needs of each industry. The

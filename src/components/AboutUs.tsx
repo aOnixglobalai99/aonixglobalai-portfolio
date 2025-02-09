@@ -4,7 +4,7 @@ import tick from '../../assets/images/tick-icon.svg';
 
 const AboutUsPage = () => {
   return (
-    <div id="about_us" className="pt-[100px] px-4 mb-[50px] md:mb-[100px]">
+    <div id="about_us" className="pt-[100px] px-4 mb-[100px]">
       <div className="max-w-[1140px] w-full m-auto flex flex-col md:flex-row gap-5">
         <div className="about-us-div h-[300px] md:h-[500px] w-full md:w-6/12 bg-center bg-no-repeat bg-cover relative">
           <div className="absolute"></div>
@@ -14,17 +14,20 @@ const AboutUsPage = () => {
             <h1 className="text-[#121a5e] font-semibold text-xl md:text-2xl">
               About Us
             </h1>
-            <h2 className="text-lg md:text-[30px] font-bold leading-[35px] md:leading-[40px] mt-3 md:mt-5">
+            {/* <h2 className="text-lg md:text-[30px] font-bold leading-[35px] md:leading-[40px] mt-3 md:mt-5">
               Let Us Be Your Preferred IT and AI Solutions Partner
+            </h2> */}
+            <h2 className="text-lg md:text-[30px] font-bold leading-[35px] md:leading-[40px] mt-3 md:mt-5">
+              Your Go-To IT and AI Solutions Partner
             </h2>
-            <p className="text-xs md:text-[15px] mt-[10px] md:mt-[15px] text-[#747474] leading-5 md:pr-[100px]">
+            <p className="text-xs md:text-[15px] mt-[10px] md:mt-[15px] text-[#747474] leading-5">
               At AonixGlobalAI, we are more than an IT company—we are your
               trusted partners in digital transformation. Combining cutting-edge
               AI and technology solutions, we drive innovation and excellence to
               achieve your business goals.
             </p>
           </div>
-          <div className="md:ml-[50px] pl-5 md:pl-10 pr-0 md:pr-[70px] py-0 border-l-[3px] border-l-[#121a5e] border-solid">
+          <div className="md:ml-[50px] pl-5 md:pl-10 border-l-[3px] border-l-[#121a5e] border-solid">
             <h1 className="text-[#121a5e] font-semibold text-sm md:text-[15px]">
               Our experts deliver scalable, secure, and future-ready solutions
               tailored to your needs, from infrastructure optimization to

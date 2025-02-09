@@ -14,11 +14,11 @@ import Image from 'next/image';
 
 const Service = () => {
   return (
-    <div id="/services" className="mb-[50px] md:mb-[100px]">
+    <div id="/services" className="mb-[100px]">
       <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
         <div className="text-center px-5">
           <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-2xl  sm:text-4xl font-bold tracking-widest text-white mb-8 bg-blue-900 inline-block p-[20px] rounded-lg">
+            <h2 className="text-2xl  sm:text-4xl lg:text-5xl font-bold tracking-widest text-blue-900">
               Services Offered By AonixGlobalAI
             </h2>
           </div>
@@ -32,7 +32,7 @@ const Service = () => {
 
         <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
           {/* Services Grid */}
-          <div className="md:pt-[100px] pt-8 flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className=" pt-[100px] flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {/* Service Card 1 */}
             <div className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
               <Image
