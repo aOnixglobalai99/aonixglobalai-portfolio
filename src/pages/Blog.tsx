@@ -2,18 +2,18 @@
 
 import React from 'react';
 import Articles from '../components/blog/BlogList';
-import { useRouter } from 'next/navigation';
+// import { useRouter } from 'next/navigation';
 
 const Blog = () => {
-  const router = useRouter();
+  // const router = useRouter();
   const BlogList: typeof Articles = Articles;
 
   return (
-    <div id="blog" className="mb-10">
+    <div id="blog" className="mb-[100px]">
       <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
-        <div className="text-center px-5">
-          <div className="max-w-6xl mx-auto text-center -mb-20 max-md:mb-10 pb-4 md:pb-24">
-            <h2 className="text-2xl sm:text-4xl font-bold tracking-widest text-white  bg-blue-900 inline-block p-[20px] rounded-lg ">
+        <div className="text-center px-5 mb-[100px]">
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="text-3xl  sm:text-4xl lg:text-5xl font-bold tracking-widest text-blue-900">
               Our Blogs
             </h2>
           </div>
@@ -25,7 +25,7 @@ const Blog = () => {
           </p>
         </div>
 
-        <div className="md:pt-[100px] pt-8 flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {BlogList.map((card, index) => (
             <div
               key={index}
@@ -39,21 +39,21 @@ const Blog = () => {
                 />
               </div>
               <div className="px-6 py-4 relative">
-                <h3 className="font-bold text-lg absolute top-0">
+                <h3 className="text-left font-bold text-lg absolute top-0">
                   {card.title}
                 </h3>
                 <p className="text-left text-sm mt-3 pt-14">
                   {card.description}
                 </p>
               </div>
-              <div className="mb-4">
+              {/* <div className="mb-4">
                 <button
                   className="bg-blue-800 text-white px-4 py-2 rounded-3xl hover:bg-blue-700 ml-7"
                   onClick={() => router.push('/blog/detailpage')}
                 >
                   Read More
                 </button>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

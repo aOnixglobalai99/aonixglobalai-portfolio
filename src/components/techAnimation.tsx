@@ -80,7 +80,7 @@ const AnimatedRow = ({
 
 export default function TechIcons() {
   return (
-    <div className="overflow-hidden bg-gray-100 py-4 md:py-6 space-y-2 md:space-y-4">
+    <div className="overflow-hidden bg-gray-100 py-4 md:py-6 space-y-2 md:space-y-4 mb-[100px]">
       <AnimatedRow items={techStack1} direction="left" duration={20} />
       <AnimatedRow items={techStack2} direction="right" duration={24} />
       <AnimatedRow items={techStack3} direction="left" duration={20} />

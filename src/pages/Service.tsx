@@ -41,7 +41,7 @@ const Service = () => {
                 width={45}
                 height={45}
               />
-              <h1 className="font-bold">UI/UX Design & Development</h1>
+              <h1 className="font-bold text-lg">UI/UX Design & Development</h1>
               <p className="text-center text-[12px]">
                 Crafting user-centric designs that focus on functionality and
                 aesthetics, ensuring your digital platforms offer a seamless and
@@ -57,7 +57,7 @@ const Service = () => {
                 width={45}
                 height={45}
               />
-              <h1 className="font-bold">Web Application Development</h1>
+              <h1 className="font-bold text-lg">Web Application Development</h1>
               <p className="text-center text-[12px]">
                 Delivering robust and scalable web solutions tailored to meet
                 your business objectives, designed to ensure high efficiency and
@@ -73,7 +73,7 @@ const Service = () => {
                 width={45}
                 height={45}
               />
-              <h1 className="font-bold">Mobile App Development</h1>
+              <h1 className="font-bold text-lg">Mobile App Development</h1>
               <p className="text-center text-[12px]">
                 Creating intuitive and feature-rich mobile applications for both
                 iOS and Android to enhance user engagement and meet business
@@ -89,7 +89,7 @@ const Service = () => {
                 width={45}
                 height={45}
               />
-              <h1 className="font-bold">CMS Web Development</h1>
+              <h1 className="font-bold text-lg">CMS Web Development</h1>
               <p className="text-center text-[12px]">
                 Developing flexible and SEO-optimized content management systems
                 that make managing and updating your website quick and
@@ -105,7 +105,9 @@ const Service = () => {
                 width={45}
                 height={45}
               />
-              <h1 className="font-bold">API Development & Integration</h1>
+              <h1 className="font-bold text-lg">
+                API Development & Integration
+              </h1>
               <p className="text-center text-[12px]">
                 Building and integrating APIs to simplify data interactions,
                 enabling your applications to seamlessly connect with external
@@ -121,7 +123,7 @@ const Service = () => {
                 width={45}
                 height={45}
               />
-              <h1 className="font-bold">Cloud-based Solutions</h1>
+              <h1 className="font-bold text-lg">Cloud-based Solutions</h1>
               <p className="text-center text-[12px]">
                 Offering reliable and scalable cloud solutions that adapt to
                 your business needs, ensuring uninterrupted operations in a
@@ -137,7 +139,7 @@ const Service = () => {
                 width={45}
                 height={45}
               />
-              <h1 className="font-bold">AI Solutions</h1>
+              <h1 className="font-bold text-lg">AI Solutions</h1>
               <p className="text-center text-[12px]">
                 Harnessing the power of artificial intelligence to create smart,
                 data-driven applications and automate processes, driving
@@ -153,7 +155,7 @@ const Service = () => {
                 width={45}
                 height={45}
               />
-              <h1 className="font-bold">Digital Marketing</h1>
+              <h1 className="font-bold text-lg">Digital Marketing</h1>
               <p className="text-center text-[12px]">
                 Implementing result-oriented digital marketing strategies,
                 including SEO, PPC, social media, and email campaigns, to boost
@@ -164,7 +166,7 @@ const Service = () => {
             {/* Service Card 9 */}
             <div className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
               <Image src={servicenine} alt="DevOps" width={45} height={45} />
-              <h1 className="font-bold">DevOps & Automation</h1>
+              <h1 className="font-bold text-lg">DevOps & Automation</h1>
               <p className="text-center text-[12px]">
                 Streamlining your software development lifecycle through DevOps
                 practices and automation tools, ensuring faster delivery and

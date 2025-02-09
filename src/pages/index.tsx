@@ -93,7 +93,7 @@ const HomePage = () => {
         <OurTeam />
         <BlogPage />
         {/* Hire me section  */}
-        <section className="w-full mt-12 mb-12 bg-[#192373] py-8 px-6 lg:py-20 lg:px-20">
+        <section className="w-full bg-[#192373] py-8 px-6 lg:py-20 lg:px-20 mb-[100px]">
           <div className="max-w-5xl mx-auto flex justify-between items-center max-md:flex-col">
             {/* Text Content */}
             <div className="text-white max-md:text-center">
@@ -117,10 +117,10 @@ const HomePage = () => {
           </div>
         </section>
 
-        <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto mb-12 md:mb-8">
+        <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto pb-[50px]">
           <div className="text-center px-5">
-            <div className="max-w-4xl mx-auto text-center -mb-20 max-md:mb-10 pb-4 md:pb-24">
-              <h2 className="text-2xl sm:text-5xl font-bold tracking-widest text-[#333] inline-block p-[20px] rounded-lg">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl  sm:text-4xl lg:text-5xl font-bold tracking-widest text-blue-900">
                 Technologies and Platforms We Work With
               </h2>
               <p className="text-center text-[15px] mt-5 px-2 md:px-10">

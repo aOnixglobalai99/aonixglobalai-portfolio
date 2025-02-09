@@ -104,12 +104,12 @@ const OurTeam = () => {
       {/* Team Section */}
       <section className="bg-white mb-[100px]">
         <div className="max-w-6xl mx-auto text-center">
-          <div className="max-w-6xl mx-auto text-center -mb-24 max-md:mb-10   md:pb-24">
-            <h2 className="text-2xl  sm:text-4xl font-bold tracking-widest text-white bg-blue-900 inline-block p-[20px] rounded-lg">
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="text-3xl  sm:text-4xl lg:text-5xl font-bold tracking-widest text-blue-900 px-4">
               Meet Our Amazing Team
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 pt-8 md:pt-[100px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 pt-[100px]">
             {teamMembers.map((member, index) => (
               <div key={index} className="relative group">
                 {/* Image */}

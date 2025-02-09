@@ -171,7 +171,7 @@ const Industry: React.FC = () => {
           </p>
         </div>
 
-        <div className="relative w-full mt-[100px]">
+        <div className="relative w-full mt-10 lg:mt-[100px]">
           <div
             className="overflow-hidden relative h-[420px] md:h-[350px] bg-white rounded-lg shadow-lg"
             onTouchStart={handleTouchStart}
@@ -216,7 +216,7 @@ const Industry: React.FC = () => {
                       </div>
                     </div>
                     <div className="w-full md:w-1/2 h-48 md:h-full relative">
-                      <div className="absolute inset-0">
+                      <div className="">
                         <Image
                           src={card.imageUrl}
                           alt={card.alt}
