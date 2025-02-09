@@ -102,7 +102,7 @@ const OurTeam = () => {
       </section> */}
 
       {/* Team Section */}
-      <section className="bg-white">
+      <section className="bg-white mb-[100px]">
         <div className="max-w-6xl mx-auto text-center">
           <div className="max-w-6xl mx-auto text-center -mb-24 max-md:mb-10   md:pb-24">
             <h2 className="text-2xl  sm:text-4xl font-bold tracking-widest text-white bg-blue-900 inline-block p-[20px] rounded-lg">

@@ -107,73 +107,72 @@ const Footer = () => {
             </h2>
             <ul className="flex flex-col gap-2">
               <li className="text-white text-sm">
-              <Link href="/" className="flex items-center group">
-                <FaChevronRight
-                className="text-blue-500 group-hover:text-blue-400"
-                size={14}
-                />
-                <span className="ml-2 group-hover:text-blue-400 transition-colors">
-                Home
-                </span>
-              </Link>
+                <Link href="/" className="flex items-center group">
+                  <FaChevronRight
+                    className="text-blue-500 group-hover:text-blue-400"
+                    size={14}
+                  />
+                  <span className="ml-2 group-hover:text-blue-400 transition-colors">
+                    Home
+                  </span>
+                </Link>
               </li>
               <li className="text-white text-sm">
-              <Link href="/Service" className="flex items-center group">
-                <FaChevronRight
-                className="text-blue-500 group-hover:text-blue-400"
-                size={14}
-                />
-                <span className="ml-2 group-hover:text-blue-400 transition-colors">
-                Services
-                </span>
-              </Link>
+                <Link href="/Service" className="flex items-center group">
+                  <FaChevronRight
+                    className="text-blue-500 group-hover:text-blue-400"
+                    size={14}
+                  />
+                  <span className="ml-2 group-hover:text-blue-400 transition-colors">
+                    Services
+                  </span>
+                </Link>
               </li>
               <li className="text-white text-sm">
-              <Link href="/Industries" className="flex items-center group">
-                <FaChevronRight
-                className="text-blue-500 group-hover:text-blue-400"
-                size={14}
-                />
-                <span className="ml-2 group-hover:text-blue-400 transition-colors">
-                Industry
-                </span>
-              </Link>
+                <Link href="/Industries" className="flex items-center group">
+                  <FaChevronRight
+                    className="text-blue-500 group-hover:text-blue-400"
+                    size={14}
+                  />
+                  <span className="ml-2 group-hover:text-blue-400 transition-colors">
+                    Industry
+                  </span>
+                </Link>
               </li>
-             
+
               <li className="text-white text-sm">
-              <Link href="/OurWork" className="flex items-center group">
-                <FaChevronRight
-                className="text-blue-500 group-hover:text-blue-400"
-                size={14}
-                />
-                <span className="ml-2 group-hover:text-blue-400 transition-colors">
-                Our Work
-                </span>
-              </Link>
-              </li>
-              <li className="text-white text-sm">
-              <Link href="/Blog" className="flex items-center group">
-                <FaChevronRight
-                className="text-blue-500 group-hover:text-blue-400"
-                size={14}
-                />
-                <span className="ml-2 group-hover:text-blue-400 transition-colors">
-                Blog
-                </span>
-              </Link>
+                <Link href="/OurWork" className="flex items-center group">
+                  <FaChevronRight
+                    className="text-blue-500 group-hover:text-blue-400"
+                    size={14}
+                  />
+                  <span className="ml-2 group-hover:text-blue-400 transition-colors">
+                    Our Work
+                  </span>
+                </Link>
               </li>
               <li className="text-white text-sm">
-              <Link href="/ContactUs" className="flex items-center group">
-                <FaChevronRight
-                className="text-blue-500 group-hover:text-blue-400"
-                size={14}
-                />
-                <span className="ml-2 group-hover:text-blue-400 transition-colors">
-                Contact
-                </span>
-              </Link>
+                <Link href="/Blog" className="flex items-center group">
+                  <FaChevronRight
+                    className="text-blue-500 group-hover:text-blue-400"
+                    size={14}
+                  />
+                  <span className="ml-2 group-hover:text-blue-400 transition-colors">
+                    Blog
+                  </span>
+                </Link>
               </li>
-            
+              <li className="text-white text-sm">
+                <Link href="/ContactUs" className="flex items-center group">
+                  <FaChevronRight
+                    className="text-blue-500 group-hover:text-blue-400"
+                    size={14}
+                  />
+                  <span className="ml-2 group-hover:text-blue-400 transition-colors">
+                    Contact
+                  </span>
+                </Link>
+              </li>
             </ul>
           </div>
 
