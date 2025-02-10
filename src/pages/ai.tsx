@@ -182,8 +182,8 @@ const AI = () => {
               Ready to Build Intelligent Applications?
             </h2>
             <p className="text-white mb-8 max-w-2xl mx-auto">
-              Let's discuss how we can enhance your web and mobile applications
-              with AI capabilities.
+              Let&apos;s discuss how we can enhance your web and mobile
+              applications with AI capabilities.
             </p>
             <Link
               href="/ContactUs"
