@@ -55,13 +55,13 @@ const Header: React.FC = () => {
             >
               Home
             </Link>
-            {/* <Link
+            <Link
               href="/ai"
               onClick={handleLinkClick}
               className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e]"
             >
               AI
-            </Link> */}
+            </Link>
             <Link
               href="/Service"
               onClick={handleLinkClick}
@@ -108,7 +108,7 @@ const Header: React.FC = () => {
       </div>
 
       {/* Main Header */}
-      <nav className="header-back fixed w-full bg-white z-30">
+      <nav className="fixed w-full bg-white z-30">
         <div className="max-w-[1140px] mx-auto px-4 py-6">
           <div className="flex justify-between items-center">
             {/* Mobile View Container */}
