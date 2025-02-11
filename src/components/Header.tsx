@@ -97,12 +97,12 @@ const Header: React.FC = () => {
             >
               Contact Us
             </Link>
-            <button
-              onClick={handleLinkClick}
-              className="w-full bg-[#078dd7] rounded text-lg font-semibold text-white p-2.5 hover:bg-[#077bc8]"
+            <a
+              href="tel:+918709871715"
+              className="w-full bg-[#078dd7] rounded text-lg font-semibold text-white p-2.5 hover:bg-[#077bc8] text-center"
             >
               Call Us
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -198,9 +198,12 @@ const Header: React.FC = () => {
                 >
                   Contact Us
                 </Link>
-                <button className="bg-[#078dd7] rounded text-lg font-semibold text-white p-2.5 hover:bg-[#077bc8]">
+                <a
+                  href="tel:+918709871715"
+                  className="w-full bg-[#078dd7] rounded text-lg font-semibold text-white p-2.5 hover:bg-[#077bc8] text-center"
+                >
                   Call Us
-                </button>
+                </a>
               </div>
             </div>
           </div>
