@@ -244,8 +244,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="mt-10 pt-6 border-t border-white/30">
           <div className="flex flex-col sm:flex-row justify-between gap-4 text-white text-sm">
-            <p>Technolgy & IT Solution Template Kit by Baliniz</p>
-            <p>Copyright © 2025 All rights reserved.</p>
+            <p>Copyright © 2025 AonixGlobalAI. All rights reserved.</p>
           </div>
         </div>
       </div>
