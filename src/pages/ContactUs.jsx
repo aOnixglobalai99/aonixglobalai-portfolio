@@ -1,13 +1,97 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import linkedin from '../../assets/footerImages/linkedin.svg';
 import insta from '../../assets/footerImages/insta.svg';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    telephone: '',
+    subject: '',
+    message: '',
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const validateForm = () => {
+    const newErrors = {};
+
+    if (!formData.name.trim()) {
+      newErrors.name = 'Name is required';
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = 'Email is required';
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = 'Please enter a valid email';
+    }
+
+    if (!formData.subject.trim()) {
+      newErrors.subject = 'Subject is required';
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = 'Message is required';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+    // Clearing error when user starts typing
+    if (errors[name]) {
+      setErrors((prev) => ({
+        ...prev,
+        [name]: '',
+      }));
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (validateForm()) {
+      // sending data to backend
+      console.log('Form data:', formData);
+      toast.success('Message sent successfully!', {
+        position: 'top-right',
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+
+      // Clearing form
+      setFormData({
+        name: '',
+        email: '',
+        telephone: '',
+        subject: '',
+        message: '',
+      });
+    } else {
+      toast.error('Please fill in all required fields', {
+        position: 'top-right',
+        autoClose: 3000,
+      });
+    }
+  };
+
   return (
     <div className="flex flex-col lg:flex-row-reverse justify-center items-center min-h-screen p-6 bg-gray-100 gap-12">
-      <div className="lg:mr-12 mt-8 lg:mt-0 flex flex-col justify-center items-left  max-w-md">
+      <ToastContainer />
+      <div className="lg:mr-12 mt-8 lg:mt-0 flex flex-col justify-center items-left max-w-md">
         <h2 className="text-2xl font-bold text-blue-400 mb-4">CONTACT US</h2>
         <h3 className="text-3xl font-bold mb-4">Let's Get In Touch</h3>
         <p className="text-gray-600 mb-6">
@@ -19,9 +103,6 @@ const Contact = () => {
           <p>
             <strong>Inbore Office</strong>: Indore, Madhya Pradesh, India
           </p>
-          {/* <p>
-            <strong>Uber Office</strong>: Jl. Raya dewata No.44, Uber
-          </p> */}
           <p>
             <strong>Calling Support</strong>:{' '}
             <a href="tel:+918709871715" className="text-sm hover:underline">
@@ -38,7 +119,6 @@ const Contact = () => {
             </a>
           </p>
         </div>
-        {/* Social Links */}
         <div className="flex flex-wrap gap-4 mt-4">
           {[
             {
@@ -84,52 +164,97 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Contact Form */}
       <div className="bg-white p-8 shadow-lg rounded-lg w-full max-w-lg">
         <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
-        <form className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-sm font-medium">Name</label>
+            <label className="block text-sm font-medium">
+              Name <span className="text-red-500">*</span>
+            </label>
             <input
               type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleInputChange}
               placeholder="Your Name"
-              className="w-full p-2 border rounded-md"
+              className={`w-full p-2 border rounded-md ${
+                errors.name ? 'border-red-500' : ''
+              }`}
             />
+            {errors.name && (
+              <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+            )}
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium">Email</label>
+              <label className="block text-sm font-medium">
+                Email <span className="text-red-500">*</span>
+              </label>
               <input
                 type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
                 placeholder="Your Email"
-                className="w-full p-2 border rounded-md"
+                className={`w-full p-2 border rounded-md ${
+                  errors.email ? 'border-red-500' : ''
+                }`}
               />
+              {errors.email && (
+                <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+              )}
             </div>
             <div>
               <label className="block text-sm font-medium">Telephone</label>
               <input
                 type="tel"
+                name="telephone"
+                value={formData.telephone}
+                onChange={handleInputChange}
                 placeholder="Your Phone"
                 className="w-full p-2 border rounded-md"
               />
             </div>
           </div>
           <div>
-            <label className="block text-sm font-medium">Subject</label>
+            <label className="block text-sm font-medium">
+              Subject <span className="text-red-500">*</span>
+            </label>
             <input
               type="text"
+              name="subject"
+              value={formData.subject}
+              onChange={handleInputChange}
               placeholder="Your Subject"
-              className="w-full p-2 border rounded-md"
+              className={`w-full p-2 border rounded-md ${
+                errors.subject ? 'border-red-500' : ''
+              }`}
             />
+            {errors.subject && (
+              <p className="text-red-500 text-sm mt-1">{errors.subject}</p>
+            )}
           </div>
           <div>
-            <label className="block text-sm font-medium">Message</label>
+            <label className="block text-sm font-medium">
+              Message <span className="text-red-500">*</span>
+            </label>
             <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleInputChange}
               placeholder="Your Message"
-              className="w-full p-2 border rounded-md h-28"
+              className={`w-full p-2 border rounded-md h-28 ${
+                errors.message ? 'border-red-500' : ''
+              }`}
             ></textarea>
+            {errors.message && (
+              <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+            )}
           </div>
-          <button className="w-full bg-blue-400 text-white p-3 rounded-md hover:bg-blue-600">
+          <button
+            type="submit"
+            className="w-full bg-blue-400 text-white p-3 rounded-md hover:bg-blue-600"
+          >
             SUBMIT MESSAGE
           </button>
         </form>
