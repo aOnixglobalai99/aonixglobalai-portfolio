@@ -63,7 +63,7 @@ const Contact = () => {
     if (validateForm()) {
       // sending data to backend
       console.log('Form data:', formData);
-      toast.success('Message sent successfully!', {
+      toast.success('We will get back to you shortly!', {
         position: 'top-right',
         autoClose: 3000,
         hideProgressBar: false,
