@@ -29,10 +29,10 @@ const Works: React.FC = () => {
     {
       title: 'Vampzz',
       images: [
-        '/images/project3/vampzz-cap-commerce-5.png',
-        '/images/project3/vampzz-cap-commerce-12.png',
-        '/images/project3/vampzz-cap-commerce-9.png',
-        '/images/project3/vampzz-cap-commerce-14.png',
+        '/images/project3/vampzz-cap-commerce-1.png',
+        '/images/project3/vampzz-cap-commerce-2.png',
+        '/images/project3/vampzz-cap-commerce-3.png',
+        '/images/project3/vampzz-cap-commerce-4.png',
       ],
     },
     // {
