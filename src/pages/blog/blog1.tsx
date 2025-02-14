@@ -6,7 +6,7 @@ const AI_Trends_2025 = () => {
       <div className="max-w-4xl mx-auto p-8 rounded-lg shadow-lg bg-[#F7FFFF]">
         <div>
           <img
-            src="/images/blogImages/aitrends.jpg"
+            src="/images/blogImages/ai_trends_blog_1.avif"
             alt=""
             className="w-full h-[400px]"
           />
@@ -188,7 +188,7 @@ const AI_Trends_2025 = () => {
           </h2>
           <div>
             <img
-              src="/images/blogImages/aisustainable.jpg"
+              src="/images/blogImages/ai_trends_blog_2.avif"
               alt=""
               className="w-full h-[400px] pb-[50px]"
             />
