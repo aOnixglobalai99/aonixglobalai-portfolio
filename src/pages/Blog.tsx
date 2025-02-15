@@ -2,10 +2,10 @@
 
 import React from 'react';
 import Articles from '../components/blog/BlogList';
-// import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 
 const Blog = () => {
-  // const router = useRouter();
+  const router = useRouter();
   const BlogList: typeof Articles = Articles;
 
   return (
@@ -33,7 +33,7 @@ const Blog = () => {
             >
               <div className="w-full h-48 md:h-56 lg:h-64 overflow-hidden">
                 <img
-                  src={card.imageUrl.src}
+                  src={card.imageUrl}
                   alt={card.title}
                   className="w-full h-full object-cover"
                 />
@@ -46,14 +46,14 @@ const Blog = () => {
                   {card.description}
                 </p>
               </div>
-              {/* <div className="mb-4">
+              <div className="mb-4">
                 <button
                   className="bg-blue-800 text-white px-4 py-2 rounded-3xl hover:bg-blue-700 ml-7"
-                  onClick={() => router.push('/blog/detailpage')}
+                  onClick={() => router.push(card.blogPath)}
                 >
                   Read More
                 </button>
-              </div> */}
+              </div>
             </div>
           ))}
         </div>
