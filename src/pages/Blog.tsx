@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Articles from '../components/blog/BlogList';
-import { useRouter } from 'next/navigation';
+// import { useRouter } from 'next/navigation';
 
 const Blog = () => {
   // const router = useRouter();
