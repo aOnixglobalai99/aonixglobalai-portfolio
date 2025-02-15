@@ -137,8 +137,8 @@ const AI_Powered_Agriculture = () => {
               <strong>Robotic Weed & Pest Control:</strong> AI-powered robots
               identify and remove weeds, reducing the need for chemical
               herbicides. <em>Example:</em>{' '}
-              <strong>Blue River Technology</strong> developed AI-based "See &
-              Spray" machines that target weeds precisely.
+              <strong>Blue River Technology</strong> developed AI-based
+              &quot;See & Spray&quot; machines that target weeds precisely.
             </li>
           </ul>
         </section>
