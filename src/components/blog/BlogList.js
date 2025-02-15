@@ -1,8 +1,7 @@
 // import responsive from '../../../assets/blogImages/responsive.jpg';
-import webApplication from '../../../assets/blogImages/web-application-2.webp';
-import mobileApplication from '../../../assets/blogImages/mobile-application-1.webp';
-import ai from '../../../assets/blogImages/AI.jpg';
-
+// import webApplication from '/images/blogImages/ai_trends_2025.avif';
+// import mobileApplication from '../../../assets/blogImages/mobile-application-1.webp';
+// import ai from '../../../assets/blogImages/AI.jpg';
 // import saas from "../../../assets/blogImages/saas.jpg"
 // import rightCompany from "../../../assets/blogImages/rightCompany.jpg"
 // import startup from "../../../assets/blogImages/startup.jpg"
@@ -11,55 +10,74 @@ import ai from '../../../assets/blogImages/AI.jpg';
 // import softwaresolution from '../../../assets/blogImages/software-solution.jpg';
 // import nodejspopular from "../../../assets/blogImages/nodejs-popular.jpg"
 // import frontend from '../../../assets/blogImages/frontend.jpg';
+
+// import AI_Trends_2025 from '@/components/newBlogs/blog1';
+// import AI_in_ECommerce from '@/components/newBlogs/blog2';
+// import AIRealEstatePage from '@/components/newBlogs/blog3';
+// import AIHealthcarePage from '@/components/newBlogs/blog4';
+// import AI_Powered_Agriculture from '@/components/newBlogs/blog5';
+// import AISportsFitnessPage from '@/components/newBlogs/blog6';
+// import AIEducationBlog from '@/components/newBlogs/blog7';
+// import AIFinanceBanking from '@/components/newBlogs/blog8';
+
 const articles = [
   {
-    imageUrl: webApplication,
-    title: 'Why Web Application Development Matters',
+    imageUrl: '/images/blogImages/ai_trends_2025.avif',
+    title: 'AI Trends in 2025: The Future of Artificial Intelligence',
     description:
-      'Learn how web application development enhances user experience, streamlines business operations, and ensures scalability in the digital era.',
+      'AI is evolving rapidly, transforming industries, workflows, and human interaction. In 2025, emerging trends will reshape businesses, society, and daily life. Explore AI&apos;s impact.',
+    blogPath: '/blog/blog1',
   },
   {
-    imageUrl: mobileApplication,
-    title: 'Why Mobile Application Development Is Essential',
+    imageUrl: '/images/blogImages/ai_ecommerce.avif',
+    title: 'AI in E-Commerce: Transforming Online Retail',
     description:
-      'Discover the importance of mobile app development for business growth, user engagement, and seamless cross-platform accessibility.',
+      'AI is transforming e-commerce by enhancing customer experiences, optimizing operations, driving sales, enabling personalization, and shaping future industry trends.',
+    blogPath: '/blog/blog2',
   },
   {
-    imageUrl: ai,
-    title: 'Why AI Solutions Are Transforming Industries',
+    imageUrl: '/images/blogImages/ai_powered_real_estate.avif',
+    title: 'AI-Powered Real Estate Services: Transforming the Property Market',
     description:
-      'Discover the impact of AI solutions on business efficiency, intelligent automation, data-driven decision-making, and enhanced customer experiences.',
+      'AI is transforming real estate by enhancing searches, transactions, and management with chatbots, predictive analytics, and optimization for better efficiency and customer experiences.',
+    blogPath: '/blog/blog3',
   },
-  // {
-  //   imageUrl: saas,
-  //   title: "SaaS Development Life Cycle: A Comprehensive Overview",
-  //   description:
-  //   "Learn the key stages of the SaaS development life cycle, from ideation to scaling. Build scalable, efficient, and customizable solutions.",
-  // },
-  // {
-  //   imageUrl: rightCompany,
-  //   title: "How to Choose the Right Web Development Company [2025]: Expert Tips",
-  //   description:
-  //   "Learn how to choose the right web development company with tips on assessing expertise, portfolio, communication, and more.",
-  // },
-  // {
-  //   imageUrl: startup,
-  //   title: "Software Development For Startups",
-  //   description:
-  //   "Learn how startups can build scalable, cost-effective software with the right strategies, technologies, and development processes.",
-  // },
-  // {
-  //   imageUrl: smallBusiness,
-  //   title: "Benefits of Custom Software Development for Small Businesses",
-  //   description:
-  //   "Custom software helps small businesses improve efficiency, security, and scalability while reducing costs.",
-  // },
-  // {
-  //   imageUrl: sasVSsaas,
-  //   title: "SAS vs SaaS: Understanding the Key Differences and Choosing the Right Fit",
-  //   description:
-  //   "Compare SAS vs SaaS to understand their features, benefits, and ideal use cases, helping you choose the right solution.",
-  // },
+  {
+    imageUrl: '/images/blogImages/ai_healthcare.avif',
+    title: 'AI in Healthcare: Transforming the Medical Industry',
+    description:
+      'AI is revolutionizing healthcare by improving diagnostics, treatments, surgeries, and patient outcomes while enhancing efficiency, accuracy, and decision-making for medical professionals.',
+    blogPath: '/blog/blog4',
+  },
+  {
+    imageUrl: '/images/blogImages/ai_agri.avif',
+    title: 'AI-Powered Agriculture: Transforming Farming with Smart Technology',
+    description:
+      'AI is transforming agriculture by optimizing crop management, improving yield predictions, automating farming, and enhancing efficiency with machine learning, robotics, and IoT.',
+    blogPath: '/blog/blog5',
+  },
+  {
+    imageUrl: '/images/blogImages/ai_sports_fitness.avif',
+    title:
+      'AI in Sports & Fitness: Transforming Performance, Training, and Health',
+    description:
+      'AI is transforming sports and fitness by enhancing performance, optimizing training, improving engagement, and enabling data-driven decisions with advanced technology.',
+    blogPath: '/blog/blog6',
+  },
+  {
+    imageUrl: '/images/blogImages/ai_edu.avif',
+    title: 'AI in Education & Learning: Transforming the Future',
+    description:
+      'AI is transforming education by personalizing learning, enhancing accessibility, optimizing grading, and bridging gaps in traditional models for a smarter future.',
+    blogPath: '/blog/blog7',
+  },
+  {
+    imageUrl: '/images/blogImages/ai_fintech.avif',
+    title: 'The Transformative Power of AI in Finance & Banking',
+    description:
+      'AI is transforming finance and banking by improving efficiency, security, and customer experience through automation, fraud detection, and data-driven decision-making solutions.',
+    blogPath: '/blog/blog8',
+  },
   // {
   //   imageUrl: nodejspopular,
   //   title: "Why Node.js is Popular: Why It Should Be Your Top Choice?",

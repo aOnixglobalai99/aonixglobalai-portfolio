@@ -15,6 +15,14 @@ import OurTeam from '@/components/OurTeam';
 import Link from 'next/link';
 import TechIcons from '@/components/techAnimation';
 import IndustryCarousel from '@/components/industryCarousel';
+// import AI_Trends_2025 from '@/components/newBlogs/blog1';
+// import AI_in_ECommerce from '@/components/newBlogs/blog2';
+// import AIRealEstatePage from '@/components/newBlogs/blog3';
+// import AIHealthcarePage from '@/components/newBlogs/blog4';
+// import AI_Powered_Agriculture from '@/components/newBlogs/blog5';
+// import AISportsFitnessPage from '@/components/newBlogs/blog6';
+// import AIEducationBlog from '@/components/newBlogs/blog7';
+// import AIFinanceBanking from '@/components/newBlogs/blog8';
 
 const HomePage = () => {
   return (
@@ -92,6 +100,7 @@ const HomePage = () => {
         <OurWork />
         <OurTeam />
         <BlogPage />
+
         {/* Hire me section  */}
         <section className="w-full bg-[#192373] py-8 px-6 lg:py-20 lg:px-20 mb-[100px]">
           <div className="max-w-5xl mx-auto flex justify-between items-center max-md:flex-col">
