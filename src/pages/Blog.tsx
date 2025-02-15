@@ -5,7 +5,7 @@ import Articles from '../components/blog/BlogList';
 import { useRouter } from 'next/navigation';
 
 const Blog = () => {
-  const router = useRouter();
+  // const router = useRouter();
   const BlogList: typeof Articles = Articles;
 
   return (
@@ -49,7 +49,7 @@ const Blog = () => {
               <div className="mb-4">
                 <button
                   className="bg-blue-800 text-white px-4 py-2 rounded-3xl hover:bg-blue-700 ml-7"
-                  onClick={() => router.push(card.blogPath)}
+                  onClick={() => window.open(card.blogPath, '_blank')}
                 >
                   Read More
                 </button>
