@@ -130,7 +130,7 @@ const AI_Powered_Agriculture = () => {
               <strong>AI-Driven Tractors & Harvesters:</strong> Autonomous
               tractors and harvesters use computer vision and GPS for automated
               farming operations. <em>Example:</em>{' '}
-              <strong>John Deere's AI-powered tractors</strong> are
+              <strong>John Deere&apos;s AI-powered tractors</strong> are
               revolutionizing farming.
             </li>
             <li>
@@ -215,8 +215,8 @@ const AI_Powered_Agriculture = () => {
             <li>
               <strong>Smart Livestock Monitoring:</strong> AI monitors livestock
               health, detects diseases, and improves breeding efficiency.{' '}
-              <em>Example:</em> <strong>Connecterra's Ida AI</strong> provides
-              real-time insights on dairy cow health and behavior.
+              <em>Example:</em> <strong>Connecterra&apos;s Ida AI</strong>{' '}
+              provides real-time insights on dairy cow health and behavior.
             </li>
           </ul>
         </section>
@@ -235,7 +235,7 @@ const AI_Powered_Agriculture = () => {
               <strong>Climate-Resilient Farming:</strong> AI helps farmers adapt
               to climate change by predicting weather patterns and suggesting
               resilient crops. <em>Example:</em>{' '}
-              <strong>Microsoft's AI for Earth initiative</strong> supports
+              <strong>Microsoft&apos;s AI for Earth initiative</strong> supports
               climate-smart agriculture projects worldwide.
             </li>
             <li>

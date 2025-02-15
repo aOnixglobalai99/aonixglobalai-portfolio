@@ -138,7 +138,7 @@ const AIEducationBlog = () => {
                   </li>
                   <li>
                     <strong>AI-Powered Teaching Assistants:</strong> Georgia
-                    Tech's AI assistant, Jill Watson, helps answer student
+                    Tech&apos;s AI assistant, Jill Watson, helps answer student
                     queries in online courses.
                   </li>
                   <li>
@@ -315,8 +315,8 @@ const AIEducationBlog = () => {
                   b) AI-Driven Career Guidance
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  AI will analyze students' skills and interests to recommend
-                  personalized career paths and relevant courses.
+                  AI will analyze students&apos; skills and interests to
+                  recommend personalized career paths and relevant courses.
                 </p>
               </div>
 

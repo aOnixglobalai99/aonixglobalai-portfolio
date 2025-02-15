@@ -57,13 +57,13 @@ const AISportsFitnessPage: React.FC = () => {
             <ul className="list-disc list-inside text-gray-700 mt-2">
               <li>
                 <strong>Motion Tracking & Biomechanics Analysis:</strong>{' '}
-                AI-powered cameras and sensors track athletes' movements in
+                AI-powered cameras and sensors track athletes&apos; movements in
                 real-time, detecting inefficiencies in posture, speed, and
                 movement.
               </li>
               <li>
                 <strong>Predictive Performance Modeling:</strong> AI algorithms
-                forecast an athlete's performance based on historical and
+                forecast an athlete&apos;s performance based on historical and
                 real-time data, helping coaches make data-driven decisions.
               </li>
               <li>
@@ -101,7 +101,7 @@ const AISportsFitnessPage: React.FC = () => {
               <li>
                 <strong>Personalized Training Recommendations:</strong>{' '}
                 AI-powered fitness apps provide real-time feedback based on the
-                user's activity and progress.
+                user&apos;s activity and progress.
               </li>
               <li>
                 <strong>AI-Based Virtual Personal Trainers:</strong> AI-powered
@@ -166,12 +166,13 @@ const AISportsFitnessPage: React.FC = () => {
               </li>
               <li>
                 <strong>Computer Vision for Technique Analysis:</strong> AI
-                compares an athlete's movement against optimal biomechanics,
-                offering instant corrective feedback.
+                compares an athlete&apos;s movement against optimal
+                biomechanics, offering instant corrective feedback.
               </li>
               <li>
                 <strong>Performance Benchmarking:</strong> AI compares an
-                athlete's stats with industry benchmarks to gauge improvement.
+                athlete&apos;s stats with industry benchmarks to gauge
+                improvement.
               </li>
               <li>
                 <strong>AI-Assisted Team Management:</strong> AI helps coaches
@@ -222,7 +223,7 @@ const AISportsFitnessPage: React.FC = () => {
             <ul className="list-disc list-inside text-gray-700 mt-2">
               <li>
                 <strong>AI Opponents & Simulations:</strong> AI-powered
-                opponents adapt to players' strategies for a more realistic
+                opponents adapt to players&apos; strategies for a more realistic
                 experience.
               </li>
               <li>
@@ -274,8 +275,8 @@ const AISportsFitnessPage: React.FC = () => {
         </h2>
         <p className="text-gray-700 mb-6">
           AI presents immense opportunities for IT companies to develop
-          innovative solutions in sports technology. Here's how your company can
-          contribute:
+          innovative solutions in sports technology. Here&apos;s how your
+          company can contribute:
         </p>
         <ul className="list-disc list-inside text-gray-700 mt-2">
           <li>
@@ -326,7 +327,7 @@ const AISportsFitnessPage: React.FC = () => {
         </p>
         <p className="text-gray-700 mb-6">
           Are you ready to integrate AI into your sports and fitness solutions?
-          Let's build the future of AI-driven athletics together!
+          Let&apos;s build the future of AI-driven athletics together!
         </p>
       </div>
     </div>

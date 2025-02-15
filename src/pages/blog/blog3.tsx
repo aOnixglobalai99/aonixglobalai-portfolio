@@ -41,9 +41,9 @@ const AIRealEstatePage: React.FC = () => {
               <p className="text-gray-600">
                 AI utilizes machine learning algorithms to analyze user
                 preferences, budget constraints, and location to recommend the
-                most suitable properties. <strong>Example:</strong> Zillow's
-                AI-powered Zestimate provides accurate property value
-                estimations and recommends properties based on user
+                most suitable properties. <strong>Example:</strong>{' '}
+                Zillow&apos;s AI-powered Zestimate provides accurate property
+                value estimations and recommends properties based on user
                 interactions.
               </p>
             </div>
@@ -54,7 +54,7 @@ const AIRealEstatePage: React.FC = () => {
               <p className="text-gray-600">
                 Users can search for properties using voice commands or by
                 uploading images to find visually similar properties.{' '}
-                <strong>Example:</strong> Realtor.com's AI-driven image
+                <strong>Example:</strong> Realtor.com&apos;s AI-driven image
                 recognition technology helps users find homes resembling their
                 preferred architectural styles.
               </p>
@@ -66,7 +66,7 @@ const AIRealEstatePage: React.FC = () => {
               <p className="text-gray-600">
                 3D property walkthroughs, enhanced with AI-generated insights,
                 allow buyers to explore properties remotely.{' '}
-                <strong>Example:</strong> Matterport's AI-driven 3D virtual
+                <strong>Example:</strong> Matterport&apos;s AI-driven 3D virtual
                 tours enable real estate agents to showcase properties with
                 immersive online experiences.
               </p>
@@ -97,9 +97,9 @@ const AIRealEstatePage: React.FC = () => {
               </h3>
               <p className="text-gray-600">
                 AI tracks user preferences and provides tailored property
-                recommendations. <strong>Example:</strong> Redfin's AI-powered
-                concierge offers customized suggestions and real-time market
-                insights.
+                recommendations. <strong>Example:</strong> Redfin&apos;s
+                AI-powered concierge offers customized suggestions and real-time
+                market insights.
               </p>
             </div>
           </div>
@@ -117,8 +117,8 @@ const AIRealEstatePage: React.FC = () => {
               <p className="text-gray-600">
                 AI evaluates location, property size, recent sales, and market
                 trends to determine property values. <strong>Example:</strong>{' '}
-                Zillow's Zestimate leverages AI to provide real-time property
-                price estimations.
+                Zillow&apos;s Zestimate leverages AI to provide real-time
+                property price estimations.
               </p>
             </div>
             <div>
@@ -146,7 +146,7 @@ const AIRealEstatePage: React.FC = () => {
               </h3>
               <p className="text-gray-600">
                 AI optimizes real estate advertisements based on user behavior
-                and demographics. <strong>Example:</strong> Facebook's
+                and demographics. <strong>Example:</strong> Facebook&apos;s
                 AI-powered real estate ads target potential buyers through
                 data-driven insights.
               </p>
@@ -235,7 +235,7 @@ const AIRealEstatePage: React.FC = () => {
               </h3>
               <p className="text-gray-600">
                 AI scans legal documents for errors and compliance issues.{' '}
-                <strong>Example:</strong> DocuSign's AI-powered contract
+                <strong>Example:</strong> DocuSign&apos;s AI-powered contract
                 analysis assists in verifying lease agreements and compliance.
               </p>
             </div>
