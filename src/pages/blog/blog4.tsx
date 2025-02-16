@@ -4,39 +4,46 @@ import articles from '@/components/blog/BlogList';
 
 const AIHealthcarePage: React.FC = () => {
   return (
-    <div className="flex gap-10 min-h-screen p-8">
-      <div className="h-fit mx-auto p-8 rounded-lg shadow-lg bg-[#F7FFFF]">
+    <div className="flex flex-col-reverse lg:flex-row gap-4 min-h-screen p-1 lg:p-8">
+      {/* Sidebar with Recent Blogs */}
+      <div className="w-full lg:w-[460px] h-fit mx-auto p-4 lg:p-8 rounded-lg bg-[#F7FFFF] mb-[100px] border shadow-sm sticky top-[100px]">
         <h1 className="text-2xl mb-5">Recent Blogs</h1>
         {articles.slice(0, 3).map((article) => (
-          <div className="flex gap-5 mb-5" key={article.blogPath}>
-            <img src={article.imageUrl} alt="" className="h-20 w-32" />
-            <div className="w-[60%]">
-              <Link
-                href={article.blogPath}
-                className=" hover:text-blue-600 transition"
-              >
+          <div
+            className="flex lg:flex-col 2xl:flex-row gap-3 lg:gap-5 mb-5"
+            key={article.blogPath}
+          >
+            <img
+              src={article.imageUrl}
+              alt=""
+              className="h-16 lg:h-20 w-24 lg:w-32 object-cover"
+            />
+            <div className="flex-1 lg:w-[100%] hover:text-cyan-500 transition">
+              <Link href={article.blogPath} className="text-sm lg:text-base">
                 {article.title}
               </Link>
             </div>
           </div>
         ))}
       </div>
-      <div className="max-w-4xl mx-auto bg-[#F7FFFF] p-8 rounded-lg shadow-lg">
+
+      {/* Main Blog Content */}
+      <div className="w-full lg:max-w-4xl mx-auto p-4 lg:p-8 rounded-lg bg-[#F7FFFF] mb-[20px] lg:mb-[100px] border shadow-sm">
         <div>
           <img
             src="/images/blogImages/ai_healthcare_blog_1.avif"
             alt=""
-            className="w-full h-[400px]"
+            className="w-full h-48 md:h-[300px] lg:h-[400px] object-cover"
           />
         </div>
-        <h1 className="text-4xl font-bold text-gray-900 mb-6 mt-[50px]">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6 lg:mb-8 text-gray-800 mt-6 lg:mt-[50px]">
           AI in Healthcare: Transforming the Medical Industry
         </h1>
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+        <h2 className="text-xl lg:text-2xl font-semibold text-gray-800 mb-4">
           Introduction
         </h2>
 
-        <p className="text-gray-700 mb-6">
+        <p className="text-sm lg:text-base text-gray-700 mb-6">
           The healthcare industry is undergoing a <strong>revolution</strong>{' '}
           with the integration of <strong>Artificial Intelligence (AI)</strong>.
           From <strong>diagnostics and treatment recommendations</strong> to{' '}
@@ -52,15 +59,15 @@ const AIHealthcarePage: React.FC = () => {
         </p>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-xl lg:text-2xl font-semibold text-gray-800 mb-4">
             Key Applications of AI in Healthcare
           </h2>
           <div className="space-y-6">
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-lg lg:text-xl font-bold text-gray-900 mb-2">
                 AI-Powered Diagnostics
               </h3>
-              <p className="text-gray-600">
+              <p className="text-sm lg:text-base text-gray-700">
                 AI is improving diagnostic accuracy by analyzing{' '}
                 <strong>
                   medical images, patient records, and genetic data
@@ -72,7 +79,7 @@ const AIHealthcarePage: React.FC = () => {
                 </strong>{' '}
                 at an early stage.
               </p>
-              <ul className="list-disc list-inside text-gray-600 mt-2">
+              <ul className="list-disc list-inside text-sm lg:text-base text-gray-700 mt-2">
                 <li>
                   <strong>Medical Imaging Analysis:</strong> AI detects
                   anomalies in X-rays, MRIs, and CT scans with high precision.
@@ -90,17 +97,17 @@ const AIHealthcarePage: React.FC = () => {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-lg lg:text-xl font-bold text-gray-900 mb-2">
                 Personalized Medicine & Treatment Plans
               </h3>
-              <p className="text-gray-600">
+              <p className="text-sm lg:text-base text-gray-700">
                 AI leverages patient data to create{' '}
                 <strong>customized treatment plans</strong> based on their
                 medical history, genetic profile, and lifestyle factors. This
                 results in more <strong>effective and personalized</strong>{' '}
                 healthcare solutions.
               </p>
-              <ul className="list-disc list-inside text-gray-600 mt-2">
+              <ul className="list-disc list-inside text-sm lg:text-base text-gray-700 mt-2">
                 <li>
                   <strong>Genomics & AI:</strong> AI analyzes DNA sequences to
                   recommend targeted therapies for conditions like cancer.
@@ -118,15 +125,15 @@ const AIHealthcarePage: React.FC = () => {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-lg lg:text-xl font-bold text-gray-900 mb-2">
                 AI in Medical Research & Drug Discovery
               </h3>
-              <p className="text-gray-600">
+              <p className="text-sm lg:text-base text-gray-700">
                 AI accelerates{' '}
                 <strong>drug discovery and clinical trials</strong>, reducing
                 the time required to develop new medications.
               </p>
-              <ul className="list-disc list-inside text-gray-600 mt-2">
+              <ul className="list-disc list-inside text-sm lg:text-base text-gray-700 mt-2">
                 <li>
                   <strong>Predicting Drug Efficacy:</strong> AI models analyze
                   vast datasets to identify promising drug candidates.
@@ -144,15 +151,15 @@ const AIHealthcarePage: React.FC = () => {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-lg lg:text-xl font-bold text-gray-900 mb-2">
                 AI-Powered Virtual Assistants & Chatbots
               </h3>
-              <p className="text-gray-600">
+              <p className="text-sm lg:text-base text-gray-700">
                 AI-driven chatbots and virtual assistants provide{' '}
                 <strong>24/7 support</strong> to patients and healthcare
                 providers.
               </p>
-              <ul className="list-disc list-inside text-gray-600 mt-2">
+              <ul className="list-disc list-inside text-sm lg:text-base text-gray-700 mt-2">
                 <li>
                   <strong>Symptom Checker:</strong> AI-based chatbots help
                   patients assess symptoms and suggest appropriate actions.
@@ -169,15 +176,15 @@ const AIHealthcarePage: React.FC = () => {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-lg lg:text-xl font-bold text-gray-900 mb-2">
                 AI in Robotic Surgeries
               </h3>
-              <p className="text-gray-600">
+              <p className="text-sm lg:text-base text-gray-700">
                 AI-powered robots assist surgeons in performing{' '}
                 <strong>minimally invasive and highly precise surgeries</strong>
                 .
               </p>
-              <ul className="list-disc list-inside text-gray-600 mt-2">
+              <ul className="list-disc list-inside text-sm lg:text-base text-gray-700 mt-2">
                 <li>
                   <strong>Enhanced Precision:</strong> AI ensures accuracy in
                   delicate procedures such as neurosurgery and cardiac surgery.
@@ -194,14 +201,14 @@ const AIHealthcarePage: React.FC = () => {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-lg lg:text-xl font-bold text-gray-900 mb-2">
                 AI in Healthcare Administration
               </h3>
-              <p className="text-gray-600">
+              <p className="text-sm lg:text-base text-gray-700">
                 AI optimizes administrative workflows, reducing hospital costs
                 and improving operational efficiency.
               </p>
-              <ul className="list-disc list-inside text-gray-600 mt-2">
+              <ul className="list-disc list-inside text-sm lg:text-base text-gray-700 mt-2">
                 <li>
                   <strong>Automated Medical Coding & Billing:</strong> AI speeds
                   up medical billing and insurance claims.
@@ -218,14 +225,14 @@ const AIHealthcarePage: React.FC = () => {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-lg lg:text-xl font-bold text-gray-900 mb-2">
                 AI in Predictive Healthcare Analytics
               </h3>
-              <p className="text-gray-600">
+              <p className="text-sm lg:text-base text-gray-700">
                 AI can <strong>predict potential health risks</strong> based on
                 patient history, genetics, and lifestyle.
               </p>
-              <ul className="list-disc list-inside text-gray-600 mt-2">
+              <ul className="list-disc list-inside text-sm lg:text-base text-gray-700 mt-2">
                 <li>
                   <strong>Preventive Care:</strong> AI identifies patients at
                   risk of chronic diseases.
@@ -243,15 +250,15 @@ const AIHealthcarePage: React.FC = () => {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-lg lg:text-xl font-bold text-gray-900 mb-2">
                 Wearable Health Technology & AI
               </h3>
-              <p className="text-gray-600">
+              <p className="text-sm lg:text-base text-gray-700">
                 AI-powered wearable devices track real-time health data,
                 providing{' '}
                 <strong>early warnings for potential health issues</strong>.
               </p>
-              <ul className="list-disc list-inside text-gray-600 mt-2">
+              <ul className="list-disc list-inside text-sm lg:text-base text-gray-700 mt-2">
                 <li>
                   <strong>Heart Rate & ECG Monitoring:</strong> AI detects
                   irregular heartbeats and warns of potential cardiac
@@ -272,22 +279,22 @@ const AIHealthcarePage: React.FC = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-xl lg:text-2xl font-semibold text-gray-800 mb-4">
             Benefits of AI in Healthcare
           </h2>
           <div>
             <img
               src="/images/blogImages/ai_healthcare_blog_2.avif"
               alt=""
-              className="w-full h-[400px] pb-[50px]"
+              className="w-full h-48 md:h-[300px] lg:h-[400px] object-cover mb-6 lg:mb-12"
             />
           </div>
           <div className="space-y-4">
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-lg lg:text-xl font-bold text-gray-900 mb-2">
                 For Patients:
               </h3>
-              <ul className="list-disc list-inside text-gray-600">
+              <ul className="list-disc list-inside text-sm lg:text-base text-gray-700">
                 <li>Faster and more accurate diagnoses</li>
                 <li>Personalized treatment and medication plans</li>
                 <li>24/7 virtual health assistance</li>
@@ -297,10 +304,10 @@ const AIHealthcarePage: React.FC = () => {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-lg lg:text-xl font-bold text-gray-900 mb-2">
                 For Doctors & Healthcare Providers:
               </h3>
-              <ul className="list-disc list-inside text-gray-600">
+              <ul className="list-disc list-inside text-sm lg:text-base text-gray-700">
                 <li>AI-assisted decision-making for better patient care</li>
                 <li>Reduced workload & administrative tasks</li>
                 <li>More precise and efficient surgeries</li>
@@ -310,10 +317,10 @@ const AIHealthcarePage: React.FC = () => {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-lg lg:text-xl font-bold text-gray-900 mb-2">
                 For Healthcare Institutions & Insurance Companies:
               </h3>
-              <ul className="list-disc list-inside text-gray-600">
+              <ul className="list-disc list-inside text-sm lg:text-base text-gray-700">
                 <li>
                   Cost savings through automation and predictive analytics
                 </li>
@@ -326,14 +333,14 @@ const AIHealthcarePage: React.FC = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-xl lg:text-2xl font-semibold text-gray-800 mb-4">
             Challenges & Ethical Considerations
           </h2>
           <div className="space-y-4">
-            <p className="text-gray-600">
+            <p className="text-sm lg:text-base text-gray-700">
               Despite its potential, AI in healthcare comes with challenges:
             </p>
-            <ul className="list-disc list-inside text-gray-600">
+            <ul className="list-disc list-inside text-sm lg:text-base text-gray-700">
               <li>
                 <strong>Data Privacy & Security:</strong> Protecting sensitive
                 patient data from breaches and cyberattacks.
@@ -355,10 +362,10 @@ const AIHealthcarePage: React.FC = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-xl lg:text-2xl font-semibold text-gray-800 mb-4">
             Conclusion
           </h2>
-          <p className="text-gray-700">
+          <p className="text-sm lg:text-base text-gray-700">
             AI is <strong>revolutionizing healthcare</strong> by enhancing
             diagnosis, treatment, research, and patient care. With its ability
             to <strong>process vast amounts of data</strong>, AI is making
@@ -367,7 +374,7 @@ const AIHealthcarePage: React.FC = () => {
             implementation will shape the{' '}
             <strong>future of AI-driven healthcare</strong>.
           </p>
-          <p className="text-gray-700 mt-4">
+          <p className="text-sm lg:text-base text-gray-700 mt-4">
             The integration of AI into healthcare is{' '}
             <strong>not just an advancement—it is a necessity</strong> for
             improving{' '}
