@@ -4,39 +4,46 @@ import articles from '@/components/blog/BlogList';
 
 const AI_in_ECommerce = () => {
   return (
-    <div className="flex gap-10 min-h-screen p-8">
-      <div className="h-fit mx-auto p-8 rounded-lg shadow-lg bg-[#F7FFFF]">
+    <div className="flex flex-col-reverse lg:flex-row gap-4 min-h-screen p-1 lg:p-8">
+      {/* Sidebar with Recent Blogs */}
+      <div className="w-full lg:w-[460px] h-fit mx-auto p-4 lg:p-8 rounded-lg bg-[#F7FFFF] mb-[100px] border shadow-sm sticky top-[100px]">
         <h1 className="text-2xl mb-5">Recent Blogs</h1>
         {articles.slice(0, 3).map((article) => (
-          <div className="flex gap-5 mb-5" key={article.blogPath}>
-            <img src={article.imageUrl} alt="" className="h-20 w-32" />
-            <div className="w-[60%]">
-              <Link
-                href={article.blogPath}
-                className=" hover:text-blue-600 transition"
-              >
+          <div
+            className="flex lg:flex-col 2xl:flex-row gap-3 lg:gap-5 mb-5"
+            key={article.blogPath}
+          >
+            <img
+              src={article.imageUrl}
+              alt=""
+              className="h-16 lg:h-20 w-24 lg:w-32 object-cover"
+            />
+            <div className="flex-1 lg:w-[100%] hover:text-cyan-500 transition">
+              <Link href={article.blogPath} className="text-sm lg:text-base">
                 {article.title}
               </Link>
             </div>
           </div>
         ))}
       </div>
-      <div className="max-w-4xl mx-auto bg-[#F7FFFF] p-8 rounded-lg shadow-lg">
+
+      {/* Main Blog Content */}
+      <div className="w-full lg:max-w-4xl mx-auto p-4 lg:p-8 rounded-lg bg-[#F7FFFF] mb-[20px] lg:mb-[100px] border shadow-sm">
         <div>
           <img
             src="/images/blogImages/ai_ecommerce_blog_1.avif"
             alt=""
-            className="w-full h-[400px]"
+            className="w-full h-48 md:h-[300px] lg:h-[400px] object-cover"
           />
         </div>
-        <h1 className="text-4xl font-bold text-center mb-8 text-gray-800 mt-[50px]">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6 lg:mb-8 text-gray-800 mt-6 lg:mt-[50px]">
           AI in E-Commerce: Transforming Online Retail
         </h1>
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+        <h2 className="text-xl lg:text-2xl font-semibold text-gray-800 mb-4">
           Introduction
         </h2>
 
-        <p className="text-gray-700 mb-6">
+        <p className="text-sm lg:text-base text-gray-700 mb-6">
           Artificial Intelligence (AI) is reshaping the e-commerce industry,
           enhancing customer experiences, optimizing business operations, and
           driving sales. From personalized recommendations to AI-powered
@@ -47,17 +54,17 @@ const AI_in_ECommerce = () => {
 
         {/* Personalized Shopping Experiences */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-xl lg:text-2xl font-semibold text-gray-800 mb-4">
             Personalized Shopping Experiences
           </h2>
-          <p className="text-gray-700 mb-4">
+          <p className="text-sm lg:text-base text-gray-700 mb-4">
             AI enables retailers to offer personalized experiences by analyzing
             customer behavior, preferences, and purchase history. Through
             machine learning algorithms, businesses can predict what customers
             want, providing relevant product recommendations and improving
             engagement.
           </p>
-          <ul className="list-disc list-inside text-gray-700">
+          <ul className="list-disc list-inside text-sm lg:text-base text-gray-700">
             <li>
               <strong>AI-Powered Recommendation Engines:</strong> Suggesting
               products based on browsing history and past purchases, increasing
@@ -86,16 +93,16 @@ const AI_in_ECommerce = () => {
 
         {/* AI-Powered Chatbots and Virtual Assistants */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-xl lg:text-2xl font-semibold text-gray-800 mb-4">
             AI-Powered Chatbots and Virtual Assistants
           </h2>
-          <p className="text-gray-700 mb-4">
+          <p className="text-sm lg:text-base text-gray-700 mb-4">
             AI-driven chatbots and virtual assistants enhance customer support
             by providing instant responses and resolving queries efficiently.
             They improve customer engagement and reduce the need for human
             intervention.
           </p>
-          <ul className="list-disc list-inside text-gray-700">
+          <ul className="list-disc list-inside text-sm lg:text-base text-gray-700">
             <li>
               <strong>24/7 Customer Support:</strong> AI chatbots handling
               queries at any time of the day, reducing response time.
@@ -122,16 +129,16 @@ const AI_in_ECommerce = () => {
 
         {/* AI-Driven Inventory and Supply Chain Management */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-xl lg:text-2xl font-semibold text-gray-800 mb-4">
             AI-Driven Inventory and Supply Chain Management
           </h2>
-          <p className="text-gray-700 mb-4">
+          <p className="text-sm lg:text-base text-gray-700 mb-4">
             AI optimizes supply chain operations by predicting demand, managing
             inventory levels, and reducing waste. Predictive analytics helps
             businesses avoid overstocking or stockouts, ensuring smooth
             operations.
           </p>
-          <ul className="list-disc list-inside text-gray-700">
+          <ul className="list-disc list-inside text-sm lg:text-base text-gray-700">
             <li>
               <strong>Predictive Analytics:</strong> AI forecasting product
               demand to optimize inventory and avoid overproduction.
@@ -158,15 +165,15 @@ const AI_in_ECommerce = () => {
 
         {/* Visual Search and AI Image Recognition */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-xl lg:text-2xl font-semibold text-gray-800 mb-4">
             Visual Search and AI Image Recognition
           </h2>
-          <p className="text-gray-700 mb-4">
+          <p className="text-sm lg:text-base text-gray-700 mb-4">
             Visual search technology allows customers to search for products
             using images instead of text. AI-powered image recognition enhances
             product discovery and improves user experience.
           </p>
-          <ul className="list-disc list-inside text-gray-700">
+          <ul className="list-disc list-inside text-sm lg:text-base text-gray-700">
             <li>
               <strong>AI-Based Visual Search:</strong> Enabling users to find
               products by uploading images rather than typing search queries.
@@ -195,16 +202,16 @@ const AI_in_ECommerce = () => {
 
         {/* AI for Fraud Detection and Cybersecurity */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-xl lg:text-2xl font-semibold text-gray-800 mb-4">
             AI for Fraud Detection and Cybersecurity
           </h2>
-          <p className="text-gray-700 mb-4">
+          <p className="text-sm lg:text-base text-gray-700 mb-4">
             AI enhances security in e-commerce by detecting fraudulent
             transactions and protecting sensitive customer data. Machine
             learning models analyze transaction patterns to identify and prevent
             fraud.
           </p>
-          <ul className="list-disc list-inside text-gray-700">
+          <ul className="list-disc list-inside text-sm lg:text-base text-gray-700">
             <li>
               <strong>AI-Powered Fraud Detection:</strong> Identifying and
               blocking suspicious activities in real-time.
@@ -230,23 +237,23 @@ const AI_in_ECommerce = () => {
 
         {/* AI in Marketing and Customer Retention */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-xl lg:text-2xl font-semibold text-gray-800 mb-4">
             AI in Marketing and Customer Retention
           </h2>
           <div>
             <img
               src="/images/blogImages/ai_ecommerce_blog_2.avif"
               alt=""
-              className="w-full h-[400px] pb-[50px]"
+              className="w-full h-48 md:h-[300px] lg:h-[400px] object-cover mb-6 lg:mb-12"
             />
           </div>
-          <p className="text-gray-700 mb-4">
+          <p className="text-sm lg:text-base text-gray-700 mb-4">
             AI is transforming digital marketing by enabling hyper-personalized
             campaigns, automated content generation, and predictive analytics.
             Businesses can reach their target audience more effectively and
             retain customers through AI-driven insights.
           </p>
-          <ul className="list-disc list-inside text-gray-700">
+          <ul className="list-disc list-inside text-sm lg:text-base text-gray-700">
             <li>
               <strong>AI in Email Marketing:</strong> Personalized email
               recommendations increasing open rates and conversions.
@@ -275,15 +282,15 @@ const AI_in_ECommerce = () => {
 
         {/* AI-Enabled Voice Commerce */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-xl lg:text-2xl font-semibold text-gray-800 mb-4">
             AI-Enabled Voice Commerce
           </h2>
-          <p className="text-gray-700 mb-4">
+          <p className="text-sm lg:text-base text-gray-700 mb-4">
             Voice search and AI-powered virtual assistants are becoming popular
             in e-commerce. Customers can now search for products and make
             purchases using voice commands, making shopping more convenient.
           </p>
-          <ul className="list-disc list-inside text-gray-700">
+          <ul className="list-disc list-inside text-sm lg:text-base text-gray-700">
             <li>
               <strong>Voice Search Optimization:</strong> Businesses optimizing
               product listings for voice-based queries to enhance searchability.
@@ -310,15 +317,15 @@ const AI_in_ECommerce = () => {
 
         {/* AI in Customer Service Automation */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-xl lg:text-2xl font-semibold text-gray-800 mb-4">
             AI in Customer Service Automation
           </h2>
-          <p className="text-gray-700 mb-4">
+          <p className="text-sm lg:text-base text-gray-700 mb-4">
             AI is transforming customer service by automating responses,
             analyzing sentiment, and improving support interactions across
             multiple channels.
           </p>
-          <ul className="list-disc list-inside text-gray-700">
+          <ul className="list-disc list-inside text-sm lg:text-base text-gray-700">
             <li>
               <strong>AI in Help Desk Solutions:</strong> Automating ticket
               resolutions and reducing manual workloads.
@@ -344,19 +351,19 @@ const AI_in_ECommerce = () => {
 
         {/* Final Thoughts */}
         <section>
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-xl lg:text-2xl font-semibold text-gray-800 mb-4">
             Final Thoughts
           </h2>
-          <p className="text-gray-700 mb-4">
+          <p className="text-sm lg:text-base text-gray-700 mb-4">
             AI is a game-changer for e-commerce, offering smarter, faster, and
-            more efficient solutions for businesses and consumers alike. From
+            more efficient solutions forbusinesses and consumers alike. From
             enhancing customer personalization to streamlining backend
             operations, AI is revolutionizing online retail. As AI technology
             continues to evolve, e-commerce companies must embrace innovation to
             enhance customer experiences, streamline operations, and drive
             growth.
           </p>
-          <p className="text-gray-700">
+          <p className="text-sm lg:text-base text-gray-700">
             The future of e-commerce lies in AI-driven automation,
             hyper-personalization, and real-time analytics. Businesses that
             leverage these technologies will stay ahead of the competition and
