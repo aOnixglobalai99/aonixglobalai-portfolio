@@ -1,8 +1,26 @@
 import React from 'react';
+import Link from 'next/link';
+import articles from '@/components/blog/BlogList';
 
 const AIFinanceBanking = () => {
   return (
-    <div className="min-h-screen p-8">
+    <div className="flex gap-10 min-h-screen p-8">
+      <div className="h-fit mx-auto p-8 rounded-lg shadow-lg bg-[#F7FFFF]">
+        <h1 className="text-2xl mb-5">Recent Blogs</h1>
+        {articles.slice(0, 3).map((article) => (
+          <div className="flex gap-5 mb-5" key={article.blogPath}>
+            <img src={article.imageUrl} alt="" className="h-20 w-32" />
+            <div className="w-[60%]">
+              <Link
+                href={article.blogPath}
+                className=" hover:text-blue-600 transition"
+              >
+                {article.title}
+              </Link>
+            </div>
+          </div>
+        ))}
+      </div>
       <div className="max-w-4xl mx-auto bg-[#F7FFFF] p-8 rounded-lg shadow-lg">
         <div>
           <img
