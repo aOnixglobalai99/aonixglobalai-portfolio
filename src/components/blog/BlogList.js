@@ -25,7 +25,7 @@ const articles = [
     imageUrl: '/images/blogImages/ai_trends_2025.avif',
     title: 'AI Trends in 2025: The Future of Artificial Intelligence',
     description:
-      'AI is evolving rapidly, transforming industries, workflows, and human interaction. In 2025, emerging trends will reshape businesses, society, and daily life. Explore AI&apos;s impact.',
+      'AI is evolving rapidly, transforming industries, workflows, and human interaction. In 2025, emerging trends will reshape businesses, society, and daily life. Explore the impact of AI.',
     blogPath: '/blog/blog1',
   },
   {
