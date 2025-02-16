@@ -6,7 +6,7 @@ const AI_Trends_2025 = () => {
   return (
     <div className="flex flex-col-reverse lg:flex-row gap-4  min-h-screen p-1 lg:p-8">
       {/* Sidebar with Recent Blogs */}
-      <div className="w-full lg:w-[460px] h-fit mx-auto p-4 lg:p-8 rounded-lg bg-[#F7FFFF] mb-[100px] border shadow-sm">
+      <div className="w-full lg:w-[460px] h-fit mx-auto p-4 lg:p-8 rounded-lg bg-[#F7FFFF] mb-[100px] border shadow-sm sticky top-[100px]">
         <h1 className="text-2xl mb-5">Recent Blogs</h1>
         {articles.slice(0, 3).map((article) => (
           <div
