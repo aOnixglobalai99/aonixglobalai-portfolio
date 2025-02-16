@@ -4,36 +4,46 @@ import articles from '@/components/blog/BlogList';
 
 const AIFinanceBanking = () => {
   return (
-    <div className="flex gap-10 min-h-screen p-8">
-      <div className="h-fit mx-auto p-8 rounded-lg shadow-lg bg-[#F7FFFF]">
+    <div className="flex flex-col-reverse lg:flex-row gap-4 min-h-screen p-1 lg:p-8">
+      {/* Sidebar with Recent Blogs */}
+      <div className="w-full lg:w-[460px] h-fit mx-auto p-4 lg:p-8 rounded-lg bg-[#F7FFFF] mb-[100px] border shadow-sm sticky top-[100px]">
         <h1 className="text-2xl mb-5">Recent Blogs</h1>
         {articles.slice(0, 3).map((article) => (
-          <div className="flex gap-5 mb-5" key={article.blogPath}>
-            <img src={article.imageUrl} alt="" className="h-20 w-32" />
-            <div className="w-[60%]">
-              <Link
-                href={article.blogPath}
-                className=" hover:text-blue-600 transition"
-              >
+          <div
+            className="flex lg:flex-col 2xl:flex-row gap-3 lg:gap-5 mb-5"
+            key={article.blogPath}
+          >
+            <img
+              src={article.imageUrl}
+              alt=""
+              className="h-16 lg:h-20 w-24 lg:w-32 object-cover"
+            />
+            <div className="flex-1 lg:w-[100%] hover:text-cyan-500 transition">
+              <Link href={article.blogPath} className="text-sm lg:text-base">
                 {article.title}
               </Link>
             </div>
           </div>
         ))}
       </div>
-      <div className="max-w-4xl mx-auto bg-[#F7FFFF] p-8 rounded-lg shadow-lg">
+
+      {/* Main Blog Content */}
+      <div className="w-full lg:max-w-4xl mx-auto p-4 lg:p-8 rounded-lg bg-[#F7FFFF] mb-[20px] lg:mb-[100px] border shadow-sm">
         <div>
           <img
             src="/images/blogImages/ai_fintech_blog_1.avif"
             alt=""
-            className="w-full h-[400px]"
+            className="w-full h-48 md:h-[300px] lg:h-[400px] object-cover"
           />
         </div>
-        <h1 className="text-4xl font-bold text-gray-800 mb-6 mt-[50px]">
-          The Transformative Power of AI in Finance & Banking
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6 lg:mb-8 text-gray-800 mt-6 lg:mt-[50px]">
+          The Transformative Power of AI in Banking & Finance
         </h1>
+        <h2 className="text-xl lg:text-2xl font-semibold text-gray-800 mb-4">
+          Introduction
+        </h2>
 
-        <p className="text-gray-700 mb-6">
+        <p className="text-sm lg:text-base text-gray-700 mb-6">
           Artificial Intelligence (AI) is revolutionizing the finance and
           banking sector by enhancing efficiency, security, and customer
           experience. AI-driven solutions are enabling financial institutions to
@@ -42,23 +52,23 @@ const AIFinanceBanking = () => {
           highlighting the benefits and challenges associated with its adoption.
         </p>
 
-        <h2 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">
+        <h2 className="text-xl lg:text-2xl font-semibold text-gray-800 mt-8 mb-4">
           AI Applications in Finance & Banking
         </h2>
 
         <div className="space-y-6">
           <div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+            <h3 className="text-lg lg:text-xl font-semibold text-gray-900 mb-2">
               1. Fraud Detection and Prevention
             </h3>
-            <p className="text-gray-700">
+            <p className="text-sm lg:text-base text-gray-700">
               AI-powered fraud detection systems analyze vast amounts of
               transactional data in real time to identify suspicious activities.
               Machine learning algorithms detect unusual patterns and flag
               potentially fraudulent transactions before they occur. Examples
               include:
             </p>
-            <ul className="list-disc list-inside text-gray-700 mt-2">
+            <ul className="list-disc list-inside text-sm lg:text-base text-gray-700 mt-2">
               <li>
                 <strong>Anomaly detection</strong> using AI to spot deviations
                 in customer behavior.
@@ -75,16 +85,16 @@ const AIFinanceBanking = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+            <h3 className="text-lg lg:text-xl font-semibold text-gray-900 mb-2">
               2. Automated Trading and Investment Management
             </h3>
-            <p className="text-gray-700">
+            <p className="text-sm lg:text-base text-gray-700">
               Algorithmic trading, powered by AI, has transformed stock market
               investments. AI-based robo-advisors analyze market trends and
               provide data-driven insights for investment decisions. Key
               applications include:
             </p>
-            <ul className="list-disc list-inside text-gray-700 mt-2">
+            <ul className="list-disc list-inside text-sm lg:text-base text-gray-700 mt-2">
               <li>
                 <strong>High-frequency trading (HFT):</strong> AI executes
                 trades in milliseconds to optimize profits.
@@ -102,16 +112,16 @@ const AIFinanceBanking = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+            <h3 className="text-lg lg:text-xl font-semibold text-gray-900 mb-2">
               3. Credit Scoring & Loan Approvals
             </h3>
-            <p className="text-gray-700">
+            <p className="text-sm lg:text-base text-gray-700">
               Traditional credit scoring models rely on limited financial
               history, often excluding individuals with no formal credit
               history. AI-driven models analyze alternative data sources, such
               as:
             </p>
-            <ul className="list-disc list-inside text-gray-700 mt-2">
+            <ul className="list-disc list-inside text-sm lg:text-base text-gray-700 mt-2">
               <li>
                 <strong>Bank transaction history</strong> to assess
                 creditworthiness.
@@ -131,14 +141,14 @@ const AIFinanceBanking = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+            <h3 className="text-lg lg:text-xl font-semibold text-gray-900 mb-2">
               4. Chatbots & Virtual Assistants
             </h3>
-            <p className="text-gray-700">
+            <p className="text-sm lg:text-base text-gray-700">
               AI-driven chatbots provide 24/7 customer support, reducing wait
               times and improving service quality. Notable use cases include:
             </p>
-            <ul className="list-disc list-inside text-gray-700 mt-2">
+            <ul className="list-disc list-inside text-sm lg:text-base text-gray-700 mt-2">
               <li>
                 <strong>Conversational banking:</strong> AI-powered virtual
                 assistants (e.g., Erica by Bank of America) help users check
@@ -156,15 +166,15 @@ const AIFinanceBanking = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+            <h3 className="text-lg lg:text-xl font-semibold text-gray-900 mb-2">
               5. Personalized Financial Services
             </h3>
-            <p className="text-gray-700">
+            <p className="text-sm lg:text-base text-gray-700">
               AI enhances personalization by analyzing customer data and
               behavior to offer customized financial products. Banks leverage AI
               to:
             </p>
-            <ul className="list-disc list-inside text-gray-700 mt-2">
+            <ul className="list-disc list-inside text-sm lg:text-base text-gray-700 mt-2">
               <li>
                 <strong>Predict customer needs</strong> based on transaction
                 history.
@@ -181,14 +191,14 @@ const AIFinanceBanking = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+            <h3 className="text-lg lg:text-xl font-semibold text-gray-900 mb-2">
               6. Regulatory Compliance & Risk Management
             </h3>
-            <p className="text-gray-700">
+            <p className="text-sm lg:text-base text-gray-700">
               Financial institutions must comply with complex regulations to
               prevent money laundering and financial crimes. AI helps by:
             </p>
-            <ul className="list-disc list-inside text-gray-700 mt-2">
+            <ul className="list-disc list-inside text-sm lg:text-base text-gray-700 mt-2">
               <li>
                 <strong>Automating regulatory reporting</strong> to reduce
                 compliance costs.
@@ -205,14 +215,14 @@ const AIFinanceBanking = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+            <h3 className="text-lg lg:text-xl font-semibold text-gray-900 mb-2">
               7. AI in Insurance & Wealth Management
             </h3>
-            <p className="text-gray-700">
+            <p className="text-sm lg:text-base text-gray-700">
               AI has a significant impact on insurance underwriting and wealth
               management:
             </p>
-            <ul className="list-disc list-inside text-gray-700 mt-2">
+            <ul className="list-disc list-inside text-sm lg:text-base text-gray-700 mt-2">
               <li>
                 <strong>Automated claims processing</strong> speeds up insurance
                 payouts.
@@ -229,18 +239,18 @@ const AIFinanceBanking = () => {
           </div>
         </div>
 
-        <h2 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">
+        <h2 className="text-xl lg:text-2xl font-semibold text-gray-800 mt-8 mb-4">
           Benefits of AI in Finance & Banking
         </h2>
         <div>
           <img
             src="/images/blogImages/ai_fintech_blog_2.avif"
             alt=""
-            className="w-full h-[400px] pb-[50px]"
+            className="w-full h-48 md:h-[300px] lg:h-[400px] object-cover mb-6 lg:mb-12"
           />
         </div>
 
-        <ul className="list-disc list-inside text-gray-700 mb-6">
+        <ul className="list-disc list-inside text-sm lg:text-base text-gray-700 mb-6">
           <li>
             <strong>Enhanced Security:</strong> AI-driven cybersecurity
             solutions protect against fraud and cyber threats.
@@ -263,11 +273,11 @@ const AIFinanceBanking = () => {
           </li>
         </ul>
 
-        <h2 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">
+        <h2 className="text-xl lg:text-2xl font-semibold text-gray-800 mt-8 mb-4">
           Challenges & Ethical Concerns
         </h2>
 
-        <ul className="list-disc list-inside text-gray-700 mb-6">
+        <ul className="list-disc list-inside text-sm lg:text-base text-gray-700 mb-6">
           <li>
             <strong>Data Privacy & Security:</strong> AI systems require access
             to sensitive financial data, raising concerns about data protection.
@@ -287,15 +297,15 @@ const AIFinanceBanking = () => {
           </li>
         </ul>
 
-        <h2 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">
+        <h2 className="text-xl lg:text-2xl font-semibold text-gray-800 mt-8 mb-4">
           Future of AI in Finance & Banking
         </h2>
 
-        <p className="text-gray-700 mb-6">
+        <p className="text-sm lg:text-base text-gray-700 mb-6">
           The future of AI in finance looks promising, with innovations such as:
         </p>
 
-        <ul className="list-disc list-inside text-gray-700 mb-6">
+        <ul className="list-disc list-inside text-sm lg:text-base text-gray-700 mb-6">
           <li>
             <strong>Quantum computing in financial modeling</strong> for faster
             risk analysis.
@@ -314,11 +324,11 @@ const AIFinanceBanking = () => {
           </li>
         </ul>
 
-        <h2 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">
+        <h2 className="text-xl lg:text-2xl font-semibold text-gray-800 mt-8 mb-4">
           Conclusion
         </h2>
 
-        <p className="text-gray-700 mb-6">
+        <p className="text-sm lg:text-base text-gray-700 mb-6">
           AI is transforming the finance and banking industry by making
           financial services more secure, efficient, and personalized. While
           challenges exist, the benefits far outweigh the risks, making AI an
