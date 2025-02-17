@@ -1,6 +1,5 @@
 import React from 'react';
 import type { StaticImageData } from 'next/image';
-import { useRouter } from 'next/router';
 
 interface Project {
   title: string;
@@ -8,7 +7,6 @@ interface Project {
 }
 
 const Works: React.FC = () => {
-  const router = useRouter();
   const projects: Project[] = [
     {
       title: 'E-commerce',
