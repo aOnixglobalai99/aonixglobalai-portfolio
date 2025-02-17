@@ -166,7 +166,7 @@ const Header: React.FC = () => {
                   AI
                 </Link>
                 <Link
-                  href="/Service"
+                  href="/ServicePage"
                   className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e]"
                 >
                   Services
