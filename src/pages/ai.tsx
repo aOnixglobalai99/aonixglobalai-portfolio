@@ -84,7 +84,7 @@ const AI = () => {
           <div className="bg-gradient-to-r from-gray-900 to-gray-800 h-[700px]">
             <div className="absolute inset-0 opacity-20 bg-[url('/circuit-pattern.jpeg')] w-full bg-center bg-no-repeat bg-cover" />
             <div className="relative h-full flex flex-col items-start w-full max-w-[1140px] mx-auto px-4 justify-center">
-              <div className="space-y-6">
+              <div className="space-y-6 animate-fade-in-left">
                 <div className="inline-block px-4 py-2 bg-gray-700/30 rounded-full">
                   <span className="text-blue-200 font-medium">
                     AI Solutions for Modern Applications
@@ -105,7 +105,7 @@ const AI = () => {
                     Start Your AI Journey
                   </Link>
                   <Link
-                    href="/portfolio"
+                    href="/OurWorkPage"
                     className="px-8 py-4 bg-white/20 text-white rounded-lg hover:bg-white/30 transition-colors font-semibold text-center"
                   >
                     View Our Work
