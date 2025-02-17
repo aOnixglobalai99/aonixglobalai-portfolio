@@ -77,14 +77,14 @@ const Header: React.FC = () => {
               Industry
             </Link>
             <Link
-              href="/OurWork"
+              href="/OurWorkPage"
               onClick={handleLinkClick}
               className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e]"
             >
               Our Work
             </Link>
             <Link
-              href="/Blog"
+              href="/BlogPage"
               onClick={handleLinkClick}
               className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e]"
             >
@@ -178,13 +178,13 @@ const Header: React.FC = () => {
                   Industry
                 </Link>
                 <Link
-                  href="/OurWork"
+                  href="/OurWorkPage"
                   className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e]"
                 >
                   Our Work
                 </Link>
                 <Link
-                  href="/Blog"
+                  href="/BlogPage"
                   className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e]"
                 >
                   Blog
