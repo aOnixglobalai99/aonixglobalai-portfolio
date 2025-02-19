@@ -11,7 +11,7 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <div className="client-footer-div bg-[#078dd7] w-full bg-center bg-no-repeat bg-cover relative z-1">
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Company Info Section */}
           <div className="flex flex-col gap-4">
@@ -163,7 +163,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="text-white text-sm">
-                <Link href="/ContactUs" className="flex items-center group">
+                <Link href="/ContactUsPage" className="flex items-center group">
                   <FaChevronRight
                     className="text-blue-500 group-hover:text-blue-400"
                     size={14}

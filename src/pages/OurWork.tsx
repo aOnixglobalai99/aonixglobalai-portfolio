@@ -49,13 +49,13 @@ const Works: React.FC = () => {
   return (
     <>
       <section className="overflow-hidden">
-        <div className="max-w-5xl mx-auto text-center">
+        <div className="max-w-[1140px] mx-auto text-center">
           <h2 className="text-3xl  sm:text-4xl lg:text-5xl font-bold tracking-widest text-blue-900 mb-[80px] lg:mb-[100px]">
             Our Work
           </h2>
         </div>
         <div className="w-full bg-white font-sans md:px-8 mb-[60px]">
-          <div className="relative max-w-6xl mx-auto">
+          <div className="relative max-w-[1140px] mx-auto">
             {projects.map((project, index) => (
               <div
                 key={index}

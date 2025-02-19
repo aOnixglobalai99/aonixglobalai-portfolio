@@ -10,12 +10,11 @@ import serviceeight from '../../assets/servicesImages/service-8.png';
 import servicenine from '../../assets/servicesImages/service-9.png';
 
 import FAQ from '@/components/FAQs';
-
 import Image from 'next/image';
 
 const Service = () => {
   return (
-    <div className="">
+    <div>
       <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 h-[400px] overflow-hidden">
         <div
           className="absolute inset-0 mix-blend-overlay bg-[url('/service-page-background-image.avif')] w-full bg-fixed bg-center bg-no-repeat bg-cover"
@@ -50,9 +49,9 @@ const Service = () => {
         </div>
       </div>
 
-      <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto mt-[100px]">
+      <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto my-[100px]">
         <div className="text-center px-5">
-          <div className="max-w-6xl mx-auto text-center">
+          <div className="max-w-[1140px] mx-auto text-center">
             <h2 className="text-2xl  sm:text-4xl lg:text-5xl font-bold tracking-widest text-blue-900">
               Services Offered By AonixGlobalAI
             </h2>
@@ -211,9 +210,8 @@ const Service = () => {
           </div>
         </div>
       </div>
-      <div className="mt-[100px]">
-        <FAQ />
-      </div>
+
+      <FAQ />
     </div>
   );
 };

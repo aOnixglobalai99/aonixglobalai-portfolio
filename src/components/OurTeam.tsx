@@ -103,8 +103,8 @@ const OurTeam = () => {
 
       {/* Team Section */}
       <section className="bg-white mb-[100px]">
-        <div className="max-w-6xl mx-auto text-center">
-          <div className="max-w-6xl mx-auto text-center">
+        <div className="max-w-[1140px] mx-auto text-center">
+          <div className="max-w-[1140px] mx-auto text-center">
             <h2 className="text-3xl  sm:text-4xl lg:text-5xl font-bold tracking-widest text-blue-900 px-4">
               Meet Our Amazing Team
             </h2>
