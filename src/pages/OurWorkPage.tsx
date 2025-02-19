@@ -48,9 +48,7 @@ const Works: React.FC = () => {
           <div className="h-full flex flex-col items-start justify-center w-full max-w-[1140px] mx-auto px-4">
             <div className="space-y-6 animate-fade-in-left">
               <div className="inline-block px-4 py-2 bg-gray-700/30 rounded-full transition-all hover:bg-gray-700/50 cursor-pointer backdrop-blur-sm">
-                <span className="text-blue-200 font-medium">
-                  Our Expertise in Projects
-                </span>
+                <span className="text-blue-200 font-medium">Our Expertise</span>
               </div>
               <h1 className="text-white font-black text-[clamp(1.3rem,5vw,2.5rem)] max-w-[600px] leading-tight">
                 Crafting Digital Excellence with Innovation
