@@ -17,7 +17,7 @@ const Service = () => {
     <div id="/services" className="mb-[100px]">
       <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
         <div className="text-center px-5">
-          <div className="max-w-6xl mx-auto text-center">
+          <div className="max-w-[1140px] mx-auto text-center">
             <h2 className="text-2xl  sm:text-4xl lg:text-5xl font-bold tracking-widest text-blue-900">
               Services Offered By AonixGlobalAI
             </h2>
@@ -30,7 +30,7 @@ const Service = () => {
           </p>
         </div>
 
-        <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
+        <div className="w-full px-4 md:px-0 md:w-[90%] lg:w-[1140px] mx-auto">
           {/* Services Grid */}
           <div className=" pt-[100px] flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {/* Service Card 1 */}
