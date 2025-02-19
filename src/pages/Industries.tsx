@@ -127,7 +127,7 @@ const Industry = () => {
 
       <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto my-[100px]">
         <div className="text-center px-5">
-          <div className="max-w-6xl mx-auto text-center">
+          <div className="max-w-[1140px] mx-auto text-center">
             <h2 className="text-2xl  sm:text-4xl lg:text-5xl font-bold tracking-widest text-blue-900">
               Our Industry Expertise
             </h2>
