@@ -103,7 +103,7 @@ const HomePage = () => {
 
         {/* Hire me section  */}
         <section className="w-full bg-[#192373] py-8 px-6 lg:py-20 lg:px-20 mb-[100px]">
-          <div className="max-w-5xl mx-auto flex justify-between items-center max-md:flex-col">
+          <div className="max-w-[1140px] mx-auto flex justify-between items-center max-md:flex-col">
             {/* Text Content */}
             <div className="text-white max-md:text-center">
               <h4 className="text-2xl lg:text-4xl font-semibold">
