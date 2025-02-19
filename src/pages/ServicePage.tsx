@@ -9,11 +9,13 @@ import serviceseven from '../../assets/servicesImages/service-7.png';
 import serviceeight from '../../assets/servicesImages/service-8.png';
 import servicenine from '../../assets/servicesImages/service-9.png';
 
+import FAQ from '@/components/FAQs';
+
 import Image from 'next/image';
 
 const Service = () => {
   return (
-    <div className="mb-[100px]">
+    <div className="">
       <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 h-[400px] overflow-hidden">
         <div
           className="absolute inset-0 mix-blend-overlay bg-[url('/service-page-background-image.avif')] w-full bg-fixed bg-center bg-no-repeat bg-cover"
@@ -208,6 +210,9 @@ const Service = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mt-[100px]">
+        <FAQ />
       </div>
     </div>
   );

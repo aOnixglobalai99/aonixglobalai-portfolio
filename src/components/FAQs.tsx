@@ -17,36 +17,53 @@ const FAQ: React.FC = () => {
   const faqs: FAQItem[] = [
     {
       question:
-        'What makes AonixGlobalAI the best software and mobile app development company?',
+        'Why should I choose AonixGlobalAI for software and mobile app development?',
       answer:
-        'AonixGlobalAI is known for its innovative approach, experienced team, and client-centric solutions, ensuring high-quality results.',
-    },
-    {
-      question: 'Do you offer app maintenance and support services?',
-      answer:
-        'AonixGlobalAI certainly offers application maintenance and support services. This covers periodical updates, bug fixes, performance tuning, and technical support to ensure that your application runs smoothly and stays up to date with the latest standards and requirements.',
+        'AonixGlobalAI stands out for its innovative solutions, skilled professionals, and customer-focused approach, delivering high-quality software tailored to client needs.',
     },
     {
       question:
-        'How do you ensure the security and quality of the software you develop?',
+        'Does AonixGlobalAI offer ongoing app maintenance and support services?',
       answer:
-        'We follow best practices, conduct thorough testing, and adhere to industry standards to ensure security and quality.',
+        'Yes, we offer comprehensive maintenance and support services, including updates, bug fixes, performance enhancements, and technical assistance to ensure your app stays functional and up to date.',
+    },
+    {
+      question: 'How does AonixGlobalAI ensure software security and quality?',
+      answer:
+        'We adhere to industry best practices, conduct rigorous testing, and follow strict security protocols to maintain high-quality and secure software solutions.',
     },
     {
       question: 'How much do software development services cost?',
       answer:
-        "Our pricing depends on the project's scope and complexity. Contact us for a customized quote.",
+        'Pricing varies based on project complexity and requirements. Get in touch with us for a customized quote based on your specific needs.',
     },
     {
-      question: 'How does AonixGlobalAI manage software development projects?',
+      question: 'How do you manage software development projects efficiently?',
       answer:
-        'We use agile methodologies, regular updates, and client collaboration to ensure seamless project management.',
+        'We follow agile development methodologies, provide regular progress updates, and collaborate closely with clients to ensure smooth project execution.',
+    },
+    {
+      question:
+        'Does AonixGlobalAI develop software for both mobile and web platforms?',
+      answer:
+        'Yes, we develop software for both mobile and web platforms, ensuring seamless functionality and a consistent user experience across devices and operating systems.',
+    },
+    {
+      question:
+        'Can AonixGlobalAI help with software integration and data migration?',
+      answer:
+        'Absolutely! We facilitate seamless system integration and smooth data migration while maintaining data accuracy and minimizing disruptions to business operations.',
+    },
+    {
+      question: 'What development methodologies does AonixGlobalAI use?',
+      answer:
+        'Our development approach is primarily based on Agile and Scrum methodologies, enabling iterative progress, flexibility, and continuous client feedback for optimized results.',
     },
   ];
 
   return (
     <div className="client-footer-div bg-[#078dd7] text-white p-6 md:p-12 w-full ">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
           FAQs
         </h1>
@@ -54,7 +71,7 @@ const FAQ: React.FC = () => {
           {faqs.map((faq, index) => (
             <div key={index} className="border-b border-blue-700 pb-4">
               <button
-                className="w-full text-left text-lg md:text-xl font-semibold flex justify-between items-center"
+                className="w-full text-left text-lg md:text-xl font-semibold flex justify-between items-center text-sky-200"
                 onClick={() => toggleFAQ(index)}
               >
                 <span>{faq.question}</span>
@@ -64,7 +81,7 @@ const FAQ: React.FC = () => {
               </button>
               {openIndex === index && (
                 <div className="mt-4 w-full">
-                  <p className="text-base md:text-lg text-blue-200">
+                  <p className="text-base md:text-lg text-gray-100">
                     {faq.answer}
                   </p>
                 </div>
