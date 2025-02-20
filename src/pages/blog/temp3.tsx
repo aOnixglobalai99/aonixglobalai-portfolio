@@ -295,7 +295,7 @@ const AIRealEstatePage: React.FC = () => {
             <div>
               <img
                 src="/images/blogImages/ai_powered_real_estate_blog_2.avif"
-                alt=""
+                alt="ai powered real estate"
                 className="w-full h-48 md:h-[300px] lg:h-[400px] object-cover mb-6 lg:mb-12"
               />
             </div>
