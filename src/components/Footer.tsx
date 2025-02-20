@@ -118,7 +118,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="text-white text-sm">
-                <Link href="/Service" className="flex items-center group">
+                <Link href="/ServicePage" className="flex items-center group">
                   <FaChevronRight
                     className="text-blue-500 group-hover:text-blue-400"
                     size={14}
@@ -141,7 +141,7 @@ const Footer = () => {
               </li>
 
               <li className="text-white text-sm">
-                <Link href="/OurWork" className="flex items-center group">
+                <Link href="/OurWorkPage" className="flex items-center group">
                   <FaChevronRight
                     className="text-blue-500 group-hover:text-blue-400"
                     size={14}
@@ -152,7 +152,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="text-white text-sm">
-                <Link href="/Blog" className="flex items-center group">
+                <Link href="/BlogPage" className="flex items-center group">
                   <FaChevronRight
                     className="text-blue-500 group-hover:text-blue-400"
                     size={14}
