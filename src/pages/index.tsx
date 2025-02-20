@@ -118,7 +118,7 @@ const HomePage = () => {
             <div className="max-md:mt-5">
               <Link
                 className="px-8 md:px-11 lg:px-12 py-3 md:py-4 text-white bg-blue-600 shadow-lg hover:bg-blue-700 transition-opacity duration-300 rounded-full text-lg md:text-xl lg:text-2xl"
-                href="/ContactUs"
+                href="/ContactUsPage"
               >
                 Contact Me
               </Link>
