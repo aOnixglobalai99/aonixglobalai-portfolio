@@ -28,10 +28,6 @@ const AIRealEstatePage: React.FC = () => {
   const blogTitle =
     'AI-Powered Real Estate Services: Transforming the Property Market';
 
-  // Encoding URL and title for safe sharing
-  const encodedUrl = encodeURIComponent(blogUrl);
-  const encodedTitle = encodeURIComponent(blogTitle);
-
   return (
     <>
       {/* SEO Metadata */}
