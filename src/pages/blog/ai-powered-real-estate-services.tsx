@@ -12,25 +12,21 @@ import {
   FaTelegram,
 } from 'react-icons/fa';
 
+// react-share components
+import {
+  LinkedinShareButton,
+  TwitterShareButton,
+  FacebookShareButton,
+  WhatsappShareButton,
+  TelegramShareButton,
+} from 'react-share';
+
 const AIRealEstatePage: React.FC = () => {
   // blog URL and title for sharing
   const blogUrl =
     'https://www.aonixglobalai.com/blog/ai-powered-real-estate-services';
   const blogTitle =
     'AI-Powered Real Estate Services: Transforming the Property Market';
-
-  // Encoding URL and title for safe sharing
-  const encodedUrl = encodeURIComponent(blogUrl);
-  const encodedTitle = encodeURIComponent(blogTitle);
-
-  // Social media share links
-  const shareLinks = {
-    linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
-    twitter: `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`,
-    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
-    whatsapp: `https://api.whatsapp.com/send?text=${encodedTitle}%20${encodedUrl}`,
-    telegram: `https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}`,
-  };
 
   return (
     <>
@@ -120,7 +116,7 @@ const AIRealEstatePage: React.FC = () => {
                 <div className="flex-1">
                   <Link
                     href={article.blogPath}
-                    className="text-sm lg:text-base text-gray-800 hover:text-cyan-600 transition focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                    className="text-sm lg:text-base text-gray-800 hover:text-cyan-600 transition focus:outline-none"
                   >
                     {article.title}
                   </Link>
@@ -146,54 +142,38 @@ const AIRealEstatePage: React.FC = () => {
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 text-gray-900 mt-6">
               AI-Powered Real Estate Services: Transforming the Property Market
             </h1>
-
             {/* Social Media Share Buttons */}
             <div className="flex justify-center gap-4 mb-6">
-              <a
-                href={shareLinks.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-blue-700 text-white rounded-full hover:bg-blue-800 transition"
-                aria-label="Share on LinkedIn"
-              >
-                <FaLinkedin size={20} />
-              </a>
-              <a
-                href={shareLinks.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-blue-400 text-white rounded-full hover:bg-blue-500 transition"
-                aria-label="Share on Twitter"
-              >
-                <FaTwitter size={20} />
-              </a>
-              <a
-                href={shareLinks.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
-                aria-label="Share on Facebook"
-              >
-                <FaFacebook size={20} />
-              </a>
-              <a
-                href={shareLinks.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition"
-                aria-label="Share on WhatsApp"
-              >
-                <FaWhatsapp size={20} />
-              </a>
-              <a
-                href={shareLinks.telegram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition"
-                aria-label="Share on Telegram"
-              >
-                <FaTelegram size={20} />
-              </a>
+              <LinkedinShareButton url={blogUrl} title={blogTitle}>
+                <FaLinkedin
+                  size={24}
+                  className="text-blue-700 hover:text-blue-800"
+                />
+              </LinkedinShareButton>
+              <TwitterShareButton url={blogUrl} title={blogTitle}>
+                <FaTwitter
+                  size={24}
+                  className="text-blue-400 hover:text-blue-500"
+                />
+              </TwitterShareButton>
+              <FacebookShareButton url={blogUrl} title={blogTitle}>
+                <FaFacebook
+                  size={24}
+                  className="text-blue-600 hover:text-blue-700"
+                />
+              </FacebookShareButton>
+              <WhatsappShareButton url={blogUrl} title={blogTitle}>
+                <FaWhatsapp
+                  size={24}
+                  className="text-green-500 hover:text-green-600"
+                />
+              </WhatsappShareButton>
+              <TelegramShareButton url={blogUrl} title={blogTitle}>
+                <FaTelegram
+                  size={24}
+                  className="text-blue-500 hover:text-blue-600"
+                />
+              </TelegramShareButton>
             </div>
 
             <h2 className="text-xl lg:text-2xl font-semibold text-cyan-600 mb-4">
@@ -600,52 +580,37 @@ const AIRealEstatePage: React.FC = () => {
             </section>
 
             {/* Social Media Share Buttons in Conclusion */}
-            <div className="flex justify-center gap-4">
-              <a
-                href={shareLinks.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-blue-700 text-white rounded-full hover:bg-blue-800 transition"
-                aria-label="Share on LinkedIn"
-              >
-                <FaLinkedin size={20} />
-              </a>
-              <a
-                href={shareLinks.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-blue-400 text-white rounded-full hover:bg-blue-500 transition"
-                aria-label="Share on Twitter"
-              >
-                <FaTwitter size={20} />
-              </a>
-              <a
-                href={shareLinks.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
-                aria-label="Share on Facebook"
-              >
-                <FaFacebook size={20} />
-              </a>
-              <a
-                href={shareLinks.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition"
-                aria-label="Share on WhatsApp"
-              >
-                <FaWhatsapp size={20} />
-              </a>
-              <a
-                href={shareLinks.telegram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition"
-                aria-label="Share on Telegram"
-              >
-                <FaTelegram size={20} />
-              </a>
+            <div className="flex justify-center gap-4 mb-6">
+              <LinkedinShareButton url={blogUrl} title={blogTitle}>
+                <FaLinkedin
+                  size={24}
+                  className="text-blue-700 hover:text-blue-800"
+                />
+              </LinkedinShareButton>
+              <TwitterShareButton url={blogUrl} title={blogTitle}>
+                <FaTwitter
+                  size={24}
+                  className="text-blue-400 hover:text-blue-500"
+                />
+              </TwitterShareButton>
+              <FacebookShareButton url={blogUrl} title={blogTitle}>
+                <FaFacebook
+                  size={24}
+                  className="text-blue-600 hover:text-blue-700"
+                />
+              </FacebookShareButton>
+              <WhatsappShareButton url={blogUrl} title={blogTitle}>
+                <FaWhatsapp
+                  size={24}
+                  className="text-green-500 hover:text-green-600"
+                />
+              </WhatsappShareButton>
+              <TelegramShareButton url={blogUrl} title={blogTitle}>
+                <FaTelegram
+                  size={24}
+                  className="text-blue-500 hover:text-blue-600"
+                />
+              </TelegramShareButton>
             </div>
           </main>
         </div>

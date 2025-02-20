@@ -99,7 +99,7 @@ const AI = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <Link
-                    href="/ContactUs"
+                    href="/ContactUsPage"
                     className="px-8 py-4 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors font-semibold text-center"
                   >
                     Start Your AI Journey
@@ -186,7 +186,7 @@ const AI = () => {
               applications with AI capabilities.
             </p>
             <Link
-              href="/ContactUs"
+              href="/ContactUsPage"
               className="inline-block px-6 py-3 bg-white text-[#192373] rounded hover:bg-gray-100 transition-colors font-semibold"
             >
               Schedule a Consultation
