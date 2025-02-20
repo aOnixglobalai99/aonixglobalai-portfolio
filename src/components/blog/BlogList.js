@@ -1,25 +1,3 @@
-// import responsive from '../../../assets/blogImages/responsive.jpg';
-// import webApplication from '/images/blogImages/ai_trends_2025.avif';
-// import mobileApplication from '../../../assets/blogImages/mobile-application-1.webp';
-// import ai from '../../../assets/blogImages/AI.jpg';
-// import saas from "../../../assets/blogImages/saas.jpg"
-// import rightCompany from "../../../assets/blogImages/rightCompany.jpg"
-// import startup from "../../../assets/blogImages/startup.jpg"
-// import smallBusiness from "../../../assets/blogImages/smallBusiness.jpg"
-// import sasVSsaas from "../../../assets/blogImages/sas-VS-saas.jpg"
-// import softwaresolution from '../../../assets/blogImages/software-solution.jpg';
-// import nodejspopular from "../../../assets/blogImages/nodejs-popular.jpg"
-// import frontend from '../../../assets/blogImages/frontend.jpg';
-
-// import AI_Trends_2025 from '@/components/newBlogs/blog1';
-// import AI_in_ECommerce from '@/components/newBlogs/blog2';
-// import AIRealEstatePage from '@/components/newBlogs/blog3';
-// import AIHealthcarePage from '@/components/newBlogs/blog4';
-// import AI_Powered_Agriculture from '@/components/newBlogs/blog5';
-// import AISportsFitnessPage from '@/components/newBlogs/blog6';
-// import AIEducationBlog from '@/components/newBlogs/blog7';
-// import AIFinanceBanking from '@/components/newBlogs/blog8';
-
 const articles = [
   {
     imageUrl: '/images/blogImages/ai_trends_2025.avif',
@@ -40,7 +18,7 @@ const articles = [
     title: 'AI-Powered Real Estate Services: Transforming the Property Market',
     description:
       'AI is transforming real estate by enhancing searches, transactions, and management with chatbots, predictive analytics, and optimization for better efficiency and customer experiences.',
-    blogPath: '/blog/blog3',
+    blogPath: '/blog/ai-powered-real-estate-services',
   },
   {
     imageUrl: '/images/blogImages/ai_healthcare.avif',
