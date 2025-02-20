@@ -91,9 +91,9 @@ const ContactUsPage = () => {
 
   return (
     <div className="bg-gray-100">
-      <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 h-[400px] overflow-hidden">
+      <div className="relative bg-gradient-to-br from-gray-800 via-gray-700 to-gray-600 h-[400px] overflow-hidden">
         <div
-          className="absolute inset-0 mix-blend-overlay bg-[url('/contact-us-page-background-image.png')] w-full bg-fixed bg-center bg-no-repeat bg-cover"
+          className="absolute inset-0 mix-blend-overlay bg-[url('/contact-us-page-background-image.avif')] w-full bg-fixed bg-center bg-no-repeat bg-cover"
           style={{ transform: 'scale(1.1)' }}
         />
         <div className="relative h-full container mx-auto px-4 md:px-6 lg:px-8">
