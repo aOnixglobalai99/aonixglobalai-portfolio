@@ -11,7 +11,7 @@ const articles = [
     title: 'AI in E-Commerce: Transforming Online Retail',
     description:
       'AI is transforming e-commerce by enhancing customer experiences, optimizing operations, driving sales, enabling personalization, and shaping future industry trends.',
-    blogPath: '/blog/blog2',
+    blogPath: '/blog/ai-in-ecommerce',
   },
   {
     imageUrl: '/images/blogImages/ai_powered_real_estate.avif',
