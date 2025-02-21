@@ -47,7 +47,7 @@ const articles = [
     title: 'AI in Education & Learning: Transforming the Future',
     description:
       'AI is transforming education by personalizing learning, enhancing accessibility, optimizing grading, and bridging gaps in traditional models for a smarter future.',
-    blogPath: '/blog/blog7',
+    blogPath: '/blog/ai-in-education-learning',
   },
   {
     imageUrl: '/images/blogImages/ai_fintech.avif',
