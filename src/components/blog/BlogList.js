@@ -25,14 +25,14 @@ const articles = [
     title: 'AI in Healthcare: Transforming the Medical Industry',
     description:
       'AI is revolutionizing healthcare by improving diagnostics, treatments, surgeries, and patient outcomes while enhancing efficiency, accuracy, and decision-making for medical professionals.',
-    blogPath: '/blog/blog4',
+    blogPath: '/blog/ai-in-healthcare',
   },
   {
     imageUrl: '/images/blogImages/ai_agri.avif',
     title: 'AI-Powered Agriculture: Transforming Farming with Smart Technology',
     description:
       'AI is transforming agriculture by optimizing crop management, improving yield predictions, automating farming, and enhancing efficiency with machine learning, robotics, and IoT.',
-    blogPath: '/blog/blog5',
+    blogPath: '/blog/ai-powered-agriculture',
   },
   {
     imageUrl: '/images/blogImages/ai_sports_fitness.avif',
@@ -40,7 +40,7 @@ const articles = [
       'AI in Sports & Fitness: Transforming Performance, Training, and Health',
     description:
       'AI is transforming sports and fitness by enhancing performance, optimizing training, improving engagement, and enabling data-driven decisions with advanced technology.',
-    blogPath: '/blog/blog6',
+    blogPath: '/blog/ai-in-sports-fitness',
   },
   {
     imageUrl: '/images/blogImages/ai_edu.avif',
