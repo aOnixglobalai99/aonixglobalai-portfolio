@@ -32,7 +32,7 @@ const articles = [
     title: 'AI-Powered Agriculture: Transforming Farming with Smart Technology',
     description:
       'AI is transforming agriculture by optimizing crop management, improving yield predictions, automating farming, and enhancing efficiency with machine learning, robotics, and IoT.',
-    blogPath: '/blog/blog5',
+    blogPath: '/blog/ai-powered-agriculture',
   },
   {
     imageUrl: '/images/blogImages/ai_sports_fitness.avif',
