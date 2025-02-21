@@ -25,7 +25,7 @@ const articles = [
     title: 'AI in Healthcare: Transforming the Medical Industry',
     description:
       'AI is revolutionizing healthcare by improving diagnostics, treatments, surgeries, and patient outcomes while enhancing efficiency, accuracy, and decision-making for medical professionals.',
-    blogPath: '/blog/blog4',
+    blogPath: '/blog/ai-in-healthcare',
   },
   {
     imageUrl: '/images/blogImages/ai_agri.avif',
