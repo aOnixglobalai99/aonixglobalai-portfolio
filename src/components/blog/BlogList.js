@@ -54,7 +54,7 @@ const articles = [
     title: 'The Transformative Power of AI in Finance & Banking',
     description:
       'AI is transforming finance and banking by improving efficiency, security, and customer experience through automation, fraud detection, and data-driven decision-making solutions.',
-    blogPath: '/blog/blog8',
+    blogPath: '/blog/ai-finance-banking',
   },
   // {
   //   imageUrl: nodejspopular,
