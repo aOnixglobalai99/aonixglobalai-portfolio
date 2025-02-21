@@ -4,14 +4,14 @@ const articles = [
     title: 'AI Trends in 2025: The Future of Artificial Intelligence',
     description:
       'AI is evolving rapidly, transforming industries, workflows, and human interaction. In 2025, emerging trends will reshape businesses, society, and daily life. Explore the impact of AI.',
-    blogPath: '/blog/blog1',
+    blogPath: '/blog/ai-trends-2025',
   },
   {
     imageUrl: '/images/blogImages/ai_ecommerce.avif',
     title: 'AI in E-Commerce: Transforming Online Retail',
     description:
       'AI is transforming e-commerce by enhancing customer experiences, optimizing operations, driving sales, enabling personalization, and shaping future industry trends.',
-    blogPath: '/blog/blog2',
+    blogPath: '/blog/ai-in-ecommerce',
   },
   {
     imageUrl: '/images/blogImages/ai_powered_real_estate.avif',
