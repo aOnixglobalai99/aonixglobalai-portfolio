@@ -125,9 +125,9 @@ const AIFinanceBanking = () => {
           }
         `}</style>
 
-        <div className="flex flex-col-reverse lg:flex-row gap-6 p-4 lg:p-8">
+        <div className="flex flex-col-reverse lg:flex-row gap-6 lg:p-8">
           {/* Sidebar with Recent Blogs */}
-          <aside className="w-full lg:w-[460px] h-fit mx-auto p-6 rounded-lg bg-[#F7FFFF] mb-12 lg:mb-[100px] border shadow-sm sticky top-[100px]">
+          <aside className="w-full lg:w-[460px] h-fit mx-auto px-2 py-4 rounded-lg bg-[#F7FFFF] mb-12 lg:mb-[100px] border shadow-sm sticky top-[100px]">
             <h1 className="text-2xl font-bold text-gray-900 mb-6">
               Recent Blogs
             </h1>
@@ -155,7 +155,7 @@ const AIFinanceBanking = () => {
           </aside>
 
           {/* Main Blog Content */}
-          <main className="w-full lg:max-w-4xl mx-auto p-6 rounded-lg bg-white mb-12 lg:mb-[100px] border shadow-sm">
+          <main className="w-full lg:max-w-4xl mx-auto px-2 py-6 rounded-lg bg-white mb-12 lg:mb-[100px] border shadow-sm">
             <div className="mb-8">
               <img
                 src="/images/blogImages/ai_fintech_blog_1.avif"
