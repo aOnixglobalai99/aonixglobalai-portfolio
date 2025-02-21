@@ -40,7 +40,7 @@ const articles = [
       'AI in Sports & Fitness: Transforming Performance, Training, and Health',
     description:
       'AI is transforming sports and fitness by enhancing performance, optimizing training, improving engagement, and enabling data-driven decisions with advanced technology.',
-    blogPath: '/blog/blog6',
+    blogPath: '/blog/ai-in-sports-fitness',
   },
   {
     imageUrl: '/images/blogImages/ai_edu.avif',
