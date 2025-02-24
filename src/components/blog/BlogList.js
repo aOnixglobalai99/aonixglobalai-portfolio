@@ -1,5 +1,12 @@
 const articles = [
   {
+    imageUrl: '/images/blogImages/chatgpt-vs-deepseek-1.jpg',
+    title: 'ChatGPT vs DeepSeek: A Battle of AI Conversational Giants',
+    description:
+      'ChatGPT by OpenAI and DeepSeek by xAI are top AI models in 2025. This blog compares their strengths, differences, features, capabilities, and impact on industries and users.',
+    blogPath: '/blog/chatgpt-vs-deepseek',
+  },
+  {
     imageUrl: '/images/blogImages/ai_trends_2025.avif',
     title: 'AI Trends in 2025: The Future of Artificial Intelligence',
     description:
