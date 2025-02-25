@@ -777,32 +777,37 @@ const BlockchainWeb3Solutions = {
   title: 'Blockchain & Web3 Solutions',
   imageUrl: BlockchainImage,
   description:
-    'AonixGlobalAI specializes in delivering cutting-edge web and mobile app solutions for the healthcare industry, empowering organizations with innovative, secure, and scalable digital tools. Below is how we transform healthcare through our development expertise:',
+    'AonixGlobalAI excels in crafting innovative web and mobile app solutions tailored for blockchain and Web3 technologies, with a strong emphasis on empowering industries like healthcare through advanced software development. Our team leverages cutting-edge tools and frameworks to deliver secure, scalable, and user-friendly digital platforms that redefine how organizations operate in decentralized ecosystems. Below is how we revolutionize industries with our specialized development expertise:',
   services: [
     {
       title: 'Custom Decentralized App (DApp) Development',
       description:
-        'Creating secure and scalable decentralized applications powered by blockchain technology.',
+        'We design and build secure, scalable decentralized applications (DApps) powered by blockchain technology, tailored to meet specific business needs. Our development process integrates robust coding practices, intuitive user interfaces, and seamless blockchain interactions to ensure high performance and reliability for clients across various sectors.',
     },
     {
       title: 'Smart Contract Engineering',
       description:
-        'Designing and deploying automated, self-executing smart contracts on leading blockchain networks.',
+        'Our team creates and deploys automated, self-executing smart contracts on top blockchain networks like Ethereum, Binance Smart Chain, and more. We focus on precision coding, thorough testing, and optimization to ensure these contracts execute flawlessly, enhancing trust and efficiency in digital transactions for your organization.',
     },
     {
       title: 'Digital Assets & NFT Ecosystems',
       description:
-        'Developing platforms for NFTs, tokenized assets, and digital collectibles with seamless transactions.',
+        'We develop comprehensive platforms for NFTs, tokenized assets, and digital collectibles, enabling smooth and secure transactions across web and mobile interfaces. Our solutions include custom-built marketplaces with user-friendly designs, wallet integrations, and blockchain-backed authenticity to elevate digital ownership experiences.',
     },
     {
       title: 'Decentralized Finance (DeFi) Solutions',
       description:
-        'Building DeFi applications, including lending, staking, and automated yield generation.',
+        'Our expertise lies in building DeFi applications such as lending platforms, staking systems, and automated yield generation tools, all accessible via web and mobile apps. We prioritize security, scalability, and intuitive design to empower users with financial tools that operate seamlessly in decentralized environments.',
     },
     {
-      title: 'Blockchain-Based Supply Chain & Identity Management',
+      title: 'Blockchain-Based Supply Chain Solutions',
       description:
-        'Enhancing transparency and security with blockchain solutions for tracking assets and verifying identities.',
+        'We craft web and mobile applications that enhance supply chain transparency and efficiency using blockchain technology. These solutions enable real-time asset tracking, fraud prevention, and data integrity, providing businesses with reliable tools to streamline operations and build trust with stakeholders.',
+    },
+    {
+      title: 'Identity Management Applications',
+      description:
+        'Our development team builds blockchain-powered identity management apps that ensure secure, verifiable digital identities for users. By integrating advanced encryption and decentralized storage, we create solutions that protect privacy, reduce identity theft risks, and simplify authentication processes across platforms.',
     },
   ],
   industries: [
@@ -821,27 +826,32 @@ const BlockchainWeb3Solutions = {
     {
       title: 'Transparent & Decentralized Systems',
       description:
-        'Ensuring immutable, trustless transactions with blockchain technology.',
+        'We ensure the creation of fully transparent and decentralized systems by utilizing blockchain technology to facilitate immutable, trustless transactions. Our web and app solutions provide users with complete visibility and control, fostering confidence in every interaction while maintaining operational integrity across decentralized networks.',
     },
     {
       title: 'Secure & Verified Smart Contracts',
       description:
-        'Developing rigorously tested smart contracts to prevent vulnerabilities and hacks.',
+        'Our approach to developing smart contracts involves rigorous testing, code audits, and advanced security protocols to eliminate vulnerabilities and prevent potential hacks. This ensures that your blockchain applications remain robust, reliable, and safeguarded against threats, delivering peace of mind to all stakeholders.',
     },
     {
       title: 'Scalable & Multi-Chain Compatibility',
       description:
-        'Building blockchain solutions that support cross-chain functionality and seamless integrations.',
+        'We engineer blockchain solutions that scale effortlessly and support cross-chain functionality, allowing seamless integration with multiple networks like Ethereum, Polygon, and Solana. Our web and app development ensures your platforms remain adaptable and future-proof, meeting growing demands without compromising performance.',
     },
     {
       title: 'Regulatory Compliance & Risk Management',
       description:
-        'Adhering to legal frameworks, AML/KYC policies, and blockchain security standards.',
+        'Our development process adheres strictly to legal frameworks, including AML/KYC policies, and incorporates blockchain security standards to mitigate risks effectively. We build web and mobile apps that not only meet regulatory requirements but also protect your business from compliance-related challenges in dynamic environments.',
     },
     {
       title: 'Web3 & Tokenized Ecosystem Integration',
       description:
-        'Empowering decentralized governance, digital assets, and token-based economies.',
+        'We empower decentralized governance, digital assets, and token-based economies by integrating Web3 functionalities into our web and mobile applications. Our solutions enable businesses to leverage tokenized systems, enhancing user engagement and creating innovative economic models tailored to their specific goals.',
+    },
+    {
+      title: 'User-Centric Design & Performance',
+      description:
+        'Our focus on user experience drives us to create intuitive, high-performing web and mobile apps tailored for blockchain and Web3 use cases. By combining sleek design with optimized functionality, we ensure that end-users can interact with complex decentralized systems effortlessly and efficiently.',
     },
   ],
 };
