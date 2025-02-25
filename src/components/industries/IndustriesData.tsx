@@ -692,32 +692,37 @@ const AutomotiveSmartMobility = {
   title: 'Automotive & Smart Mobility',
   imageUrl: AutomotiveImage,
   description:
-    'AonixGlobalAI specializes in delivering cutting-edge web and mobile app solutions for the healthcare industry, empowering organizations with innovative, secure, and scalable digital tools. Below is how we transform healthcare through our development expertise:',
+    'AonixGlobalAI excels in crafting innovative web and mobile app solutions tailored for the automotive and smart mobility industries. Leveraging advanced technologies, we empower businesses with robust, secure, and scalable digital platforms that redefine transportation experiences, enhance operational efficiency, and drive seamless connectivity. Below is how we revolutionize the automotive and mobility sectors through our specialized web and app development expertise.',
   services: [
     {
       title: 'Intelligent Vehicle Connectivity',
       description:
-        'Developing IoT-powered systems for real-time vehicle diagnostics, tracking, and smart telematics.',
+        'We design and develop IoT-powered web and mobile applications that enable real-time vehicle diagnostics, precise tracking, and smart telematics. These solutions integrate seamlessly with vehicle systems, providing drivers and fleet operators with actionable insights, streamlined performance monitoring, and enhanced user experiences through intuitive interfaces and reliable connectivity.',
     },
     {
       title: 'Autonomous Driving Software',
       description:
-        'Creating AI-powered self-driving technologies with advanced sensor fusion and decision-making algorithms.',
+        'Our team builds sophisticated AI-driven web and app platforms for autonomous driving, incorporating advanced sensor fusion and cutting-edge decision-making algorithms. These solutions enable vehicles to process environmental data, make real-time navigation choices, and ensure safety, all while offering users interactive dashboards and remote monitoring capabilities.',
     },
     {
       title: 'Smart Fleet Management',
       description:
-        'Building AI-driven fleet solutions with predictive maintenance, route efficiency, and real-time monitoring.',
+        'We create AI-powered web and mobile applications for fleet management, featuring predictive maintenance tools, optimized route planning, and real-time performance monitoring. These platforms help businesses reduce downtime, improve operational efficiency, and provide fleet managers with detailed analytics and user-friendly controls for overseeing large-scale transportation networks.',
     },
     {
       title: 'Electric Vehicle (EV) Tech Solutions',
       description:
-        'Designing software for EV charging networks, battery analytics, and intelligent energy distribution.',
+        'Our software development expertise shines in crafting web and app solutions for EV charging networks, battery performance analytics, and intelligent energy distribution systems. These tools empower users with real-time charging station locators, energy usage insights, and seamless integration with smart grids, enhancing EV adoption and sustainability efforts.',
     },
     {
       title: 'Mobility & Transport Innovations',
       description:
-        'Developing AI-based ride-sharing, carpooling, and integrated urban mobility platforms.',
+        'We develop AI-enhanced web and mobile platforms for ride-sharing, carpooling, and integrated urban mobility services. These applications offer intuitive booking systems, dynamic route optimization, and real-time updates, ensuring smooth coordination between users, drivers, and city infrastructure for a smarter, more connected transportation ecosystem.',
+    },
+    {
+      title: 'Telematics & Driver Assistance Apps',
+      description:
+        'Our web and mobile apps for telematics and driver assistance deliver real-time data on vehicle health, driving behavior, and road conditions. Built with user-centric design, these solutions provide personalized recommendations, safety alerts, and interactive features, enhancing driver convenience and supporting automotive insurance and aftermarket services.',
     },
   ],
 
@@ -738,30 +743,36 @@ const AutomotiveSmartMobility = {
     {
       title: 'AI-Powered Vehicle Analytics',
       description:
-        'Utilizing machine learning and big data for real-time diagnostics, predictive maintenance, and automation.',
+        'Our web and app solutions harness machine learning and big data to deliver real-time vehicle diagnostics, predictive maintenance insights, and automated performance optimization. These platforms provide users with detailed reports, proactive alerts, and actionable intelligence, ensuring vehicles operate efficiently while reducing costs and enhancing safety across diverse mobility applications.',
     },
     {
       title: 'Compliance with Global Automotive Standards',
       description:
-        'Ensuring adherence to industry regulations, safety protocols, and smart mobility guidelines.',
+        'We ensure our web and mobile apps comply with stringent global automotive regulations, safety protocols, and smart mobility guidelines. By embedding industry best practices into our development process, we create reliable, legally sound platforms that meet international standards, fostering trust among manufacturers, service providers, and end-users alike.',
     },
     {
       title: 'Seamless IoT & Cloud Integration',
       description:
-        'Developing secure V2X (Vehicle-to-Everything) communication systems for next-gen mobility.',
+        'Our development team builds secure, scalable web and app solutions for V2X (Vehicle-to-Everything) communication, integrating IoT and cloud technologies seamlessly. These platforms enable real-time data exchange between vehicles, infrastructure, and users, delivering robust connectivity, enhanced functionality, and a foundation for next-generation mobility innovations.',
     },
     {
       title: 'Sustainability & Energy Optimization',
       description:
-        'Enhancing energy efficiency, EV range, and carbon footprint reduction through intelligent software solutions.',
+        'Through expertly crafted web and mobile applications, we enhance energy efficiency, extend EV range, and reduce carbon footprints with intelligent software solutions. These platforms offer users tools for monitoring energy consumption, optimizing charging schedules, and analyzing environmental impact, supporting greener transportation and sustainable urban development goals.',
     },
     {
       title: 'Secure & Resilient Automotive Cybersecurity',
       description:
-        'Implementing encrypted data transmission, access control, and anti-hacking measures for connected vehicles.',
+        'We implement cutting-edge cybersecurity measures in our web and app platforms, including encrypted data transmission, robust access controls, and anti-hacking protections for connected vehicles. These solutions safeguard sensitive information, prevent unauthorized access, and ensure operational resilience, providing peace of mind in an increasingly digital automotive landscape.',
+    },
+    {
+      title: 'Scalable Platforms for Future Growth',
+      description:
+        'Our web and mobile applications are designed with scalability in mind, allowing automotive businesses to adapt to evolving technologies and market demands. Featuring flexible architectures, seamless updates, and integration capabilities, these platforms support long-term growth, from small fleets to city-wide mobility networks, with consistent performance and reliability.',
     },
   ],
 };
+
 const BlockchainWeb3Solutions = {
   title: 'Blockchain & Web3 Solutions',
   imageUrl: BlockchainImage,
