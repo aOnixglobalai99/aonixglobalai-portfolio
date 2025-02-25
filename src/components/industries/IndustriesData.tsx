@@ -859,32 +859,37 @@ const AIMachineLearningSolutions = {
   title: 'AI & Machine Learning Solutions',
   imageUrl: AiMachineImage,
   description:
-    'AonixGlobalAI specializes in delivering cutting-edge web and mobile app solutions for the healthcare industry, empowering organizations with innovative, secure, and scalable digital tools. Below is how we transform healthcare through our development expertise:',
+    'AonixGlobalAI is a leader in delivering innovative web and mobile app solutions powered by advanced AI and machine learning technologies, designed to transform businesses across multiple industries. Our software and app development expertise creates secure, scalable, and cutting-edge digital tools that enhance efficiency, improve user experiences, optimize workflows, and drive sustainable growth. Below is how we elevate organizations through our AI-driven development capabilities and next-generation technology solutions.',
   services: [
     {
       title: 'Intelligent Chatbots & Virtual Assistants',
       description:
-        'Creating AI-driven chatbots and virtual assistants to enhance customer interactions, streamline support, and automate workflows.',
+        'We craft sophisticated AI-powered chatbots and virtual assistants integrated into web and mobile apps to elevate customer engagement, streamline support services, and automate intricate workflows. These intelligent tools deliver seamless interactions, reduce operational delays, and enhance productivity, making them ideal for businesses seeking efficient communication solutions.',
     },
     {
       title: 'Predictive Analytics & Data Intelligence',
       description:
-        'Harnessing AI to analyze patterns, assess risks, and provide data-driven insights for better decision-making.',
+        'Our developers leverage AI to build web and mobile applications that analyze complex data trends, evaluate risks with precision, and provide actionable insights for smarter decision-making. These solutions empower organizations to anticipate challenges, refine strategies, and unlock opportunities through intuitive, data-rich interfaces tailored to their needs.',
     },
     {
       title: 'AI-Powered Computer Vision',
       description:
-        'Developing advanced vision-based applications for facial recognition, object detection, and automated surveillance.',
+        'We create advanced vision-based web and app solutions featuring capabilities like facial recognition, object detection, and automated surveillance powered by AI. These applications process visual data swiftly, offering real-time insights and enhancing functionalities such as security, quality control, and user interaction across various sectors.',
     },
     {
       title: 'Natural Language Understanding (NLU)',
       description:
-        'Building AI solutions for language processing, sentiment analysis, and automated text-based interactions.',
+        'Our team builds AI-driven web and mobile tools with advanced language processing, sentiment analysis, and automated text interaction features. These solutions enable businesses to interpret user intent accurately, facilitate natural dialogues, and optimize text-based operations, ensuring responsive and intelligent communication platforms.',
     },
     {
       title: 'AI in Healthcare & Diagnostics',
       description:
-        'Utilizing AI for medical imaging, predictive disease modeling, drug discovery, and personalized patient care.',
+        'We develop specialized web and mobile apps that harness AI for healthcare applications, including medical imaging, predictive disease modeling, drug discovery, and personalized care solutions. These tools improve diagnostic precision, support clinical workflows, and deliver tailored insights, enhancing outcomes in medical and patient-facing environments.',
+    },
+    {
+      title: 'Custom AI Workflow Automation',
+      description:
+        'Our custom AI-driven web and app solutions automate repetitive tasks, streamline business processes, and boost overall productivity for organizations. Designed to integrate seamlessly with existing systems, these tools reduce manual efforts, adapt to unique workflows, and scale effortlessly as operational demands evolve.',
     },
   ],
   industries: [
@@ -903,27 +908,32 @@ const AIMachineLearningSolutions = {
     {
       title: 'State-of-the-Art AI Models',
       description:
-        'Developing advanced deep learning and neural network solutions tailored to business needs.',
+        'We integrate cutting-edge deep learning and neural network technologies into web and mobile apps, tailored to meet diverse business objectives. These advanced models ensure high performance, adaptability, and innovation, providing clients with powerful, future-ready solutions that align perfectly with their strategic goals.',
     },
     {
       title: 'Secure & Compliant AI Systems',
       description:
-        'Ensuring AI-driven applications meet data protection standards such as GDPR and HIPAA.',
+        'Our AI-powered web and app solutions are built with robust security protocols to comply with strict regulations like GDPR and HIPAA, protecting sensitive data effectively. We prioritize reliability and trust, delivering platforms that safeguard user information while meeting industry-specific compliance standards seamlessly.',
     },
     {
       title: 'Scalable & Adaptive AI Solutions',
       description:
-        'Designing AI systems that efficiently process large datasets and grow with business expansion.',
+        'We engineer AI-driven web and mobile systems that efficiently handle large datasets and scale dynamically as businesses expand over time. These adaptable solutions maintain performance under growing demands, offering long-term flexibility and reliability for organizations across various operational scales.',
     },
     {
       title: 'Transparent & Responsible AI',
       description:
-        'Promoting fairness, explainability, and ethical AI practices for unbiased decision-making.',
+        'Our development process embeds fairness, explainability, and ethical AI practices into web and app solutions, ensuring unbiased and accountable outcomes. We create transparent systems that stakeholders can trust and understand, promoting integrity and responsible use of technology in every application.',
     },
     {
       title: 'Cloud & API Integration',
       description:
-        'Seamlessly integrating AI models with cloud-based services and enterprise applications.',
+        'We seamlessly integrate AI models into web and mobile apps with cloud services and enterprise APIs, enabling real-time data access and enhanced functionality. This connectivity supports collaboration, optimizes performance, and ensures smooth operation across platforms, tailored to business infrastructure needs.',
+    },
+    {
+      title: 'User-Centric Design & Optimization',
+      description:
+        'Our web and app development emphasizes intuitive, AI-enhanced interfaces optimized for user engagement, performance, and accessibility. We focus on delivering solutions that are not only technologically advanced but also user-friendly, ensuring a seamless and enjoyable experience for all end-users.',
     },
   ],
 };
