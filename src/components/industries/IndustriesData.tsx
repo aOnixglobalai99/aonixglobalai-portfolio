@@ -941,32 +941,37 @@ const ManufacturingIndustrialAutomation = {
   title: 'Smart Manufacturing Solutions',
   imageUrl: ManufacturingImage,
   description:
-    'AonixGlobalAI specializes in delivering cutting-edge web and mobile app solutions for the healthcare industry, empowering organizations with innovative, secure, and scalable digital tools. Below is how we transform healthcare through our development expertise:',
+    'AonixGlobalAI excels in crafting advanced web and mobile app solutions tailored specifically for the manufacturing and industrial automation sectors. We empower businesses by providing innovative, secure, and highly scalable digital tools designed to streamline operations and enhance productivity. Our development expertise transforms industrial processes through custom software, intuitive applications, and seamless integrations, enabling organizations to stay competitive in a fast-evolving landscape. Below is how we revolutionize manufacturing with our cutting-edge development services:',
   services: [
     {
       title: 'Industrial IoT & Smart Monitoring',
       description:
-        'Integrating sensors and connected devices for real-time tracking, predictive maintenance, and process optimization.',
+        'We design and develop sophisticated web and mobile applications that integrate sensors and connected devices, enabling real-time tracking of machinery and assets. Our solutions support predictive maintenance by analyzing data trends and optimizing industrial processes, ensuring uninterrupted operations. These custom-built platforms provide user-friendly interfaces and robust backend systems to deliver actionable insights and improve decision-making across the board.',
     },
     {
       title: 'Automation & AI-Driven Robotics',
       description:
-        'Enhancing production efficiency with intelligent automation, robotics, and workflow streamlining.',
+        'Our team builds intelligent web and app solutions to enhance production efficiency through automation and AI-driven robotics. These tools streamline workflows, reduce manual intervention, and boost operational precision with tailored software integrations. By leveraging cutting-edge development techniques, we create scalable platforms that adapt to evolving manufacturing needs and support seamless robotic process coordination.',
     },
     {
       title: 'Digital Twin & Virtual Factory Models',
       description:
-        'Creating AI-powered digital replicas of production environments to optimize operations and reduce risks.',
+        'We craft AI-powered web and mobile applications that create detailed digital replicas of production environments, allowing businesses to simulate and optimize operations virtually. These innovative tools help reduce risks, improve planning, and enhance performance by providing real-time insights. Our development expertise ensures these virtual factory models are scalable, secure, and seamlessly integrated with existing systems.',
     },
     {
       title: 'Predictive Equipment Maintenance',
       description:
-        'Leveraging machine learning to identify equipment failures before they happen, reducing downtime and costs.',
+        'Using advanced machine learning algorithms, we develop custom applications that proactively monitor equipment health and predict potential failures before they occur. These solutions minimize downtime, cut operational costs, and extend machinery lifespan by delivering detailed analytics and timely alerts. Our web and app platforms provide intuitive dashboards for easy management and data-driven decision-making.',
     },
     {
       title: 'Logistics & Smart Supply Chain Automation',
       description:
-        'Developing AI-powered inventory tracking, demand forecasting, and warehouse management solutions.',
+        'AonixGlobalAI creates AI-powered web and mobile apps for inventory tracking, demand forecasting, and warehouse management, transforming supply chain efficiency. Our solutions automate logistics processes, improve accuracy, and enable real-time visibility into operations. With scalable software architecture, we ensure seamless performance and adaptability to meet the dynamic needs of modern supply chains.',
+    },
+    {
+      title: 'Custom Manufacturing Workflow Apps',
+      description:
+        'We specialize in developing tailored web and mobile applications that streamline manufacturing workflows from start to finish. These platforms enhance coordination, automate repetitive tasks, and provide real-time updates to teams, boosting overall productivity. Our custom-built solutions are designed to integrate with existing tools, ensuring a cohesive and efficient operational ecosystem.',
     },
   ],
 
@@ -987,27 +992,32 @@ const ManufacturingIndustrialAutomation = {
     {
       title: 'AI-Powered Manufacturing Optimization',
       description:
-        'Boosting productivity with data-driven insights and automated process improvements.',
+        'Our expertly crafted web and app solutions boost productivity by delivering data-driven insights and automating complex manufacturing processes. These platforms analyze performance metrics, identify inefficiencies, and recommend improvements, ensuring optimal output. With AonixGlobalAI, businesses gain a competitive edge through intelligent software tailored to their unique operational needs.',
     },
     {
       title: 'Secure & Scalable Industrial IoT',
       description:
-        'Deploying secure, cloud-connected IIoT platforms for real-time industrial control.',
+        'We deploy robust, cloud-connected Industrial IoT platforms through custom web and mobile apps, ensuring secure real-time control over industrial systems. Our development prioritizes top-tier security protocols and scalability, allowing seamless expansion as operations grow. These solutions provide reliable connectivity and protect sensitive data across all devices and networks.',
     },
     {
       title: 'Proactive Maintenance & Cost Reduction',
       description:
-        'Minimizing equipment failures with predictive maintenance and advanced analytics.',
+        'Our predictive maintenance applications leverage advanced analytics to monitor equipment health, minimizing unexpected failures and reducing operational costs. Built with intuitive interfaces, these tools deliver actionable insights and automated alerts, helping businesses save time and resources. AonixGlobalAI ensures long-term savings through proactive, software-driven strategies.',
     },
     {
       title: 'Eco-Friendly & Energy-Smart Solutions',
       description:
-        'Enhancing sustainability with energy-efficient manufacturing strategies.',
+        'We develop innovative web and mobile apps that promote sustainability by optimizing energy use in manufacturing processes. These solutions track consumption patterns, suggest efficiency improvements, and support eco-friendly strategies, reducing environmental impact. Our software empowers businesses to achieve green goals while maintaining profitability and operational excellence.',
     },
     {
       title: 'Seamless ERP & MES System Integration',
       description:
-        'Ensuring smooth connectivity between automation systems and enterprise resource planning tools.',
+        'AonixGlobalAI builds web and app solutions that ensure smooth connectivity between automation systems, enterprise resource planning (ERP), and manufacturing execution systems (MES). Our integrations enhance data flow, improve coordination, and streamline decision-making across platforms. These custom tools are designed for reliability and adaptability in complex industrial environments.',
+    },
+    {
+      title: 'Real-Time Analytics & Reporting',
+      description:
+        'Our advanced applications provide real-time analytics and detailed reporting features, empowering manufacturers with actionable insights into their operations. These web and mobile platforms deliver customizable dashboards, track key performance indicators, and support strategic planning. We enable data-driven success with intuitive, high-performance software solutions.',
     },
   ],
 };
