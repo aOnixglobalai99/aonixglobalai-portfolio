@@ -10,11 +10,12 @@ import { useRouter } from 'next/router';
 const DetailIndustry = () => {
   const router = useRouter();
   const { industry } = router.query;
-  console.log(industry);
+  // console.log(industry);
 
   const [category, setCategory] = useState<{
     title: string;
     imageUrl: StaticImageData;
+    description: string;
     services: { title: string; description: string }[];
     industries: string[];
     trustFactors: { title: string; description: string }[];
@@ -35,21 +36,24 @@ const DetailIndustry = () => {
   console.log(category);
 
   return (
-    <div className="max-w-5xl mx-auto p-5 pt-[100px]">
+    <div className="max-w-6xl mx-auto p-5">
       {category && (
         <Image
           src={category.imageUrl}
-          alt="Telecom Networking Services"
-          className="w-full h-96 mb-6 rounded-lg shadow-md"
+          alt={category.title}
+          className="w-full h-auto max-h-96 object-cover mb-6 rounded-lg shadow-md"
+          sizes="(max-width: 768px) 100vw, 50vw"
         />
       )}
 
       {/* Services Section */}
       <section className="mb-9">
-        <h2 className="text-3xl font-semibold tracking-wide mb-9">
-          {category?.title.replace(/([A-Z])/g, ' $1').trim()} Services Offered
-          By AonixGlobalAI
+        <h2 className="text-3xl font-semibold tracking-wide mb-4">
+          {category?.title.replace(/([A-Z])/g, ' $1').trim()} through Web and
+          App Development By AonixGlobalAI
         </h2>
+        {/* title description */}
+        {category && <p className="mb-8">{category.description}</p>}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {category?.services.map((service, index) => (
             <div
@@ -59,9 +63,9 @@ const DetailIndustry = () => {
               <Image
                 src={Logo}
                 alt={category?.title.replace(/([A-Z])/g, ' $1').trim()}
-                className="w-10 h-10"
+                className="w-10 h-10 mb-6"
               />
-              <h3 className="text-xl font-bold mb-2 text-[#03104e]">
+              <h3 className="text-xl font-bold text-[#03104e] mb-6">
                 {service.title}
               </h3>
               <p className="text-gray-600">{service.description}</p>
@@ -90,13 +94,13 @@ const DetailIndustry = () => {
         <h2 className="text-3xl tracking-wide font-semibold mb-9">
           Why Trust Us?
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {category?.trustFactors.map((factor, index) => (
             <div
               key={index}
               className="p-6 border rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-full"
             >
-              <h3 className="text-xl font-bold mb-2 text-[#03104e]">
+              <h3 className="text-xl font-bold text-[#03104e] mb-6">
                 {factor.title}
               </h3>
               <p className="text-gray-600">{factor.description}</p>

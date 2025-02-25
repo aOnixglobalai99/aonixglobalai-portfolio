@@ -164,7 +164,7 @@ const Industry = () => {
                   <button
                     className="bg-blue-800 text-white px-4 py-2 rounded-3xl hover:bg-blue-700 ml-7"
                     onClick={() =>
-                      router.push(
+                      window.open(
                         `/industries/${card.title.replace(/\s+/g, '-')}`
                       )
                     }
