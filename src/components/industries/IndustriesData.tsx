@@ -1,19 +1,6 @@
-import HealthcareImage from '../../../assets/industries/Healthcare-IT-Solutions.jpg';
-import FintechImage from '../../../assets/industries/Fintech.jpg';
-import TelecomImage from '../../../assets/industries/Telecom-&-Networking.webp';
-import AviationImage from '../../../assets/industries/Aviation & Aerospace Technology.webp';
-import EcommerceImage from '../../../assets/industries/Ecommerce Technology.jpg';
-import CyberSecurityImage from '../../../assets/industries/Cybersecurity & Data Protection.webp';
-import EducationImage from '../../../assets/industries/Education.webp';
-import CyberComputingImage from '../../../assets/industries/Cloud Computing & SaaS Solutions.webp';
-import AutomotiveImage from '../../../assets/industries/Automotive & Smart Mobility.jpg';
-import BlockchainImage from '../../../assets/industries/Blockchain & Web3 Solutions.webp';
-import AiMachineImage from '../../../assets/industries/AI & Machine Learning Solutions.webp';
-import ManufacturingImage from '../../../assets/industries/Manufacturing.jpg';
-
 const HealthCareServices = {
   title: 'Healthcare IT Solutions',
-  imageUrl: HealthcareImage,
+  imageUrl: '/images/industryBanner/healthcare.jpg',
   description:
     'AonixGlobalAI develops advanced web and mobile applications for healthcare, offering secure, scalable, and innovative solutions. We help organizations enhance patient care, streamline workflows, and improve data management. Our expertise includes AI-driven analytics, cloud computing, and telemedicine, enabling seamless communication between providers and patients. With a focus on security, compliance, and efficiency, our tools optimize processes, boost patient engagement, and support regulatory standards, ensuring healthcare organizations remain adaptable.',
   services: [
@@ -95,7 +82,7 @@ const HealthCareServices = {
 };
 const FinancialServices = {
   title: 'Fintech & Banking Solutions',
-  imageUrl: FintechImage,
+  imageUrl: '/images/industryBanner/fintech.avif',
   description:
     'AonixGlobalAI leverages its expertise in web and mobile app development to deliver high-performance fintech and banking solutions. We empower financial organizations with secure, scalable, and user-centric digital platforms that enhance efficiency and customer interactions. Our cutting-edge technologies streamline processes, optimize workflows, and help businesses stay competitive. With a strong focus on security, compliance, and user experience, our solutions meet modern banking demands while ensuring reliability, flexibility, and growth.',
   services: [
@@ -177,7 +164,7 @@ const FinancialServices = {
 };
 const TelecomNetworkingServices = {
   title: 'Telecom & Networking',
-  imageUrl: TelecomImage,
+  imageUrl: '/images/industryBanner/telecom.avif',
   // Original: 36 words, New: 72 words
   description:
     'AonixGlobalAI excels in crafting innovative, high-performance web and mobile app solutions tailored specifically for the telecom and networking industry. Our expertise empowers businesses with secure, scalable, and cutting-edge digital tools designed to streamline operations and enhance connectivity. By leveraging advanced technologies like AI and cloud computing, along with deep industry insights, we revolutionize telecom workflows, delivering custom applications that meet unique organizational needs and drive success across diverse, complex communication networks.',
@@ -273,7 +260,7 @@ const TelecomNetworkingServices = {
 
 const AviationAerospaceTechnology = {
   title: 'Aviation & Aerospace Technology',
-  imageUrl: AviationImage,
+  imageUrl: '/images/industryBanner/aviation.avif',
   description:
     'AonixGlobalAI excels in crafting innovative web and mobile app solutions specifically tailored for the aviation and aerospace industries. Our extensive expertise empowers organizations with advanced, secure, and highly scalable digital tools designed to meet the evolving and complex demands of this dynamic sector. We focus on delivering cutting-edge solutions that enhance operational efficiency, optimize workflows, and improve safety and compliance. Below, explore how we revolutionize aviation and aerospace through our specialized software and app development services.',
   services: [
@@ -357,7 +344,7 @@ const AviationAerospaceTechnology = {
 };
 const ECommerceRetailTech = {
   title: 'E-Commerce & Retail Tech',
-  imageUrl: EcommerceImage,
+  imageUrl: '/images/industryBanner/ecommerce.avif',
   description:
     'AonixGlobalAI crafts state-of-the-art web and mobile application solutions for the e-commerce and retail sectors, helping businesses thrive with innovative, secure, and scalable digital platforms. Our expertise transforms retail by delivering tools that enhance efficiency, streamline customer interactions, and drive sustainable growth through advanced technology. We also focus on improving inventory management, boosting customer engagement, and enhancing data-driven decision-making to keep businesses competitive in the evolving digital marketplace.',
   services: [
@@ -438,7 +425,7 @@ const ECommerceRetailTech = {
   ],
 };
 const CybersecurityDataProtection = {
-  imageUrl: CyberSecurityImage,
+  imageUrl: '/images/industryBanner/cyber-security.avif',
   title: 'Cybersecurity & Data Protection',
   description:
     'AonixGlobalAI excels in crafting advanced web and mobile app solutions tailored for industries like healthcare, finance, and beyond, seamlessly integrating top-tier cybersecurity and data protection features. Through our development expertise, we empower organizations by delivering innovative, secure, and highly scalable digital tools. Our approach ensures that your applications operate flawlessly while remaining safeguarded against evolving threats, providing confidence and reliability in an ever-growing digital world.',
@@ -524,7 +511,7 @@ const CybersecurityDataProtection = {
 
 const EducationELearningTechnology = {
   title: 'Education & E-Learning Technology',
-  imageUrl: EducationImage,
+  imageUrl: '/images/industryBanner/edutech.avif',
   description:
     'AonixGlobalAI excels in crafting state-of-the-art web and mobile app solutions tailored for the education and e-learning industry. Our expertise empowers schools, universities, and training organizations with innovative, secure, and highly scalable digital platforms. By leveraging advanced technologies, we create transformative tools that enhance learning experiences, streamline educational processes, and drive engagement across diverse learners. Here’s how our web and app development services revolutionize education:',
   services: [
@@ -606,7 +593,7 @@ const EducationELearningTechnology = {
 };
 const CloudComputingSaaSSolutions = {
   title: 'Cloud Computing & SaaS Solutions',
-  imageUrl: CyberComputingImage,
+  imageUrl: '/images/industryBanner/cloud.jpg',
   description:
     'AonixGlobalAI is a leader in delivering innovative web and mobile application solutions powered by advanced cloud computing and SaaS technologies. Our expert team designs and develops secure, scalable, and cutting-edge digital tools that empower businesses across various sectors to achieve operational excellence. With a focus on software and app development, we provide tailored cloud-based platforms that drive efficiency, flexibility, and growth. Below, discover how our cloud expertise transforms businesses through modern development practices:',
   services: [
@@ -690,7 +677,7 @@ const CloudComputingSaaSSolutions = {
 };
 const AutomotiveSmartMobility = {
   title: 'Automotive & Smart Mobility',
-  imageUrl: AutomotiveImage,
+  imageUrl: '/images/industryBanner/automotive.avif',
   description:
     'AonixGlobalAI excels in crafting innovative web and mobile app solutions tailored for the automotive and smart mobility industries. Leveraging advanced technologies, we empower businesses with robust, secure, and scalable digital platforms that redefine transportation experiences, enhance operational efficiency, and drive seamless connectivity. Below is how we revolutionize the automotive and mobility sectors through our specialized web and app development expertise.',
   services: [
@@ -775,7 +762,7 @@ const AutomotiveSmartMobility = {
 
 const BlockchainWeb3Solutions = {
   title: 'Blockchain & Web3 Solutions',
-  imageUrl: BlockchainImage,
+  imageUrl: '/images/industryBanner/dapps.avif',
   description:
     'AonixGlobalAI excels in crafting innovative web and mobile app solutions tailored for blockchain and Web3 technologies, with a strong emphasis on empowering industries like healthcare through advanced software development. Our team leverages cutting-edge tools and frameworks to deliver secure, scalable, and user-friendly digital platforms that redefine how organizations operate in decentralized ecosystems. Below is how we revolutionize industries with our specialized development expertise:',
   services: [
@@ -857,7 +844,7 @@ const BlockchainWeb3Solutions = {
 };
 const AIMachineLearningSolutions = {
   title: 'AI & Machine Learning Solutions',
-  imageUrl: AiMachineImage,
+  imageUrl: '/images/industryBanner/ai.avif',
   description:
     'AonixGlobalAI is a leader in delivering innovative web and mobile app solutions powered by advanced AI and machine learning technologies, designed to transform businesses across multiple industries. Our software and app development expertise creates secure, scalable, and cutting-edge digital tools that enhance efficiency, improve user experiences, optimize workflows, and drive sustainable growth. Below is how we elevate organizations through our AI-driven development capabilities and next-generation technology solutions.',
   services: [
@@ -939,7 +926,7 @@ const AIMachineLearningSolutions = {
 };
 const ManufacturingIndustrialAutomation = {
   title: 'Smart Manufacturing Solutions',
-  imageUrl: ManufacturingImage,
+  imageUrl: '/images/industryBanner/mfg.avif',
   description:
     'AonixGlobalAI excels in crafting advanced web and mobile app solutions tailored specifically for the manufacturing and industrial automation sectors. We empower businesses by providing innovative, secure, and highly scalable digital tools designed to streamline operations and enhance productivity. Our development expertise transforms industrial processes through custom software, intuitive applications, and seamless integrations, enabling organizations to stay competitive in a fast-evolving landscape. Below is how we revolutionize manufacturing with our cutting-edge development services:',
   services: [

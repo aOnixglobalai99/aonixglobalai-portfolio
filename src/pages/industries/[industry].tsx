@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from 'react';
 // import { useParams } from "react-router-dom";
 import categories from '../../components/industries/IndustriesData';
-import Image, { StaticImageData } from 'next/image';
-import Logo from '../../../assets/industries/tick.png';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
+
 // Data Objects
 
 const DetailIndustry = () => {
@@ -14,7 +14,7 @@ const DetailIndustry = () => {
 
   const [category, setCategory] = useState<{
     title: string;
-    imageUrl: StaticImageData;
+    imageUrl: string;
     description: string;
     services: { title: string; description: string }[];
     industries: string[];
@@ -41,6 +41,8 @@ const DetailIndustry = () => {
         <Image
           src={category.imageUrl}
           alt={category.title}
+          width={600}
+          height={400}
           className="w-full h-auto max-h-96 object-cover mb-6 rounded-lg shadow-md"
           sizes="(max-width: 768px) 100vw, 50vw"
         />
@@ -61,7 +63,9 @@ const DetailIndustry = () => {
               className="p-6 border rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               <Image
-                src={Logo}
+                src="/images/industry/tick.png"
+                width={60}
+                height={40}
                 alt={category?.title.replace(/([A-Z])/g, ' $1').trim()}
                 className="w-10 h-10 mb-6"
               />
