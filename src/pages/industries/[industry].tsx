@@ -18,6 +18,7 @@ const DetailIndustry = () => {
     description: string;
     services: { title: string; description: string }[];
     industries: string[];
+    industryImages: string[];
     trustFactors: { title: string; description: string }[];
   } | null>(null);
 
@@ -82,15 +83,26 @@ const DetailIndustry = () => {
       <section className="mb-6">
         <h2 className="text-3xl tracking-wide font-semibold mb-3">
           Industries That Can Benefit from Our{' '}
-          {category?.title.replace(/([A-Z])/g, ' $1').trim()}
+          {category?.title.replace(/([A-Z])/g, '$1').trim()}
         </h2>
-        <ul className="list-disc pl-5 grid grid-cols-1 md:grid-cols-2 gap-2">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
           {category?.industries.map((industry, index) => (
-            <li key={index} className="text-gray-700">
-              {industry}
-            </li>
+            <div key={index} className="relative">
+              {/* Image */}
+              {category?.industryImages[index] && (
+                <img
+                  src={category.industryImages[index]}
+                  alt={industry}
+                  className="w-full h-auto object-cover rounded-lg"
+                />
+              )}
+              {/* Text overlaid on the image */}
+              <p className="absolute bottom-2 left-2 text-white font-bold bg-blue-700 bg-opacity-75 px-2 py-1 rounded ">
+                {industry}
+              </p>
+            </div>
           ))}
-        </ul>
+        </div>
       </section>
 
       {/* Trust Factors Section */}
