@@ -34,7 +34,7 @@ const DetailIndustry = () => {
     }
   }, [industry]);
 
-  console.log(category);
+  // console.log(category);
 
   return (
     <div className="max-w-6xl mx-auto p-5">
@@ -81,11 +81,11 @@ const DetailIndustry = () => {
 
       {/* Industries Section */}
       <section className="mb-6">
-        <h2 className="text-3xl tracking-wide font-semibold mb-3">
+        <h2 className="text-3xl tracking-wide font-semibold mb-6">
           Industries That Can Benefit from Our{' '}
           {category?.title.replace(/([A-Z])/g, '$1').trim()}
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
           {category?.industries.map((industry, index) => (
             <div key={index} className="relative">
               {/* Image */}
@@ -97,7 +97,7 @@ const DetailIndustry = () => {
                 />
               )}
               {/* Text overlaid on the image */}
-              <p className="absolute bottom-2 left-2 text-white font-bold bg-blue-700 bg-opacity-75 px-2 py-1 rounded ">
+              <p className="absolute bottom-2 left-2 right-2 text-center text-white font-bold bg-blue-700 bg-opacity-75 px-2 py-1 rounded ">
                 {industry}
               </p>
             </div>
