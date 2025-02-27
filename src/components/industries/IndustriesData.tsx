@@ -47,6 +47,18 @@ const HealthCareServices = {
     'Public Health Agencies',
     'Veterinary & Animal Care Clinics',
   ],
+  industryImages: [
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Telehealth-Platforms.jpg',
+    '/images/industry-specific-images/healthcare/Health-and-Wellness-Startups.jpg',
+    '/images/industry-specific-images/healthcare/Urgent-Care-Facilities.jpg',
+    '/images/industry-specific-images/healthcare/Mental-Healthcare-Providers.avif',
+    '/images/industry-specific-images/healthcare/Pharmaceutical-Research-and-Development.avif',
+    '/images/industry-specific-images/healthcare/Medical-Training-Institutions.jpg',
+    '/images/industry-specific-images/healthcare/Pediatric-Healthcare-Services.jpg',
+    '/images/industry-specific-images/healthcare/Public-Health-Agencies.jpg',
+    '/images/industry-specific-images/healthcare/Veterinary-and-Animal-Care-Clinics.jpg',
+  ],
   trustFactors: [
     {
       title: 'Comprehensive Development Support',
@@ -128,6 +140,18 @@ const FinancialServices = {
     'Financial Regulatory & Compliance Bodies',
     'Credit Unions & Cooperative Banks',
     'Blockchain & Cryptocurrency Ecosystem',
+  ],
+  industryImages: [
+    '/images/industry-specific-images/fintech/Commercial-and-Retail-Banks.jpg',
+    '/images/industry-specific-images/fintech/Fintech-Startups-and-Enterprises.avif',
+    '/images/industry-specific-images/fintech/Wealth-and-Asset-Management=Firms.avif',
+    '/images/industry-specific-images/fintech/Insurance-and-Risk-Management-Companies.avif',
+    '/images/industry-specific-images/fintech/Payment-Processing-and-Gateway-Services.avif',
+    '/images/industry-specific-images/fintech/Microfinance-and-Digital-Lending-Platforms.avif',
+    '/images/industry-specific-images/fintech/Forex-and-Stock-Trading-Platforms.avif',
+    '/images/industry-specific-images/fintech/Financial-Regulatory-and-Compliance-Bodies.avif',
+    '/images/industry-specific-images/fintech/Credit-Unions-and-Cooperative-Banks.avif',
+    '/images/industry-specific-images/fintech/Blockchain-and-Cryptocurrency-Ecosystem.avif',
   ],
   trustFactors: [
     {
@@ -217,6 +241,18 @@ const TelecomNetworkingServices = {
     'Government & Defense Communication Networks',
     'Networking Hardware Manufacturers',
     'Enterprise-Grade Network Solutions',
+  ],
+  industryImages: [
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
   ],
   trustFactors: [
     {
@@ -308,6 +344,18 @@ const AviationAerospaceTechnology = {
     'Aviation Training & Certification Bodies',
     'Government & Aviation Regulators',
   ],
+  industryImages: [
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+  ],
 
   trustFactors: [
     {
@@ -391,6 +439,18 @@ const ECommerceRetailTech = {
     'Subscription-Based Business Models',
     'Dropshipping & Print-on-Demand Ventures',
   ],
+  industryImages: [
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+  ],
   trustFactors: [
     {
       title: 'Scalable & High-Performance Solutions',
@@ -473,6 +533,18 @@ const CybersecurityDataProtection = {
     'Education & Academic Institutions',
     'Media, Entertainment & Content Platforms',
     'Logistics & Supply Chain Management',
+  ],
+  industryImages: [
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
   ],
 
   trustFactors: [
@@ -558,6 +630,18 @@ const EducationELearningTechnology = {
     'MOOCs & Distance Learning Providers',
     'Language Learning & Literacy Platforms',
   ],
+  industryImages: [
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+  ],
   trustFactors: [
     {
       title: 'AI-Powered Learning Customization',
@@ -640,6 +724,18 @@ const CloudComputingSaaSSolutions = {
     'Media, Streaming & Content Distribution',
     'Government & Public Sector Organizations',
     'Telecom & Network Service Providers',
+  ],
+  industryImages: [
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
   ],
 
   trustFactors: [
@@ -725,6 +821,18 @@ const AutomotiveSmartMobility = {
     'Automotive Insurance & Telematics',
     'Aftermarket & Auto Tech Services',
   ],
+  industryImages: [
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+  ],
 
   trustFactors: [
     {
@@ -809,6 +917,18 @@ const BlockchainWeb3Solutions = {
     'Intellectual Property & Digital Rights Protection',
     'Cybersecurity & Identity Authentication',
   ],
+  industryImages: [
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+  ],
   trustFactors: [
     {
       title: 'Transparent & Decentralized Systems',
@@ -890,6 +1010,18 @@ const AIMachineLearningSolutions = {
     'Automotive & Connected Vehicles',
     'Media, Content & Entertainment',
     'Energy & Sustainability Solutions',
+  ],
+  industryImages: [
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
   ],
   trustFactors: [
     {
@@ -973,6 +1105,18 @@ const ManufacturingIndustrialAutomation = {
     'Heavy Machinery & Industrial Equipment',
     'Logistics & Smart Warehousing',
     'Metallurgy & Advanced Materials Processing',
+  ],
+  industryImages: [
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Telehealth-Platforms.jpg',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
   ],
 
   trustFactors: [
