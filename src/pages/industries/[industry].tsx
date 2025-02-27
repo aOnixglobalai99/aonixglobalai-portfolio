@@ -52,8 +52,8 @@ const DetailIndustry = () => {
       {/* Services Section */}
       <section className="mb-9">
         <h2 className="text-3xl font-semibold tracking-wide mb-4">
-          {category?.title.replace(/([A-Z])/g, ' $1').trim()} through Web and
-          App Development By AonixGlobalAI
+          {category?.title.replace(/([A-Z])/g, '$1').trim()} through Web and App
+          Development By AonixGlobalAI
         </h2>
         {/* title description */}
         {category && <p className="mb-8">{category.description}</p>}
