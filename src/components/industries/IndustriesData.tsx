@@ -47,6 +47,18 @@ const HealthCareServices = {
     'Public Health Agencies',
     'Veterinary & Animal Care Clinics',
   ],
+  industryImages: [
+    '/images/industry-specific-images/healthcare/Hospitals-and-Medical-Centers.avif',
+    '/images/industry-specific-images/healthcare/Telehealth-Platforms.jpg',
+    '/images/industry-specific-images/healthcare/Health-and-Wellness-Startups.jpg',
+    '/images/industry-specific-images/healthcare/Urgent-Care-Facilities.jpg',
+    '/images/industry-specific-images/healthcare/Mental-Healthcare-Providers.avif',
+    '/images/industry-specific-images/healthcare/Pharmaceutical-Research-and-Development.avif',
+    '/images/industry-specific-images/healthcare/Medical-Training-Institutions.jpg',
+    '/images/industry-specific-images/healthcare/Pediatric-Healthcare-Services.jpg',
+    '/images/industry-specific-images/healthcare/Public-Health-Agencies.jpg',
+    '/images/industry-specific-images/healthcare/Veterinary-and-Animal-Care-Clinics.jpg',
+  ],
   trustFactors: [
     {
       title: 'Comprehensive Development Support',
@@ -128,6 +140,18 @@ const FinancialServices = {
     'Financial Regulatory & Compliance Bodies',
     'Credit Unions & Cooperative Banks',
     'Blockchain & Cryptocurrency Ecosystem',
+  ],
+  industryImages: [
+    '/images/industry-specific-images/fintech/Commercial-and-Retail-Banks.jpg',
+    '/images/industry-specific-images/fintech/Fintech-Startups-and-Enterprises.avif',
+    '/images/industry-specific-images/fintech/Wealth-and-Asset-Management=Firms.avif',
+    '/images/industry-specific-images/fintech/Insurance-and-Risk-Management-Companies.avif',
+    '/images/industry-specific-images/fintech/Payment-Processing-and-Gateway-Services.avif',
+    '/images/industry-specific-images/fintech/Microfinance-and-Digital-Lending-Platforms.avif',
+    '/images/industry-specific-images/fintech/Forex-and-Stock-Trading-Platforms.avif',
+    '/images/industry-specific-images/fintech/Financial-Regulatory-and-Compliance-Bodies.avif',
+    '/images/industry-specific-images/fintech/Credit-Unions-and-Cooperative-Banks.avif',
+    '/images/industry-specific-images/fintech/Blockchain-and-Cryptocurrency-Ecosystem.avif',
   ],
   trustFactors: [
     {
@@ -217,6 +241,18 @@ const TelecomNetworkingServices = {
     'Government & Defense Communication Networks',
     'Networking Hardware Manufacturers',
     'Enterprise-Grade Network Solutions',
+  ],
+  industryImages: [
+    '/images/industry-specific-images/telecom/Telecommunication-Service-Providers.avif',
+    '/images/industry-specific-images/telecom/Broadband-and-Internet-Companies.avif',
+    '/images/industry-specific-images/telecom/Wireless-and-Mobile-Network-Operators.avif',
+    '/images/industry-specific-images/telecom/Cloud-Infrastructure-and-Data-Centers.jpg',
+    '/images/industry-specific-images/telecom/VoIP-and-Digital-Communication-Platforms.jpg',
+    '/images/industry-specific-images/telecom/Satellite-and-Space-Communication-Enterprises.avif',
+    '/images/industry-specific-images/telecom/IoT-and-Smart-Connectivity-Solutions.avif',
+    '/images/industry-specific-images/telecom/Government-and-Defense-Communication-Networks.avif',
+    '/images/industry-specific-images/telecom/Networking-Hardware-Manufacturers.avif',
+    '/images/industry-specific-images/telecom/Enterprise-Grade-Network-Solutions.avif',
   ],
   trustFactors: [
     {
@@ -308,6 +344,18 @@ const AviationAerospaceTechnology = {
     'Aviation Training & Certification Bodies',
     'Government & Aviation Regulators',
   ],
+  industryImages: [
+    '/images/industry-specific-images/aviation/Commercial-Airlines-and-Private-Aviation.avif',
+    '/images/industry-specific-images/aviation/Aerospace-Engineering-Firms.avif',
+    '/images/industry-specific-images/aviation/Space-Exploration-and-Research-Centers.jpg',
+    '/images/industry-specific-images/aviation/Defense-and-Security-Sectors.jpg',
+    '/images/industry-specific-images/aviation/Global-Air-Traffic-Management.avif',
+    '/images/industry-specific-images/aviation/Satellite-Operations-and-Communication.avif',
+    '/images/industry-specific-images/aviation/Aircraft-Maintenance-and-Upgrades.avif',
+    '/images/industry-specific-images/aviation/Drone-and-UAV-Development.jpg',
+    '/images/industry-specific-images/aviation/Aviation-Training-and-Certification-Bodies.jpg',
+    '/images/industry-specific-images/aviation/Government-and-Aviation-Regulators.avif',
+  ],
 
   trustFactors: [
     {
@@ -391,6 +439,18 @@ const ECommerceRetailTech = {
     'Subscription-Based Business Models',
     'Dropshipping & Print-on-Demand Ventures',
   ],
+  industryImages: [
+    '/images/industry-specific-images/ecommerce/Digital-Marketplaces.avif',
+    '/images/industry-specific-images/ecommerce/Retail-and-E-Commerce-Enterprises.avif',
+    '/images/industry-specific-images/ecommerce/Fashion-and-Apparel-Retailers.avif',
+    '/images/industry-specific-images/ecommerce/Grocery-and-Food-Delivery-Platforms.avif',
+    '/images/industry-specific-images/ecommerce/Consumer-Electronics-and-Gadgets.avif',
+    '/images/industry-specific-images/ecommerce/Luxury-and-Lifestyle-Brands.avif',
+    '/images/industry-specific-images/ecommerce/B2B-Wholesale-and-Distribution.avif',
+    '/images/industry-specific-images/ecommerce/Health-and-Wellness-Commerce.avif',
+    '/images/industry-specific-images/ecommerce/Subscription-Based-Business-Models.avif',
+    '/images/industry-specific-images/ecommerce/Dropshipping-and-Print-on-Demand-Ventures.avif',
+  ],
   trustFactors: [
     {
       title: 'Scalable & High-Performance Solutions',
@@ -473,6 +533,18 @@ const CybersecurityDataProtection = {
     'Education & Academic Institutions',
     'Media, Entertainment & Content Platforms',
     'Logistics & Supply Chain Management',
+  ],
+  industryImages: [
+    '/images/industry-specific-images/cybersecurity/Banking-and-Financial-Services.jpg',
+    '/images/industry-specific-images/cybersecurity/Healthcare-and-Medical-Research.avif',
+    '/images/industry-specific-images/cybersecurity/Government-and-National-Security.avif',
+    '/images/industry-specific-images/cybersecurity/E-Commerce-and-Digital-Retail.jpg',
+    '/images/industry-specific-images/cybersecurity/Telecom-and-Network-Security.avif',
+    '/images/industry-specific-images/cybersecurity/Cloud-Computing-and-SaaS-Platforms.avif',
+    '/images/industry-specific-images/cybersecurity/Automotive-and-Smart-Manufacturing.avif',
+    '/images/industry-specific-images/cybersecurity/Education-and-Academic-Institutions.jpg',
+    '/images/industry-specific-images/cybersecurity/Media-Entertainment-and-Content-Platforms.jpg',
+    '/images/industry-specific-images/cybersecurity/Logistics-and-Supply-Chain-Management.avif',
   ],
 
   trustFactors: [
@@ -558,6 +630,18 @@ const EducationELearningTechnology = {
     'MOOCs & Distance Learning Providers',
     'Language Learning & Literacy Platforms',
   ],
+  industryImages: [
+    '/images/industry-specific-images/edutech/Schools-and-Higher-Education.avif',
+    '/images/industry-specific-images/edutech/Educational-Technology-EdTech-Startups.avif',
+    '/images/industry-specific-images/edutech/Corporate-Learning-and-Employee-Training.jpg',
+    '/images/industry-specific-images/edutech/Public-Sector-and-Government-Education.avif',
+    '/images/industry-specific-images/edutech/Online-Course-and-Skill-Development-Platforms.jpg',
+    '/images/industry-specific-images/edutech/Vocational-Training-and-Certification-Programs.avif',
+    '/images/industry-specific-images/edutech/K-12-Digital-Learning-Solutions.jpg',
+    '/images/industry-specific-images/edutech/Tutoring-and-Test-Preparation-Services.jpg',
+    '/images/industry-specific-images/edutech/MOOCs-and-Distance-Learning-Providers.avif',
+    '/images/industry-specific-images/edutech/Language-Learning-and-Literacy-Platforms.jpg',
+  ],
   trustFactors: [
     {
       title: 'AI-Powered Learning Customization',
@@ -640,6 +724,18 @@ const CloudComputingSaaSSolutions = {
     'Media, Streaming & Content Distribution',
     'Government & Public Sector Organizations',
     'Telecom & Network Service Providers',
+  ],
+  industryImages: [
+    '/images/industry-specific-images/cloud/Technology-Startups-and-SaaS-Providers.avif',
+    '/images/industry-specific-images/cloud/Enterprise-IT-and-Digital-Transformation.jpg',
+    '/images/industry-specific-images/cloud/Healthcare-and-Biotechnology.avif',
+    '/images/industry-specific-images/cloud/Banking-and-Financial-Services.avif',
+    '/images/industry-specific-images/cloud/E-Commerce-and-Online-Retail.avif',
+    '/images/industry-specific-images/cloud/Manufacturing-and-Logistics.jpg',
+    '/images/industry-specific-images/cloud/Education-and-Digital-Learning-Platforms.jpg',
+    '/images/industry-specific-images/cloud/Media-Streaming-and-Content-Distribution.jpg',
+    '/images/industry-specific-images/cloud/Government-and-Public-Sector-Organizations.jpg',
+    '/images/industry-specific-images/cloud/Telecom-and-Network-Service-Providers.jpg',
   ],
 
   trustFactors: [
@@ -725,6 +821,18 @@ const AutomotiveSmartMobility = {
     'Automotive Insurance & Telematics',
     'Aftermarket & Auto Tech Services',
   ],
+  industryImages: [
+    '/images/industry-specific-images/automotive/Automotive-Manufacturing.jpg',
+    '/images/industry-specific-images/automotive/Electric-Vehicle-and-Charging-Infrastructure.jpg',
+    '/images/industry-specific-images/automotive/Self-Driving-and-AI-Driven-Transportation.avif',
+    '/images/industry-specific-images/automotive/Ride-Hailing-and-Mobility-Services.avif',
+    '/images/industry-specific-images/automotive/Fleet-and-Logistics-Management.avif',
+    '/images/industry-specific-images/automotive/Smart-City-and-Urban-Transportation-Planning.jpg',
+    '/images/industry-specific-images/automotive/Public-Transport-and-Mobility-Solutions.avif',
+    '/images/industry-specific-images/automotive/Vehicle-Leasing-and-Rental-Services.jpg',
+    '/images/industry-specific-images/automotive/Automotive-Insurance-and-Telematics.jpg',
+    '/images/industry-specific-images/automotive/Aftermarket-and-Auto-Tech-Services.avif',
+  ],
 
   trustFactors: [
     {
@@ -809,6 +917,18 @@ const BlockchainWeb3Solutions = {
     'Intellectual Property & Digital Rights Protection',
     'Cybersecurity & Identity Authentication',
   ],
+  industryImages: [
+    '/images/industry-specific-images/blockchain/Cybersecurity-and-Identity-Authentication.avif',
+    '/images/industry-specific-images/blockchain/Financial-Technology-and-Decentralized-Finance-DeFi.jpg',
+    '/images/industry-specific-images/blockchain/Gaming-Metaverse-and-Virtual-Economies.jpg',
+    '/images/industry-specific-images/blockchain/Logistics-and-Supply-Chain-Transparency.jpg',
+    '/images/industry-specific-images/blockchain/Healthcare-Data-and-Pharmaceutical-Tracing.avif',
+    '/images/industry-specific-images/blockchain/Real-Estate-and-Digital-Property-Solutions.avif',
+    '/images/industry-specific-images/blockchain/Renewable-Energy-and-Sustainability-Initiatives.jpg',
+    '/images/industry-specific-images/blockchain/Government-and-Public-Sector-Digitalization.avif',
+    '/images/industry-specific-images/blockchain/Intellectual-Property-and-Digital-Rights-Protection.jpg',
+    '/images/industry-specific-images/blockchain/Cybersecurity-and-Identity-Authentication.avif',
+  ],
   trustFactors: [
     {
       title: 'Transparent & Decentralized Systems',
@@ -890,6 +1010,18 @@ const AIMachineLearningSolutions = {
     'Automotive & Connected Vehicles',
     'Media, Content & Entertainment',
     'Energy & Sustainability Solutions',
+  ],
+  industryImages: [
+    '/images/industry-specific-images/ai/Healthcare-and-Medical-Technology.avif',
+    '/images/industry-specific-images/ai/Financial-Services-and-Banking.jpg',
+    '/images/industry-specific-images/ai/Retail-and-Digital-Commerce.avif',
+    '/images/industry-specific-images/ai/Manufacturing-and-Automation.avif',
+    '/images/industry-specific-images/ai/Education-and-Learning-Platforms.avif',
+    '/images/industry-specific-images/ai/Transportation-and-Smart-Logistics.avif',
+    '/images/industry-specific-images/ai/Cybersecurity-and-Risk-Prevention.avif',
+    '/images/industry-specific-images/ai/Automotive-and-Connected-Vehicles.avif',
+    '/images/industry-specific-images/ai/Media-Content-and-Entertainment.avif',
+    '/images/industry-specific-images/ai/Energy-and-Sustainability-Solutions.avif',
   ],
   trustFactors: [
     {
@@ -973,6 +1105,18 @@ const ManufacturingIndustrialAutomation = {
     'Heavy Machinery & Industrial Equipment',
     'Logistics & Smart Warehousing',
     'Metallurgy & Advanced Materials Processing',
+  ],
+  industryImages: [
+    '/images/industry-specific-images/mfg/Automotive-and-Aerospace-Engineering.avif',
+    '/images/industry-specific-images/mfg/Pharmaceutical-and-Medical-Equipment-Production.avif',
+    '/images/industry-specific-images/mfg/Semiconductor-and-Electronics-Manufacturing.avif',
+    '/images/industry-specific-images/mfg/Food-Processing-and-Packaging.jpg',
+    '/images/industry-specific-images/mfg/Renewable-Energy-and-Utility-Management.avif',
+    '/images/industry-specific-images/mfg/Textile-and-Apparel-Production.avif',
+    '/images/industry-specific-images/mfg/Petrochemical-and-Gas-Processing.jpg',
+    '/images/industry-specific-images/mfg/Heavy-Machinery-and-Industrial-Equipment.jpg',
+    '/images/industry-specific-images/mfg/Logistics-and-Smart-Warehousing.avif',
+    '/images/industry-specific-images/mfg/Metallurgy-and-Advanced-Materials-Processing.avif',
   ],
 
   trustFactors: [
