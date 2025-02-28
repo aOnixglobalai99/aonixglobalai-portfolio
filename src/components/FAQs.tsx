@@ -62,70 +62,33 @@ const FAQ: React.FC = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-white to-blue-50 p-6 md:p-12 w-full">
+    <div className="bg-[rgb(26,36,115)] text-white p-6 md:p-12 w-full ">
       <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#121a5e]">
-          <span className="relative inline-block after:content-[''] after:absolute after:w-24 after:h-1 after:bg-[#078dd7] after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:mt-2 pb-4">
-            Frequently Asked Questions
-          </span>
+        <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
+          FAQs
         </h1>
-
-        <div className="space-y-6">
+        <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-md rounded-lg overflow-hidden border-l-4 border-[#078dd7] transition-all duration-300 hover:shadow-lg"
-            >
+            <div key={index} className="border-b border-blue-700 pb-4">
               <button
-                className="w-full text-left p-5 md:p-6 text-lg md:text-xl font-semibold flex justify-between items-center text-[#121a5e]"
+                className="w-full text-left text-lg md:text-xl font-semibold flex justify-between items-center text-sky-200"
                 onClick={() => toggleFAQ(index)}
-                aria-expanded={openIndex === index}
-                aria-controls={`faq-answer-${index}`}
               >
-                <span className="pr-4">{faq.question}</span>
-                <span className="text-[#078dd7] transition-transform duration-300 transform flex-shrink-0 ml-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className={`transform transition-transform duration-300 ${
-                      openIndex === index ? 'rotate-180' : ''
-                    }`}
-                  >
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                  </svg>
+                <span>{faq.question}</span>
+                <span className="text-2xl">
+                  {openIndex === index ? '-' : '+'}
                 </span>
               </button>
-
-              <div
-                id={`faq-answer-${index}`}
-                className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                  openIndex === index
-                    ? 'max-h-96 opacity-100'
-                    : 'max-h-0 opacity-0'
-                }`}
-              >
-                <div className="p-5 md:p-6 pt-0 md:pt-0 border-t border-gray-100">
-                  <p className="text-base md:text-lg text-gray-700">
+              {openIndex === index && (
+                <div className="mt-4 w-full">
+                  <p className="text-base md:text-lg text-gray-100">
                     {faq.answer}
                   </p>
                 </div>
-              </div>
+              )}
             </div>
           ))}
         </div>
-
-        {/* <div className="mt-10 text-center">
-          <button className="bg-[#078dd7] rounded-md text-lg font-semibold text-white py-3 px-8 hover:bg-[#077bc8] transition-colors duration-300 shadow-md">
-            Contact Us For More Information
-          </button>
-        </div> */}
       </div>
     </div>
   );
