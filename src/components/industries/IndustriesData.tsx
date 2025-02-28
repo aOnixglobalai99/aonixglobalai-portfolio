@@ -1,5 +1,6 @@
 import HealthcareFAQs from '@/components/IndustryFAQs/HealthcareFAQs';
 import FinanceFAQs from '@/components/IndustryFAQs/FinanceFAQs';
+import AviationFAQs from '@/components/IndustryFAQs/AviationFAQs';
 
 const HealthCareServices = {
   faqs: HealthcareFAQs,
@@ -301,7 +302,7 @@ const TelecomNetworkingServices = {
 };
 
 const AviationAerospaceTechnology = {
-  faqs: HealthcareFAQs,
+  faqs: AviationFAQs,
   title: 'Aviation & Aerospace Technology',
   imageUrl: '/images/industryBanner/aviation.avif',
   description:
