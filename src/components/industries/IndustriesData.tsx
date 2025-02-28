@@ -2,6 +2,7 @@ import HealthcareFAQs from '@/components/IndustryFAQs/HealthcareFAQs';
 import FinanceFAQs from '@/components/IndustryFAQs/FinanceFAQs';
 import AviationFAQs from '@/components/IndustryFAQs/AviationFAQs';
 import EcommerceFAQs from '@/components/IndustryFAQs/EcommerceFAQs';
+import CyberSecurityFAQs from '@/components/IndustryFAQs/CyberSecurityFAQs';
 
 const HealthCareServices = {
   faqs: HealthcareFAQs,
@@ -495,7 +496,7 @@ const ECommerceRetailTech = {
   ],
 };
 const CybersecurityDataProtection = {
-  faqs: HealthcareFAQs,
+  faqs: CyberSecurityFAQs,
   imageUrl: '/images/industryBanner/cyber-security.avif',
   title: 'Cybersecurity & Data Protection',
   description:
