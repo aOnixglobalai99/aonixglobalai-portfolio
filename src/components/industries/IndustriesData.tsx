@@ -9,6 +9,7 @@ import AutomotiveFAQs from '@/components/IndustryFAQs/AutomotiveFAQs';
 import BlockchainFAQs from '@/components/IndustryFAQs/BlockchainFAQs';
 import AIMLFAQs from '@/components/IndustryFAQs/AIMLFAQs';
 import ManufacturingFAQs from '@/components/IndustryFAQs/ManufacturingFAQs';
+import TelecomFAQs from '@/components/IndustryFAQs/TelecomFAQs';
 
 const HealthCareServices = {
   faqs: HealthcareFAQs,
@@ -201,7 +202,7 @@ const FinancialServices = {
   ],
 };
 const TelecomNetworkingServices = {
-  faqs: HealthcareFAQs,
+  faqs: TelecomFAQs,
   title: 'Telecom & Networking',
   imageUrl: '/images/industryBanner/telecom.avif',
   // Original: 36 words, New: 72 words
