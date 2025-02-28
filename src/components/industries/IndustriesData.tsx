@@ -6,6 +6,7 @@ import CyberSecurityFAQs from '@/components/IndustryFAQs/CyberSecurityFAQs';
 import EduTechFAQs from '@/components/IndustryFAQs/EduTech';
 import CloudFAQs from '@/components/IndustryFAQs/CloudFAQs';
 import AutomotiveFAQs from '@/components/IndustryFAQs/AutomotiveFAQs';
+import BlockchainFAQs from '@/components/IndustryFAQs/BlockchainFAQs';
 
 const HealthCareServices = {
   faqs: HealthcareFAQs,
@@ -887,7 +888,7 @@ const AutomotiveSmartMobility = {
 };
 
 const BlockchainWeb3Solutions = {
-  faqs: HealthcareFAQs,
+  faqs: BlockchainFAQs,
   title: 'Blockchain & Web3 Solutions',
   imageUrl: '/images/industryBanner/dapps.avif',
   description:
