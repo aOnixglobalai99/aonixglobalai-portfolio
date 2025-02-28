@@ -7,6 +7,7 @@ import EduTechFAQs from '@/components/IndustryFAQs/EduTech';
 import CloudFAQs from '@/components/IndustryFAQs/CloudFAQs';
 import AutomotiveFAQs from '@/components/IndustryFAQs/AutomotiveFAQs';
 import BlockchainFAQs from '@/components/IndustryFAQs/BlockchainFAQs';
+import AIMLFAQs from '@/components/IndustryFAQs/AIMLFAQs';
 
 const HealthCareServices = {
   faqs: HealthcareFAQs,
@@ -983,7 +984,7 @@ const BlockchainWeb3Solutions = {
   ],
 };
 const AIMachineLearningSolutions = {
-  faqs: HealthcareFAQs,
+  faqs: AIMLFAQs,
   title: 'AI & Machine Learning Solutions',
   imageUrl: '/images/industryBanner/ai.avif',
   description:
