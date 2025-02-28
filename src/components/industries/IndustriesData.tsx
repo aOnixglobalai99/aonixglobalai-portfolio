@@ -8,6 +8,7 @@ import CloudFAQs from '@/components/IndustryFAQs/CloudFAQs';
 import AutomotiveFAQs from '@/components/IndustryFAQs/AutomotiveFAQs';
 import BlockchainFAQs from '@/components/IndustryFAQs/BlockchainFAQs';
 import AIMLFAQs from '@/components/IndustryFAQs/AIMLFAQs';
+import ManufacturingFAQs from '@/components/IndustryFAQs/ManufacturingFAQs';
 
 const HealthCareServices = {
   faqs: HealthcareFAQs,
@@ -1079,7 +1080,7 @@ const AIMachineLearningSolutions = {
   ],
 };
 const ManufacturingIndustrialAutomation = {
-  faqs: HealthcareFAQs,
+  faqs: ManufacturingFAQs,
   title: 'Smart Manufacturing Solutions',
   imageUrl: '/images/industryBanner/mfg.avif',
   description:
