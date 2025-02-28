@@ -4,6 +4,7 @@ import AviationFAQs from '@/components/IndustryFAQs/AviationFAQs';
 import EcommerceFAQs from '@/components/IndustryFAQs/EcommerceFAQs';
 import CyberSecurityFAQs from '@/components/IndustryFAQs/CyberSecurityFAQs';
 import EduTechFAQs from '@/components/IndustryFAQs/EduTech';
+import CloudFAQs from '@/components/IndustryFAQs/CloudFAQs';
 
 const HealthCareServices = {
   faqs: HealthcareFAQs,
@@ -690,7 +691,7 @@ const EducationELearningTechnology = {
   ],
 };
 const CloudComputingSaaSSolutions = {
-  faqs: HealthcareFAQs,
+  faqs: CloudFAQs,
   title: 'Cloud Computing & SaaS Solutions',
   imageUrl: '/images/industryBanner/cloud.jpg',
   description:
