@@ -5,6 +5,7 @@ import EcommerceFAQs from '@/components/IndustryFAQs/EcommerceFAQs';
 import CyberSecurityFAQs from '@/components/IndustryFAQs/CyberSecurityFAQs';
 import EduTechFAQs from '@/components/IndustryFAQs/EduTech';
 import CloudFAQs from '@/components/IndustryFAQs/CloudFAQs';
+import AutomotiveFAQs from '@/components/IndustryFAQs/AutomotiveFAQs';
 
 const HealthCareServices = {
   faqs: HealthcareFAQs,
@@ -788,7 +789,7 @@ const CloudComputingSaaSSolutions = {
   ],
 };
 const AutomotiveSmartMobility = {
-  faqs: HealthcareFAQs,
+  faqs: AutomotiveFAQs,
   title: 'Automotive & Smart Mobility',
   imageUrl: '/images/industryBanner/automotive.avif',
   description:
