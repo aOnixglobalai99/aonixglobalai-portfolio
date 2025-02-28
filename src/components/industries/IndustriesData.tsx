@@ -1,4 +1,5 @@
 import HealthcareFAQs from '@/components/IndustryFAQs/HealthcareFAQs';
+import FinanceFAQs from '@/components/IndustryFAQs/FinanceFAQs';
 
 const HealthCareServices = {
   faqs: HealthcareFAQs,
@@ -96,7 +97,7 @@ const HealthCareServices = {
   ],
 };
 const FinancialServices = {
-  faqs: HealthcareFAQs,
+  faqs: FinanceFAQs,
   title: 'Fintech & Banking Solutions',
   imageUrl: '/images/industryBanner/fintech.avif',
   description:
