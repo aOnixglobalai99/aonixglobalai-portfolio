@@ -109,8 +109,8 @@ const ChatGptVsDeepSeek = () => {
                 "url": "https://aonixglobalai.com/logo.png"
               }
             },
-            "datePublished": "2025-02-24",
-            "dateModified": "2025-02-24"
+            "datePublished": "2025-02-27",
+            "dateModified": "2025-02-28"
           }
         `}</script>
       </Head>
@@ -166,9 +166,16 @@ const ChatGptVsDeepSeek = () => {
               </p>
             </div>
 
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 text-gray-900 mt-6">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 text-gray-800 mt-6">
               ChatGPT vs DeepSeek: A Battle of AI Conversational Giants
             </h1>
+            <div className="mb-8 text-center text-gray-500 font-semibold">
+              <p className="flex justify-around">
+                <span>Author: AonixGlobalAI</span>
+                <span>Published On: February 27, 2025</span>
+                <span>Category: Generative AI</span>
+              </p>
+            </div>
             {/* Social Media Share Buttons */}
             <div className="flex justify-center gap-4 mb-6">
               <LinkedinShareButton url={blogUrl} title={blogTitle}>
