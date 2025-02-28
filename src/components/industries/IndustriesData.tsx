@@ -3,6 +3,7 @@ import FinanceFAQs from '@/components/IndustryFAQs/FinanceFAQs';
 import AviationFAQs from '@/components/IndustryFAQs/AviationFAQs';
 import EcommerceFAQs from '@/components/IndustryFAQs/EcommerceFAQs';
 import CyberSecurityFAQs from '@/components/IndustryFAQs/CyberSecurityFAQs';
+import EduTechFAQs from '@/components/IndustryFAQs/EduTech';
 
 const HealthCareServices = {
   faqs: HealthcareFAQs,
@@ -594,7 +595,7 @@ const CybersecurityDataProtection = {
 };
 
 const EducationELearningTechnology = {
-  faqs: HealthcareFAQs,
+  faqs: EduTechFAQs,
   title: 'Education & E-Learning Technology',
   imageUrl: '/images/industryBanner/edutech.avif',
   description:
