@@ -1,6 +1,7 @@
 import HealthcareFAQs from '@/components/IndustryFAQs/HealthcareFAQs';
 import FinanceFAQs from '@/components/IndustryFAQs/FinanceFAQs';
 import AviationFAQs from '@/components/IndustryFAQs/AviationFAQs';
+import EcommerceFAQs from '@/components/IndustryFAQs/EcommerceFAQs';
 
 const HealthCareServices = {
   faqs: HealthcareFAQs,
@@ -399,7 +400,7 @@ const AviationAerospaceTechnology = {
   ],
 };
 const ECommerceRetailTech = {
-  faqs: HealthcareFAQs,
+  faqs: EcommerceFAQs,
   title: 'E-Commerce & Retail Tech',
   imageUrl: '/images/industryBanner/ecommerce.avif',
   description:

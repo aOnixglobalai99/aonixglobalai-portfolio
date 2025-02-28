@@ -65,7 +65,7 @@ const FAQ: React.FC = () => {
     <div className="bg-[rgb(26,36,115)] text-white p-6 md:p-12 w-full">
       <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
-          Aviation & Aerospace FAQs
+          FAQs
         </h1>
         <div className="space-y-4">
           {faqs.map((faq, index) => (
