@@ -1,4 +1,7 @@
+import HealthcareFAQs from '@/components/IndustryFAQs/HealthcareFAQs';
+
 const HealthCareServices = {
+  faqs: HealthcareFAQs,
   title: 'Healthcare IT Solutions',
   imageUrl: '/images/industryBanner/healthcare.jpg',
   description:
@@ -93,6 +96,7 @@ const HealthCareServices = {
   ],
 };
 const FinancialServices = {
+  faqs: HealthcareFAQs,
   title: 'Fintech & Banking Solutions',
   imageUrl: '/images/industryBanner/fintech.avif',
   description:
@@ -187,6 +191,7 @@ const FinancialServices = {
   ],
 };
 const TelecomNetworkingServices = {
+  faqs: HealthcareFAQs,
   title: 'Telecom & Networking',
   imageUrl: '/images/industryBanner/telecom.avif',
   // Original: 36 words, New: 72 words
@@ -295,6 +300,7 @@ const TelecomNetworkingServices = {
 };
 
 const AviationAerospaceTechnology = {
+  faqs: HealthcareFAQs,
   title: 'Aviation & Aerospace Technology',
   imageUrl: '/images/industryBanner/aviation.avif',
   description:
@@ -391,6 +397,7 @@ const AviationAerospaceTechnology = {
   ],
 };
 const ECommerceRetailTech = {
+  faqs: HealthcareFAQs,
   title: 'E-Commerce & Retail Tech',
   imageUrl: '/images/industryBanner/ecommerce.avif',
   description:
@@ -485,6 +492,7 @@ const ECommerceRetailTech = {
   ],
 };
 const CybersecurityDataProtection = {
+  faqs: HealthcareFAQs,
   imageUrl: '/images/industryBanner/cyber-security.avif',
   title: 'Cybersecurity & Data Protection',
   description:
@@ -582,6 +590,7 @@ const CybersecurityDataProtection = {
 };
 
 const EducationELearningTechnology = {
+  faqs: HealthcareFAQs,
   title: 'Education & E-Learning Technology',
   imageUrl: '/images/industryBanner/edutech.avif',
   description:
@@ -676,6 +685,7 @@ const EducationELearningTechnology = {
   ],
 };
 const CloudComputingSaaSSolutions = {
+  faqs: HealthcareFAQs,
   title: 'Cloud Computing & SaaS Solutions',
   imageUrl: '/images/industryBanner/cloud.jpg',
   description:
@@ -772,6 +782,7 @@ const CloudComputingSaaSSolutions = {
   ],
 };
 const AutomotiveSmartMobility = {
+  faqs: HealthcareFAQs,
   title: 'Automotive & Smart Mobility',
   imageUrl: '/images/industryBanner/automotive.avif',
   description:
@@ -869,6 +880,7 @@ const AutomotiveSmartMobility = {
 };
 
 const BlockchainWeb3Solutions = {
+  faqs: HealthcareFAQs,
   title: 'Blockchain & Web3 Solutions',
   imageUrl: '/images/industryBanner/dapps.avif',
   description:
@@ -963,6 +975,7 @@ const BlockchainWeb3Solutions = {
   ],
 };
 const AIMachineLearningSolutions = {
+  faqs: HealthcareFAQs,
   title: 'AI & Machine Learning Solutions',
   imageUrl: '/images/industryBanner/ai.avif',
   description:
@@ -1057,6 +1070,7 @@ const AIMachineLearningSolutions = {
   ],
 };
 const ManufacturingIndustrialAutomation = {
+  faqs: HealthcareFAQs,
   title: 'Smart Manufacturing Solutions',
   imageUrl: '/images/industryBanner/mfg.avif',
   description:
