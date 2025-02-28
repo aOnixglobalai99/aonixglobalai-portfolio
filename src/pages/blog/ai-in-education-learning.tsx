@@ -111,8 +111,8 @@ const AIEducationBlog: React.FC = () => {
                 "url": "https://aonixglobalai.com/logo.png"
               }
             },
-            "datePublished": "2025-02-15",
-            "dateModified": "2025-02-20"
+            "datePublished": "2025-02-06",
+            "dateModified": "2025-02-28"
           }
         `}</script>
       </Head>
@@ -172,6 +172,13 @@ const AIEducationBlog: React.FC = () => {
               AI in Education & Learning: Transforming the Future of Knowledge
               Acquisition
             </h1>
+            <div className="mb-8 text-center text-gray-500 font-semibold">
+              <p className="flex justify-around">
+                <span>Author: AonixGlobalAI</span>
+                <span>Published On: February 6, 2025</span>
+                <span>Category: AI</span>
+              </p>
+            </div>
 
             {/* Social Media Share Buttons */}
             <div className="flex justify-center gap-4 mb-6">

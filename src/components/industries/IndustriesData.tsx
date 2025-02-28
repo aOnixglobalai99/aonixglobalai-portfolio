@@ -1,4 +1,18 @@
+import HealthcareFAQs from '@/components/IndustryFAQs/HealthcareFAQs';
+import FinanceFAQs from '@/components/IndustryFAQs/FinanceFAQs';
+import AviationFAQs from '@/components/IndustryFAQs/AviationFAQs';
+import EcommerceFAQs from '@/components/IndustryFAQs/EcommerceFAQs';
+import CyberSecurityFAQs from '@/components/IndustryFAQs/CyberSecurityFAQs';
+import EduTechFAQs from '@/components/IndustryFAQs/EduTech';
+import CloudFAQs from '@/components/IndustryFAQs/CloudFAQs';
+import AutomotiveFAQs from '@/components/IndustryFAQs/AutomotiveFAQs';
+import BlockchainFAQs from '@/components/IndustryFAQs/BlockchainFAQs';
+import AIMLFAQs from '@/components/IndustryFAQs/AIMLFAQs';
+import ManufacturingFAQs from '@/components/IndustryFAQs/ManufacturingFAQs';
+import TelecomFAQs from '@/components/IndustryFAQs/TelecomFAQs';
+
 const HealthCareServices = {
+  faqs: HealthcareFAQs,
   title: 'Healthcare IT Solutions',
   imageUrl: '/images/industryBanner/healthcare.jpg',
   description:
@@ -93,6 +107,7 @@ const HealthCareServices = {
   ],
 };
 const FinancialServices = {
+  faqs: FinanceFAQs,
   title: 'Fintech & Banking Solutions',
   imageUrl: '/images/industryBanner/fintech.avif',
   description:
@@ -187,6 +202,7 @@ const FinancialServices = {
   ],
 };
 const TelecomNetworkingServices = {
+  faqs: TelecomFAQs,
   title: 'Telecom & Networking',
   imageUrl: '/images/industryBanner/telecom.avif',
   // Original: 36 words, New: 72 words
@@ -295,6 +311,7 @@ const TelecomNetworkingServices = {
 };
 
 const AviationAerospaceTechnology = {
+  faqs: AviationFAQs,
   title: 'Aviation & Aerospace Technology',
   imageUrl: '/images/industryBanner/aviation.avif',
   description:
@@ -391,6 +408,7 @@ const AviationAerospaceTechnology = {
   ],
 };
 const ECommerceRetailTech = {
+  faqs: EcommerceFAQs,
   title: 'E-Commerce & Retail Tech',
   imageUrl: '/images/industryBanner/ecommerce.avif',
   description:
@@ -485,6 +503,7 @@ const ECommerceRetailTech = {
   ],
 };
 const CybersecurityDataProtection = {
+  faqs: CyberSecurityFAQs,
   imageUrl: '/images/industryBanner/cyber-security.avif',
   title: 'Cybersecurity & Data Protection',
   description:
@@ -582,6 +601,7 @@ const CybersecurityDataProtection = {
 };
 
 const EducationELearningTechnology = {
+  faqs: EduTechFAQs,
   title: 'Education & E-Learning Technology',
   imageUrl: '/images/industryBanner/edutech.avif',
   description:
@@ -676,6 +696,7 @@ const EducationELearningTechnology = {
   ],
 };
 const CloudComputingSaaSSolutions = {
+  faqs: CloudFAQs,
   title: 'Cloud Computing & SaaS Solutions',
   imageUrl: '/images/industryBanner/cloud.jpg',
   description:
@@ -772,6 +793,7 @@ const CloudComputingSaaSSolutions = {
   ],
 };
 const AutomotiveSmartMobility = {
+  faqs: AutomotiveFAQs,
   title: 'Automotive & Smart Mobility',
   imageUrl: '/images/industryBanner/automotive.avif',
   description:
@@ -869,6 +891,7 @@ const AutomotiveSmartMobility = {
 };
 
 const BlockchainWeb3Solutions = {
+  faqs: BlockchainFAQs,
   title: 'Blockchain & Web3 Solutions',
   imageUrl: '/images/industryBanner/dapps.avif',
   description:
@@ -963,6 +986,7 @@ const BlockchainWeb3Solutions = {
   ],
 };
 const AIMachineLearningSolutions = {
+  faqs: AIMLFAQs,
   title: 'AI & Machine Learning Solutions',
   imageUrl: '/images/industryBanner/ai.avif',
   description:
@@ -1057,6 +1081,7 @@ const AIMachineLearningSolutions = {
   ],
 };
 const ManufacturingIndustrialAutomation = {
+  faqs: ManufacturingFAQs,
   title: 'Smart Manufacturing Solutions',
   imageUrl: '/images/industryBanner/mfg.avif',
   description:

@@ -113,8 +113,8 @@ const AIRealEstatePage: React.FC = () => {
                 "url": "https://aonixglobalai.com/logo.png"
               }
             },
-            "datePublished": "2025-02-10",
-            "dateModified": "2025-02-20"
+            "datePublished": "2025-02-18",
+            "dateModified": "2025-02-28"
           }
         `}</script>
       </Head>
@@ -173,6 +173,13 @@ const AIRealEstatePage: React.FC = () => {
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 text-gray-900 mt-6">
               AI-Powered Real Estate Services: Transforming the Property Market
             </h1>
+            <div className="mb-8 text-center text-gray-500 font-semibold">
+              <p className="flex justify-around">
+                <span>Author: AonixGlobalAI</span>
+                <span>Published On: February 18, 2025</span>
+                <span>Category: AI</span>
+              </p>
+            </div>
             {/* Social Media Share Buttons */}
             <div className="flex justify-center gap-4 mb-6">
               <LinkedinShareButton url={blogUrl} title={blogTitle}>

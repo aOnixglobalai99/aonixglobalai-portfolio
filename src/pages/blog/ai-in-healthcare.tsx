@@ -110,8 +110,8 @@ const AIHealthcarePage: React.FC = () => {
                 "url": "https://aonixglobalai.com/logo.png"
               }
             },
-            "datePublished": "2025-02-10",
-            "dateModified": "2025-02-20"
+            "datePublished": "2025-02-15",
+            "dateModified": "2025-02-28"
           }
         `}</script>
       </Head>
@@ -170,6 +170,13 @@ const AIHealthcarePage: React.FC = () => {
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 text-gray-900 mt-6">
               AI in Healthcare: Transforming the Medical Industry
             </h1>
+            <div className="mb-8 text-center text-gray-500 font-semibold">
+              <p className="flex justify-around">
+                <span>Author: AonixGlobalAI</span>
+                <span>Published On: February 15, 2025</span>
+                <span>Category: AI</span>
+              </p>
+            </div>
 
             {/* Social Media Share Buttons */}
             <div className="flex justify-center gap-4 mb-6">

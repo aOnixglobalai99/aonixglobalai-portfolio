@@ -111,8 +111,8 @@ const AI_Trends_2025 = () => {
                 "url": "https://aonixglobalai.com/logo.png"
               }
             },
-            "datePublished": "2025-02-01",
-            "dateModified": "2025-02-20"
+            "datePublished": "2025-02-24",
+            "dateModified": "2025-02-28"
           }
         `}</script>
       </Head>
@@ -168,9 +168,16 @@ const AI_Trends_2025 = () => {
               </p>
             </div>
 
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 text-gray-900 mt-6">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 text-gray-800 mt-6">
               AI Trends in 2025: The Future of Artificial Intelligence
             </h1>
+            <div className="mb-8 text-center text-gray-500 font-semibold">
+              <p className="flex justify-around">
+                <span>Author: AonixGlobalAI</span>
+                <span>Published On: February 24, 2025</span>
+                <span>Category: AI</span>
+              </p>
+            </div>
             {/* Social Media Share Buttons */}
             <div className="flex justify-center gap-4 mb-6">
               <LinkedinShareButton url={blogUrl} title={blogTitle}>
