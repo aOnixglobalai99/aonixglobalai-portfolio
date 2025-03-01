@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* .certification-maindiv {
+  background-image: url('../../assets/images/thirdsectionbg.png');
+} */
+.homepagefirstdiv-back {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url('../../assets/images/homepageback.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .homepagefirstdiv-back {
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .homepagefirstdiv-back {
+    background-size: cover;
+    background-position: top;
+  }
+}
+
+.aboutus-back {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url('../../assets/images/aboutusback.jpg');
+}
+.about-us-div {
+  background-image: url('../../assets/images/aboutus.jpg');
+}
+.client-team-img-left {
+  background-image: url('../../assets/images/business-team.jpg');
+}
+.client-message-div {
+  background-image: linear-gradient(rgba(18, 26, 94, 0.566), rgb(18, 26, 94)),
+    url('../../assets/images/worldmap.png');
+}
+.client-footer-div {
+  background-image: linear-gradient(rgba(18, 26, 94, 0.566), rgb(18, 26, 94)),
+    url('../../assets/images/worldmap.png');
+}
+
+.header-back {
+  background-image: radial-gradient(transparent 1px, #ffffff 1px);
+  mask: linear-gradient(rgb(0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.casestudyfirst-img-back {
+  background-image: url('../../assets/images/caseone.jpg');
+}
+.newsone-img-back {
+  background-image: url('../../assets/images/newsone.jpg');
+}
+.engineer-team-back {
+  background-image: url('../../assets/images/team-of-engineers-working.jpg');
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.submit-form-div-left {
+  background-image: linear-gradient(
+      rgba(18, 26, 94, 0.866),
+      rgba(18, 26, 94, 0.866)
+    ),
+    url('../../assets/images/coworking.jpg');
+}
+
+.blog-gotopage-div {
+  background-image: linear-gradient(rgba(18, 26, 94, 0.566), rgb(18, 26, 94)),
+    url('../../assets/images/getready.jpg');
+}
+
+.backgrounddd {
+  position: relative;
+  z-index: 1;
+}
+
+.backgrounddd:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  background: #078dd7;
+  /* background: #121a5e; */
+  z-index: -1;
+  transition: transform 0.3s;
+}
+
+.backgrounddd:hover::after {
+  transform: scaleY(1);
+}
+.backgrounddd:hover {
+  color: white;
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carouselItems {
+  display: flex;
+  animation: slide 13s infinite;
+}
+
+.carouselItem {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  23.08% {
+    /* 3 seconds transition out of 13 seconds (100% / 4 items) */
+    transform: translateX(0);
+  }
+  30.77% {
+    /* 3 seconds pause (each item shown for 4 seconds) */
+    transform: translateX(-100%);
+  }
+  53.85% {
+    /* 3 seconds transition out of 13 seconds */
+    transform: translateX(-100%);
+  }
+  60.77% {
+    /* 3 seconds pause for the 2nd item */
+    transform: translateX(-200%);
+  }
+  83.85% {
+    /* 3 seconds transition out of 13 seconds */
+    transform: translateX(-200%);
+  }
+  90.77% {
+    /* 3 seconds pause for the 3rd item */
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in-left {
+  animation: fadeInFromLeft 0.8s ease-out forwards;
+}
