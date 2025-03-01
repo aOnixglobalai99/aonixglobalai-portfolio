@@ -101,7 +101,7 @@ const ContactUsPage = () => {
   };
 
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-50">
       {/* Header Section (Unique to ContactUsPage) */}
       <div className="relative bg-gradient-to-br from-gray-800 via-gray-700 to-gray-600 h-[400px] overflow-hidden">
         <div
