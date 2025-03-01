@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import linkedin from '../../assets/footerImages/linkedin.svg';
-import insta from '../../assets/footerImages/insta.svg';
 import Link from 'next/link';
-import Image from 'next/image';
+import { FaLinkedin, FaInstagram, FaDribbble, FaBehance } from 'react-icons/fa';
+import { MdLocationOn, MdAccessTime } from 'react-icons/md';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -16,6 +15,7 @@ const Contact = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const validateForm = () => {
     const newErrors = {};
@@ -57,29 +57,38 @@ const Contact = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (validateForm()) {
-      // sending data to backend
-      console.log('Form data:', formData);
-      toast.success('We will get back to you shortly!', {
-        position: 'top-right',
-        autoClose: 3000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-      });
+      setIsSubmitting(true);
 
-      // Clearing form
-      setFormData({
-        name: '',
-        email: '',
-        telephone: '',
-        subject: '',
-        message: '',
-      });
+      try {
+        // Simulating API call
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+
+        console.log('Form data:', formData);
+        toast.success('Thank you! We will get back to you shortly.', {
+          position: 'top-right',
+          autoClose: 3000,
+        });
+
+        // Clearing form
+        setFormData({
+          name: '',
+          email: '',
+          telephone: '',
+          subject: '',
+          message: '',
+        });
+      } catch (error) {
+        toast.error('Something went wrong. Please try again.', {
+          position: 'top-right',
+          autoClose: 3000,
+        });
+      } finally {
+        setIsSubmitting(false);
+      }
     } else {
       toast.error('Please fill in all required fields', {
         position: 'top-right',
@@ -89,178 +98,223 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row-reverse justify-center items-center min-h-screen p-6 bg-gray-100 gap-12">
+    <div className="flex flex-col lg:flex-row-reverse justify-center items-center min-h-screen md:p-6 bg-gray-50 gap-24">
       <ToastContainer />
+
+      {/* Contact Information */}
       <div className="lg:mr-12 mt-8 lg:mt-0 flex flex-col justify-center items-left max-w-md">
-        <h2 className="text-2xl font-bold text-blue-400 mb-4">CONTACT US</h2>
-        <h3 className="text-3xl font-bold mb-4">Let's Get In Touch</h3>
-        <p className="text-gray-600 mb-6">
-          Let's connect and discuss how we can empower your business with
-          intelligent solutions. Whether you have questions, need support, or
-          want to explore our services, we're here to help.
-        </p>
-        <div className="space-y-4">
-          <p>
-            <strong>Inbore Office</strong>: Indore, Madhya Pradesh, India
+        <div className="bg-blue-500 text-white p-6 rounded-sm md:rounded-lg shadow-lg mb-8">
+          <h2 className="text-2xl font-bold mb-4">Let's Connect</h2>
+          <p className="mb-6">
+            Ready to transform your business with intelligent solutions? We're
+            here to help you navigate the possibilities.
           </p>
-          <p>
-            <strong>Calling Support</strong>:{' '}
-            <a href="tel:+918709871715" className="text-sm hover:underline">
-              (+91) 8709871715
-            </a>
-          </p>
-          <p>
-            <strong>Email</strong>:{' '}
+          <div className="flex items-center gap-2 mb-3">
+            <span className="flex-shrink-0">✉️</span>
             <a
               href="mailto:support@aonixglobalai.com"
-              className="text-sm hover:underline"
+              className="hover:underline transition-colors"
             >
               support@aonixglobalai.com
             </a>
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-4 mt-4">
-          {[
-            {
-              href: 'https://www.linkedin.com/company/aonixglobalai/',
-              icon: linkedin,
-              size: 12,
-            },
-            {
-              href: '#',
-              icon: 'https://img.icons8.com/?size=24&id=de4vjQ6J061l&format=png',
-              size: 15,
-            },
-            {
-              href: 'https://www.instagram.com/aonixglobalai/',
-              icon: insta,
-              size: 15,
-            },
-            {
-              href: 'https://dribbble.com/AonixGlobalAI',
-              icon: 'https://img.icons8.com/?size=32&id=16154&format=png',
-              size: 18,
-            },
-            {
-              href: 'https://www.behance.net/aonixgldevelop',
-              icon: 'https://img.icons8.com/?size=24&id=HvLKZeTLqQZn&format=png',
-              size: 15,
-            },
-          ].map((social, index) => (
-            <Link
-              key={index}
-              href={social.href}
-              className="bg-white w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-300 transition-colors"
-              target="_blank"
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="flex-shrink-0">📞</span>
+            <a
+              href="tel:+918709871715"
+              className="hover:underline transition-colors"
             >
-              <Image
-                src={social.icon}
-                alt="Social Icon"
-                width={social.size}
-                height={social.size}
-              />
-            </Link>
-          ))}
+              (+91) 8709871715
+            </a>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div className="bg-white p-5 rounded-sm md:rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow">
+            <div className="flex flex-col items-center text-center">
+              <div className="bg-blue-100 p-3 rounded-full mb-3">
+                <MdLocationOn className="text-blue-500" size={24} />
+              </div>
+              <h3 className="font-semibold mb-1">Visit Our Office</h3>
+              <p className="text-gray-600 text-sm">
+                Indore, Madhya Pradesh, India
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-white p-5 rounded-sm md:rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow">
+            <div className="flex flex-col items-center text-center">
+              <div className="bg-blue-100 p-3 rounded-full mb-3">
+                <MdAccessTime className="text-blue-500" size={24} />
+              </div>
+              <h3 className="font-semibold mb-1">Business Hours</h3>
+              <p className="text-gray-600 text-sm">Mon-Fri: 9AM - 6PM IST</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Social Media */}
+        <div>
+          <h3 className="text-xl font-semibold mb-4 text-gray-800">
+            Follow Us
+          </h3>
+          <div className="flex gap-3">
+            <SocialLink
+              href="https://www.linkedin.com/company/aonixglobalai/"
+              icon={<FaLinkedin size={18} />}
+              label="LinkedIn"
+              color="bg-blue-600"
+            />
+            <SocialLink
+              href="https://www.instagram.com/aonixglobalai/"
+              icon={<FaInstagram size={18} />}
+              label="Instagram"
+              color="bg-pink-600"
+            />
+            <SocialLink
+              href="https://dribbble.com/AonixGlobalAI"
+              icon={<FaDribbble size={18} />}
+              label="Dribbble"
+              color="bg-pink-500"
+            />
+            <SocialLink
+              href="https://www.behance.net/aonixgldevelop"
+              icon={<FaBehance size={18} />}
+              label="Behance"
+              color="bg-blue-700"
+            />
+          </div>
         </div>
       </div>
 
-      <div className="bg-white p-8 shadow-lg rounded-lg w-full max-w-lg">
-        <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div>
-            <label className="block text-sm font-medium">
-              Name <span className="text-red-500">*</span>
-            </label>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
+      {/* Contact Form */}
+      <div className="bg-white p-8 shadow-lg rounded-sm md:rounded-lg w-full max-w-lg border border-gray-100">
+        <h2 className="text-2xl font-bold mb-6 text-gray-800">
+          Send Us a Message
+        </h2>
+
+        <form onSubmit={handleSubmit} className="space-y-6">
+          <FormField
+            label="Name"
+            name="name"
+            type="text"
+            placeholder="Your Name"
+            value={formData.name}
+            onChange={handleInputChange}
+            error={errors.name}
+            required
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <FormField
+              label="Email"
+              name="email"
+              type="email"
+              placeholder="Your Email"
+              value={formData.email}
               onChange={handleInputChange}
-              placeholder="Your Name"
-              className={`w-full p-2 border rounded-md ${
-                errors.name ? 'border-red-500' : ''
-              }`}
+              error={errors.email}
+              required
             />
-            {errors.name && (
-              <p className="text-red-500 text-sm mt-1">{errors.name}</p>
-            )}
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            <div>
-              <label className="block text-sm font-medium">
-                Email <span className="text-red-500">*</span>
-              </label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-                placeholder="Your Email"
-                className={`w-full p-2 border rounded-md ${
-                  errors.email ? 'border-red-500' : ''
-                }`}
-              />
-              {errors.email && (
-                <p className="text-red-500 text-sm mt-1">{errors.email}</p>
-              )}
-            </div>
-            <div>
-              <label className="block text-sm font-medium">Telephone</label>
-              <input
-                type="tel"
-                name="telephone"
-                value={formData.telephone}
-                onChange={handleInputChange}
-                placeholder="Your Phone"
-                className="w-full p-2 border rounded-md"
-              />
-            </div>
-          </div>
-          <div>
-            <label className="block text-sm font-medium">
-              Subject <span className="text-red-500">*</span>
-            </label>
-            <input
-              type="text"
-              name="subject"
-              value={formData.subject}
+
+            <FormField
+              label="Telephone"
+              name="telephone"
+              type="tel"
+              placeholder="Your Phone (Optional)"
+              value={formData.telephone}
               onChange={handleInputChange}
-              placeholder="Your Subject"
-              className={`w-full p-2 border rounded-md ${
-                errors.subject ? 'border-red-500' : ''
-              }`}
             />
-            {errors.subject && (
-              <p className="text-red-500 text-sm mt-1">{errors.subject}</p>
-            )}
           </div>
-          <div>
-            <label className="block text-sm font-medium">
-              Message <span className="text-red-500">*</span>
-            </label>
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleInputChange}
-              placeholder="Your Message"
-              className={`w-full p-2 border rounded-md h-28 ${
-                errors.message ? 'border-red-500' : ''
-              }`}
-            ></textarea>
-            {errors.message && (
-              <p className="text-red-500 text-sm mt-1">{errors.message}</p>
-            )}
-          </div>
+
+          <FormField
+            label="Subject"
+            name="subject"
+            type="text"
+            placeholder="Your Subject"
+            value={formData.subject}
+            onChange={handleInputChange}
+            error={errors.subject}
+            required
+          />
+
+          <FormField
+            label="Message"
+            name="message"
+            type="textarea"
+            placeholder="Your Message"
+            value={formData.message}
+            onChange={handleInputChange}
+            error={errors.message}
+            required
+          />
+
           <button
             type="submit"
-            className="w-full bg-blue-400 text-white p-3 rounded-md hover:bg-blue-600"
+            disabled={isSubmitting}
+            className="w-full bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 transition-colors font-medium flex items-center justify-center"
           >
-            SUBMIT MESSAGE
+            {isSubmitting ? 'SENDING...' : 'SUBMIT MESSAGE'}
           </button>
         </form>
       </div>
     </div>
   );
 };
+
+// Helper Components
+const SocialLink = ({ href, icon, label, color }) => (
+  <Link
+    href={href}
+    className={`${color} text-white w-10 h-10 flex items-center justify-center rounded-full hover:opacity-90 transition-opacity shadow-sm`}
+    target="_blank"
+    aria-label={label}
+  >
+    {icon}
+  </Link>
+);
+
+const FormField = ({
+  label,
+  name,
+  type,
+  placeholder,
+  value,
+  onChange,
+  error,
+  required = false,
+}) => (
+  <div>
+    <label className="block text-sm font-medium text-gray-700 mb-1">
+      {label} {required && <span className="text-red-500">*</span>}
+    </label>
+
+    {type === 'textarea' ? (
+      <textarea
+        name={name}
+        value={value}
+        onChange={onChange}
+        placeholder={placeholder}
+        className={`w-full p-3 border rounded-md focus:ring-2 focus:ring-blue-300 focus:border-blue-500 outline-none transition-all ${
+          error ? 'border-red-500' : 'border-gray-300'
+        }`}
+        rows={4}
+      ></textarea>
+    ) : (
+      <input
+        type={type}
+        name={name}
+        value={value}
+        onChange={onChange}
+        placeholder={placeholder}
+        className={`w-full p-3 border rounded-md focus:ring-2 focus:ring-blue-300 focus:border-blue-500 outline-none transition-all ${
+          error ? 'border-red-500' : 'border-gray-300'
+        }`}
+      />
+    )}
+
+    {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
+  </div>
+);
 
 export default Contact;
