@@ -519,7 +519,7 @@ const services: Service[] = [
         topic: 'Scalability planning',
         description:
           'Strategic planning ensures your cloud resources scale dynamically with demand, maintaining performance during peak times and optimizing costs during low usage without manual intervention.',
-        image: '/images/serviceDetails/cloud-scalability.avif',
+        image: '/images/serviceDetails/cloud-scalability.jpg',
       },
       {
         topic: 'Cost optimization',
