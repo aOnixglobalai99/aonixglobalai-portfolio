@@ -777,7 +777,7 @@ const services: Service[] = [
         topic: 'CI/CD pipeline setup',
         description:
           'We implement continuous integration and deployment pipelines to automate builds and releases, accelerating development cycles and ensuring your software is delivered quickly and reliably every time.',
-        image: '/images/serviceDetails/devops-cicd.avif',
+        image: '/images/serviceDetails/devops-cicd.jpg',
       },
       {
         topic: 'Infrastructure as Code',
