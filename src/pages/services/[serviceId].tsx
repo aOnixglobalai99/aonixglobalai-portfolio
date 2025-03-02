@@ -421,7 +421,7 @@ const services: Service[] = [
         topic: 'API documentation',
         description:
           'We provide clear, comprehensive API documentation, making it easy for developers to understand and use your APIs, reducing onboarding time and ensuring effective implementation across teams.',
-        image: '/images/serviceDetails/api-documentation.avif',
+        image: '/images/serviceDetails/api-documentation.jpg',
       },
       {
         topic: 'Security implementation',
