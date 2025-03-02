@@ -2,6 +2,7 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import Image from 'next/image';
 // import { useRouter } from 'next/router';
 import Head from 'next/head';
+import Link from 'next/link';
 
 // Service data types
 interface Benefit {
@@ -972,12 +973,12 @@ const ServicePage: React.FC<ServicePageProps> = ({ service }) => {
 
           {/* CTA Section */}
           <div className="mt-16 text-center">
-            <a
+            <Link
               href="/ContactUsPage"
               className="inline-block px-8 py-4 bg-blue-700 text-white font-medium rounded-full hover:bg-blue-800 transition-colors"
             >
               Get Started with {service.title}
-            </a>
+            </Link>
           </div>
         </div>
       </div>
