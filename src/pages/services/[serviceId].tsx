@@ -3,7 +3,7 @@ import Image from 'next/image';
 // import { useRouter } from 'next/router';
 import Head from 'next/head';
 
-// Service data type
+// Service data types
 interface Benefit {
   title: string;
   description: string;
@@ -238,7 +238,7 @@ const services: Service[] = [
         topic: 'App store deployment',
         description:
           'We handle the entire submission process to the App Store and Google Play, ensuring compliance with guidelines and optimizing listings to maximize visibility and downloads effectively.',
-        image: '/images/serviceDetails/mobile-deployment.avif',
+        image: '/images/serviceDetails/mobile-deployment.jpg',
       },
       {
         topic: 'UI/UX for mobile',
@@ -330,7 +330,7 @@ const services: Service[] = [
         topic: 'Content workflow management',
         description:
           'We design workflows to streamline content creation, review, and publishing processes, enabling your team to collaborate effectively and maintain consistency across all your digital assets.',
-        image: '/images/serviceDetails/cms-workflow.avif',
+        image: '/images/serviceDetails/cms-workflow.jpg',
       },
       {
         topic: 'SEO optimization',
