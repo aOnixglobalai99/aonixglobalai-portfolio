@@ -60,7 +60,7 @@ const services: Service[] = [
         topic: 'Responsive Design Implementation',
         description:
           'Using advanced techniques, we ensure your designs adapt flawlessly across devices, from desktops to mobiles, providing a consistent and optimized experience that meets users wherever they are.',
-        image: '/images/serviceDetails/ui-ux-responsive.avif',
+        image: '/images/serviceDetails/ui-ux-responsive.jpg',
       },
       {
         topic: 'Usability Testing',
@@ -975,8 +975,8 @@ const ServicePage: React.FC<ServicePageProps> = ({ service }) => {
           {/* CTA Section */}
           <div className="mt-16 text-center">
             <a
-              href="/contact"
-              className="inline-block px-8 py-4 bg-blue-800 text-white font-medium rounded-full hover:bg-blue-700 transition-colors"
+              href="/ContactUsPage"
+              className="inline-block px-8 py-4 bg-blue-700 text-white font-medium rounded-full hover:bg-blue-800 transition-colors"
             >
               Get Started with {service.title}
             </a>
