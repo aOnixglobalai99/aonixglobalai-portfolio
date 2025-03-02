@@ -600,7 +600,7 @@ const services: Service[] = [
         topic: 'Natural language processing',
         description:
           'Our NLP solutions enable apps to understand and respond to human language, enhancing user interactions with features like chatbots or voice commands for a smarter experience.',
-        image: '/images/serviceDetails/ai-nlp.avif',
+        image: '/images/serviceDetails/ai-nlp.jpg',
       },
       {
         topic: 'Predictive analytics',
