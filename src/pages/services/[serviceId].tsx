@@ -907,9 +907,8 @@ const ServicePage: React.FC<ServicePageProps> = ({ service }) => {
               <Image
                 src={service.image}
                 alt={service.title}
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg shadow-lg"
+                fill
+                className="rounded-lg shadow-lg object-cover"
               />
             </div>
 
@@ -948,9 +947,8 @@ const ServicePage: React.FC<ServicePageProps> = ({ service }) => {
                   <Image
                     src={detail.image}
                     alt={detail.topic}
-                    layout="fill"
-                    objectFit="cover"
-                    className="rounded-lg shadow-md"
+                    fill
+                    className="rounded-lg shadow-md object-cover"
                   />
                 </div>
               </div>
