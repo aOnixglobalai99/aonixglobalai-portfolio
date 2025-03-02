@@ -1,6 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 import Head from 'next/head';
 
 // Service data type
@@ -9,12 +9,18 @@ interface Benefit {
   description: string;
 }
 
+interface Detail {
+  topic: string;
+  description: string;
+  image: string;
+}
+
 interface Service {
   id: string;
   title: string;
   description: string;
   image: string;
-  details: string[];
+  details: Detail[];
   benefits: Benefit[];
   heroBackgroundImage: string;
 }
@@ -23,7 +29,7 @@ interface ServicePageProps {
   service: Service | null;
 }
 
-// Service data with 10 benefits per service
+// Service data with benefits and detailed approach
 const services: Service[] = [
   {
     id: 'ui-ux-design',
@@ -32,11 +38,36 @@ const services: Service[] = [
       'Crafting user-centric designs that focus on functionality and aesthetics.',
     image: '/images/servicesImages/ui.avif',
     details: [
-      'User research and analysis',
-      'Wireframing and prototyping',
-      'Visual design and branding',
-      'Responsive design implementation',
-      'Usability testing',
+      {
+        topic: 'User Research and Analysis',
+        description:
+          'We dive deep into understanding your audience through surveys, interviews, and analytics, identifying their needs and behaviors to create designs that resonate and deliver exceptional user satisfaction effectively.',
+        image: '/images/serviceDetails/ui-ux-research.avif',
+      },
+      {
+        topic: 'Wireframing and Prototyping',
+        description:
+          'Our team builds detailed wireframes and interactive prototypes to visualize layouts and test functionality early, ensuring the final design aligns with your goals and user expectations seamlessly.',
+        image: '/images/serviceDetails/ui-ux-wireframe.avif',
+      },
+      {
+        topic: 'Visual Design and Branding',
+        description:
+          'We craft compelling visuals with consistent branding elements like colors and typography, enhancing your identity and creating an aesthetically pleasing experience that strengthens recognition across all platforms.',
+        image: '/images/serviceDetails/ui-ux-visual.avif',
+      },
+      {
+        topic: 'Responsive Design Implementation',
+        description:
+          'Using advanced techniques, we ensure your designs adapt flawlessly across devices, from desktops to mobiles, providing a consistent and optimized experience that meets users wherever they are.',
+        image: '/images/serviceDetails/ui-ux-responsive.avif',
+      },
+      {
+        topic: 'Usability Testing',
+        description:
+          'Through rigorous testing with real users, we refine interfaces to eliminate friction, validate design choices, and ensure the final product is intuitive, efficient, and delightful to use consistently.',
+        image: '/images/serviceDetails/ui-ux-testing.avif',
+      },
     ],
     benefits: [
       {
@@ -99,11 +130,36 @@ const services: Service[] = [
       'Delivering robust and scalable web solutions tailored to your business.',
     image: '/images/servicesImages/web.avif',
     details: [
-      'Custom web application development',
-      'Frontend and backend development',
-      'Database integration',
-      'Performance optimization',
-      'Security implementation',
+      {
+        topic: 'Custom web application development',
+        description:
+          'We build bespoke web applications tailored to your unique business needs, integrating custom features and workflows to enhance operations and provide a competitive edge in your industry.',
+        image: '/images/serviceDetails/web-custom.avif',
+      },
+      {
+        topic: 'Frontend and backend development',
+        description:
+          'Our experts create responsive frontends and robust backends, ensuring seamless interaction and data management, delivering a cohesive web application that performs reliably under all conditions.',
+        image: '/images/serviceDetails/web-frontend-backend.avif',
+      },
+      {
+        topic: 'Database integration',
+        description:
+          'We seamlessly integrate databases to store and manage your data efficiently, enabling fast retrieval and secure handling, which supports dynamic content and advanced functionality effortlessly.',
+        image: '/images/serviceDetails/web-database.avif',
+      },
+      {
+        topic: 'Performance optimization',
+        description:
+          'Through code optimization and server tuning, we enhance application speed and responsiveness, ensuring users experience minimal delays and your app handles high traffic without compromising quality.',
+        image: '/images/serviceDetails/web-performance.avif',
+      },
+      {
+        topic: 'Security implementation',
+        description:
+          'We embed advanced security protocols like encryption and authentication into your app, protecting sensitive data and users from threats, ensuring compliance and trust at every level.',
+        image: '/images/serviceDetails/web-security.avif',
+      },
     ],
     benefits: [
       {
@@ -166,11 +222,36 @@ const services: Service[] = [
       'Creating intuitive and feature-rich mobile applications for both iOS and Android.',
     image: '/images/servicesImages/mobile-app.avif',
     details: [
-      'Native app development (iOS & Android)',
-      'Cross-platform development',
-      'App store deployment',
-      'UI/UX for mobile',
-      'Maintenance and updates',
+      {
+        topic: 'Native app development (iOS & Android)',
+        description:
+          'We develop high-performance native apps for iOS and Android, leveraging platform-specific tools to deliver fast, reliable experiences tailored to each ecosystem’s unique capabilities and user expectations.',
+        image: '/images/serviceDetails/mobile-native.avif',
+      },
+      {
+        topic: 'Cross-platform development',
+        description:
+          'Using frameworks like React Native, we create apps that run smoothly on both iOS and Android, reducing development time and costs while maintaining quality and consistency across platforms.',
+        image: '/images/serviceDetails/mobile-cross-platform.avif',
+      },
+      {
+        topic: 'App store deployment',
+        description:
+          'We handle the entire submission process to the App Store and Google Play, ensuring compliance with guidelines and optimizing listings to maximize visibility and downloads effectively.',
+        image: '/images/serviceDetails/mobile-deployment.avif',
+      },
+      {
+        topic: 'UI/UX for mobile',
+        description:
+          'Our mobile-specific UI/UX designs prioritize touch interactions and small screens, crafting intuitive interfaces that enhance usability and engagement for users on the go seamlessly.',
+        image: '/images/serviceDetails/mobile-uiux.avif',
+      },
+      {
+        topic: 'Maintenance and updates',
+        description:
+          'We provide ongoing support, delivering timely updates and bug fixes to keep your app current, secure, and aligned with evolving user needs and platform requirements consistently.',
+        image: '/images/serviceDetails/mobile-maintenance.avif',
+      },
     ],
     benefits: [
       {
@@ -233,11 +314,36 @@ const services: Service[] = [
       'Developing flexible and SEO-optimized content management systems.',
     image: '/images/servicesImages/cms.avif',
     details: [
-      'Custom CMS development',
-      'WordPress/Shopsify integration',
-      'Content workflow management',
-      'SEO optimization',
-      'User role management',
+      {
+        topic: 'Custom CMS development',
+        description:
+          'We build tailored CMS solutions designed to fit your specific content needs, offering flexibility and control to manage your website efficiently without relying on generic platforms.',
+        image: '/images/serviceDetails/cms-custom.avif',
+      },
+      {
+        topic: 'WordPress/Shopsify integration',
+        description:
+          'Our team integrates popular platforms like WordPress or Shopsify, customizing them to enhance functionality, streamline content management, and align with your business goals seamlessly.',
+        image: '/images/serviceDetails/cms-wordpress.avif',
+      },
+      {
+        topic: 'Content workflow management',
+        description:
+          'We design workflows to streamline content creation, review, and publishing processes, enabling your team to collaborate effectively and maintain consistency across all your digital assets.',
+        image: '/images/serviceDetails/cms-workflow.avif',
+      },
+      {
+        topic: 'SEO optimization',
+        description:
+          'Built-in SEO tools and best practices are implemented to boost your site’s visibility, ensuring content is structured for search engines to drive organic traffic effortlessly.',
+        image: '/images/serviceDetails/cms-seo.avif',
+      },
+      {
+        topic: 'User role management',
+        description:
+          'Customizable roles and permissions allow precise control over who can edit, approve, or publish content, enhancing security and teamwork while maintaining oversight of your CMS.',
+        image: '/images/serviceDetails/cms-roles.avif',
+      },
     ],
     benefits: [
       {
@@ -299,11 +405,36 @@ const services: Service[] = [
     description: 'Building and integrating APIs to simplify data interactions.',
     image: '/images/servicesImages/api.avif',
     details: [
-      'RESTful API development',
-      'Third-party API integration',
-      'API documentation',
-      'Security implementation',
-      'Performance optimization',
+      {
+        topic: 'RESTful API development',
+        description:
+          'We create RESTful APIs with standardized protocols, enabling efficient, scalable data interactions between your applications and external systems, ensuring seamless communication and robust performance consistently.',
+        image: '/images/serviceDetails/api-restful.avif',
+      },
+      {
+        topic: 'Third-party API integration',
+        description:
+          'Our team integrates third-party APIs to extend functionality, connecting your app with tools like payment gateways or social platforms, enhancing features without building from scratch.',
+        image: '/images/serviceDetails/api-third-party.avif',
+      },
+      {
+        topic: 'API documentation',
+        description:
+          'We provide clear, comprehensive API documentation, making it easy for developers to understand and use your APIs, reducing onboarding time and ensuring effective implementation across teams.',
+        image: '/images/serviceDetails/api-documentation.avif',
+      },
+      {
+        topic: 'Security implementation',
+        description:
+          'Advanced security measures like OAuth and rate limiting are embedded into APIs, protecting data exchanges and preventing unauthorized access, ensuring safety and trust in every interaction.',
+        image: '/images/serviceDetails/api-security.avif',
+      },
+      {
+        topic: 'Performance optimization',
+        description:
+          'We optimize API endpoints for speed and efficiency, reducing latency and handling high request volumes, ensuring your applications remain responsive and reliable under all conditions.',
+        image: '/images/serviceDetails/api-performance.avif',
+      },
     ],
     benefits: [
       {
@@ -366,11 +497,36 @@ const services: Service[] = [
       'Offering reliable and scalable cloud solutions for your business.',
     image: '/images/servicesImages/cloud.avif',
     details: [
-      'Cloud architecture design',
-      'AWS/Azure/Google Cloud deployment',
-      'Cloud migration services',
-      'Scalability planning',
-      'Cost optimization',
+      {
+        topic: 'Cloud architecture design',
+        description:
+          'We design tailored cloud architectures to optimize scalability and performance, ensuring your infrastructure supports current needs and future growth with efficiency and reliability at every step.',
+        image: '/images/serviceDetails/cloud-architecture.avif',
+      },
+      {
+        topic: 'AWS/Azure/Google Cloud deployment',
+        description:
+          'Our experts deploy solutions on leading platforms like AWS, Azure, or Google Cloud, leveraging their strengths to deliver robust, scalable applications tailored to your business requirements.',
+        image: '/images/serviceDetails/cloud-deployment.avif',
+      },
+      {
+        topic: 'Cloud migration services',
+        description:
+          'We manage seamless migrations from on-premises to cloud environments, minimizing downtime and ensuring data integrity, so your business transitions smoothly without operational disruptions.',
+        image: '/images/serviceDetails/cloud-migration.avif',
+      },
+      {
+        topic: 'Scalability planning',
+        description:
+          'Strategic planning ensures your cloud resources scale dynamically with demand, maintaining performance during peak times and optimizing costs during low usage without manual intervention.',
+        image: '/images/serviceDetails/cloud-scalability.avif',
+      },
+      {
+        topic: 'Cost optimization',
+        description:
+          'We analyze usage patterns and implement cost-saving strategies like auto-scaling and reserved instances, ensuring you maximize value from your cloud investment without overspending.',
+        image: '/images/serviceDetails/cloud-cost.avif',
+      },
     ],
     benefits: [
       {
@@ -433,11 +589,36 @@ const services: Service[] = [
       'Harnessing artificial intelligence to create smart, data-driven applications.',
     image: '/images/servicesImages/ai.avif',
     details: [
-      'Machine learning implementation',
-      'Natural language processing',
-      'Predictive analytics',
-      'AI model training',
-      'Automation solutions',
+      {
+        topic: 'Machine learning implementation',
+        description:
+          'We deploy machine learning models to analyze patterns and predict outcomes, enabling your applications to adapt and improve over time based on data-driven insights effectively.',
+        image: '/images/serviceDetails/ai-machine-learning.avif',
+      },
+      {
+        topic: 'Natural language processing',
+        description:
+          'Our NLP solutions enable apps to understand and respond to human language, enhancing user interactions with features like chatbots or voice commands for a smarter experience.',
+        image: '/images/serviceDetails/ai-nlp.avif',
+      },
+      {
+        topic: 'Predictive analytics',
+        description:
+          'Using AI, we forecast trends and behaviors based on historical data, empowering your business with insights to optimize strategies and anticipate market shifts proactively.',
+        image: '/images/serviceDetails/ai-predictive.avif',
+      },
+      {
+        topic: 'AI model training',
+        description:
+          'We train AI models with your data to ensure accuracy and relevance, fine-tuning algorithms to deliver precise results tailored to your specific industry or use case.',
+        image: '/images/serviceDetails/ai-training.avif',
+      },
+      {
+        topic: 'Automation solutions',
+        description:
+          'AI-driven automation streamlines repetitive tasks like data processing or scheduling, reducing manual effort and boosting efficiency across your operations with reliable, intelligent systems.',
+        image: '/images/serviceDetails/ai-automation.avif',
+      },
     ],
     benefits: [
       {
@@ -499,11 +680,36 @@ const services: Service[] = [
     description: 'Implementing result-oriented digital marketing strategies.',
     image: '/images/servicesImages/digital-marketing.avif',
     details: [
-      'SEO optimization',
-      'PPC campaign management',
-      'Social media marketing',
-      'Content marketing',
-      'Analytics and reporting',
+      {
+        topic: 'SEO optimization',
+        description:
+          'We optimize your website with keyword strategies and technical enhancements, boosting search rankings to drive organic traffic and connect you with customers searching for your services.',
+        image: '/images/serviceDetails/digital-seo.avif',
+      },
+      {
+        topic: 'PPC campaign management',
+        description:
+          'Our team designs and manages PPC campaigns, targeting high-value audiences with precision to maximize clicks and conversions while optimizing ad spend for the best ROI possible.',
+        image: '/images/serviceDetails/digital-ppc.avif',
+      },
+      {
+        topic: 'Social media marketing',
+        description:
+          'We create engaging social media campaigns to build your audience, foster interaction, and amplify brand reach across platforms, driving engagement and loyalty with strategic content.',
+        image: '/images/serviceDetails/digital-social.avif',
+      },
+      {
+        topic: 'Content marketing',
+        description:
+          'Through compelling blogs, videos, and more, we craft content that educates and attracts your audience, establishing authority and nurturing leads through every stage of their journey.',
+        image: '/images/serviceDetails/digital-content.avif',
+      },
+      {
+        topic: 'Analytics and reporting',
+        description:
+          'We provide detailed analytics to track campaign performance, offering actionable insights that refine strategies and ensure your marketing efforts deliver measurable results consistently over time.',
+        image: '/images/serviceDetails/digital-analytics.avif',
+      },
     ],
     benefits: [
       {
@@ -566,11 +772,36 @@ const services: Service[] = [
       'Streamlining your software development lifecycle through DevOps practices.',
     image: '/images/servicesImages/dev-ops.avif',
     details: [
-      'CI/CD pipeline setup',
-      'Infrastructure as Code',
-      'Automated testing',
-      'Monitoring and logging',
-      'Containerization',
+      {
+        topic: 'CI/CD pipeline setup',
+        description:
+          'We implement continuous integration and deployment pipelines to automate builds and releases, accelerating development cycles and ensuring your software is delivered quickly and reliably every time.',
+        image: '/images/serviceDetails/devops-cicd.avif',
+      },
+      {
+        topic: 'Infrastructure as Code',
+        description:
+          'Using tools like Terraform, we define infrastructure in code, enabling consistent, repeatable deployments and rapid scaling, reducing manual errors and enhancing environment management efficiency.',
+        image: '/images/serviceDetails/devops-iac.avif',
+      },
+      {
+        topic: 'Automated testing',
+        description:
+          'Our automated testing suites run continuously, catching bugs early in development, ensuring high-quality code, and reducing post-release issues for a more reliable software product consistently.',
+        image: '/images/serviceDetails/devops-testing.avif',
+      },
+      {
+        topic: 'Monitoring and logging',
+        description:
+          'We set up real-time monitoring and detailed logging to track application health, quickly identifying and resolving issues to maintain performance and uptime across all environments effectively.',
+        image: '/images/serviceDetails/devops-monitoring.avif',
+      },
+      {
+        topic: 'Containerization',
+        description:
+          'Using Docker and Kubernetes, we containerize applications for portability and scalability, ensuring consistent performance across development, testing, and production environments with minimal configuration hassles.',
+        image: '/images/serviceDetails/devops-containerization.avif',
+      },
     ],
     benefits: [
       {
@@ -629,7 +860,7 @@ const services: Service[] = [
 ];
 
 const ServicePage: React.FC<ServicePageProps> = ({ service }) => {
-  const router = useRouter();
+  // const router = useRouter();
 
   if (!service) {
     return (
@@ -691,11 +922,39 @@ const ServicePage: React.FC<ServicePageProps> = ({ service }) => {
                 {service.details.map((detail, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <span className="flex-shrink-0 w-2 h-2 mt-2 bg-blue-600 rounded-full" />
-                    <span className="text-gray-700">{detail}</span>
+                    <span className="text-gray-700">{detail.topic}</span>
                   </li>
                 ))}
               </ul>
             </div>
+          </div>
+
+          {/* Our Approach Section */}
+          <div className="mt-16">
+            <h2 className="text-3xl font-bold text-blue-900 mb-6">
+              Our Approach
+            </h2>
+            {service.details.map((detail, index) => (
+              <div key={index} className="grid md:grid-cols-2 gap-8 mb-12">
+                {/* Left: Topic and Description */}
+                <div className="space-y-2">
+                  <h3 className="text-xl font-semibold text-sky-700">
+                    {detail.topic}
+                  </h3>
+                  <p className="text-gray-600">{detail.description}</p>
+                </div>
+                {/* Right: Image */}
+                <div className="relative h-[200px] w-full">
+                  <Image
+                    src={detail.image}
+                    alt={detail.topic}
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-lg shadow-md"
+                  />
+                </div>
+              </div>
+            ))}
           </div>
 
           {/* Benefits Section */}
