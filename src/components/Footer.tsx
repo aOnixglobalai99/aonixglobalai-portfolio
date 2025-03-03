@@ -1,254 +1,211 @@
 import React from 'react';
 import Image from 'next/image';
-import logo from '../../assets/logo/logo.png';
-import phone from '../../assets/footerImages/phone.svg';
-import email from '../../assets/footerImages/email.svg';
-import linkedin from '../../assets/footerImages/linkedin.svg';
-import insta from '../../assets/footerImages/insta.svg';
-import { FaChevronRight } from 'react-icons/fa';
 import Link from 'next/link';
+import {
+  FaChevronRight,
+  FaLinkedinIn,
+  FaTwitter,
+  FaInstagram,
+  FaDribbble,
+  FaBehance,
+  FaMapMarkerAlt,
+  FaPhone,
+  FaEnvelope,
+} from 'react-icons/fa';
+
+import logo from '../../assets/logo/logo.png';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  const socialLinks = [
+    {
+      href: 'https://www.linkedin.com/company/aonixglobalai/',
+      icon: <FaLinkedinIn size={16} />,
+      alt: 'LinkedIn',
+    },
+    {
+      href: '#',
+      icon: <FaTwitter size={16} />,
+      alt: 'Twitter',
+    },
+    {
+      href: 'https://www.instagram.com/aonixglobalai/',
+      icon: <FaInstagram size={16} />,
+      alt: 'Instagram',
+    },
+    {
+      href: 'https://dribbble.com/AonixGlobalAI',
+      icon: <FaDribbble size={16} />,
+      alt: 'Dribbble',
+    },
+    {
+      href: 'https://www.behance.net/aonixgldevelop',
+      icon: <FaBehance size={16} />,
+      alt: 'Behance',
+    },
+  ];
+
+  const navLinks = [
+    { href: '/', label: 'Home' },
+    { href: '/ServicePage', label: 'Services' },
+    { href: '/Industries', label: 'Industry' },
+    { href: '/OurWorkPage', label: 'Our Work' },
+    { href: '/BlogPage', label: 'Blog' },
+    { href: '/ContactUsPage', label: 'Contact' },
+  ];
+
   return (
-    <div className="client-footer-div bg-[#078dd7] w-full bg-center bg-no-repeat bg-cover relative z-1">
-      <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <footer className="bg-slate-900 w-full bg-center bg-no-repeat bg-cover relative z-10">
+      {/* top border - gradient */}
+      <div className="h-1 w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"></div>
+
+      <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Company Info Section */}
-          <div className="flex flex-col gap-4">
-            <div className="flex items-center gap-3 bg-white p-2 rounded-2xl w-fit">
-              <Image src={logo} alt="Logo" width={45} height={45} />
-              <h1 className="text-2xl sm:text-3xl font-bold text-[#121a5e]">
-                Aonix<span className="text-[#078dd7]">Global</span>
-                <span className="text-[#121a5e]">AI</span>
+          <div className="flex flex-col gap-6">
+            <div className="flex items-center gap-3 bg-slate-800 p-3 rounded-xl w-fit shadow-lg shadow-indigo-500/10">
+              <Image
+                src={logo}
+                alt="Logo"
+                width={40}
+                height={40}
+                className="object-contain"
+              />
+              <h1 className="text-2xl sm:text-3xl font-bold  text-indigo-600">
+                Aonix<span className="text-sky-500">Global</span>
+                <span className="text-indigo-600">AI</span>
               </h1>
             </div>
 
-            <p className="text-white text-sm sm:text-base">
+            <p className="text-slate-400 text-sm sm:text-base">
               Empowering the Future with Intelligent Solutions
             </p>
 
-            <div className="flex flex-col gap-3 mt-4">
-              <div className="flex items-center gap-2.5">
-                <Image
-                  src="https://img.icons8.com/?size=48&id=uzeKRJIGwbBY&format=png"
-                  alt="Location"
-                  width={15}
-                  height={15}
-                  className="h-5 w-auto"
-                />
-                <p className="text-white text-sm">Indore, Madhya Pradesh</p>
+            <div className="flex flex-col gap-5 mt-2">
+              <div className="flex items-center gap-4 group">
+                <div className="bg-slate-800 p-2.5 rounded-lg group-hover:bg-slate-700 transition-colors">
+                  <FaMapMarkerAlt className="text-indigo-400 h-4 w-4" />
+                </div>
+                <p className="text-slate-300 text-sm">
+                  Indore, Madhya Pradesh, India
+                </p>
               </div>
 
-              <div className="flex items-center gap-2.5">
-                <Image src={email} alt="Email" width={15} height={15} />
+              <div className="flex items-center gap-4 group">
+                <div className="bg-slate-800 p-2.5 rounded-lg group-hover:bg-slate-700 transition-colors">
+                  <FaEnvelope className="text-indigo-400 h-4 w-4" />
+                </div>
                 <a
                   href="mailto:support@aonixglobalai.com"
-                  className="text-white text-sm hover:underline"
+                  className="text-slate-300 text-sm hover:text-indigo-300 transition-colors"
                 >
                   support@aonixglobalai.com
                 </a>
               </div>
 
-              <div className="flex items-center gap-2.5">
-                <Image src={phone} alt="Phone" width={15} height={15} />
+              <div className="flex items-center gap-4 group">
+                <div className="bg-slate-800 p-2.5 rounded-lg group-hover:bg-slate-700 transition-colors">
+                  <FaPhone className="text-indigo-400 h-4 w-4" />
+                </div>
                 <a
                   href="tel:+918709871715"
-                  className="text-white text-sm hover:underline"
+                  className="text-slate-300 text-sm hover:text-indigo-300 transition-colors"
                 >
                   (+91) 8709871715
                 </a>
               </div>
             </div>
           </div>
-          {/* <div className="w-[20%] flex flex-col gap-5">
-            <h1 className="text-[white] text-[25px]">Quick Links</h1>
-            <ul className="flex flex-col gap-2">
-              <li className="text-white text-[15px]">
-                <Link href="#" className="flex items-center">
-                  <FaChevronRight className="text-blue-500" size={16} />
-                  <span className="ml-2 hover:text-blue-500">
-                    Privacy Policy
-                  </span>
-                </Link>
-              </li>
-              <li className="text-white text-[15px]">
-                <Link href="#" className="flex items-center">
-                  <FaChevronRight className="text-blue-500" size={16} />
-                  <span className="ml-2 hover:text-blue-500">
-                    Term Of Service
-                  </span>
-                </Link>
-              </li>
-              <li className="text-white text-[15px]">
-                <Link href="#" className="flex items-center">
-                  <FaChevronRight className="text-blue-500" size={16} />
-                  <span className="ml-2 hover:text-blue-500">Disclaimer</span>
-                </Link>
-              </li>
-              <li className="text-white text-[15px]">
-                <Link href="#" className="flex items-center">
-                  <FaChevronRight className="text-blue-500" size={16} />
-                  <span className="ml-2 hover:text-blue-500">Credits</span>
-                </Link>
-              </li>
-              <li className="text-white text-[15px]">
-                <Link href="#" className="flex items-center">
-                  <FaChevronRight className="text-blue-500" size={16} />
-                  <span className="ml-2 hover:text-blue-500">FAQ</span>
-                </Link>
-              </li>
-            </ul>
-          </div> */}
 
           {/* Other Pages Section */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-6">
             <h2 className="text-white text-xl sm:text-2xl font-semibold">
-              Other Pages
+              Explore
             </h2>
-            <ul className="flex flex-col gap-2">
-              <li className="text-white text-sm">
-                <Link href="/" className="flex items-center group">
-                  <FaChevronRight
-                    className="text-blue-500 group-hover:text-blue-400"
-                    size={14}
-                  />
-                  <span className="ml-2 group-hover:text-blue-400 transition-colors">
-                    Home
-                  </span>
-                </Link>
-              </li>
-              <li className="text-white text-sm">
-                <Link href="/ServicePage" className="flex items-center group">
-                  <FaChevronRight
-                    className="text-blue-500 group-hover:text-blue-400"
-                    size={14}
-                  />
-                  <span className="ml-2 group-hover:text-blue-400 transition-colors">
-                    Services
-                  </span>
-                </Link>
-              </li>
-              <li className="text-white text-sm">
-                <Link href="/Industries" className="flex items-center group">
-                  <FaChevronRight
-                    className="text-blue-500 group-hover:text-blue-400"
-                    size={14}
-                  />
-                  <span className="ml-2 group-hover:text-blue-400 transition-colors">
-                    Industry
-                  </span>
-                </Link>
-              </li>
-
-              <li className="text-white text-sm">
-                <Link href="/OurWorkPage" className="flex items-center group">
-                  <FaChevronRight
-                    className="text-blue-500 group-hover:text-blue-400"
-                    size={14}
-                  />
-                  <span className="ml-2 group-hover:text-blue-400 transition-colors">
-                    Our Work
-                  </span>
-                </Link>
-              </li>
-              <li className="text-white text-sm">
-                <Link href="/BlogPage" className="flex items-center group">
-                  <FaChevronRight
-                    className="text-blue-500 group-hover:text-blue-400"
-                    size={14}
-                  />
-                  <span className="ml-2 group-hover:text-blue-400 transition-colors">
-                    Blog
-                  </span>
-                </Link>
-              </li>
-              <li className="text-white text-sm">
-                <Link href="/ContactUsPage" className="flex items-center group">
-                  <FaChevronRight
-                    className="text-blue-500 group-hover:text-blue-400"
-                    size={14}
-                  />
-                  <span className="ml-2 group-hover:text-blue-400 transition-colors">
-                    Contact
-                  </span>
-                </Link>
-              </li>
+            <ul className="flex flex-col gap-4 mt-2">
+              {navLinks.map((link, index) => (
+                <li key={index} className="text-slate-300 text-sm">
+                  <Link href={link.href} className="flex items-center group">
+                    <div className="bg-slate-800 w-8 h-8 rounded-lg flex items-center justify-center mr-4 group-hover:bg-indigo-600 transition-all duration-300">
+                      <FaChevronRight
+                        className="text-indigo-400 group-hover:text-white"
+                        size={10}
+                      />
+                    </div>
+                    <span className="group-hover:text-indigo-300 transition-colors">
+                      {link.label}
+                    </span>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Newsletter Section */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-6">
             <h2 className="text-white text-xl sm:text-2xl font-semibold">
-              Newsletter
+              Stay Updated
             </h2>
-            <div className="flex flex-col sm:flex-row gap-2">
-              <input
-                className="flex-grow p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
-                placeholder="Email address"
-                type="email"
-              />
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg text-sm transition-colors">
-                SUBSCRIBE
-              </button>
-            </div>
-
-            <p className="text-white text-sm">Get the latest news & updates</p>
-
-            {/* Social Links */}
-            <div className="flex flex-wrap gap-4 mt-2">
-              {[
-                {
-                  href: 'https://www.linkedin.com/company/aonixglobalai/',
-                  icon: linkedin,
-                  size: 12,
-                },
-                {
-                  href: '#',
-                  icon: 'https://img.icons8.com/?size=24&id=de4vjQ6J061l&format=png',
-                  size: 15,
-                },
-                {
-                  href: 'https://www.instagram.com/aonixglobalai/',
-                  icon: insta,
-                  size: 15,
-                },
-                {
-                  href: 'https://dribbble.com/AonixGlobalAI',
-                  icon: 'https://img.icons8.com/?size=32&id=16154&format=png',
-                  size: 18,
-                },
-                {
-                  href: 'https://www.behance.net/aonixgldevelop',
-                  icon: 'https://img.icons8.com/?size=24&id=HvLKZeTLqQZn&format=png',
-                  size: 15,
-                },
-              ].map((social, index) => (
-                <Link
-                  key={index}
-                  href={social.href}
-                  className="bg-white w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-300 transition-colors"
-                  target="_blank"
-                >
-                  <Image
-                    src={social.icon}
-                    alt="Social Icon"
-                    width={social.size}
-                    height={social.size}
+            <div className="flex flex-col gap-4 mt-2">
+              <div className="flex flex-col gap-3">
+                <div className="relative">
+                  <input
+                    className="w-full p-4 pl-5 pr-12 rounded-xl border-0 bg-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm text-slate-300 placeholder-slate-500"
+                    placeholder="Your email address"
+                    type="email"
                   />
-                </Link>
-              ))}
+                  <button className="absolute right-1 top-1 bottom-1 bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 text-white font-medium px-4 rounded-lg text-sm transition-colors">
+                    SUBSCRIBE
+                  </button>
+                </div>
+                <p className="text-slate-500 text-sm">
+                  Get our latest news and updates
+                </p>
+              </div>
+
+              {/* Social Links */}
+              <div className="flex flex-wrap gap-3 mt-4">
+                {socialLinks.map((social, index) => (
+                  <Link
+                    key={index}
+                    href={social.href}
+                    className="bg-slate-800 hover:bg-indigo-600 w-10 h-10 flex items-center justify-center rounded-lg transition-all duration-300"
+                    target="_blank"
+                    aria-label={social.alt}
+                  >
+                    <span className="text-indigo-400 hover:text-white transition-colors">
+                      {social.icon}
+                    </span>
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>
 
         {/* Footer Bottom */}
-        <div className="mt-10 pt-6 border-t border-white/30">
-          <div className="flex flex-col sm:flex-row justify-between gap-4 text-white text-sm">
-            <p>Copyright © 2025 AonixGlobalAI. All rights reserved.</p>
+        <div className="mt-16 pt-8 border-t border-slate-800">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-6 text-slate-500 text-sm">
+            <p>© {currentYear} AonixGlobalAI. All rights reserved.</p>
+            {/* <div className="flex gap-8">
+              <Link
+                href="/privacy-policy"
+                className="hover:text-indigo-400 transition-colors"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                href="/terms"
+                className="hover:text-indigo-400 transition-colors"
+              >
+                Terms of Service
+              </Link>
+            </div> */}
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
