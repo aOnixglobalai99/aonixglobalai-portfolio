@@ -1,8 +1,8 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Image from 'next/image';
-// import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 // Service data types
 interface Benefit {
@@ -28,7 +28,33 @@ interface Service {
 
 interface ServicePageProps {
   service: Service | null;
+  relatedServices: Service[];
 }
+
+// Testimonial data
+const testimonials = [
+  {
+    name: 'Sarah Johnson',
+    company: 'TechVision Inc.',
+    quote:
+      'The team delivered our project ahead of schedule with exceptional quality. Their expertise in UI/UX design transformed our application.',
+    avatar: '/images/testimonials/avatar1.jpg',
+  },
+  {
+    name: 'Michael Chen',
+    company: 'Innovate Solutions',
+    quote:
+      'Working with this team was seamless. Their cloud solutions helped us scale our operations while reducing costs by 30%.',
+    avatar: '/images/testimonials/avatar2.jpg',
+  },
+  {
+    name: 'Emily Rodriguez',
+    company: 'GrowthMarket',
+    quote:
+      'The digital marketing strategy they implemented doubled our conversion rates within just three months.',
+    avatar: '/images/testimonials/avatar3.jpg',
+  },
+];
 
 // Service data with benefits and detailed approach
 const services: Service[] = [
@@ -861,7 +887,31 @@ const services: Service[] = [
 ];
 
 const ServicePage: React.FC<ServicePageProps> = ({ service }) => {
-  // const router = useRouter();
+  const [isNavSticky, setIsNavSticky] = useState(false);
+  const [activeSection, setActiveSection] = useState('overview');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsNavSticky(scrollPosition > 400);
+
+      const sections = ['overview', 'approach', 'benefits', 'testimonials'];
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= 100 && rect.bottom >= 100) {
+            setActiveSection(section);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   if (!service) {
     return (
@@ -871,6 +921,17 @@ const ServicePage: React.FC<ServicePageProps> = ({ service }) => {
     );
   }
 
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop - 80,
+        behavior: 'smooth',
+      });
+      setIsMobileMenuOpen(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Head>
@@ -879,22 +940,138 @@ const ServicePage: React.FC<ServicePageProps> = ({ service }) => {
       </Head>
 
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 h-[400px] overflow-hidden">
+      <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 h-[500px] lg:h-[600px] overflow-hidden">
         <div className="relative h-full container mx-auto px-4 md:px-6 lg:px-8">
           <div
-            className="absolute inset-0 mix-blend-overlay w-full bg-fixed bg-center bg-no-repeat bg-cover"
+            className="absolute inset-0 mix-blend-overlay w-full bg-fixed bg-center bg-no-repeat bg-cover opacity-80"
             style={{
               backgroundImage: `url(${service.heroBackgroundImage})`,
-              transform: 'scale(1)',
+              transform: 'scale(1.05)',
             }}
           />
-          <div className="h-full flex flex-col items-start justify-center w-full max-w-[1140px] mx-auto animate-fade-in-left">
-            <h1 className="text-white font-black text-[clamp(1.5rem,5vw,3rem)] max-w-[800px] leading-tight">
+          <div className="absolute inset-0 bg-blue-900/40 backdrop-blur-[2px]"></div>
+          <div className="h-full flex flex-col items-start justify-center w-full max-w-[1140px] mx-auto animate-fade-in-left relative z-10">
+            <div className="inline-block px-3 py-1 bg-blue-600/90 text-white text-sm rounded-full mb-4">
+              Professional Services
+            </div>
+            <h1 className="text-white font-black text-[clamp(2rem,6vw,4rem)] max-w-[800px] leading-[1.1] mb-6">
               {service.title}
             </h1>
-            <p className="text-blue-100 text-[clamp(1rem,2vw,1.25rem)] max-w-[600px] mt-4">
+            <p className="text-blue-50 text-[clamp(1.1rem,2vw,1.4rem)] max-w-[600px] mb-8">
               {service.description}
             </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/ContactUsPage"
+                className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
+                Request a Free Consultation
+              </Link>
+              <button
+                onClick={() => scrollToSection('approach')}
+                className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/30 hover:bg-white/20 text-white font-medium rounded-lg transition-all flex items-center justify-center gap-2"
+              >
+                Learn Our Approach
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Sticky Navigation */}
+      <div
+        className={`sticky top-[93px] z-30 w-full bg-white shadow-md transition-all duration-300 ease-in-out ${
+          isNavSticky
+            ? 'translate-y-0 opacity-100'
+            : '-translate-y-full opacity-0'
+        }`}
+      >
+        <div className="container mx-auto px-4 md:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row items-center justify-between py-4 gap-4">
+            <div className="flex w-full sm:w-auto justify-between items-center">
+              <h2 className="text-blue-900 font-bold text-lg sm:text-xl whitespace-nowrap">
+                {service.title}
+              </h2>
+              <button
+                className="sm:hidden text-gray-600 hover:text-blue-600"
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              >
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+            <nav
+              className={`${
+                isMobileMenuOpen ? 'flex' : 'hidden'
+              } sm:flex flex-col sm:flex-row w-full sm:w-auto items-center gap-4 sm:gap-6 pb-4 sm:pb-0`}
+            >
+              <button
+                onClick={() => scrollToSection('overview')}
+                className={`text-sm whitespace-nowrap ${
+                  activeSection === 'overview'
+                    ? 'text-blue-600 font-medium'
+                    : 'text-gray-600 hover:text-blue-600'
+                }`}
+              >
+                Overview
+              </button>
+              <button
+                onClick={() => scrollToSection('approach')}
+                className={`text-sm whitespace-nowrap ${
+                  activeSection === 'approach'
+                    ? 'text-blue-600 font-medium'
+                    : 'text-gray-600 hover:text-blue-600'
+                }`}
+              >
+                Approach
+              </button>
+              <button
+                onClick={() => scrollToSection('benefits')}
+                className={`text-sm whitespace-nowrap ${
+                  activeSection === 'benefits'
+                    ? 'text-blue-600 font-medium'
+                    : 'text-gray-600 hover:text-blue-600'
+                }`}
+              >
+                Benefits
+              </button>
+              <button
+                onClick={() => scrollToSection('testimonials')}
+                className={`text-sm whitespace-nowrap ${
+                  activeSection === 'testimonials'
+                    ? 'text-blue-600 font-medium'
+                    : 'text-gray-600 hover:text-blue-600'
+                }`}
+              >
+                Testimonials
+              </button>
+            </nav>
           </div>
         </div>
       </div>
@@ -902,83 +1079,337 @@ const ServicePage: React.FC<ServicePageProps> = ({ service }) => {
       {/* Main Content */}
       <div className="container mx-auto px-4 md:px-6 lg:px-8 py-16">
         <div className="max-w-[1140px] mx-auto">
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Service Image */}
-            <div className="relative h-[400px] w-full">
-              <Image
-                src={service.image}
-                alt={service.title}
-                fill
-                className="rounded-lg shadow-lg object-cover"
-              />
-            </div>
-
-            {/* Service Details */}
-            <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-blue-900">
-                What We Offer
-              </h2>
-              <ul className="space-y-4">
-                {service.details.map((detail, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <span className="flex-shrink-0 w-2 h-2 mt-2 bg-blue-600 rounded-full" />
-                    <span className="text-gray-700">{detail.topic}</span>
-                  </li>
-                ))}
-              </ul>
+          {/* Overview Section */}
+          <div id="overview" className="scroll-mt-24">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative">
+                <div className="absolute -left-4 -top-4 w-full h-full bg-blue-100 rounded-lg"></div>
+                <div className="absolute -right-4 -bottom-4 w-full h-full bg-blue-600/10 rounded-lg"></div>
+                <div className="relative h-[400px] w-full">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    fill
+                    className="rounded-lg shadow-lg object-cover"
+                  />
+                </div>
+              </div>
+              <div className="space-y-6">
+                <div className="inline-block px-4 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
+                  Our Service
+                </div>
+                <h2 className="text-3xl font-bold text-blue-900">
+                  What We Offer
+                </h2>
+                <p className="text-gray-600 leading-relaxed">
+                  Our comprehensive {service.title.toLowerCase()} services are
+                  designed to help your business achieve its goals through
+                  innovative and effective solutions.
+                </p>
+                <ul className="space-y-4 mt-6">
+                  {service.details.map((detail, index) => (
+                    <li key={index} className="flex items-start gap-3 group">
+                      <span className="flex-shrink-0 w-6 h-6 mt-0.5 bg-blue-100 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                        <span className="w-2 h-2 bg-blue-600 rounded-full group-hover:bg-white"></span>
+                      </span>
+                      <span className="text-gray-700 font-medium">
+                        {detail.topic}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="pt-4">
+                  <Link
+                    href="/ContactUsPage"
+                    className="inline-flex items-center text-blue-600 font-medium hover:text-blue-800 transition-colors"
+                  >
+                    Schedule a consultation
+                    <svg
+                      className="ml-2 w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
 
           {/* Our Approach Section */}
-          <div className="mt-16">
-            <h2 className="text-3xl font-bold text-blue-900 mb-6">
-              Our Approach
-            </h2>
-            {service.details.map((detail, index) => (
-              <div key={index} className="grid md:grid-cols-2 gap-8 mb-12">
-                {/* Left: Topic and Description */}
-                <div className="space-y-2">
-                  <h3 className="text-xl font-semibold text-sky-700">
-                    {detail.topic}
-                  </h3>
-                  <p className="text-gray-600">{detail.description}</p>
-                </div>
-                {/* Right: Image */}
-                <div className="relative h-[200px] w-full">
-                  <Image
-                    src={detail.image}
-                    alt={detail.topic}
-                    fill
-                    className="rounded-lg shadow-md object-cover"
-                  />
-                </div>
+          <div id="approach" className="mt-24 scroll-mt-24">
+            <div className="text-center mb-16">
+              <div className="inline-block px-4 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
+                Methodology
               </div>
-            ))}
-          </div>
-
-          {/* Benefits Section */}
-          <div className="mt-16">
-            <h2 className="text-3xl font-bold text-blue-900 mb-6">Benefits</h2>
-            <div className="grid sm:grid-cols-2 gap-6">
-              {service.benefits.map((benefit, index) => (
-                <div key={index} className="p-6 bg-white rounded-lg shadow-md ">
-                  <p className="text-sky-700 font-semibold">{benefit.title}</p>
-                  <p className="text-gray-600 text-sm mt-2">
-                    {benefit.description}
-                  </p>
+              <h2 className="text-3xl font-bold text-blue-900 mt-4">
+                Our Approach
+              </h2>
+              <p className="text-gray-600 max-w-2xl mx-auto mt-4">
+                We follow a structured methodology to ensure every project
+                delivers exceptional results and addresses your unique business
+                needs.
+              </p>
+            </div>
+            <div className="space-y-16">
+              {service.details.map((detail, index) => (
+                <div
+                  key={index}
+                  className="grid md:grid-cols-2 gap-12 items-center"
+                >
+                  <div
+                    className={`space-y-4 ${
+                      index % 2 === 1 ? 'md:order-2' : ''
+                    }`}
+                  >
+                    <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 text-blue-800 font-bold">
+                      {index + 1}
+                    </div>
+                    <h3 className="text-2xl font-semibold text-blue-900">
+                      {detail.topic}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      {detail.description}
+                    </p>
+                  </div>
+                  <div
+                    className={`relative ${
+                      index % 2 === 1 ? 'md:order-1' : ''
+                    }`}
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-sky-400/10 rounded-lg transform rotate-1"></div>
+                    <div className="relative h-[300px] w-full rounded-lg overflow-hidden shadow-xl">
+                      <Image
+                        src={detail.image}
+                        alt={detail.topic}
+                        fill
+                        className="object-cover hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* CTA Section */}
-          <div className="mt-16 text-center">
-            <Link
-              href="/ContactUsPage"
-              className="inline-block px-8 py-4 bg-blue-700 text-white font-medium rounded-full hover:bg-blue-800 transition-colors"
-            >
-              Get Started with {service.title}
-            </Link>
+          {/* Benefits Section */}
+          <div id="benefits" className="mt-24 scroll-mt-24">
+            <div className="text-center mb-16">
+              <div className="inline-block px-4 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
+                Why Choose Us
+              </div>
+              <h2 className="text-3xl font-bold text-blue-900 mt-4">
+                Benefits of Our {service.title} Services
+              </h2>
+              <p className="text-gray-600 max-w-2xl mx-auto mt-4">
+                Our solutions are designed to deliver tangible results and
+                long-term value for your business.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {service.benefits.map((benefit, index) => (
+                <div
+                  key={index}
+                  className="p-6 bg-white rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow group"
+                >
+                  <div className="w-12 h-12 mb-4 rounded-full bg-blue-100 flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6 text-blue-600 group-hover:text-white transition-colors"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-lg font-semibold text-blue-900 mb-2 group-hover:text-blue-600 transition-colors">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm">{benefit.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Testimonials Section */}
+          <div id="testimonials" className="mt-24 scroll-mt-24">
+            <div className="text-center mb-16">
+              <div className="inline-block px-4 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
+                Client Stories
+              </div>
+              <h2 className="text-3xl font-bold text-blue-900 mt-4">
+                What Our Clients Say
+              </h2>
+              <p className="text-gray-600 max-w-2xl mx-auto mt-4">
+                Discover how our services have helped businesses like yours
+                achieve their goals.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              {testimonials.map((testimonial, index) => (
+                <div
+                  key={index}
+                  className="bg-white p-8 rounded-lg shadow-md relative"
+                >
+                  <div className="absolute -top-5 -left-5">
+                    <svg
+                      width="40"
+                      height="40"
+                      viewBox="0 0 40 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.1667 25.8333C14.4667 25.8333 16.3333 23.9667 16.3333 21.6667C16.3333 19.3667 14.4667 17.5 12.1667 17.5C9.86667 17.5 8 19.3667 8 21.6667L8.01667 22.5C8.01667 28.3333 12.8333 33.1667 18.6667 33.1667V30C15.35 30 12.6667 27.3167 12.6667 24H14.3333C16.6333 24 18.5 22.1333 18.5 19.8333C18.5 17.5333 16.6333 15.6667 14.3333 15.6667C12.0333 15.6667 10.1667 17.5333 10.1667 19.8333C10.1667 22.1333 12.0333 24 14.3333 24H12.6667C12.6667 27.3167 15.35 30 18.6667 30V27.5C16.3667 27.5 14.5 25.6333 14.5 23.3333V23.35C13.45 23.1 12.6667 22.4667 12.1667 21.6667C12.1667 23.9667 14.0333 25.8333 16.3333 25.8333H12.1667Z"
+                        fill="#3B82F6"
+                      />
+                      <path
+                        d="M27.8333 25.8333C30.1333 25.8333 32 23.9667 32 21.6667C32 19.3667 30.1333 17.5 27.8333 17.5C25.5333 17.5 23.6667 19.3667 23.6667 21.6667L23.6833 22.5C23.6833 28.3333 28.5 33.1667 34.3333 33.1667V30C31.0167 30 28.3333 27.3167 28.3333 24H30C32.3 24 34.1667 22.1333 34.1667 19.8333C34.1667 17.5333 32.3 15.6667 30 15.6667C27.7 15.6667 25.8333 17.5333 25.8333 19.8333C25.8333 22.1333 27.7 24 30 24H28.3333C28.3333 27.3167 31.0167 30 34.3333 30V27.5C32.0333 27.5 30.1667 25.6333 30.1667 23.3333V23.35C29.1167 23.1 28.3333 22.4667 27.8333 21.6667C27.8333 23.9667 29.7 25.8333 32 25.8333H27.8333Z"
+                        fill="#3B82F6"
+                      />
+                    </svg>
+                  </div>
+                  <div className="flex flex-col h-full justify-between">
+                    <p className="text-gray-600 italic mb-6 pt-6">
+                      &quot;{testimonial.quote}&quot;
+                    </p>
+                    <div className="flex items-center">
+                      <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">
+                        {testimonial.name.charAt(0)}
+                      </div>
+                      <div className="ml-4">
+                        <p className="font-medium text-blue-900">
+                          {testimonial.name}
+                        </p>
+                        <p className="text-sm text-gray-500">
+                          {testimonial.company}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Related Services Section */}
+          <div className="mt-24">
+            <div className="text-center mb-16">
+              <div className="inline-block px-4 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
+                Explore More
+              </div>
+              <h2 className="text-3xl font-bold text-blue-900 mt-4">
+                Related Services
+              </h2>
+              <p className="text-gray-600 max-w-2xl mx-auto mt-4">
+                Discover other services that complement{' '}
+                {service.title.toLowerCase()} for a comprehensive solution.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              {services
+                .filter((s) => s.id !== service.id)
+                .slice(0, 3)
+                .map((relatedService, index) => (
+                  <Link
+                    href={`/services/${relatedService.id}`}
+                    key={index}
+                    className="group"
+                  >
+                    <div className="bg-white rounded-lg shadow-md overflow-hidden h-full transition-shadow">
+                      <div className="relative h-48 w-full">
+                        <Image
+                          src={relatedService.image}
+                          alt={relatedService.title}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
+                      <div className="p-6">
+                        <h3 className="font-semibold text-blue-900 text-lg mb-2 group-hover:text-blue-600 transition-colors">
+                          {relatedService.title}
+                        </h3>
+                        <p className="text-gray-600 text-sm mb-4">
+                          {relatedService.description}
+                        </p>
+                        <span className="inline-flex items-center text-blue-600 text-sm font-medium">
+                          Learn more
+                          <svg
+                            className="ml-1 w-4 h-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M9 5l7 7-7 7"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+            </div>
+          </div>
+
+          {/* Enhanced CTA Section */}
+          <div className="mt-24 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative px-8 py-12 md:p-16">
+              <div className="absolute inset-0 opacity-10">
+                <svg
+                  width="100%"
+                  height="100%"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0L100 100M20 0L100 80M40 0L100 60M60 0L100 40M80 0L100 20M0 20L80 100M0 40L60 100M0 60L40 100M0 80L20 100"
+                    stroke="white"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </div>
+              <div className="relative z-10 text-center">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                  Ready to enhance your business with {service.title}?
+                </h2>
+                <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
+                  Get in touch with our team of experts to discuss your
+                  requirements and discover how we can help you achieve your
+                  goals.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Link
+                    href="/ContactUsPage"
+                    className="px-8 py-4 bg-white text-blue-700 font-medium rounded-lg transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  >
+                    Request a Free Consultation
+                  </Link>
+                  <button
+                    onClick={() => scrollToSection('approach')}
+                    className="px-8 py-4 bg-transparent border-2 border-white text-white font-medium rounded-lg hover:bg-white/10 transition-colors"
+                  >
+                    Learn About Our Process
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -986,7 +1417,6 @@ const ServicePage: React.FC<ServicePageProps> = ({ service }) => {
   );
 };
 
-// Static site generation
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = services.map((service) => ({
     params: { serviceId: service.id },
@@ -1003,10 +1433,14 @@ export const getStaticProps: GetStaticProps<ServicePageProps> = async (
 ) => {
   const serviceId = context.params?.serviceId as string;
   const service = services.find((s) => s.id === serviceId) || null;
+  const relatedServices = services
+    .filter((s) => s.id !== serviceId)
+    .slice(0, 3);
 
   return {
     props: {
       service,
+      relatedServices,
     },
   };
 };
