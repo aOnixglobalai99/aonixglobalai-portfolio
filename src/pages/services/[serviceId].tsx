@@ -886,10 +886,7 @@ const services: Service[] = [
   },
 ];
 
-const ServicePage: React.FC<ServicePageProps> = ({
-  service,
-  relatedServices,
-}) => {
+const ServicePage: React.FC<ServicePageProps> = ({ service }) => {
   const [isNavSticky, setIsNavSticky] = useState(false);
   const [activeSection, setActiveSection] = useState('overview');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
