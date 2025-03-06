@@ -90,6 +90,8 @@ const Header: React.FC = () => {
             >
               Blog
             </Link>
+           
+            <Link href="/career" onClick={handleLinkClick} className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e]">Career</Link>
             <Link
               href="/ContactUsPage"
               onClick={handleLinkClick}
@@ -189,6 +191,8 @@ const Header: React.FC = () => {
                 >
                   Blog
                 </Link>
+                <Link href="/career" className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e]">Career</Link>
+               
                 <Link
                   href="/ContactUsPage"
                   className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e]"
@@ -211,3 +215,4 @@ const Header: React.FC = () => {
 };
 
 export default Header;
+
