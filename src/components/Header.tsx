@@ -99,9 +99,23 @@ const Header: React.FC = () => {
             >
               Contact Us
             </Link>
-            <button className="bg-[#078dd7] rounded text-lg font-semibold text-white p-2.5 hover:bg-[#077bc8]">
-              <a href="tel:+918709871715">Call Us</a>
-            </button>
+            <a
+              href="tel:+918709871715"
+              className="bg-[#078dd7] rounded-md text-lg font-semibold text-white px-4 py-2.5 hover:bg-[#077bc8] transition-colors duration-200 flex items-center justify-center "
+            >
+              <button className="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z" />
+                </svg>
+                Call Us
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -199,9 +213,20 @@ const Header: React.FC = () => {
                 >
                   Contact Us
                 </Link>
-                <button className="bg-[#078dd7] rounded text-lg font-semibold text-white p-2.5 hover:bg-[#077bc8]">
-                  <a href="tel:+918709871715">Call Us</a>
-                </button>
+                <a href="tel:+918709871715" className="inline-block">
+                  <button className="bg-blue-600 rounded-md text-base font-semibold text-white px-3 py-1.5 hover:bg-blue-700 transition-colors duration-200 flex items-center gap-2">
+                    {/* <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z" />
+                    </svg> */}
+                    Call Us
+                  </button>
+                </a>
               </div>
             </div>
           </div>

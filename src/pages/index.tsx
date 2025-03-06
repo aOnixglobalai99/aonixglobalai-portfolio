@@ -15,6 +15,7 @@ import OurTeam from '@/components/OurTeam';
 import Link from 'next/link';
 import TechIcons from '@/components/techAnimation';
 import IndustryCarousel from '@/components/industryCarousel';
+import Router from 'next/router';
 // import AI_Trends_2025 from '@/components/newBlogs/blog1';
 // import AI_in_ECommerce from '@/components/newBlogs/blog2';
 // import AIRealEstatePage from '@/components/newBlogs/blog3';
@@ -29,21 +30,24 @@ const HomePage = () => {
     <div id="/" className="font-poppins w-full">
       {/* Hero Section */}
       <div className="w-full">
-        <div className="homepagefirstdiv-back h-[800px] bg-center bg-no-repeat bg-cover">
-          <div className="h-full flex flex-col items-start w-full max-w-[1140px] mx-auto pr-4 justify-center m-auto">
-            <div className="px-4 xl:px-0">
-              <h2 className="text-white font-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl w-full sm:w-[500px] md:w-[600px] lg:w-[700px] leading-tight mb-4">
+        <div className="homepagefirstdiv-back min-h-screen bg-center bg-no-repeat bg-cover">
+          <div className="h-full flex flex-col items-start w-full max-w-6xl mx-auto px-4 justify-center py-16">
+            <div className="w-full">
+              <h2 className="text-white font-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl leading-tight mb-4">
                 Innovative IT, AI & Tech Solutions for Modern Businesses
               </h2>
-              <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl w-full sm:w-[400px] md:w-[500px] lg:w-[600px] leading-relaxed mb-5">
+              <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl leading-relaxed mb-8">
                 Empowering businesses with scalable IT, AI, and tech solutions
                 to drive innovation, streamline operations, and ensure security.
               </p>
             </div>
 
-            {/* <button className="bg-[#078dd7] rounded font-semibold text-[white]  hover:bg-[#077bc8] transition-[0.3s] text-[25px] px-[60px] py-[15px]">
+            <button
+              className="px-6 py-3 sm:px-8 sm:py-4 bg-black/30 text-white rounded-lg hover:bg-black/40 transition-colors font-semibold text-center border border-white/20 backdrop-blur-md shadow-md hover:shadow-lg"
+              onClick={() => Router.push('./ContactUsPage')}
+            >
               Contact Us
-            </button> */}
+            </button>
           </div>
         </div>
 
@@ -149,7 +153,6 @@ const HomePage = () => {
 
         <FAQs />
       </div>
-      {/* Other sections can be added below */}
     </div>
   );
 };

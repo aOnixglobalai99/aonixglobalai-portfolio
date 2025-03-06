@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link'; // Added for navigation
+import Image from 'next/image';
 import serviceone from '../../assets/servicesImages/service-1.webp';
 import servicetwo from '../../assets/servicesImages/service-2.webp';
 import servicethree from '../../assets/servicesImages/service-3.webp';
@@ -9,20 +11,16 @@ import serviceseven from '../../assets/servicesImages/service-7.png';
 import serviceeight from '../../assets/servicesImages/service-8.png';
 import servicenine from '../../assets/servicesImages/service-9.png';
 
-import Image from 'next/image';
-// import { Accordion } from 'flowbite-react';
-
 const Service = () => {
   return (
     <div id="/services" className="mb-[100px]">
       <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
         <div className="text-center px-5">
           <div className="max-w-[1140px] mx-auto text-center">
-            <h2 className="text-2xl  sm:text-4xl lg:text-5xl font-bold tracking-widest text-blue-900">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-widest text-blue-900">
               Services Offered By AonixGlobalAI
             </h2>
           </div>
-          {/* <h2 className="text-3xl font-semibold">IT Solutions & Projects</h2> */}
           <p className="text-center text-[15px] mt-5 px-2 md:px-10">
             AonixGlobalAI provides a comprehensive range of development services
             designed to meet your specific needs, from creating intuitive user
@@ -32,14 +30,14 @@ const Service = () => {
 
         <div className="w-full px-4 md:px-0 md:w-[90%] lg:w-[1140px] mx-auto">
           {/* Services Grid */}
-          <div className=" pt-[100px] flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="pt-[100px] flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {/* Service Card 1 */}
-            <div className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
+            <div className="bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 h-full justify-between border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
               <Image
                 src={serviceone}
                 alt="UI/UX Design"
-                width={45}
-                height={45}
+                width={50}
+                height={50}
               />
               <h1 className="font-bold text-lg">UI/UX Design & Development</h1>
               <p className="text-center text-[12px]">
@@ -47,10 +45,16 @@ const Service = () => {
                 aesthetics, ensuring your digital platforms offer a seamless and
                 engaging experience across all devices.
               </p>
+              <Link
+                href="/services/ui-ux-design"
+                className="bg-blue-800 text-white px-4 py-2 rounded-3xl hover:bg-blue-700 inline-block"
+              >
+                Read More
+              </Link>
             </div>
 
             {/* Service Card 2 */}
-            <div className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
+            <div className="bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 h-full justify-between border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
               <Image
                 src={servicetwo}
                 alt="Web Development"
@@ -63,15 +67,21 @@ const Service = () => {
                 your business objectives, designed to ensure high efficiency and
                 optimal performance.
               </p>
+              <Link
+                href="/services/web-development"
+                className="bg-blue-800 text-white px-4 py-2 rounded-3xl hover:bg-blue-700 inline-block"
+              >
+                Read More
+              </Link>
             </div>
 
             {/* Service Card 3 */}
-            <div className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
+            <div className="bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 h-full justify-between border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
               <Image
                 src={servicethree}
                 alt="Mobile Development"
-                width={45}
-                height={45}
+                width={40}
+                height={40}
               />
               <h1 className="font-bold text-lg">Mobile App Development</h1>
               <p className="text-center text-[12px]">
@@ -79,10 +89,16 @@ const Service = () => {
                 iOS and Android to enhance user engagement and meet business
                 demands.
               </p>
+              <Link
+                href="/services/mobile-development"
+                className="bg-blue-800 text-white px-4 py-2 rounded-3xl hover:bg-blue-700 inline-block"
+              >
+                Read More
+              </Link>
             </div>
 
             {/* Service Card 4 */}
-            <div className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
+            <div className="bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 h-full justify-between border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
               <Image
                 src={servicefour}
                 alt="CMS Development"
@@ -95,10 +111,16 @@ const Service = () => {
                 that make managing and updating your website quick and
                 hassle-free.
               </p>
+              <Link
+                href="/services/cms-development"
+                className="bg-blue-800 text-white px-4 py-2 rounded-3xl hover:bg-blue-700 inline-block"
+              >
+                Read More
+              </Link>
             </div>
 
             {/* Service Card 5 */}
-            <div className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
+            <div className="bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 h-full justify-between border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
               <Image
                 src={servicefive}
                 alt="API Development"
@@ -113,15 +135,21 @@ const Service = () => {
                 enabling your applications to seamlessly connect with external
                 services.
               </p>
+              <Link
+                href="/services/api-development"
+                className="bg-blue-800 text-white px-4 py-2 rounded-3xl hover:bg-blue-700 inline-block"
+              >
+                Read More
+              </Link>
             </div>
 
             {/* Service Card 6 */}
-            <div className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
+            <div className="bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 h-full justify-between border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
               <Image
                 src={servicesix}
                 alt="Cloud Solutions"
-                width={45}
-                height={45}
+                width={35}
+                height={35}
               />
               <h1 className="font-bold text-lg">Cloud-based Solutions</h1>
               <p className="text-center text-[12px]">
@@ -129,10 +157,16 @@ const Service = () => {
                 your business needs, ensuring uninterrupted operations in a
                 dynamic market environment.
               </p>
+              <Link
+                href="/services/cloud-solutions"
+                className="bg-blue-800 text-white px-4 py-2 rounded-3xl hover:bg-blue-700 inline-block"
+              >
+                Read More
+              </Link>
             </div>
 
             {/* Service Card 7 */}
-            <div className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
+            <div className="bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 h-full justify-between border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
               <Image
                 src={serviceseven}
                 alt="AI Solutions"
@@ -145,10 +179,16 @@ const Service = () => {
                 data-driven applications and automate processes, driving
                 innovation and operational efficiency.
               </p>
+              <Link
+                href="/services/ai-solutions"
+                className="bg-blue-800 text-white px-4 py-2 rounded-3xl hover:bg-blue-700 inline-block"
+              >
+                Read More
+              </Link>
             </div>
 
             {/* Service Card 8 */}
-            <div className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
+            <div className="bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 h-full justify-between border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
               <Image
                 src={serviceeight}
                 alt="Digital Marketing"
@@ -161,10 +201,16 @@ const Service = () => {
                 including SEO, PPC, social media, and email campaigns, to boost
                 your brand&apos;s online visibility and engagement.
               </p>
+              <Link
+                href="/services/digital-marketing"
+                className="bg-blue-800 text-white px-4 py-2 rounded-3xl hover:bg-blue-700 inline-block"
+              >
+                Read More
+              </Link>
             </div>
 
             {/* Service Card 9 */}
-            <div className="backgrounddd bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
+            <div className="bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 h-full justify-between border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
               <Image src={servicenine} alt="DevOps" width={45} height={45} />
               <h1 className="font-bold text-lg">DevOps & Automation</h1>
               <p className="text-center text-[12px]">
@@ -172,6 +218,12 @@ const Service = () => {
                 practices and automation tools, ensuring faster delivery and
                 enhanced reliability of your applications.
               </p>
+              <Link
+                href="/services/devops-automation"
+                className="bg-blue-800 text-white px-4 py-2 rounded-3xl hover:bg-blue-700 inline-block"
+              >
+                Read More
+              </Link>
             </div>
           </div>
         </div>
