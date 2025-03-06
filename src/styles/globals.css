@@ -32,19 +32,30 @@ body {
   height: 100vh;
 }
 
-/* Tablet */
-@media (max-width: 1024px) {
+/* Fix for the specific 769px-1200px range */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
   .homepagefirstdiv-back {
-    background-size: contain;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 600px;
+  }
+}
+
+/* Optional: For very small screens, ensure image is visible */
+@media screen and (max-width: 767px) {
+  .homepagefirstdiv-back {
+    background-size: cover;
     background-position: center;
   }
 }
 
-/* Mobile */
-@media (max-width: 768px) {
+/* Optional: For large screens, return to default behavior */
+@media screen and (min-width: 1201px) {
   .homepagefirstdiv-back {
     background-size: cover;
-    background-position: top;
+    background-position: center;
   }
 }
 
