@@ -15,6 +15,7 @@ import OurTeam from '@/components/OurTeam';
 import Link from 'next/link';
 import TechIcons from '@/components/techAnimation';
 import IndustryCarousel from '@/components/industryCarousel';
+import Router from 'next/router';
 // import AI_Trends_2025 from '@/components/newBlogs/blog1';
 // import AI_in_ECommerce from '@/components/newBlogs/blog2';
 // import AIRealEstatePage from '@/components/newBlogs/blog3';
@@ -41,9 +42,12 @@ const HomePage = () => {
               </p>
             </div>
 
-            {/* <button className="bg-[#078dd7] rounded font-semibold text-[white]  hover:bg-[#077bc8] transition-[0.3s] text-[25px] px-[60px] py-[15px]">
+            <button
+              className="px-8 py-4 bg-black/30 text-white rounded-lg hover:bg-black/40 transition-colors font-semibold text-center border border-white/20 backdrop-blur-md shadow-md hover:shadow-lg mx-4 xl:mx-0"
+              onClick={() => Router.push('./ContactUsPage')}
+            >
               Contact Us
-            </button> */}
+            </button>
           </div>
         </div>
 
@@ -149,7 +153,6 @@ const HomePage = () => {
 
         <FAQs />
       </div>
-      {/* Other sections can be added below */}
     </div>
   );
 };
