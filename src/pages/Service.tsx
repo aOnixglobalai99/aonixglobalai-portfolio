@@ -36,8 +36,8 @@ const Service = () => {
               <Image
                 src={serviceone}
                 alt="UI/UX Design"
-                width={45}
-                height={45}
+                width={50}
+                height={50}
               />
               <h1 className="font-bold text-lg">UI/UX Design & Development</h1>
               <p className="text-center text-[12px]">
@@ -80,8 +80,8 @@ const Service = () => {
               <Image
                 src={servicethree}
                 alt="Mobile Development"
-                width={45}
-                height={45}
+                width={40}
+                height={40}
               />
               <h1 className="font-bold text-lg">Mobile App Development</h1>
               <p className="text-center text-[12px]">
@@ -148,8 +148,8 @@ const Service = () => {
               <Image
                 src={servicesix}
                 alt="Cloud Solutions"
-                width={45}
-                height={45}
+                width={35}
+                height={35}
               />
               <h1 className="font-bold text-lg">Cloud-based Solutions</h1>
               <p className="text-center text-[12px]">

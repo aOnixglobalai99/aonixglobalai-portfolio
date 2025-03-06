@@ -2,6 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import React from 'react';
+import Image from 'next/image';
 
 const Industry = () => {
   const router = useRouter();
@@ -148,9 +149,11 @@ const Industry = () => {
                 className="backgrounddd bg-white text-center shadow-md flex flex-col items-start justify-between gap-5 border rounded-lg overflow-hidden"
               >
                 <div className="w-full h-48 md:h-56 lg:h-64 overflow-hidden">
-                  <img
+                  <Image
                     src={card.imageUrl}
                     alt={card.title}
+                    width={600}
+                    height={800}
                     className="w-full h-full object-cover"
                   />
                 </div>
