@@ -155,11 +155,11 @@ const Industry: React.FC = () => {
   };
 
   return (
-    <section id="industries" className=" pb-[120px] ">
-      <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
+    <section id="industries" className="pb-[120px]">
+      <div className="w-full px-4 md:w-[90%] mx-auto lg:w-[95%] xl:w-[1140px]">
         <div className="text-center px-5">
           <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-2xl  sm:text-4xl lg:text-5xl font-bold tracking-widest text-blue-900">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-widest text-blue-900">
               Our Industry Expertise
             </h2>
           </div>
@@ -195,16 +195,16 @@ const Industry: React.FC = () => {
                   style={{ width: `${100 / cardData.length}%` }}
                 >
                   <div className="flex flex-col-reverse md:flex-row h-full">
-                    <div className="w-full md:w-1/2 p-4 md:p-8 flex flex-col justify-center">
+                    <div className="w-full md:w-1/2 p-4 md:p-6 lg:p-8 flex flex-col justify-center">
                       <div className="max-w-xl">
-                        <h3 className="font-bold text-xl md:text-2xl mb-3 md:mb-6">
+                        <h3 className="font-bold text-xl md:text-2xl mb-3 md:mb-4 lg:mb-6">
                           {card.title}
                         </h3>
-                        <p className="text-left text-[15px] mb-4 md:mb-8">
+                        <p className="text-left text-[15px] mb-4 md:mb-6 lg:mb-8">
                           {card.description}
                         </p>
                         <button
-                          className="bg-blue-800 text-white px-6 md:px-8 py-2 md:py-3 rounded-full hover:bg-blue-700 transition-all duration-300 text-base md:text-lg transform"
+                          className="bg-blue-800 text-white px-6 md:px-7 lg:px-8 py-2 md:py-2.5 lg:py-3 rounded-full hover:bg-blue-700 transition-all duration-300 text-base md:text-lg transform"
                           onClick={() =>
                             router.push(
                               `/industries/${card.title.replace(/\s+/g, '-')}`
@@ -234,13 +234,13 @@ const Industry: React.FC = () => {
           </div>
 
           <button
-            className="absolute left-2 md:left-[-45px] top-1/3 md:top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 md:p-3 rounded-full z-10 transition-all duration-300"
+            className="absolute left-2 md:left-[-20px] top-1/3 md:top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 md:p-3 rounded-full z-10 transition-all duration-300"
             onClick={prevSlide}
           >
-            <ChevronLeft className="h-5 w-5 md:h-4 md:w-4" />
+            <ChevronLeft className="h-4 w-4" />
           </button>
           <button
-            className="absolute right-2 md:right-[-45px] top-1/3 md:top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 md:p-3 rounded-full z-10 transition-all duration-300"
+            className="absolute right-2 md:right-[-20px] top-1/3 md:top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 md:p-3 rounded-full z-10 transition-all duration-300"
             onClick={nextSlide}
           >
             <ChevronRight className="h-5 w-5 md:h-4 md:w-4" />
