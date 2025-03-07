@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link'; // Added for navigation
+import Link from 'next/link';
 import Image from 'next/image';
 import serviceone from '../../assets/servicesImages/service-1.webp';
 import servicetwo from '../../assets/servicesImages/service-2.webp';
@@ -14,23 +14,23 @@ import servicenine from '../../assets/servicesImages/service-9.png';
 const Service = () => {
   return (
     <div id="/services" className="mb-[100px]">
-      <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
+      <div className="w-full px-4 xl:w-[1140px] mx-auto">
         <div className="text-center px-5">
-          <div className="max-w-[1140px] mx-auto text-center">
+          <div className="max-w-full mx-auto text-center">
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-widest text-blue-900">
               Services Offered By AonixGlobalAI
             </h2>
           </div>
-          <p className="text-center text-[15px] mt-5 px-2 md:px-10">
+          <p className="text-center sm:w-4/5 mx-auto text-[15px] mt-5 px-2 md:px-10">
             AonixGlobalAI provides a comprehensive range of development services
             designed to meet your specific needs, from creating intuitive user
             interfaces to developing scalable web and mobile applications.
           </p>
         </div>
 
-        <div className="w-full px-4 md:px-0 md:w-[90%] lg:w-[1140px] mx-auto">
+        <div className="w-full px-4 md:px-0 md:w-[90%] lg:w-[90%] xl:w-[1140px] mx-auto">
           {/* Services Grid */}
-          <div className="pt-[100px] flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="pt-[100px] flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 gap-5">
             {/* Service Card 1 */}
             <div className="bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-center gap-5 h-full justify-between border-neutral-100 px-[30px] py-[33px] rounded-[0px_0px_0px_0px] border-solid border-[0px_0px_0px_0px]">
               <Image
