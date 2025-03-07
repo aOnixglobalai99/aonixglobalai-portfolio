@@ -1,5 +1,4 @@
-'use client'; // If using Next.js 13+ with App Router
-
+'use client';
 import { useRouter } from 'next/navigation';
 import React from 'react';
 import Image from 'next/image';
@@ -82,17 +81,17 @@ const Industry = () => {
   ];
 
   return (
-    <div id="industries" className="">
+    <div id="industries" className="mb-[100px]">
       <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 h-[400px] overflow-hidden">
         {/* Background Image */}
         <div
-          className="absolute inset-0  mix-blend-overlay bg-[url('/our-industry-page-background-image.webp')] w-full bg-fixed bg-center bg-no-repeat bg-cover"
+          className="absolute inset-0 mix-blend-overlay bg-[url('/our-industry-page-background-image.webp')] w-full bg-fixed bg-center bg-no-repeat bg-cover"
           style={{ transform: 'scale(1.1)' }}
         />
 
         {/* Content Container */}
-        <div className="relative h-full container mx-auto px-4 md:px-6 lg:px-8">
-          <div className="h-full flex flex-col items-start justify-center w-full max-w-[1140px] mx-auto px-4">
+        <div className="relative h-full w-full px-4 xl:w-[1140px] mx-auto">
+          <div className="h-full flex flex-col items-start justify-center px-5">
             <div className="space-y-6 animate-fade-in-left">
               {/* Tag Label */}
               <div className="inline-block px-4 py-2 bg-gray-700/30 rounded-full transition-all hover:bg-gray-700/50 cursor-pointer backdrop-blur-sm">
@@ -126,27 +125,28 @@ const Industry = () => {
         </div>
       </div>
 
-      <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto my-[100px]">
-        <div className="text-center px-5">
-          <div className="max-w-[1140px] mx-auto text-center">
-            <h2 className="text-2xl  sm:text-4xl lg:text-5xl font-bold tracking-widest text-blue-900">
+      <div className="w-full px-4 xl:w-[1140px] mx-auto">
+        <div className="text-center px-5 py-[100px]">
+          <div className="max-w-full mx-auto text-center">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-widest text-blue-900">
               Our Industry Expertise
             </h2>
           </div>
-          <p className="text-center text-[15px] mt-5 px-2 md:px-10">
+          <p className="text-center sm:w-4/5 mx-auto text-[15px] mt-5 px-2 md:px-10">
             With broad experience across a number of sectors, we offer
             specialized solutions to meet the unique needs of each industry. The
             following are only a few of the domains where we can provide
             beneficial outcomes for any business:
           </p>
         </div>
-        <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
+
+        <div className="w-full px-4 md:px-0 md:w-[90%] lg:w-[90%] xl:w-[1140px] mx-auto">
           {/* Industry Cards Grid */}
-          <div className="pt-8 md:pt-[100px]  flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 gap-5">
             {cardData.map((card, index) => (
               <div
                 key={index}
-                className="backgrounddd bg-white text-center shadow-md flex flex-col items-start justify-between gap-5 border rounded-lg overflow-hidden"
+                className="bg-white text-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.1)] flex flex-col items-start justify-between gap-5 h-full border-neutral-100 rounded-lg overflow-hidden"
               >
                 <div className="w-full h-48 md:h-56 lg:h-64 overflow-hidden">
                   <Image
@@ -163,9 +163,9 @@ const Industry = () => {
                   </h3>
                   <p className="text-left text-sm pt-10">{card.description}</p>
                 </div>
-                <div className="mb-4">
+                <div className="mb-4 px-6">
                   <button
-                    className="bg-blue-800 text-white px-4 py-2 rounded-3xl hover:bg-blue-700 ml-7"
+                    className="bg-blue-800 text-white px-4 py-2 rounded-3xl hover:bg-blue-700 w-full"
                     onClick={() =>
                       window.open(
                         `/industries/${card.title.replace(/\s+/g, '-')}`
