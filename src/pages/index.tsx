@@ -130,7 +130,7 @@ const HomePage = () => {
           </div>
         </section>
 
-        <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto pb-[50px]">
+        <div className="w-full px-4 md:w-[90%] xl:w-[1140px] mx-auto pb-[50px]">
           <div className="text-center px-5">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl  sm:text-4xl lg:text-5xl font-bold tracking-widest text-blue-900">
