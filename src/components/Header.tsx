@@ -90,8 +90,14 @@ const Header: React.FC = () => {
             >
               Blog
             </Link>
-           
-            <Link href="/career" onClick={handleLinkClick} className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e]">Career</Link>
+
+            <Link
+              href="/career"
+              onClick={handleLinkClick}
+              className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e]"
+            >
+              Career
+            </Link>
             <Link
               href="/ContactUsPage"
               onClick={handleLinkClick}
@@ -168,7 +174,7 @@ const Header: React.FC = () => {
               </div>
 
               {/* Desktop Navigation */}
-              <div className="flex items-center gap-8">
+              <div className="flex items-center gap-6">
                 <Link
                   href="/"
                   className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e]"
@@ -205,8 +211,13 @@ const Header: React.FC = () => {
                 >
                   Blog
                 </Link>
-                <Link href="/career" className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e]">Career</Link>
-               
+                <Link
+                  href="/career"
+                  className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e]"
+                >
+                  Career
+                </Link>
+
                 <Link
                   href="/ContactUsPage"
                   className="text-[15px] text-[#077bc8] font-semibold hover:text-[#121a5e]"
@@ -240,4 +251,3 @@ const Header: React.FC = () => {
 };
 
 export default Header;
-
