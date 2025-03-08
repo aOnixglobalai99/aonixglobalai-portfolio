@@ -2,14 +2,13 @@
 
 import React from 'react';
 import Articles from '../components/blog/BlogList';
-// import { useRouter } from 'next/navigation';
 
 const Blog = () => {
-  // const router = useRouter();
   const BlogList: typeof Articles = Articles;
 
   return (
     <div id="blog" className="mb-[100px]">
+      {/* Responsive Header Section */}
       <div className="relative bg-gradient-to-br from-gray-800 via-gray-700 to-gray-600 h-[400px] overflow-hidden">
         <div
           className="absolute inset-0 mix-blend-overlay bg-[url('/blog-page-background-image.jpg')] w-full bg-fixed bg-center bg-no-repeat bg-cover"
@@ -35,10 +34,12 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div className="w-full px-4 md:w-[90%] lg:w-[1140px] mx-auto">
+
+      {/* Blog Content Section */}
+      <div className="w-full px-4 md:w-[90%] xl:w-[1140px] mx-auto">
         <div className="text-center px-5 my-[100px]">
           <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-3xl  sm:text-4xl lg:text-5xl font-bold tracking-widest text-blue-900">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-widest text-blue-900">
               Our Blogs
             </h2>
           </div>
@@ -50,11 +51,12 @@ const Blog = () => {
           </p>
         </div>
 
-        <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {/* Responsive Blog Grid */}
+        <div className="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 gap-5 px-4 md:px-0">
           {BlogList.map((card, index) => (
             <div
               key={index}
-              className="backgrounddd bg-white text-center shadow-md flex flex-col items-start justify-between gap-5 border rounded-lg overflow-hidden"
+              className="bg-white text-center shadow-md flex flex-col items-start justify-between gap-5 border rounded-lg overflow-hidden"
             >
               <div className="w-full h-48 md:h-56 lg:h-64 overflow-hidden">
                 <img
