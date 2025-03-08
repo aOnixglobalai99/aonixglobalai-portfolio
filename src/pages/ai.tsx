@@ -258,7 +258,7 @@ const AI = () => {
         <div className="relative">
           <div className="bg-gradient-to-r from-gray-900 to-gray-800 h-[700px]">
             <div className="absolute inset-0 opacity-20 bg-[url('/circuit-pattern.jpeg')] w-full bg-center bg-no-repeat bg-cover" />
-            <div className="relative h-full flex flex-col items-start w-full max-w-[1140px] mx-auto px-4 justify-center">
+            <div className="relative h-full flex flex-col items-start w-full max-w-[1140px] mx-auto px-4 xl:px-0 justify-center">
               <div className="space-y-6 animate-fade-in-left">
                 <div className="inline-block px-4 py-2 bg-gray-700/30 rounded-full">
                   <span className="text-blue-200 font-medium">
@@ -426,7 +426,7 @@ const AI = () => {
         {/* Next Steps Section */}
         <div className="bg-gray-50 py-20">
           <div className="max-w-[1140px] mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold text-gray-900 mb-8 flex gap-5 justify-center items-center">
+            <h2 className="text-4xl font-bold text-gray-900 mb-8 flex gap-2.5 justify-center items-center">
               Next Steps
               <FaCheck />
             </h2>
