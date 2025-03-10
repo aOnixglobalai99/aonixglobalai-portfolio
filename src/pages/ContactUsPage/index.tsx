@@ -1,11 +1,17 @@
+"use client";
+
 import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Link from 'next/link';
 import { FaLinkedin, FaInstagram, FaDribbble, FaBehance } from 'react-icons/fa';
 import { MdLocationOn, MdAccessTime } from 'react-icons/md';
+import { submitContactForm } from "@/redux/contactSlice"
+import { useDispatch } from 'react-redux';
+import { AppDispatch } from "@/redux/store";
 
 const ContactUsPage = () => {
+  const dispatch: AppDispatch = useDispatch();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -14,11 +20,11 @@ const ContactUsPage = () => {
     message: '',
   });
 
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const validateForm = () => {
-    const newErrors = {};
+    const newErrors: { [key: string]: string } = {};
 
     if (!formData.name.trim()) {
       newErrors.name = 'Name is required';
@@ -42,7 +48,7 @@ const ContactUsPage = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: { target: { name: any; value: any; }; }) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -56,15 +62,30 @@ const ContactUsPage = () => {
     }
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
 
     if (validateForm()) {
       setIsSubmitting(true);
 
       try {
-        // Simulating API call
-        await new Promise((resolve) => setTimeout(resolve, 1000));
+     
+      const response = await dispatch(submitContactForm(formData));
+      if (response.meta.requestStatus === 'fulfilled') {
+        toast.success('Thank you! We will get back to you shortly!', {
+          position: 'top-right',
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+        });
+      } else {
+        toast.error('Something went wrong. Please try again.', {
+          position: 'top-right',
+          autoClose: 3000,
+        });
+      }
 
         console.log('Form data:', formData);
         toast.success('Thank you! We will get back to you shortly!', {
@@ -84,6 +105,7 @@ const ContactUsPage = () => {
           subject: '',
           message: '',
         });
+        console.log(formData)
       } catch (error) {
         toast.error('Something went wrong. Please try again.', {
           position: 'top-right',
@@ -254,8 +276,7 @@ const ContactUsPage = () => {
                 type="tel"
                 placeholder="Your Phone (Optional)"
                 value={formData.telephone}
-                onChange={handleInputChange}
-              />
+                onChange={handleInputChange} error={undefined}              />
             </div>
 
             <FormField
@@ -295,7 +316,7 @@ const ContactUsPage = () => {
 };
 
 // Helper Components
-const SocialLink = ({ href, icon, label, color }) => (
+const SocialLink: React.FC<{ href: string; icon: React.ReactNode; label: string; color: string }> = ({ href, icon, label, color }) => (
   <Link
     href={href}
     className={`${color} text-white w-10 h-10 flex items-center justify-center rounded-full hover:opacity-90 transition-opacity shadow-sm`}
@@ -306,7 +327,18 @@ const SocialLink = ({ href, icon, label, color }) => (
   </Link>
 );
 
-const FormField = ({
+interface FormFieldProps {
+  label: string;
+  name: string;
+  type: string;
+  placeholder: string;
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
+  error?: string;
+  required?: boolean;
+}
+
+const FormField: React.FC<FormFieldProps> = ({
   label,
   name,
   type,
