@@ -424,7 +424,7 @@ const AI = () => {
         </div>
 
         {/* Next Steps Section */}
-        <div className="bg-gray-50 py-20">
+        {/* <div className="bg-gray-50 py-20">
           <div className="max-w-[1140px] mx-auto px-4 text-center">
             <h2 className="text-4xl font-bold text-gray-900 mb-8 flex gap-2.5 justify-center items-center">
               Next Steps
@@ -461,7 +461,7 @@ const AI = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* CTA Section */}
         <div className="bg-[rgb(26,36,115)] w-full bg-center bg-no-repeat bg-cover relative z-1 py-20">
