@@ -1,8 +1,17 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
+interface Job {
+    _id: string;
+    title: string;
+    jobType: string;
+    dateOpened: string;
+    city: string;
+    requirements: string[];
+}
+
 interface JobState {
-    jobs: any[];
-    job: any;
+    jobs: Job[];
+    job: Job | null;
     status: 'idle' | 'loading' | 'succeeded' | 'failed';
     error: string | null;
 }
@@ -14,23 +23,25 @@ const initialState: JobState = {
     error: null,
 };
 
-
-
 export const getAllJobs = createAsyncThunk(
     'jobs/getAllJobs',
     async (_, { rejectWithValue }) => {
         try {
-            const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/jobs`
-            );
+            const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/jobs`);
             if (!response.ok) throw new Error('Failed to fetch jobs');
-            const data = await response.json()
+            const data: { data: Job[] } = await response.json();
             return data.data;
-        } catch (err: any) {
-            return rejectWithValue(err.message);
+        } catch (err) {
+            let errorMessage = 'An unknown error occurred';
+            if (err instanceof Error) {
+                errorMessage = err.message;
+            } else if (typeof err === 'string') {
+                errorMessage = err;
+            }
+            return rejectWithValue(errorMessage);
         }
     }
 );
-
 
 export const getJobById = createAsyncThunk(
     'jobs/getJobById',
@@ -38,16 +49,19 @@ export const getJobById = createAsyncThunk(
         try {
             const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/jobs/${id}`);
             if (!response.ok) throw new Error('Job not found');
-            const data = await response.json()
+            const data: { data: Job } = await response.json();
             return data.data;
-        } catch (err: any) {
-            return rejectWithValue(err.message);
+        } catch (err) {
+            let errorMessage = 'An unknown error occurred';
+            if (err instanceof Error) {
+                errorMessage = err.message;
+            } else if (typeof err === 'string') {
+                errorMessage = err;
+            }
+            return rejectWithValue(errorMessage);
         }
     }
 );
-
-
-
 
 const jobSlice = createSlice({
     name: 'jobs',
@@ -55,7 +69,6 @@ const jobSlice = createSlice({
     reducers: {},
     extraReducers: (builder) => {
         builder
-            
             .addCase(getAllJobs.pending, (state) => {
                 state.status = 'loading';
             })
@@ -77,8 +90,7 @@ const jobSlice = createSlice({
             .addCase(getJobById.rejected, (state, action) => {
                 state.status = 'failed';
                 state.error = action.payload as string;
-            })
-            
+            });
     },
 });
 

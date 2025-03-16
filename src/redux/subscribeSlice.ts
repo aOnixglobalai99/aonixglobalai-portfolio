@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk} from '@reduxjs/toolkit';
 
 interface SubscribeState {
 
@@ -44,11 +44,18 @@ export const subscribeEmail = createAsyncThunk<
             }
 
             return data;
-        } catch (error: any) {
-            return rejectWithValue({ message: error.message || "Something went wrong" });
+        } catch (error) {
+            let errorMessage = "Something went wrong";
+
+            if (error instanceof Error) {
+                errorMessage = error.message;
+            }
+
+            return rejectWithValue({ message: errorMessage });
         }
     }
 );
+
 
 
 

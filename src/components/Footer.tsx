@@ -16,8 +16,8 @@ import {
 } from 'react-icons/fa';
 
 import logo from '../../assets/logo/logo.png';
-import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch, RootState } from "@/redux/store";
+import { useDispatch} from "react-redux";
+import { AppDispatch } from "@/redux/store";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
