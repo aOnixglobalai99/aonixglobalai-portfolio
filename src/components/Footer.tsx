@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { subscribeEmail } from '@/redux/subscribeSlice';
+
 import {
   FaChevronRight,
   FaLinkedinIn,
@@ -14,10 +16,21 @@ import {
 } from 'react-icons/fa';
 
 import logo from '../../assets/logo/logo.png';
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispatch, RootState } from "@/redux/store";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
+  const [email,setEmail] = useState("")
+  const dispatch: AppDispatch = useDispatch();
+  const handleSubscribe=async()=>{
+    const response = await dispatch(subscribeEmail(email))
+    console.log(response)
+    if(response){
+      alert(response.payload?.message)
+    }
+    setEmail("")
+  }
   const socialLinks = [
     {
       href: 'https://www.linkedin.com/company/aonixglobalai/',
@@ -154,8 +167,10 @@ const Footer = () => {
                     className="w-full p-4 pl-5 pr-12 rounded-xl border-0 bg-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm text-slate-300 placeholder-slate-500"
                     placeholder="Your email address"
                     type="email"
+                    value={email}
+                    onChange={(e)=>setEmail(e.target.value)}
                   />
-                  <button className="absolute right-1 top-1 bottom-1 bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 text-white font-medium px-4 rounded-lg text-sm transition-colors">
+                  <button onClick={handleSubscribe} className="absolute right-1 top-1 bottom-1 bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 text-white font-medium px-4 rounded-lg text-sm transition-colors">
                     SUBSCRIBE
                   </button>
                 </div>

@@ -37,7 +37,7 @@ const initialState: RegisterState = {
 };
 
 // API base URL
-const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000/api";
+const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000";
 
 // ✅ Register a new user
 export const registerUser = createAsyncThunk('user/registerUser', async (form: RegisteredUser) => {
