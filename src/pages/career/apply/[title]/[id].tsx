@@ -87,7 +87,7 @@ const ApplyPage = () => {
         } else {
             toast.error("Please upload a valid resume.");
         }
-    } catch (error) {
+    } catch {
         toast.error("Something went wrong. Please try again.");
     } finally {
         setIsSubmitting(false);
@@ -150,7 +150,7 @@ const ApplyPage = () => {
             type="text"
             name="skills"
             value={formData.skills}
-            placeholder="Skills (if any)"
+            placeholder="Skills "
             className="p-3 border rounded w-full focus:ring-2 focus:ring-blue-300"
             onChange={handleChange}
           />

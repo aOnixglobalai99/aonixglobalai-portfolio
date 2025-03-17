@@ -15,7 +15,7 @@ const JobPortal = () => {
   const router = useRouter();
 
   const dispatch: AppDispatch = useDispatch();
-  const { jobs, status, error } = useSelector((state: RootState) => state.job);
+  const { jobs, status} = useSelector((state: RootState) => state.job);
 
   const filteredJobs =
     filter === "all" ? jobs : jobs.filter((job) => job.jobType === filter);

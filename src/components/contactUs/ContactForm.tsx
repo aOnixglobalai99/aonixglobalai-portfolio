@@ -1,7 +1,15 @@
 import React, { useState } from "react";
 import FormField from "./FormField";
 
-const ContactForm = ({ onSubmit, isSubmitting }: { onSubmit: (data: any) => void; isSubmitting: boolean }) => {
+interface FormData {
+  name: string;
+  email: string;
+  telephone:string;
+  subject: string;
+  message: string;
+}
+
+const ContactForm = ({ onSubmit, isSubmitting }: { onSubmit: (data: FormData) => void; isSubmitting: boolean }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
