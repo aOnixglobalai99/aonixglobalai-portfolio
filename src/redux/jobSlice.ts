@@ -28,7 +28,7 @@ export const getAllJobs = createAsyncThunk(
     async (_, { rejectWithValue }) => {
         try {
             const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/jobs`);
-            if (!response.ok) throw new Error('Failed to fetch jobs');
+            if (!response.ok) throw new Error('No job available!!');
             const data: { data: Job[] } = await response.json();
             return data.data;
         } catch (err) {

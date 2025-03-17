@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import JobApplicationForm from "@/components/career/careerForm";
 import { getAllJobs } from "@/redux/jobSlice";
 import { registerUser } from "@/redux/registerSlice";
 import { ToastContainer, toast } from "react-toastify";
@@ -52,7 +51,7 @@ const JobPortal = () => {
       console.log(formData);
 
       if (formData.resume instanceof File) {
-        console.log("here")
+      
         const response = await dispatch(registerUser(formData));
         console.log(response);
 
@@ -76,7 +75,7 @@ const JobPortal = () => {
       } else {
         toast.error("Please upload a valid resume.");
       }
-    } catch (error) {
+    } catch {
       toast.error("Something went wrong. Please try again.");
     } finally {
       setIsSubmitting(false);
@@ -95,10 +94,7 @@ const JobPortal = () => {
 
   return (
     <div className="bg-gray-50 text-gray-900 min-h-screen p-6 flex flex-col items-center">
-      <div className="w-full max-w-6xl">
-        <JobApplicationForm />
-      </div>
-
+     
       <div className="max-w-6xl w-full bg-white p-8 rounded-lg shadow-lg mt-6">
         {/* Tabs */}
         <div className="flex justify-center border-b mb-6">
@@ -130,7 +126,7 @@ const JobPortal = () => {
 
             {status === "failed" && (
               <div className="text-red-500 text-center py-4">
-                Error: {error || "Failed to fetch jobs. Please try again later."}
+                {"No jobs available!!"}
               </div>
             )}
 

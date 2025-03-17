@@ -3,8 +3,8 @@ import { useRouter } from "next/router";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { applyJob } from "@/redux/applicationSlice";
-import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch, RootState } from "@/redux/store";
+import { useDispatch} from "react-redux";
+import { AppDispatch } from "@/redux/store";
 
 const ApplyPage = () => {
   const router = useRouter();
