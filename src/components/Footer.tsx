@@ -10,23 +10,25 @@ import {
   FaInstagram,
   FaDribbble,
   FaBehance,
+  FaFacebook,
   FaMapMarkerAlt,
   FaPhone,
   FaEnvelope,
 } from 'react-icons/fa';
+import { SiX } from 'react-icons/si'; // ✅ New clean X icon
 
 import logo from '../../assets/logo/logo.png';
-import { useDispatch} from "react-redux";
+import { useDispatch } from "react-redux";
 import { AppDispatch } from "@/redux/store";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const [email,setEmail] = useState("")
+  const [email, setEmail] = useState("")
   const dispatch: AppDispatch = useDispatch();
-  const handleSubscribe=async()=>{
+  const handleSubscribe = async () => {
     const response = await dispatch(subscribeEmail(email))
     console.log(response)
-    if(response){
+    if (response) {
       alert(response.payload?.message)
     }
     setEmail("")
@@ -38,19 +40,20 @@ const Footer = () => {
       alt: 'LinkedIn',
     },
     {
-      href: '#',
-      icon: <FaTwitter size={16} />,
-      alt: 'Twitter',
+      href: 'https://x.com/AonixGlobalAI',
+      icon: <SiX size={14} />,
+      alt: 'X',
     },
+
     {
       href: 'https://www.instagram.com/aonixglobalai/',
       icon: <FaInstagram size={16} />,
       alt: 'Instagram',
     },
     {
-      href: 'https://dribbble.com/AonixGlobalAI',
-      icon: <FaDribbble size={16} />,
-      alt: 'Dribbble',
+      href: 'https://www.facebook.com/profile.php?id=61577369285356',
+      icon: <FaFacebook size={16} />,
+      alt: 'Facebook',
     },
     {
       href: 'https://www.behance.net/aonixgldevelop',
@@ -125,7 +128,7 @@ const Footer = () => {
                   href="tel:+918709871715"
                   className="text-slate-300 text-sm hover:text-indigo-300 transition-colors"
                 >
-                  (+91) 8709871715
+                  (+91) 8319177429
                 </a>
               </div>
             </div>
@@ -168,7 +171,7 @@ const Footer = () => {
                     placeholder="Your email address"
                     type="email"
                     value={email}
-                    onChange={(e)=>setEmail(e.target.value)}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                   <button onClick={handleSubscribe} className="absolute right-1 top-1 bottom-1 bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 text-white font-medium px-4 rounded-lg text-sm transition-colors">
                     SUBSCRIBE

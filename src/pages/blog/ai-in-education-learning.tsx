@@ -6,11 +6,11 @@ import Contact from '@/components/ContactUs';
 
 import {
   FaLinkedin,
-  FaTwitter,
   FaFacebook,
   FaWhatsapp,
   FaTelegram,
 } from 'react-icons/fa';
+import { SiX } from 'react-icons/si'; // ✅ Twitter (X)
 
 import {
   LinkedinShareButton,
@@ -189,11 +189,11 @@ const AIEducationBlog: React.FC = () => {
                 />
               </LinkedinShareButton>
               <TwitterShareButton url={blogUrl} title={blogTitle}>
-                <FaTwitter
-                  size={24}
-                  className="text-blue-400 hover:text-blue-500"
-                />
-              </TwitterShareButton>
+  <SiX
+    size={20}
+    className="text-black hover:text-gray-700"
+  />
+  </TwitterShareButton>
               <FacebookShareButton url={blogUrl} title={blogTitle}>
                 <FaFacebook
                   size={24}
@@ -570,11 +570,11 @@ const AIEducationBlog: React.FC = () => {
                 />
               </LinkedinShareButton>
               <TwitterShareButton url={blogUrl} title={blogTitle}>
-                <FaTwitter
-                  size={24}
-                  className="text-blue-400 hover:text-blue-500"
-                />
-              </TwitterShareButton>
+  <SiX
+    size={20}
+    className="text-black hover:text-gray-700"
+  />
+  </TwitterShareButton>
               <FacebookShareButton url={blogUrl} title={blogTitle}>
                 <FaFacebook
                   size={24}

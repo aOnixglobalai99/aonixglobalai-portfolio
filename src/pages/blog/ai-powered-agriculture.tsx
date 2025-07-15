@@ -6,11 +6,13 @@ import Contact from '@/components/ContactUs';
 
 import {
   FaLinkedin,
-  FaTwitter,
   FaFacebook,
   FaWhatsapp,
   FaTelegram,
 } from 'react-icons/fa';
+import { SiX } from 'react-icons/si'; // ✅ Twitter (X)
+
+
 
 import {
   LinkedinShareButton,
@@ -188,11 +190,12 @@ const AI_Powered_Agriculture: React.FC = () => {
                 />
               </LinkedinShareButton>
               <TwitterShareButton url={blogUrl} title={blogTitle}>
-                <FaTwitter
-                  size={24}
-                  className="text-blue-400 hover:text-blue-500"
-                />
-              </TwitterShareButton>
+  <SiX
+    size={20}
+    className="text-black hover:text-gray-700"
+  />
+  </TwitterShareButton>
+
               <FacebookShareButton url={blogUrl} title={blogTitle}>
                 <FaFacebook
                   size={24}
@@ -532,12 +535,13 @@ const AI_Powered_Agriculture: React.FC = () => {
                   className="text-blue-700 hover:text-blue-800"
                 />
               </LinkedinShareButton>
-              <TwitterShareButton url={blogUrl} title={blogTitle}>
-                <FaTwitter
-                  size={24}
-                  className="text-blue-400 hover:text-blue-500"
-                />
-              </TwitterShareButton>
+          <TwitterShareButton url={blogUrl} title={blogTitle}>
+  <SiX
+    size={20}
+    className="text-black hover:text-gray-700"
+  />
+  </TwitterShareButton>
+
               <FacebookShareButton url={blogUrl} title={blogTitle}>
                 <FaFacebook
                   size={24}

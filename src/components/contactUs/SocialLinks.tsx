@@ -1,13 +1,36 @@
 import React from "react";
 import Link from "next/link";
-import { FaLinkedin, FaInstagram, FaDribbble, FaBehance } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaBehance, FaFacebook } from 'react-icons/fa';
+import { SiX } from 'react-icons/si'; // ✅ Twitter (X)
 
 const socialLinks = [
-  { href: "https://www.linkedin.com/company/aonixglobalai/", icon: <FaLinkedin />, color: "bg-blue-600" },
-  { href: "https://www.instagram.com/aonixglobalai/", icon: <FaInstagram />, color: "bg-pink-600" },
-  { href: "https://dribbble.com/AonixGlobalAI", icon: <FaDribbble />, color: "bg-pink-500" },
-  { href: "https://www.behance.net/aonixgldevelop", icon: <FaBehance />, color: "bg-blue-700" },
+  {
+    href: "https://www.linkedin.com/company/aonixglobalai/",
+    icon: <FaLinkedin />,
+    color: "bg-blue-600"
+  },
+  {
+    href: "https://x.com/AonixGlobalAI",
+    icon: <SiX />,
+    color: "bg-black"
+  },
+  {
+    href: "https://www.instagram.com/aonixglobalai/",
+    icon: <FaInstagram />,
+    color: "bg-pink-600"
+  },
+  {
+    href: "https://www.facebook.com/profile.php?id=61577369285356",
+    icon: <FaFacebook />,
+    color: "bg-blue-800"
+  },
+  {
+    href: "https://www.behance.net/aonixgldevelop",
+    icon: <FaBehance />,
+    color: "bg-blue-700"
+  }
 ];
+
 
 const SocialLinks = () => (
   <div className="flex gap-3">

@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Link from 'next/link';
-import { FaLinkedin, FaInstagram, FaDribbble, FaBehance } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaFacebook, FaBehance } from 'react-icons/fa';
 import { MdLocationOn, MdAccessTime } from 'react-icons/md';
-
+import { SiX } from 'react-icons/si'; // ✅ New clean X icon
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -124,7 +124,7 @@ const Contact = () => {
               href="tel:+918709871715"
               className="hover:underline transition-colors"
             >
-              (+91) 8709871715
+              (+91) 8319177429
             </a>
           </div>
         </div>
@@ -166,16 +166,23 @@ const Contact = () => {
               color="bg-blue-600"
             />
             <SocialLink
+              href="https://x.com/AonixGlobalAI"
+              icon={<SiX size={18} />}
+              label="X"
+              color="bg-black"
+            />
+            <SocialLink
               href="https://www.instagram.com/aonixglobalai/"
               icon={<FaInstagram size={18} />}
               label="Instagram"
               color="bg-pink-600"
             />
+
             <SocialLink
-              href="https://dribbble.com/AonixGlobalAI"
-              icon={<FaDribbble size={18} />}
-              label="Dribbble"
-              color="bg-pink-500"
+              href="https://www.facebook.com/profile.php?id=61577369285356"
+              icon={<FaFacebook size={18} />}
+              label="Facebook"
+              color="bg-blue-800"
             />
             <SocialLink
               href="https://www.behance.net/aonixgldevelop"
@@ -295,9 +302,8 @@ const FormField = ({
         value={value}
         onChange={onChange}
         placeholder={placeholder}
-        className={`w-full p-3 border rounded-md focus:ring-2 focus:ring-blue-300 focus:border-blue-500 outline-none transition-all ${
-          error ? 'border-red-500' : 'border-gray-300'
-        }`}
+        className={`w-full p-3 border rounded-md focus:ring-2 focus:ring-blue-300 focus:border-blue-500 outline-none transition-all ${error ? 'border-red-500' : 'border-gray-300'
+          }`}
         rows={4}
       ></textarea>
     ) : (
@@ -307,9 +313,8 @@ const FormField = ({
         value={value}
         onChange={onChange}
         placeholder={placeholder}
-        className={`w-full p-3 border rounded-md focus:ring-2 focus:ring-blue-300 focus:border-blue-500 outline-none transition-all ${
-          error ? 'border-red-500' : 'border-gray-300'
-        }`}
+        className={`w-full p-3 border rounded-md focus:ring-2 focus:ring-blue-300 focus:border-blue-500 outline-none transition-all ${error ? 'border-red-500' : 'border-gray-300'
+          }`}
       />
     )}
 
