@@ -195,6 +195,7 @@ const AI_Powered_Agriculture: React.FC = () => {
     className="text-black hover:text-gray-700"
   />
   </TwitterShareButton>
+  
 
               <FacebookShareButton url={blogUrl} title={blogTitle}>
                 <FaFacebook

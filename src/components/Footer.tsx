@@ -6,9 +6,7 @@ import { subscribeEmail } from '@/redux/subscribeSlice';
 import {
   FaChevronRight,
   FaLinkedinIn,
-  FaTwitter,
   FaInstagram,
-  FaDribbble,
   FaBehance,
   FaFacebook,
   FaMapMarkerAlt,

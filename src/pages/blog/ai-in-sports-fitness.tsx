@@ -6,7 +6,6 @@ import Contact from '@/components/ContactUs';
 
 import {
   FaLinkedin,
-  FaTwitter,
   FaFacebook,
   FaWhatsapp,
   FaTelegram,
