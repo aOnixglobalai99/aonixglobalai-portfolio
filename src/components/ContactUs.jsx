@@ -124,7 +124,7 @@ const Contact = () => {
               href="tel:+918709871715"
               className="hover:underline transition-colors"
             >
-              (+91) 8319177429
+              (+91) 9109021215
             </a>
           </div>
         </div>

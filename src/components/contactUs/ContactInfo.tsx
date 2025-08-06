@@ -9,7 +9,7 @@ const ContactInfo = () => {
         <h2 className="text-2xl font-bold mb-4">Let&apos;s Connect</h2>
         <p>Let&apos;s discuss how we can help empower your business.</p>
         <p className="mt-3">✉️ <a href="mailto:support@aonixglobalai.com" className="hover:underline">support@aonixglobalai.com</a></p>
-        <p>📞 <a href="tel:+918319177429" className="hover:underline">(+91) 8319177429</a></p>
+        <p>📞 <a href="tel:+919109021215" className="hover:underline">(+91) 9109021215</a></p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
